@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Starship Factory
+subtitle: "Dein Makerspace in Basel!"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -23,6 +24,9 @@ twitter_username: StarshipFactory
 github_username: starshipfactory
 minimal_mistakes_skin: default
 search: true
+logo: "/assets/images/logo.svg"
+breadcrumbs: true  # disabled by default
+teaser: /assets/images/500x300.png
 
 # Build settings
 markdown: kramdown
@@ -79,13 +83,16 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/StarshipFactory"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/starshipfactory"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/starship_factory"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/starshipfactory"
 
 defaults:
   # _posts
@@ -96,7 +103,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -105,7 +112,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
 category_archive:
   type: liquid

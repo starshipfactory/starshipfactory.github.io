@@ -1,13 +1,11 @@
 main:
   - title: "Home"
     url: /
+  - title: "Events"
+    url: /events/
   - title: "Über uns"
-    url: /categories/
-  - title: "Treffen"
-    url: /treffen/
+    url: /verein/
   - title: "Spenden"
     url: /spenden/
-  - title: "Workshops"
-    url: /workshops/
   - title: "Wiki"
     url: https://wiki.starship-factory.ch/
