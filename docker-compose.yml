@@ -1,0 +1,14 @@
+version: "3.2"
+services:
+  jekyll:
+    image: jekyll/jekyll
+    command:
+      - /usr/jekyll/bin/jekyll
+      - build
+      - --watch
+      - --incremental
+    volumes:
+      - type: "bind"
+        source: "./"
+        target: "/srv/jekyll"
+  
