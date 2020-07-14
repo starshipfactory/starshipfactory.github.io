@@ -26,7 +26,7 @@ minimal_mistakes_skin: default
 search: true
 logo: "/assets/images/logo.svg"
 breadcrumbs: true  # disabled by default
-teaser: /assets/images/500x300.png
+teaser: /assets/images/logo.svg
 
 # Build settings
 markdown: kramdown
@@ -104,7 +104,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: false
-      share: true
+      share: false
       related: true
   # _pages
   - scope:

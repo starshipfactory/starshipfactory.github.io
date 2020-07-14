@@ -1,14 +1,22 @@
 version: "3.2"
+
 services:
   jekyll:
     image: jekyll/jekyll
     command:
       - /usr/jekyll/bin/jekyll
-      - build
+      - serve
+      - --livereload
       - --watch
       - --incremental
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
     volumes:
       - type: "bind"
         source: "./"
         target: "/srv/jekyll"
-  
+    ports:
+      - "8080:8080"  
+      - "35729:35729"  
