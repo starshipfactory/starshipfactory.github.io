@@ -1,5 +1,5 @@
 ---
-title: "2. April: Arduino-Day 2016 in der Starship Factory"
+title: "2.April: Arduino-Day 2016 in der Starship Factory"
 categories:
   - Elektronik
   - Software
