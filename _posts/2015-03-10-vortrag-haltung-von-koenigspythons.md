@@ -7,8 +7,8 @@ tags:
   - tierhaltung
   - vortrag
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/DSC_0011.JPG
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/DSC_0011.JPG
+  image: /assets/images/uploads/zinnia/blogtitle/DSC_0011.JPG
+  teaser: /assets/images/uploads/zinnia/blogtitle/DSC_0011.JPG
 ---
 
 Liebe Starshiponauten und Interessenten!

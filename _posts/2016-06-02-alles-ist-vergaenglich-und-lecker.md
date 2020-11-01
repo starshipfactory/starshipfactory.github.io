@@ -6,8 +6,8 @@ tags:
   - event
   - fermentation
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG 
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG 
+  image: /assets/images/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG 
+  teaser: /assets/images/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG 
 ---
 
 Am 10. Juni ab 20:00 Uhr findet in der Starship Factory ein Treffen zum Thema Fermentation statt. Denn alles ist vergänglich – und lecker! Hier die Beschreibung des Events:

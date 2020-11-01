@@ -3,8 +3,8 @@ title: "Neue Location für Starshiponauten"
 categories:
   - Organisation
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/B_Lr_Z4WwAAc-ko.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/B_Lr_Z4WwAAc-ko.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/B_Lr_Z4WwAAc-ko.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/B_Lr_Z4WwAAc-ko.jpg
 ---
 
 Nach eineinhalb Jahren und mehreren Anläufen ist die Starship Factory nun endlich an einem neuen Ort eingezogen. Statt am St-Alban-Rheinweg sind wir nun in unserem neuen und eigenen Clublokal Auf dem Wolf 13, zwischen dem St-Jakob-Stadion und der S-Bahn-Station Dreispitz, angekommen.

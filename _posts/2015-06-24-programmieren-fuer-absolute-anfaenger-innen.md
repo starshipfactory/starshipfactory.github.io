@@ -9,8 +9,8 @@ tags:
   - python
   - workshop
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg
 ---
 
 Du wolltest schon immer mal programmieren lernen, hast aber bisher gedacht, das sei zu schwierig für dich, oder du bist bisher einfach nicht dazu gekommen? Wir haben genau den passenden Workshop für dich und es ist einfacher, als du denkst.

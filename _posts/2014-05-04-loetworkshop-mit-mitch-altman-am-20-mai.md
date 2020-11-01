@@ -4,8 +4,8 @@ categories:
   - Elektronik
   - Veranstaltungen
 header:
-  image: https://starship-factory.ch/media/snippet_images/content/loetequipment.png
-  teaser: https://starship-factory.ch/media/snippet_images/content/loetequipment.png
+  image: /assets/images/snippet_images/content/loetequipment.png
+  teaser: /assets/images/snippet_images/content/loetequipment.png
 tags:
   - loeten
   - workshop
@@ -22,11 +22,11 @@ Lötkits werden von Mitch selbst mitgebracht. Darunter auch:
 
 … und [viele andere Kits](https://noisebridge.net/wiki/MitchWorkshopsEU#Kits "https://noisebridge.net/wiki/MitchWorkshopsEU#Kits") zum selbst löten!
 
-![image_cache/6465c3141fe51862fa2f170bde8faa5f](https://starship-factory.ch/media/snippet_images/content/image_cache6465c3141fe51862fa2f170bde8faa5f.jpeg "image_cache/6465c3141fe51862fa2f170bde8faa5f")
+![image_cache/6465c3141fe51862fa2f170bde8faa5f](/assets/images/snippet_images/content/image_cache6465c3141fe51862fa2f170bde8faa5f.jpeg "image_cache/6465c3141fe51862fa2f170bde8faa5f")
 
-![image_cache/fe490ebd1f09ae5302a4f475f36d1c8b](https://starship-factory.ch/media/snippet_images/content/image_cachefe490ebd1f09ae5302a4f475f36d1c8b.jpeg "image_cache/fe490ebd1f09ae5302a4f475f36d1c8b")
+![image_cache/fe490ebd1f09ae5302a4f475f36d1c8b](/assets/images/snippet_images/content/image_cachefe490ebd1f09ae5302a4f475f36d1c8b.jpeg "image_cache/fe490ebd1f09ae5302a4f475f36d1c8b")
 
-![image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a](https://starship-factory.ch/media/snippet_images/content/image_cacheac6ffeb6a62ab363ab6dff7b9668cd5a.jpeg "image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a")
+![image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a](/assets/images/snippet_images/content/image_cacheac6ffeb6a62ab363ab6dff7b9668cd5a.jpeg "image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a")
 
   
 

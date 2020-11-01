@@ -4,8 +4,8 @@ categories:
   - Textilbearbeitung
   - Veranstaltungen
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg
 ---
 
 Am **16.08.2014** um **15:00 Uhr** veranstalten wir einen **T-Shirt-Druck-Workshop**.
@@ -16,7 +16,7 @@ Wer Tastatur und Maus bedienen kann, kann auch T-Shirts bedrucken. Wir zei­gen 
 
 Fragen und Anmeldungen bitte an: [workshops@lists.starship‑factory.ch](mailto:workshops@lists.starship-factory.ch?subject=T-Shirtworkshop%2016.08.2014)
 
-![Beispiel-T-Shirts](https://starship-factory.ch/media/snippet_images/content_small/beispiel-t-shirts.jpg "Beispiel-T-Shirts")
+![Beispiel-T-Shirts](/assets/images/snippet_images/content_small/beispiel-t-shirts.jpg "Beispiel-T-Shirts")
 
 ### Kursinhalt
 
@@ -26,9 +26,9 @@ Während wir das fertige Motiv gemeinsam auf dem Schneid­plot­ter aus­schnei�
 
 Nachdem Du Dein Motiv entgittert hast, bekommst du eine Einweisung in die Bedienung unserer Textiltransferpresse und schon ist Dein T-Shirt fertig be­druckt mit deinem Wunschmotiv.
 
-![Verschiedene T-Shirts](https://starship-factory.ch/media/snippet_images/content_small/verschiedene-t-shirts.jpg "Verschiedene T-Shirts")
+![Verschiedene T-Shirts](/assets/images/snippet_images/content_small/verschiedene-t-shirts.jpg "Verschiedene T-Shirts")
 
-![Reichliche Farbauswahl.](https://starship-factory.ch/media/snippet_images/content_small/reichliche-farbauswahl.jpg "Reichliche Farbauswahl.")
+![Reichliche Farbauswahl.](/assets/images/snippet_images/content_small/reichliche-farbauswahl.jpg "Reichliche Farbauswahl.")
 
 ### Teilnahmebedingungen
 
@@ -42,13 +42,13 @@ Die Anmeldung ist verbindlich: Es gibt keine Rückerstattung der Kosten bei Nich
 
 Sollte die Veranstaltung nicht stattfinden können, erstatten wir die Teilnahmegebühren. Es bestehen keine Haftungsansprüche aus vom Veranstalter her abgesagten Veranstaltungen.
 
-![Schneidplotter bei der Arbeit.](https://starship-factory.ch/media/snippet_images/content_small/schneidplotter-bei-der-arbeit.jpg "Schneidplotter bei der Arbeit.")
+![Schneidplotter bei der Arbeit.](/assets/images/snippet_images/content_small/schneidplotter-bei-der-arbeit.jpg "Schneidplotter bei der Arbeit.")
 
 ### Voraussetzungen
 
 Mitbringen solltest Du, wenn möglich, einen eigenen Laptop mit Mac OS X, Windows oder Linux, auf den wir die [Software](http://inkscape.org/) installieren können.
 
-![Motiv auf dem T-Shirt platzieren.](https://starship-factory.ch/media/snippet_images/content_small/motiv-auf-dem-t-shirt-platzieren_2.jpg "Motiv auf dem T-Shirt platzieren.")
+![Motiv auf dem T-Shirt platzieren.](/assets/images/snippet_images/content_small/motiv-auf-dem-t-shirt-platzieren_2.jpg "Motiv auf dem T-Shirt platzieren.")
 
 ### Weitere Informationen
 

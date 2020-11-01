@@ -3,8 +3,8 @@ title: "Das Ende eines erfüllten Jahres"
 categories:
   - Organisation
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg
+  image: /assets/images/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg
+  teaser: /assets/images/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg
 tags:
   - 31c3
   - essen

@@ -3,8 +3,8 @@ title: "Arduino-ISP-Programmer"
 categories:
   - Elektronik
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/20141012_220830.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/20141012_220830.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/20141012_220830.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/20141012_220830.jpg
 tags:
   - arduino
   - avr

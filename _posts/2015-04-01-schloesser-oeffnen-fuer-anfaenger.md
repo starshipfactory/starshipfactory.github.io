@@ -7,8 +7,8 @@ tags:
   - schloesser
   - workshop
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/DSC_0505_0005_01.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/DSC_0505_0005_01.png
+  image: /assets/images/uploads/zinnia/blogtitle/DSC_0505_0005_01.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/DSC_0505_0005_01.png
 ---
 
 Am 17.04.2015 um 18:00 Uhr findet in der [Räumlichkeiten der Starship-Factory](https://starship-factory.ch/anfahrt/) ein Workshop zum Thema «Schlösser öffnen für Anfänger» statt.
@@ -21,4 +21,4 @@ Die Anzahl der Teilnehmer ist durch die vorhandene Menge an Picksets auf max. 10
 
 Wir freuen uns auf reges Interesse!
 
-![Ein Schloss picken.](https://starship-factory.ch/media/snippet_images/content/ein-schloss-picken.png "Ein Schloss picken.")
+![Ein Schloss picken.](/assets/images/snippet_images/content/ein-schloss-picken.png "Ein Schloss picken.")

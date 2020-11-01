@@ -11,8 +11,8 @@ tags:
   - workshop
   - löten
 header:
-  image: https://starship-factory.ch/media/snippet_images/content/digitaluhr.jpg
-  teaser: https://starship-factory.ch/media/snippet_images/content/digitaluhr.jpg
+  image: /assets/images/snippet_images/content/digitaluhr.jpg
+  teaser: /assets/images/snippet_images/content/digitaluhr.jpg
 ---
 
 Wir bauen eine Digitaluhr nach unserem eigenen Geschmack. Der Workshop bietet eine interessante Mischung aus Löten, 3D-Druck und Laserschnitt. Die einzelnen Arbeitsschritte können dabei in beliebiger Reihenfolge durchgeführt werden. Am Tag des Workshops werden wir uns hierfür in 3 Gruppen aufteilen. Der Workshop dient vorrangig dazu, einen Einstieg in das Projekt zu finden. Die Fertigstellung erfolgt dann beliebig im Rahmen der Öffnungszeiten der Starship Factory (siehe Öffnungszeiten).

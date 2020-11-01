@@ -3,8 +3,8 @@ title: "Neue Öffnungszeiten!"
 categories:
   - Organisation
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png
+  image: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png
 ---
 
 Die Öffnungszeiten der _Starship Factory_ sind diese Woche leicht überarbeitet worden.

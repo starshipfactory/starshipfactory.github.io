@@ -8,8 +8,8 @@ tags:
   - arduino
   - workshop
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg
 ---
 
 Am **2\. April 2016** findet wieder der internationale [Arduino Day](https://day.arduino.cc/#/) statt. Und auch diesesmal werden wir von der Starship Factory mit einem vielfältigen Angebot aufwarten. Einige Highlights:

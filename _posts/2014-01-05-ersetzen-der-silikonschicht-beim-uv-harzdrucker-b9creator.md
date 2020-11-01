@@ -3,7 +3,7 @@ title: "Ersetzen der Silikonschicht beim UV-Harzdrucker B9Creator"
 categories:
   - 3D-Druck
 header:
-  teaser: https://starship-factory.ch/media/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png
+  teaser: /assets/images/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png
 tags:
   - 3d-druck
   - b9creator
@@ -22,6 +22,6 @@ Da es sich beim UV-Harzdruck um ein optisches Verfahren handelt, bei welchem das
 
 Beheizt man die Wanne zum Aushärten des Silikons auf maximal 70°C, kann sie bereits nach 3-4 Stunden wieder benutzt werden. Allerdings entsteht dabei eine erhöhte Gefahr, dass nicht alle Luftblasen im Silikon bis an die Oberfläche gelangen, bevor es fertig ausgehärtet ist. Ohne Hitze dauert das Aushärten des Silikons bis zu 48h, wodurch das Silikon allerdings wahrscheinlicher blasenfrei ist. Es lohnt sich daher, mit einer Zweitwanne zu arbeiten, um den B9Creator in Betrieb halten zu können.
 
-![Artec-Drache von Thingiverse](https://starship-factory.ch/media/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png "Artec-Drache von Thingiverse")
+![Artec-Drache von Thingiverse](/assets/images/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png "Artec-Drache von Thingiverse")
 
 Zum Test haben wir den [Drachen von artec3d auf Thingiverse](http://www.thingiverse.com/thing:16860) gedruckt. Durch fälschlicherweise unterschiedliche Z-Achsen-Einstellungen im Slicer und Druckprogramm ist dabei eine Streckung enstanden. Verblüffenderweise kann sich das Druckresultat dennoch sehen lassen. Es entsprechen 100 Micron des originalen Objekts 88.5 Micron im oben abgebildeten Druck.

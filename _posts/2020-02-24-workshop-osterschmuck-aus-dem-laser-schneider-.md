@@ -10,8 +10,9 @@ tags:
   - Ostern
   - Schmuck
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Ostereier.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Ostereier.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/Ostereier.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/Ostereier.jpg
+event_date: 2020-03-07 14:00
 ---
 
 Liebe Maker,

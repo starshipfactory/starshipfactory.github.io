@@ -3,8 +3,8 @@ title: "Wir haben geöffnet!"
 categories:
   - Organisation
 header:
-  image: https://starship-factory.ch/media/snippet_images/content/we-are-open.jpg
-  teaser: https://starship-factory.ch/media/snippet_images/content/we-are-open.jpg
+  image: /assets/images/snippet_images/content/we-are-open.jpg
+  teaser: /assets/images/snippet_images/content/we-are-open.jpg
 ---
 
 Liebe Maker und alle, die es noch werden wollen: Wir haben wieder geöffnet! Und das bereits seit dem 25. Mai. Ihr seid uns also alle wieder an den Tagen der offenen Tür willkommen. Diese sind wie bisher:

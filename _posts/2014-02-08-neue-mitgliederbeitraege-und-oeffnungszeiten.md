@@ -3,8 +3,8 @@ title: "Neue Mitgliederbeiträge und Öffnungszeiten"
 categories:
   - Organisation
 header:
-  image: https://starship-factory.ch/media/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg
-  teaser: https://starship-factory.ch/media/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg
+  image: /assets/images/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg
+  teaser: /assets/images/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg
 ---
 
 Nähen jetzt auch Dienstags in der Starship Factory!

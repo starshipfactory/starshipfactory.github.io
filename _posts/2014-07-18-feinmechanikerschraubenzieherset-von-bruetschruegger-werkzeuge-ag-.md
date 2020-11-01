@@ -4,8 +4,8 @@ categories:
   - 3D-Druck
   - Elektronik
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/sponsoring-feinmechaniker.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/sponsoring-feinmechaniker.png
+  image: /assets/images/uploads/zinnia/blogtitle/sponsoring-feinmechaniker.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/sponsoring-feinmechaniker.png
 tags:
   - sponsoring
   - werkzeug

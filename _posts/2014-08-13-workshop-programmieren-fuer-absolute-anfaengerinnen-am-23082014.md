@@ -4,8 +4,8 @@ categories:
   - Software
   - Veranstaltungen
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg
 tags:
   - oeffnungszeiten
 ---

@@ -7,8 +7,9 @@ tags:
   - django
   - women
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Djangogirls-logo.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Djangogirls-logo.png
+  image: /assets/images/uploads/zinnia/blogtitle/Djangogirls-logo.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/Djangogirls-logo.png
+event_date: 2019-05-20 09:00
 ---
 
 Geschrieben am 20\. Mai 2019 in [Software](https://starship-factory.ch/categories/projekte/software/ "Alle Einträge in Software anzeigen"), [Veranstaltungen](https://starship-factory.ch/categories/veranstaltungen/ "Alle Einträge in Veranstaltungen anzeigen").

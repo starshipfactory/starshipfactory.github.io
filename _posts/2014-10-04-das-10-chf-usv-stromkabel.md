@@ -3,17 +3,17 @@ title: "Das 10-CHF-USV-Stromkabel"
 categories:
   - Elektronik
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg
 tags:
   - 220v
   - elektronik
   - kabel
 ---
 
-![USV-Stromkabel mit C13- und C14-Steckern](https://starship-factory.ch/media/snippet_images/content_small/usv-stromkabel-mit-c13-und-c14-steckern.jpg "USV-Stromkabel mit C13- und C14-Steckern")
+![USV-Stromkabel mit C13- und C14-Steckern](/assets/images/snippet_images/content_small/usv-stromkabel-mit-c13-und-c14-steckern.jpg "USV-Stromkabel mit C13- und C14-Steckern")
 
-![Reguläre Schweizer Typ-13-Stromkupplungen](https://starship-factory.ch/media/snippet_images/content_small/regulare-schweizer-strombuchsen.jpg "Reguläre Schweizer Typ-13-Stromkupplungen")
+![Reguläre Schweizer Typ-13-Stromkupplungen](/assets/images/snippet_images/content_small/regulare-schweizer-strombuchsen.jpg "Reguläre Schweizer Typ-13-Stromkupplungen")
 
 Immer mal wieder trifft man in seinem Leben auf Geräte wie unterbrechungsfreie Stromversorgungen (USVs), welche Strom statt über den gewohnten Schweizer Stromstecker über den pinnigen Partner der PC-Stromkabel, den C14-Stecker, liefern. Oft kann man dort nur Geräte mit PC-Stromsteckern anschliessen, da es nur Kabel zu kaufen gibt, welche auf der einen Seite ebendiesen C14-Stecker haben und auf der anderen Seite den C13-Stecker, wie man ihn von PCs und Mikrowellen kennt.
 
@@ -23,13 +23,13 @@ Der findige Bastler kennt jedoch noch eine andere Lösung. Alles, was hierfür b
 
   
 
-![Das Kabel wird mit dem Seitenschneider durchtrennt](https://starship-factory.ch/media/snippet_images/content_small/das-kabel-wird-mit-dem-seitenschneider-durchtrennt.jpg "Das Kabel wird mit dem Seitenschneider durchtrennt")
+![Das Kabel wird mit dem Seitenschneider durchtrennt](/assets/images/snippet_images/content_small/das-kabel-wird-mit-dem-seitenschneider-durchtrennt.jpg "Das Kabel wird mit dem Seitenschneider durchtrennt")
 
 Für den ersten Schritt wird ein kräftiger Seitenschneider oder ein vergleichbares Werkzeug benötigt. Mit dessen Hilfe wird das Stromkabel durchtrennt. Es empfiehlt sich, das Kabel nicht direkt am Stecker zu schneiden, sondern tendentiell etwas mehr in der Mitte, so dass man das Kabelende noch mit einem anderen Stromstecker versehen und weiterhin benützen zu können. Auch wichtig ist selbstverständlich, dass das Stromkabel beim Schneiden ausgesteckt ist, da die 220V Spannung im örtlichen Stromnetz bei Berührungen nicht nur zu Verbrennungen und damit verbundenen Nieren- und Leberschäden führen können, und die plötzlich übertretende Energie den Seitenschneider schmelzen könnte.
 
   
 
-![Das Kabel besteht aus einer braunen, einer blauen und einer gelb-grün gestreiften Litze](https://starship-factory.ch/media/snippet_images/content_small/das-kabel-besteht-aus-einer-braunen-einer-blauen-und-einer-gelb-grun-gestreiften-litze.jpg "Das Kabel besteht aus einer braunen, einer blauen und einer gelb-grün gestreiften Litze")
+![Das Kabel besteht aus einer braunen, einer blauen und einer gelb-grün gestreiften Litze](/assets/images/snippet_images/content_small/das-kabel-besteht-aus-einer-braunen-einer-blauen-und-einer-gelb-grun-gestreiften-litze.jpg "Das Kabel besteht aus einer braunen, einer blauen und einer gelb-grün gestreiften Litze")
 
 Nun ist gut zu erkennen, wie das Stromkabel aufgebaut ist. Es besteht aus drei Drähten, welche wiederum aus vielen kleinen Einzeldrähten zusammen gesetzt sind. Dieser Aufbau nennt sich Litze. Die individuellen Litzen müssen sehr stark sein, also aus vielen einzelnen Drähten bestehen, um bei grossen Strömen durch das Kabel nicht zu schmelzen.
 
@@ -37,7 +37,7 @@ Die drei Litzen sind farblich voneinander unterschieden, da sie verschiedene Fun
 
   
 
-![Am vorderen Ende wird die Isolierung der Litze vollständig entfernt](https://starship-factory.ch/media/snippet_images/content_small/am-vorderen-ende-wird-die-isolierung-der-litze-vollstandig-entfernt.jpg "Am vorderen Ende wird die Isolierung der Litze vollständig entfernt")
+![Am vorderen Ende wird die Isolierung der Litze vollständig entfernt](/assets/images/snippet_images/content_small/am-vorderen-ende-wird-die-isolierung-der-litze-vollstandig-entfernt.jpg "Am vorderen Ende wird die Isolierung der Litze vollständig entfernt")
 
 Da das Kabel nicht als Ganzes, mitsamt Isolierung, in den neuen Stecker passt, muss man im nächsten Schritt die äussere, schwarze Isolierung mit einer Abisolierzange ca. 2-3 Zentimeter weit entfernen. Wenn man zuviel entfernt hat, hält das Kabel leider nicht richtig im Stecker (da die Befestigung darauf basiert, die äussere, schwarze Isolierschicht einzuquetschen). Dies lässt sich jedoch relativ einfach beheben, indem man die herausstehenden Litzen etwas einkürzt (oder mehr um die Kontakte wickelt – doch mehr dazu später).
 
@@ -45,25 +45,25 @@ Manch einer mag dazu verleitet sein, in Ermangelung einer Abisolierzange ein Sac
 
   
 
-![Perfekt abisolierte Litzen](https://starship-factory.ch/media/snippet_images/content_small/perfekt-abisolierte-litzen.jpg "Perfekt abisolierte Litzen")
+![Perfekt abisolierte Litzen](/assets/images/snippet_images/content_small/perfekt-abisolierte-litzen.jpg "Perfekt abisolierte Litzen")
 
 Nun müssen auf der Seite des Kabels nur noch die Spitzen etwas abisoliert werden. Dazu wird die Isolierung in etwa der Breite eines Schraubenkopfes vorsichtig mit der Isolierzange entfernt.
 
   
 
-![Die Schrauben am Eingang müssen gelöst werden.](https://starship-factory.ch/media/snippet_images/content_small/die-schrauben-am-eingang-mussen-gelost-werden.jpg "Die Schrauben am Eingang müssen gelöst werden.")
+![Die Schrauben am Eingang müssen gelöst werden.](/assets/images/snippet_images/content_small/die-schrauben-am-eingang-mussen-gelost-werden.jpg "Die Schrauben am Eingang müssen gelöst werden.")
 
 Nun widmen wir uns der Typ-13-Kupplung. Zuerst einmal müssen die Schrauben am Ende gelöst werden, so dass das Kabel an der dicken Isolierung befestigt werden kann.
 
   
 
-![Die Schrauben an den Kontakten müssen gelöst werden](https://starship-factory.ch/media/snippet_images/content_small/die-schrauben-an-den-kontakten-mussen-gelost-werden.jpg "Die Schrauben an den Kontakten müssen gelöst werden")
+![Die Schrauben an den Kontakten müssen gelöst werden](/assets/images/snippet_images/content_small/die-schrauben-an-den-kontakten-mussen-gelost-werden.jpg "Die Schrauben an den Kontakten müssen gelöst werden")
 
 Nun müssen die Kontakte gewissermassen «geöffnet» werden. Dazu gibt es üblicherweise Schrauben, welche eine Metallplatte an den Kontakt pressen. Diese müssen wir nun lösen, um anschliessend die Litzen darin befestigen zu können.
 
   
 
-![Alle Litzen an Ort und Stelle](https://starship-factory.ch/media/snippet_images/content_small/alle-litzen-an-ort-und-stelle.jpg "Alle Litzen an Ort und Stelle")
+![Alle Litzen an Ort und Stelle](/assets/images/snippet_images/content_small/alle-litzen-an-ort-und-stelle.jpg "Alle Litzen an Ort und Stelle")
 
 Nun müssen die Litzen mit dem tatsächlichen Kontakt verbunden werden. Hierzu wird die Litze zwischen das Metallplättchen und die Kontaktoberseite mit der Schraube gesteckt (nicht darauf, die Schraube alleine hält die Litzen nicht gut genug auseinander und kann zudem dadurch sehr heiss werden!). Das kann etwas puzzelig ausfallen, ist aber im Grunde machbar.
 
@@ -73,13 +73,13 @@ Sind die Litzen an Ort und Stelle, sollten die Schrauben, welche sie festhalten 
 
   
 
-![Die Zugentlastung wird wieder eingebaut](https://starship-factory.ch/media/snippet_images/content_small/die-zugentlastung-wird-wieder-eingebaut.jpg "Die Zugentlastung wird wieder eingebaut")
+![Die Zugentlastung wird wieder eingebaut](/assets/images/snippet_images/content_small/die-zugentlastung-wird-wieder-eingebaut.jpg "Die Zugentlastung wird wieder eingebaut")
 
 Damit die Zuglast des Stromkabels nicht alleine an den Kontakten und den kleinen Litzen hängt, muss nun noch die weisse Zugentlastungsbrücke wieder am Eingang der Buchse eingeschraubt werden. Hierbei ist wichtig, dass die Zugentlastung die dicke, schwarze Isolierschicht des Kabels einklemmt und nicht die drei dünnen, farbigen Litzenisolierschichten. Dadurch ist der Stecker stabiler und langlebiger.
 
   
 
-![Die Kupplung ist nun wieder zusammen gebaut](https://starship-factory.ch/media/snippet_images/content_small/die-kupplung-ist-nun-wieder-zusammen-gebaut.jpg "Die Kupplung ist nun wieder zusammen gebaut")
+![Die Kupplung ist nun wieder zusammen gebaut](/assets/images/snippet_images/content_small/die-kupplung-ist-nun-wieder-zusammen-gebaut.jpg "Die Kupplung ist nun wieder zusammen gebaut")
 
 Nun muss nur noch die Kappe wieder angebracht werden, damit man die Kontakte nicht berühren kann (220 Volt sind ziemlich viel und tragen nicht gerade zur Entspannung bei). Diese wird von einer einfachen Schraube festgehalten.
 
@@ -87,7 +87,7 @@ Nun muss nur noch die Kappe wieder angebracht werden, damit man die Kontakte nic
 
 ## Testing
 
-![Das Stromkabel muss ausgiebig getestet werden](https://starship-factory.ch/media/snippet_images/content_small/das-stromkabel-muss-ausgiebig-getestet-werden.jpg "Das Stromkabel muss ausgiebig getestet werden")
+![Das Stromkabel muss ausgiebig getestet werden](/assets/images/snippet_images/content_small/das-stromkabel-muss-ausgiebig-getestet-werden.jpg "Das Stromkabel muss ausgiebig getestet werden")
 
 Nun könnte man das fertige Kabel zwar gleich irgendwo anschliessen. Doch wie bereits erwähnt sind 220 Volt keine Spannung mit der man scherzen sollte. Also sollte man, bevor man das Stromkabel in Betrieb nimmt, noch einmal ein paar Prüfungen vornehmen. Anderenfalls kann es zu Kurzschlüssen, Bränden oder lebensgefährlichen Stromschlägen kommen. Und wer will das schon?
 

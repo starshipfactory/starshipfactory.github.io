@@ -8,8 +8,8 @@ tags:
   - cryptoparty
   - digitale selbstverteidigung
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/cryptoparty.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/cryptoparty.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/cryptoparty.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/cryptoparty.jpg
 ---
 [Starship Factory - Digitale Selbstverteidigung: der Crypto-September](https://starship-factory.ch/2015/08/18/digitale-selbstverteidigung-der-crypto-september/)
 

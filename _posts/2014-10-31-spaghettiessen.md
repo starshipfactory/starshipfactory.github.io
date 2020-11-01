@@ -3,8 +3,8 @@ title: "Spaghettiessen"
 categories:
   - Veranstaltungen 
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/dried_spaghetti.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/dried_spaghetti.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/dried_spaghetti.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/dried_spaghetti.jpg
 tags:
   - vereinskram
 ---

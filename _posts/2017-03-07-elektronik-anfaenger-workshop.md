@@ -13,8 +13,8 @@ tags:
   - elektronik
   - workshop
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Componentes.JPG
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Componentes.JPG
+  image: /assets/images/uploads/zinnia/blogtitle/Componentes.JPG
+  teaser: /assets/images/uploads/zinnia/blogtitle/Componentes.JPG
 ---
 
 Am 02. Mai um 19:00 findet in der Starship Factory ein Elektronikworkshop statt.

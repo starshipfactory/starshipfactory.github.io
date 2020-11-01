@@ -6,8 +6,8 @@ tags:
   - freifunk
   - veranstaltung
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Freifunk.net.svg.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/Freifunk.net.svg.png
+  image: /assets/images/uploads/zinnia/blogtitle/Freifunk.net.svg.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/Freifunk.net.svg.png
 ---
 
 Am 20. Januar 2015 ab 19:30 findet in den [Räumlichkeiten der Starship Factory](https://starship-factory.ch/anfahrt/) der 1. Freifunktreff in Basel statt.

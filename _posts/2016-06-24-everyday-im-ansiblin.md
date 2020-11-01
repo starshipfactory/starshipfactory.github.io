@@ -5,8 +5,8 @@ categories:
 tags:
   - 
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/maxresdefault.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/maxresdefault.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/maxresdefault.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/maxresdefault.jpg
 ---
 
 In der Informatik bestehen viele Aufgaben darin, Maschinen zu verwalten, zusätzliche Maschinen zu konfigurieren und die aktuelle Konfiguration auf dem aktuellen Stand zu halten. Früher wurde das von sogenannten Sysadmins von Hand erledigt, welche dann häufig als Reaktion darauf besondere Formen von Irrsinnigkeit an den Tag legten.

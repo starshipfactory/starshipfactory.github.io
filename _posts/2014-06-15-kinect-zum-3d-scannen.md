@@ -3,8 +3,8 @@ title: "Neues Equipment: Kinect zum 3D-Scannen"
 categories:
   - 3D-Druck
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/20140614_005612.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/20140614_005612.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/20140614_005612.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/20140614_005612.jpg
 tags:
   - 3d-scan
   - kinect

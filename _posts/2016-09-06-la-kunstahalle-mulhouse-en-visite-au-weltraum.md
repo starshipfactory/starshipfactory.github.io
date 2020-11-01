@@ -8,8 +8,8 @@ tags:
   - francophone
   - weltraum
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/3f272a209e-UNIVERSALIS.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/3f272a209e-UNIVERSALIS.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/3f272a209e-UNIVERSALIS.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/3f272a209e-UNIVERSALIS.jpg
 ---
 
 Am 21. Oktober um 20 Uhr hören wir gemeinsam die [Silkscreenrecords](http://www.phonotopy.org/SSR.html) von Yann Leguay.

@@ -7,8 +7,8 @@ tags:
   - vereinskram
   - women
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/img_0001_GidxVNc.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/img_0001_GidxVNc.png
+  image: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc.png
 ---
 
 Per E-Mail erreichte uns ein Katalog von Fragen zur Starship Factory, die auch für Leser dieses Blogs sehr interessant sein könnten. Daher veröffentlichen wir hier unsere Antwort:

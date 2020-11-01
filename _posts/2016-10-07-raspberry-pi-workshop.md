@@ -12,8 +12,8 @@ tags:
   - raspi
   - workshop
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/raspi3.jpeg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/raspi3.jpeg
+  image: /assets/images/uploads/zinnia/blogtitle/raspi3.jpeg
+  teaser: /assets/images/uploads/zinnia/blogtitle/raspi3.jpeg
 ---
 
 Am 29. Oktober findet in der Starship Factory wieder ein [Raspberry Pi Workshop](https://wiki.starship-factory.ch/Veranstaltungen/Workshops/Raspberry-Pi/) statt.

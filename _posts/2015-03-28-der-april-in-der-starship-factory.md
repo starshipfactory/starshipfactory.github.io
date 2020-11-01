@@ -6,8 +6,8 @@ tags:
   - arduino
   - workshop
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png
+  image: /assets/images/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png
 ---
 [Starship Factory - Der April in der Starship Factory](https://starship-factory.ch/2015/03/28/der-april-in-der-starship-factory/)
 

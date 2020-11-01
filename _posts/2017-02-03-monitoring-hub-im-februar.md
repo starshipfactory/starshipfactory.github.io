@@ -10,8 +10,8 @@ tags:
   - prometheus
   - treffen
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/annotations_example.png
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/annotations_example.png
+  image: /assets/images/uploads/zinnia/blogtitle/annotations_example.png
+  teaser: /assets/images/uploads/zinnia/blogtitle/annotations_example.png
 ---
 
 Am 27. Februar ab 19:00 Uhr starten wir ein neues Experiment: zum ersten Mal findet unser «Monitoring Hub» statt.
@@ -26,6 +26,6 @@ Das Ziel des Treffens ist einerseits, Monitoringsysteme zu testen und Datenpunkt
 
 Weitere Informationen über den Monitoring Hub und seine Ziele finden sich auf der [Workshopseite zum Monitoring Hub](https://starship-factory.ch/workshops/monitoring-hub/).
 
-![Ein Graph unter Prometheus mit Grafana](https://starship-factory.ch/media/snippet_images/content/ein-graph-unter-prometheus-mit-grafana_xJPDxGn.png "Ein Graph unter Prometheus mit Grafana")
+![Ein Graph unter Prometheus mit Grafana](/assets/images/snippet_images/content/ein-graph-unter-prometheus-mit-grafana_xJPDxGn.png "Ein Graph unter Prometheus mit Grafana")
 
 

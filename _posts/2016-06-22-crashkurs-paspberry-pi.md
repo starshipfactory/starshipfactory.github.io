@@ -4,8 +4,8 @@ categories:
   - Elektronik
   - Software
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/black_box.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/black_box.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/black_box.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/black_box.jpg
 ---
 
 Am 29. Juni findet in der Starship Factory ein [Crashkurs zum Thema Raspberry Pi](https://starship-factory.ch/workshops/crahkurs-raspberry-pi/) statt. Dabei zeigen wir euch, was ein Raspberry Pi ist, wie man ihn richtig hält, was für Strom er futtert und was man bei artgerechter Haltung alles für lustige Dinge damit anstellen kann.

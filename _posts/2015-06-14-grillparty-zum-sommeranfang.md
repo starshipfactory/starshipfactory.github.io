@@ -5,8 +5,8 @@ categories:
 tags:
   - party
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg
 ---
 
 Am 21. Juni ist es wieder soweit: der Sommer beginnt! Daher möchten wir euch ganz herzlich zum Grillieren und Fachsimpeln in die Starship Factory einladen.

@@ -8,8 +8,8 @@ tags:
   - electronics
   - microcontroller
 header:
-  image: https://starship-factory.ch/media/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg
-  teaser: https://starship-factory.ch/media/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg
+  image: /assets/images/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg
+  teaser: /assets/images/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg
 ---
 
 Diesen Samstag, den 28. März 2015, ist der internationale [Arduino Day](https://day.arduino.cc/#/)!
