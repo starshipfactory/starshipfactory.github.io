@@ -34,7 +34,7 @@ remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -60,6 +60,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 author:
   name   : "First Lastname"
@@ -93,15 +94,24 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook"
       url: "https://www.facebook.com/starshipfactory"
+    - label: "Impressum"
+      url: "/impressum/"
+    - label: "Datenschutz"
+      url: "/datenschutz/"
+    - label: "Statuten"
+      url: "/organisation/statuten/"
+    - label: "Reglement/Charta"
+      url: "/organisation/reglement/"
 
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "/blog/"
       type: posts
     values:
       layout: single
       author_profile: false
+      show_date: true
       read_time: true
       comments: false
       share: false
