@@ -24,7 +24,7 @@ Mit der Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle "Ciba" fahren.
 - Auf die in Fahrtrichtung linke Seite der Strasse wechseln.
 - Am Tor zur Novartis/BASF vorbeigehen
 - Ca 100m dem Trottoir/Gehsteig folgen.
-- Links durchs blaue tor gehen.
+- Links durchs blaue Tor gehen.
 - Dann gleich wieder rechts bis zur Treppe, die zum Haupteingang der Räumlichkeiten führt.
 
 ### Mit dem Bus Nummer 30 + Tram Nummer 8
@@ -41,7 +41,7 @@ Bus Nummer 30 Richtung Basel, Bahnhof SBB, bis zur Haltestelle "Feldbergstrasse"
 
 ## Alternativen
 
-Die Tram 17 fähr ebenfalls bis zur Haltestelle "Ciba", zB. von der Heuwaage aus.
+Die Tram 17 fährt ebenfalls bis zur Haltestelle "Ciba", z.B. von der Heuwaage aus.
 
 Die Tram 14 und 1 fahren bis zur Haltestelle "Dreirosenbrücke", von dort aus sind es 5 Minuten zu Fuss entlang der Tramlinie 8/17, an der Haltestelle "Ciba" vorbei (s.o.)
 
