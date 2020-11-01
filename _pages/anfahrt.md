@@ -19,7 +19,7 @@ Dies ist im ehemaligen Ciba-Areal im Klybeck, direkt neben dem Restaurant Platan
 
 _20 Minuten vom Bahnhof SBB_
 
-Mit der Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle "Ciba" fahren.
+Mit der Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle „Ciba“ fahren.
 
 - Auf die in Fahrtrichtung linke Seite der Strasse wechseln.
 - Am Tor zur Novartis/BASF vorbeigehen
@@ -29,7 +29,7 @@ Mit der Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle "Ciba" fahren.
 
 ### Mit dem Bus Nummer 30 + Tram Nummer 8
 
-Bus Nummer 30 Richtung Basel, Badischer Bahnhof, bis zur Haltestelle "Feldbergstrasse", dann Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle "Ciba".
+Bus Nummer 30 Richtung Basel, Badischer Bahnhof, bis zur Haltestelle „Feldbergstrasse“, dann Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle „Ciba“.
 
 ## Vom Badischen Bahnhof
 
@@ -37,13 +37,13 @@ _17 Minuten vom Badischen Bahnhof_
 
 ### Mit dem Bus Nummer 30 + Tram Nummer 8
 
-Bus Nummer 30 Richtung Basel, Bahnhof SBB, bis zur Haltestelle "Feldbergstrasse", dann Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle "Ciba".
+Bus Nummer 30 Richtung Basel, Bahnhof SBB, bis zur Haltestelle „Feldbergstrasse“, dann Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle „Ciba“.
 
 ## Alternativen
 
-Die Tram 17 fähr ebenfalls bis zur Haltestelle "Ciba", zB. von der Heuwaage aus.
+Die Tram 17 fähr ebenfalls bis zur Haltestelle „Ciba“, zB. von der Heuwaage aus.
 
-Die Tram 14 und 1 fahren bis zur Haltestelle "Dreirosenbrücke", von dort aus sind es 5 Minuten zu Fuss entlang der Tramlinie 8/17, an der Haltestelle "Ciba" vorbei (s.o.)
+Die Tram 14 und 1 fahren bis zur Haltestelle „Dreirosenbrücke“, von dort aus sind es 5 Minuten zu Fuss entlang der Tramlinie 8/17, an der Haltestelle „Ciba“ vorbei (s.o.)
 
 ## Mit dem Auto
 
