@@ -29,7 +29,7 @@ Mit der Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle „Ciba“ fahr
 
 ### Mit dem Bus Nummer 30 + Tram Nummer 8
 
-Bus Nummer 30 Richtung Basel, Badischer Bahnhof, bis zur Haltestelle „Feldbergstrasse“, dann Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle „Ciba“.
+Bus Nummer 30 Richtung Basel, Badischer Bahnhof, bis zur Haltestelle „Feldbergstrasse“, dann Tram Nummer 8 Richtung *Weil am Rhein* bis zur Haltestelle „Ciba“. Von dort aus weiter nach der Anleitung vom Tram Nummer 8.
 
 ## Vom Badischen Bahnhof
 
@@ -37,11 +37,11 @@ _17 Minuten vom Badischen Bahnhof_
 
 ### Mit dem Bus Nummer 30 + Tram Nummer 8
 
-Bus Nummer 30 Richtung Basel, Bahnhof SBB, bis zur Haltestelle „Feldbergstrasse“, dann Tram Nummer 8 Richtung Weil am Rhein bis zur Haltestelle „Ciba“.
+Bus Nummer 30 Richtung *Basel, Bahnhof SBB*, bis zur Haltestelle „Feldbergstrasse", dann Tram Nummer 8 Richtung *Weil am Rhein* bis zur Haltestelle "Ciba".
 
 ## Alternativen
 
-Die Tram 17 fährt ebenfalls bis zur Haltestelle „Ciba", z.B. von der Heuwaage aus.
+Die Tram 17 fährt ebenfalls bis zur Haltestelle „Ciba", zB. von der Haltestelle *Heuwaage* aus.
 
 Die Tram 14 und 1 fahren bis zur Haltestelle „Dreirosenbrücke“, von dort aus sind es 5 Minuten zu Fuss entlang der Tramlinie 8/17, an der Haltestelle „Ciba“ vorbei (s.o.)
 
@@ -51,8 +51,10 @@ _5 Minuten (1.8 km) von der A3 Autobahnausfahrt Deutschland / Basel-Kleinhüning
 
 Auch mit dem Auto ist man im nu in der Starship Factory.
 
-- A3 Richtung Basel, Beschilderung Richtung Deutschland / Weil am Rhein / Basel-Kleinhüningen folgen und rechts einspuren.
-- Ausfahrt Deutschland / Basel-Kleinhüningen folgen.
+- **Aus Richtung Schweiz**: A3 Richtung Basel, Beschilderung Richtung Deutschland / Weil am Rhein / Basel-Kleinhüningen folgen und rechts einspuren.
+- **Aus Richtung Deutschland**: A3 Richtung Basel, Beschilderung Richtung Basel-Kleinhüningen folgen und rechts einspuren.
+- **Aus Richtung Frankreich**: auf die A3 Richtung Schweiz, dann der Beschilderung Richtung Basel-Kleinhüningen folgen.
+- Ausfahrt Basel-Kleinhüningen folgen.
 - Der Schwarzwaldallee folgen (170 m)
 - Der Hochbergerstrasse folgen (190 m)
 - Links abbiegen auf den Riehenring (210 m)
