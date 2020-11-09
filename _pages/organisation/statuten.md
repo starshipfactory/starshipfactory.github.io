@@ -1,6 +1,6 @@
 ---
-permalink: /organisation/statuten/
-title: "Statuten"
+title: Statuten
+permalink: "/organisation/statuten/"
 ---
 
 ## I. Name, Sitz und Zweck

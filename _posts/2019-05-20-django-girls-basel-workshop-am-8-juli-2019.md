@@ -1,14 +1,15 @@
 ---
-title: "Django Girls Basel Workshop am 8. Juli 2019"
+title: Django Girls Basel Workshop am 8. Juli 2019
+date: 2019-05-20 00:00:00 Z
 categories:
-  - Software
-  - Veranstaltungen
+- Software
+- Veranstaltungen
 tags:
-  - django
-  - women
+- django
+- women
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/Djangogirls-logo.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/Djangogirls-logo.png
+  image: "/assets/images/uploads/zinnia/blogtitle/Djangogirls-logo.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/Djangogirls-logo.png"
 event_date: 2019-05-20 09:00
 ---
 

@@ -1,15 +1,16 @@
 ---
-title: "Workshop «Schlösser öffnen für Anfänger und Fortgeschrittene» im Dezember"
+title: Workshop «Schlösser öffnen für Anfänger und Fortgeschrittene» im Dezember
+date: 2015-12-01 00:00:00 Z
 categories:
-  - Veranstaltungen
+- Veranstaltungen
 tags:
-  - lockpicking
-  - anfaenger
-  - schloesser
-  - workshop
+- lockpicking
+- anfaenger
+- schloesser
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/castle-728293_1280.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/castle-728293_1280.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/castle-728293_1280.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/castle-728293_1280.jpg"
 ---
 
 Lange musstet ihr warten, doch nun ist es endlich soweit: es gibt wieder einen [Workshop zum Thema **Schlösser öffnen für Anfänger** (und Fortgeschrittene)](https://starship-factory.ch/workshops/schloesser-oeffnen/)! In gemütlicher Atmosphäre und mit freundlichen Mitlernenden lernt man hier, wie ein Schloss aufgebaut ist, wie man Schlösser gewaltfrei öffnen kann und worauf man beim Kauf eines Schlosses achten sollte. Eine grosse Anzahl Übungsschlösser bietet hierbei viele Herausforderungen. Vorkenntnisse sind zur Teilnahme am Workshop nicht notwendig; alle erforderlichen Kenntnisse werden vor Ort im Rahmen des Workshops erworben.

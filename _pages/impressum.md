@@ -1,6 +1,6 @@
 ---
-permalink: /impressum/
-title: "Impressum"
+title: Impressum
+permalink: "/impressum/"
 ---
 
 ![Das Gesetz](https://starship-factory.ch/media/snippet_images/content/das-gesetz_1.jpg "Das Gesetz")

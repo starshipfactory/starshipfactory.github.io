@@ -1,13 +1,14 @@
 ---
-title: "Ersetzen der Silikonschicht beim UV-Harzdrucker B9Creator"
+title: Ersetzen der Silikonschicht beim UV-Harzdrucker B9Creator
+date: 2014-01-05 00:00:00 Z
 categories:
-  - 3D-Druck
-header:
-  teaser: /assets/images/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png
+- 3D-Druck
 tags:
-  - 3d-druck
-  - b9creator
-  - wartung
+- 3d-druck
+- b9creator
+- wartung
+header:
+  teaser: "/assets/images/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png"
 ---
 
 Beim 3D-Drucken mit dem B9-Creator wird mit Hilfe eines Beamers Schichtweise UV-Harz gehärtet und so in eine Form verwandelt, die nach dem Druck aus dem restlichen noch flüssigen Harz genommen wird. Damit das Harz sich beim Härten nicht mit der Acrylglas-Druckwanne (in den Anleitungen Vat genannt) verbindet, wird eine Beschichtung aus Silikon (PDMS) benutzt. Diese geht leider nach wenigen Drucken kaputt und muss daher regelmäßig erneuert werden.

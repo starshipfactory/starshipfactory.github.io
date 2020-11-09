@@ -1,13 +1,14 @@
 ---
-title: "Alles ist vergänglich – und lecker!"
+title: Alles ist vergänglich – und lecker!
+date: 2016-06-02 00:00:00 Z
 categories:
-  - Veranstaltungen
+- Veranstaltungen
 tags:
-  - event
-  - fermentation
+- event
+- fermentation
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG 
-  teaser: /assets/images/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG 
+  image: "/assets/images/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/2012-02-Theobroma_cacao_fermentation_equipment_anagoria.JPG"
 ---
 
 Am 10. Juni ab 20:00 Uhr findet in der Starship Factory ein Treffen zum Thema Fermentation statt. Denn alles ist vergänglich – und lecker! Hier die Beschreibung des Events:

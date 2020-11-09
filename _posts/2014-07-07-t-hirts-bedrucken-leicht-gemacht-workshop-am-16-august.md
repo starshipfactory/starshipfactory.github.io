@@ -1,11 +1,12 @@
 ---
-title: "T-Shirts bedrucken leicht gemacht! Workshop am 16. August"
+title: T-Shirts bedrucken leicht gemacht! Workshop am 16. August
+date: 2014-07-07 00:00:00 Z
 categories:
-  - Textilbearbeitung
-  - Veranstaltungen
+- Textilbearbeitung
+- Veranstaltungen
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/11637361263_dcf036cd79_o.jpg"
 ---
 
 Am **16.08.2014** um **15:00 Uhr** veranstalten wir einen **T-Shirt-Druck-Workshop**.

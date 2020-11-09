@@ -1,10 +1,11 @@
 ---
-title: "Neue Mitgliederbeiträge und Öffnungszeiten"
+title: Neue Mitgliederbeiträge und Öffnungszeiten
+date: 2014-02-08 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 header:
-  image: /assets/images/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg
-  teaser: /assets/images/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg
+  image: "/assets/images/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg"
+  teaser: "/assets/images/snippet_images/content/nahen-jetzt-auch-dienstags-in-der-starship-factory.jpeg"
 ---
 
 Nähen jetzt auch Dienstags in der Starship Factory!

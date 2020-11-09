@@ -1,10 +1,11 @@
 ---
-title: "Neue Öffnungszeiten!"
+title: Neue Öffnungszeiten!
+date: 2016-05-13 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png
+  image: "/assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc_VplXzDs.png"
 ---
 
 Die Öffnungszeiten der _Starship Factory_ sind diese Woche leicht überarbeitet worden.

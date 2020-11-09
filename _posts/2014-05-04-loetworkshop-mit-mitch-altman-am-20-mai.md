@@ -1,14 +1,15 @@
 ---
-title: "Lötworkshop mit Mitch Altman am 20. Mai"
+title: Lötworkshop mit Mitch Altman am 20. Mai
+date: 2014-05-04 00:00:00 Z
 categories:
-  - Elektronik
-  - Veranstaltungen
-header:
-  image: /assets/images/snippet_images/content/loetequipment.png
-  teaser: /assets/images/snippet_images/content/loetequipment.png
+- Elektronik
+- Veranstaltungen
 tags:
-  - loeten
-  - workshop
+- loeten
+- workshop
+header:
+  image: "/assets/images/snippet_images/content/loetequipment.png"
+  teaser: "/assets/images/snippet_images/content/loetequipment.png"
 ---
 
 [Mitch Altman](https://noisebridge.net/wiki/User:Maltman23 "Mitch Altmans Infoseite bei Noisebridge") vom Hackerspace «[Noisebridge](https://noisebridge.net/ "Noisebridge")» in San Francisco hat sich bei uns als Gast angekündigt. Am **20\. Mai um 18 Uhr** wird er bei uns in der Starship Factory einen Lötworkshop geben. Dieser ist für Anfänger geeignet, die noch nie gelötet haben und einen einfachen Einstieg suchen. Die Kits sind hingegen vielfältig und auch für Fortgeschrittene interessant.

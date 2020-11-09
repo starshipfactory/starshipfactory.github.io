@@ -1,20 +1,21 @@
 ---
-title: "Elektronik Anfänger-Workshop"
+title: Elektronik Anfänger-Workshop
+date: 2017-03-07 00:00:00 Z
 categories:
-  - Elektronik
-  - Veranstaltungen
+- Elektronik
+- Veranstaltungen
 tags:
-  - Anfänger
-  - DIY
-  - Leuchtdioden
-  - Spannung
-  - Strom
-  - Widerstand
-  - elektronik
-  - workshop
+- Anfänger
+- DIY
+- Leuchtdioden
+- Spannung
+- Strom
+- Widerstand
+- elektronik
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/Componentes.JPG
-  teaser: /assets/images/uploads/zinnia/blogtitle/Componentes.JPG
+  image: "/assets/images/uploads/zinnia/blogtitle/Componentes.JPG"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/Componentes.JPG"
 ---
 
 Am 02. Mai um 19:00 findet in der Starship Factory ein Elektronikworkshop statt.

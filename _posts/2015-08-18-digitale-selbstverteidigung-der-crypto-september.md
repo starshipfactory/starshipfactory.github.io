@@ -1,16 +1,18 @@
 ---
-title: "Digitale Selbstverteidigung: der Crypto-September"
+title: 'Digitale Selbstverteidigung: der Crypto-September'
+date: 2015-08-18 00:00:00 Z
 categories:
-  - Software
-  - Veranstaltungen
+- Software
+- Veranstaltungen
 tags:
-  - crypto
-  - cryptoparty
-  - digitale selbstverteidigung
+- crypto
+- cryptoparty
+- digitale selbstverteidigung
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/cryptoparty.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/cryptoparty.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/cryptoparty.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/cryptoparty.jpg"
 ---
+
 [Starship Factory - Digitale Selbstverteidigung: der Crypto-September](https://starship-factory.ch/2015/08/18/digitale-selbstverteidigung-der-crypto-september/)
 
 Jeden Tag liest man von neuen Angriffen auf die Privatsphäre. Dank Leuten wie Edward Snowden wissen wir um die NSA-Spähaffäre; Laptopdiebstahl, Angriffe duch SPAM-Bots und Kreditkartenhaie sind an der Tagesordnung und die Politik drängt stets auf mehr Überwachung sowie tiefere Eingriffe in die Privatsphäre. Da ist es nur natürlich, das man als Benutzer seine Daten besser vor fremdem Zugriff sichern will. Doch was tun?

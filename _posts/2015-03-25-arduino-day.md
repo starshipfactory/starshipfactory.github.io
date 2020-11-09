@@ -1,15 +1,16 @@
 ---
-title: "Arduino Day am Samstag, 28.03.2015"
+title: Arduino Day am Samstag, 28.03.2015
+date: 2015-03-25 00:00:00 Z
 categories:
-  - Elektronik
-  - Veranstaltungen
+- Elektronik
+- Veranstaltungen
 tags:
-  - arduino
-  - electronics
-  - microcontroller
+- arduino
+- electronics
+- microcontroller
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/3253807749_e1f95d7442_o.jpg"
 ---
 
 Diesen Samstag, den 28. März 2015, ist der internationale [Arduino Day](https://day.arduino.cc/#/)!

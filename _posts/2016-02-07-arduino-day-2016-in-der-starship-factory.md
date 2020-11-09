@@ -1,15 +1,16 @@
 ---
-title: "2.April: Arduino-Day 2016 in der Starship Factory"
+title: '2.April: Arduino-Day 2016 in der Starship Factory'
+date: 2016-02-07 00:00:00 Z
 categories:
-  - Elektronik
-  - Software
-  - Veranstaltungen
+- Elektronik
+- Software
+- Veranstaltungen
 tags:
-  - arduino
-  - workshop
+- arduino
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o.jpg"
 ---
 
 Am **2\. April 2016** findet wieder der internationale [Arduino Day](https://day.arduino.cc/#/) statt. Und auch diesesmal werden wir von der Starship Factory mit einem vielfältigen Angebot aufwarten. Einige Highlights:

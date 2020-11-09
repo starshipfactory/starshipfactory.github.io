@@ -1,16 +1,17 @@
 ---
-title: 'Workshop "Programmieren für absolute AnfängerInnen" am 27.06.2015'
+title: Workshop "Programmieren für absolute AnfängerInnen" am 27.06.2015
+date: 2015-06-24 00:00:00 Z
 categories:
-  - Software
-  - Veranstaltungen
+- Software
+- Veranstaltungen
 tags:
-  - anfaenger
-  - programmieren
-  - python
-  - workshop
+- anfaenger
+- programmieren
+- python
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer_cxz9ddN.jpg"
 ---
 
 Du wolltest schon immer mal programmieren lernen, hast aber bisher gedacht, das sei zu schwierig für dich, oder du bist bisher einfach nicht dazu gekommen? Wir haben genau den passenden Workshop für dich und es ist einfacher, als du denkst.

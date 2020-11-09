@@ -1,14 +1,15 @@
 ---
-title: "Wie funktioniert eine Starship Factory?"
+title: Wie funktioniert eine Starship Factory?
+date: 2015-08-30 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 tags:
-  - organisatorisch
-  - vereinskram
-  - women
+- organisatorisch
+- vereinskram
+- women
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc.png
+  image: "/assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/img_0001_GidxVNc.png"
 ---
 
 Per E-Mail erreichte uns ein Katalog von Fragen zur Starship Factory, die auch für Leser dieses Blogs sehr interessant sein könnten. Daher veröffentlichen wir hier unsere Antwort:

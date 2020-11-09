@@ -1,11 +1,12 @@
 ---
-title: "Das Esszimmer goes Weltraum @ Art Basel 2017"
+title: Das Esszimmer goes Weltraum @ Art Basel 2017
+date: 2017-06-04 00:00:00 Z
 categories:
-  - Gesellschaft
+- Gesellschaft
 tags:
-  - art
-  - art basel
-  - events
+- art
+- art basel
+- events
 ---
 
 Unsere Freunde von [stöckerselig](http://stoeckerselig.ch/) laden Dich während der Art Basel herzlich in den Weltraum ein. Dieser wird erneut zur Pop-Up Gallery mit Künstler\_innen aus Basel, der Schweiz, Europa und dem Rest der Welt. Für die Besucher\_innen eine Plattform für Austausch und Netzwerkpflege und eine einmalige Gelegenheit, Kunst zu sehen, die erst in XX Jahren an der Art Basel zu sehen sein wird.  

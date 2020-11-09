@@ -1,13 +1,14 @@
 ---
-title: "Säulen als Stützstruktur im 3D-Druck"
+title: Säulen als Stützstruktur im 3D-Druck
+date: 2014-02-04 00:00:00 Z
 categories:
-  - 3D-Druck
-header:
-  teaser: /assets/images/snippet_images/content/die-software-des-b9creator-erzeugt-saulen-statt-der-herkommlichen-rauten-supportstrukturen-um-objekte-druckbar-zu-machen-welche-am-unteren-ende-nicht-zusammen-hangen_2.png
+- 3D-Druck
 tags:
-  - 3d-druck
-  - stützstruktur
-  - verfahren
+- 3d-druck
+- stützstruktur
+- verfahren
+header:
+  teaser: "/assets/images/snippet_images/content/die-software-des-b9creator-erzeugt-saulen-statt-der-herkommlichen-rauten-supportstrukturen-um-objekte-druckbar-zu-machen-welche-am-unteren-ende-nicht-zusammen-hangen_2.png"
 ---
 
 Im 3D-Druck werden Objekte üblicherweise erstellt, indem wie mit einer Heissklebepistole mehrere Schichten Plastik aufeinander aufgetragen werden. Das funktioniert mit Objekten, welche eine würfel- oder pyramidenähnliche Form haben hervorragend, doch wenn das Objekt mehr als nur Vorsprünge hat (Brücken zwischen Teilobjekten etc.), kann es notwendig werden, Stützstrukturen einzuarbeiten. Diese werden von den 3D-Slicerprogrammen wie z.B. Cura oder slic3r oft selbstständig erstellt. Es handelt sich dabei um weniger stark ausgeprägte Plastikstrukturen, welche nicht viel Druck aushalten (anders als die zum Objekt gehörenden Strukturen), aber genug Halt bieten, dass die Plastikfäden des Druckers darauf halten können und das Objekt druckbar wird.

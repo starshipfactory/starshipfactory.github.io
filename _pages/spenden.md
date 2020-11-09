@@ -1,6 +1,6 @@
 ---
-permalink: /spenden/
-title: "Spenden"
+title: Spenden
+permalink: "/spenden/"
 ---
 
 Die Starship Factory freut sich selbstverständlich enorm über Spenden jeglicher Art. Das bezieht sowohl Sachspenden und Leihgaben als auch finanzielle Unterstützung ein.

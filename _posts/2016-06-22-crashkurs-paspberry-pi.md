@@ -1,11 +1,12 @@
 ---
-title: "Crashkurs Paspberry Pi"
+title: Crashkurs Paspberry Pi
+date: 2016-06-22 00:00:00 Z
 categories:
-  - Elektronik
-  - Software
+- Elektronik
+- Software
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/black_box.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/black_box.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/black_box.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/black_box.jpg"
 ---
 
 Am 29. Juni findet in der Starship Factory ein [Crashkurs zum Thema Raspberry Pi](https://starship-factory.ch/workshops/crahkurs-raspberry-pi/) statt. Dabei zeigen wir euch, was ein Raspberry Pi ist, wie man ihn richtig hält, was für Strom er futtert und was man bei artgerechter Haltung alles für lustige Dinge damit anstellen kann.

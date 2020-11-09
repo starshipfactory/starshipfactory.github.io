@@ -1,11 +1,12 @@
 ---
-title: "Samstag ist Arduino Day!"
+title: Samstag ist Arduino Day!
+date: 2016-03-29 00:00:00 Z
 categories:
-  - Elektronik
-  - Veranstaltungen
+- Elektronik
+- Veranstaltungen
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o_k5dPqDQ.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o_k5dPqDQ.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o_k5dPqDQ.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/6512280793_47e1bbff81_o_k5dPqDQ.jpg"
 ---
 
 Am Samstag, dem 2. April 2016 ist es dann soweit: der Arduino Day steht vor der Tür!

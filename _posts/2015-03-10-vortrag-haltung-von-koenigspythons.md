@@ -1,14 +1,15 @@
 ---
-title: "Vortrag: Haltung von Königspythons am 27.03.2015"
+title: 'Vortrag: Haltung von Königspythons am 27.03.2015'
+date: 2015-03-10 00:00:00 Z
 categories:
-  - Veranstaltungen
+- Veranstaltungen
 tags:
-  - python
-  - tierhaltung
-  - vortrag
+- python
+- tierhaltung
+- vortrag
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/DSC_0011.JPG
-  teaser: /assets/images/uploads/zinnia/blogtitle/DSC_0011.JPG
+  image: "/assets/images/uploads/zinnia/blogtitle/DSC_0011.JPG"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/DSC_0011.JPG"
 ---
 
 Liebe Starshiponauten und Interessenten!

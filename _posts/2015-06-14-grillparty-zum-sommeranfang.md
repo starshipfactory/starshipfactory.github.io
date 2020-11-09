@@ -1,12 +1,13 @@
 ---
-title: "Grillparty zum Sommeranfang"
+title: Grillparty zum Sommeranfang
+date: 2015-06-14 00:00:00 Z
 categories:
-  - Veranstaltungen
+- Veranstaltungen
 tags:
-  - party
+- party
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/6114985353_a1aea86062_b.jpg"
 ---
 
 Am 21. Juni ist es wieder soweit: der Sommer beginnt! Daher möchten wir euch ganz herzlich zum Grillieren und Fachsimpeln in die Starship Factory einladen.

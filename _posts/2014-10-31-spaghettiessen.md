@@ -1,12 +1,13 @@
 ---
-title: "Spaghettiessen"
+title: Spaghettiessen
+date: 2014-10-31 00:00:00 Z
 categories:
-  - Veranstaltungen 
-header:
-  image: /assets/images/uploads/zinnia/blogtitle/dried_spaghetti.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/dried_spaghetti.jpg
+- Veranstaltungen
 tags:
-  - vereinskram
+- vereinskram
+header:
+  image: "/assets/images/uploads/zinnia/blogtitle/dried_spaghetti.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/dried_spaghetti.jpg"
 ---
 
 Die Starship Factory lädt alle zum Spaghettiessen ein.  

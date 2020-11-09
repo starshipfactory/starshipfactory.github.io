@@ -1,13 +1,14 @@
 ---
-title: "Neues Equipment: Kinect zum 3D-Scannen"
+title: 'Neues Equipment: Kinect zum 3D-Scannen'
+date: 2014-06-15 00:00:00 Z
 categories:
-  - 3D-Druck
-header:
-  image: /assets/images/uploads/zinnia/blogtitle/20140614_005612.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/20140614_005612.jpg
+- 3D-Druck
 tags:
-  - 3d-scan
-  - kinect
+- 3d-scan
+- kinect
+header:
+  image: "/assets/images/uploads/zinnia/blogtitle/20140614_005612.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/20140614_005612.jpg"
 ---
 
 Am Freitag haben wir von einem Mitglied eine [Xbox Kinect](http://wiki.starship-factory.ch/Equipment/Xbox_Kinect.html) bekommen.

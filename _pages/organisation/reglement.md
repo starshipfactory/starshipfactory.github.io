@@ -1,6 +1,6 @@
 ---
-permalink: /organisation/reglement/
-title: "Starship Charta"
+title: Starship Charta
+permalink: "/organisation/reglement/"
 ---
 
 Im Folgenden werden die Regeln dargelegt, welche in den Räumlichkeiten und an Veranstaltungen der Starship Factory gelten. Diese Regeln wurden anlässlich der Gründungsversammlung am 25. August 2013 in Kraft gesetzt und an der Generalversammlung vom  12. September 2014 angepasst.

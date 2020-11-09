@@ -1,11 +1,12 @@
 ---
-title: "Solarbetriebene Endanflugrechner für Raumschiffe"
+title: Solarbetriebene Endanflugrechner für Raumschiffe
+date: 2015-12-27 00:00:00 Z
 categories:
-  - Elektronik
-  - Software
+- Elektronik
+- Software
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/IMG_20151227_193121.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/IMG_20151227_193121.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/IMG_20151227_193121.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/IMG_20151227_193121.jpg"
 ---
 
 An der heutigen Starship Factory Session, haben wir uns mit batteriegestütztem Betrieb von embedded Computern beschäftigt. Der [OpenVario-Flugrechner](http://www.openvario.org) wird durch die Solarzelle via Regler betrieben. Die Batterie dient als Stütze und sollte den Offlinebetrieb für ca 18h ermöglichen.

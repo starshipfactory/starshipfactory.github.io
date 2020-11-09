@@ -1,6 +1,6 @@
 ---
-permalink: /anfahrt/
-title: "Anfahrt"
+title: Anfahrt
+permalink: "/anfahrt/"
 ---
 
 Das Vereinslokal der Starship Factory befindet sich im
