@@ -1,5 +1,6 @@
 ---
 title: Printing Starships — Logodesignprozess in 3D
+date: 2013-10-12 00:00:00 Z
 categories:
 - 3D-Druck
 tags:

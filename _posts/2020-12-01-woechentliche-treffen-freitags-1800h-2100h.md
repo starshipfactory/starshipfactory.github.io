@@ -1,9 +1,6 @@
 ---
-title: Wöchentliche Treffen Freitags, 18:00h - 21:00h
-categories:
-- Organisation
-header:
-  teaser: "/assets/images/snippet_images/content/ultimaker-to-be_3.jpeg 
+title: 2013 09 15 Woechentliche Treffen Freitags 1800h 2100h
+date: 2020-12-01 21:29:53.627000000 Z
 ---
 
 Liebe Mitglieder der Starship-Factory, Interessierte und Neugierige!

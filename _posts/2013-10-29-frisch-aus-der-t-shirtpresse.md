@@ -1,5 +1,6 @@
 ---
 title: Frisch aus der T-Shirtpresse
+date: 2013-10-29 00:00:00 Z
 categories:
 - Projekte
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Wie baue ich einen Sub Irrigated Planter?
+date: 2013-08-19 00:00:00 Z
 categories:
 - Garten
 tags:

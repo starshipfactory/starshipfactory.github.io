@@ -1,5 +1,6 @@
 ---
 title: Workshop "T-Shirts Bedrucken leicht gemacht" im Nähcafé Kiel
+date: 2013-08-22 00:00:00 Z
 categories:
 - Nähen
 tags:

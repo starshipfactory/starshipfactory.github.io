@@ -1,5 +1,6 @@
 ---
 title: HeloCut5 für HELO-Schneidplotter aktivieren
+date: 2013-12-16 00:00:00 Z
 categories:
 - Textilbearbeitung
 tags:

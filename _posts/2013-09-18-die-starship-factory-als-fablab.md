@@ -1,9 +1,10 @@
 ---
 title: Die Starship Factory als FabLab
+date: 2013-09-18 00:00:00 Z
 categories:
 - Organisation
 header:
-  teaser: "/assets/images/snippet_images/content/pla_3.jpeg" 
+  teaser: "/assets/images/snippet_images/content/pla_3.jpeg"
 ---
 
 Wer sich mit Themen wie 3D-Drucken, CNC-Fräsen und Lasercutten beschäftigt, hat vielleicht bereits den Begriff «FabLab» gehört. FabLabs, und somit auch die Starship Factory, sind Makerspaces mit der Grundidee, dass dort jeder so gut wie alles selber herstellen kann. Um dies zu erreichen setzen FabLabs im Wesentlichen auf drei Verfahren: 3D-Drucken, Lasercutten und CNC-Fräsen.

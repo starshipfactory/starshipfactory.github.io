@@ -1,10 +1,11 @@
 ---
 title: Die Elektronik-Bastellust kann kommen!
+date: 2013-12-10 00:00:00 Z
 categories:
 - Elektronik
 tags:
 - elektronik
-- löten 
+- löten
 header:
   teaser: "/assets/images/snippet_images/content/kabel-und-litzen-in-verschiedenen-grossen_2.jpeg"
 ---

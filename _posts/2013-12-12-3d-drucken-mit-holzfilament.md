@@ -1,5 +1,6 @@
 ---
 title: 3D-Drucken mit Holzfilament
+date: 2013-12-12 00:00:00 Z
 categories:
 - 3D-Druck
 tags:
@@ -7,7 +8,7 @@ tags:
 - material
 - holz
 header:
-  teaser: "/assets/images/snippet_images/content/3d-printed-octopus_2.jpeg" 
+  teaser: "/assets/images/snippet_images/content/3d-printed-octopus_2.jpeg"
 ---
 
 Wer Holzskulpturen schön findet, im Schnitzen aber nicht so gut ist, für den gibt es jetzt Alternativen. Statt Skulpturen mit dem Messer aus einem Holzblock herauszuarbeiten, haben wir jetzt auch [Filament für den 3D-Drucker, welches Holz enthält](http://www.orbi-tech.de/shop/3D-Filamente/LayWoo-d3/3-mm-LayWoo-d3/LayWoo-d3-3-mm::302.html "http://www.orbi-tech.de/shop/3D-Filaments/LayWoo-d3/3-mm-LayWoo-d3/LayWoo-d3-3-mm::302.html") und daher einen sehr schönen, holzigen Anblick bietet:

@@ -1,5 +1,6 @@
 ---
 title: Photography Lightbox
+date: 2013-10-24 00:00:00 Z
 categories:
 - Projekte
 tags:

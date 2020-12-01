@@ -1,9 +1,10 @@
 ---
 title: ELNA Supermatic-Musterdiscs selber herstellen
+date: 2013-10-09 00:00:00 Z
 categories:
 - 3D-Druck
 tags:
-- 3d-druck 
+- 3d-druck
 - nähen
 header:
   teaser: "/assets/images/snippet_images/content/prototyp-einer-selbst-gedruckten-elna-disc_2.jpeg"

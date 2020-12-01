@@ -1,5 +1,6 @@
 ---
-title: T-Shirt-Produktion auf dem 30c3Workshop 
+title: T-Shirt-Produktion auf dem 30c3Workshop
+date: 2013-12-30 00:00:00 Z
 categories:
 - Veranstaltungen
 tags:
