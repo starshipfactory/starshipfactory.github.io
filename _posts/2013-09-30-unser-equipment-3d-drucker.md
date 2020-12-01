@@ -1,6 +1,5 @@
 ---
 title: 2013 09 30 Unser Equipment 3d Drucker
-date: 2020-12-01 21:29:53.733000000 Z
 ---
 
 In der Starship Factory gibt es zur Zeit zwei funktionierende 3D-Drucker: Einen Ultimaker und einen RepRap Pro Huxley:

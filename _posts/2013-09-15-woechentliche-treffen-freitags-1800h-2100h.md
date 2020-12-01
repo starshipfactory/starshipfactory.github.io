@@ -1,6 +1,5 @@
 ---
 title: 2013 09 15 Woechentliche Treffen Freitags 1800h 2100h
-date: 2020-12-01 21:29:53.627000000 Z
 ---
 
 Liebe Mitglieder der Starship-Factory, Interessierte und Neugierige!
