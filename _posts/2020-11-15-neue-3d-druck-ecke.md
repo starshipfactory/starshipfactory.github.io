@@ -6,8 +6,8 @@ categories:
 tags:
 - 3d-druck
 header:
-  image: "/assets/images/snippet_images/content/neue_3d-druck-ecke.jpg"
-  teaser: "/assets/images/snippet_images/content/neue_3d-druck-ecke.jpg"
+  image: "/assets/images/snippet_images/content/neue_3d-druck-ecke.jpeg"
+  teaser: "/assets/images/snippet_images/content/neue_3d-druck-ecke.jpeg"
 ---
 
 Nachdem es doch immer ein wenig eng war in der bisherigen 3D-Druck-Ecke hat Claudius die Initiative ergriffen und uns ein paar Meter hochwertiges Metallregal gesichert. Dieses haben wir nun aufgebaut und die Drucker weitestgehend transferiert.
