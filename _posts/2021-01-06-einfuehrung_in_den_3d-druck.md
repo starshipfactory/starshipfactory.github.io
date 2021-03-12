@@ -11,7 +11,7 @@ header:
   teaser: "/assets/images/snippet_images/content/prusa-3d-drucker.jpg"
 --- 
 
-**+++ Datum geändert +++ Datum geändert +++ Datum geändert +++
+**+++ Datum geändert +++ Datum geändert +++ Datum geändert +++**
 
 Leider bleibt die Starship Factory auf Grund der geltenden Coronavirus-Verordnung weiterhin für die Öffentlichkeit geschlossen. Wir müssen unsere Einführung in den 3D-Druck daher leider verschieben. Diese findet nun voraussichtlich am **Freitag, den 16. April** im Rahmen unserer regulären Öffnungszeit ab 20 Uhr statt. Dies ist eine Veranstaltung von Laien für Laien. Nach einer kurzen Einführung in die Prinzipien des TLD („thin layer deposition“) 3D-Drucks und die typischen Arbeitsabläufe erkunden wir gemeinsam den Gerätepark der Star Ship Factory. Je nach Lust und Laune starten wir eine Reihe von Test-Drucken, erforschen die Funktionsweise der Geräte oder drucken erste Modelle. Nach dieser Einführung seid ihr in der Regel befähigt, die 3D-Drucker der Starship Factory auch alleine zu nutzen. Im Anschluss sind der Kreativität keine Grenzen mehr gesetzt.
 
