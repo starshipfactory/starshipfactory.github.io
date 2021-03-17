@@ -23,4 +23,4 @@ https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-a
 We used Minimal Mistakes as the theme for Jekyll to get a good base start, see their starter Repos for more information:
 - [Minimal Mistakes Starter Template](https://github.com/mmistakes/mm-github-pages-starter/)
 - [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
-- [Minimal Mistakes Conifuration](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+- [Minimal Mistakes Configuration](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
