@@ -1,27 +1,26 @@
-# Minimal Mistakes remote theme starter
+# Starship Factory Website
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+This is the new Version of the Starship-Factory Website that is intended to be easier to keep up to date and change the Styling of it.
+You can view the current progress on https://starshipfactory.github.io
 
-Contains basic configuration to get you a site with:
+The Website is built with Jekyll and Github Pages and can also be run in development mode locally with docker-compose:
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+    docker-compose up
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+In development mode you will have live-reload functionality and automatic rebuilds of content when you change it. Sadly changes to the configration files will not rebuild the whole site, just restart the docker container to accomplish that.
+
+---
+**NOTE**
+
+You will need to create a personal token and copy it in the variable JEKYLL_GITHUB_TOKEN in the .env file  
+https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 
 ---
 
-## Troubleshooting
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+# Base Theme
+We used Minimal Mistakes as the theme for Jekyll to get a good base start, see their starter Repos for more information:
+- [Minimal Mistakes Starter Template](https://github.com/mmistakes/mm-github-pages-starter/)
+- [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
+- [Minimal Mistakes Configuration](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
