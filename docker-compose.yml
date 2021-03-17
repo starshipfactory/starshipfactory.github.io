@@ -4,7 +4,7 @@ services:
   jekyll:
     image: jekyll/jekyll
     environment:
-      - JEKYLL_GITHUB_TOKEN={JEKYLL_GITHUB_TOKEN}
+      - JEKYLL_GITHUB_TOKEN=${JEKYLL_GITHUB_TOKEN}
       - SSL_CERT_FILE=./cacert.pem
     command:
       - /usr/jekyll/bin/jekyll
