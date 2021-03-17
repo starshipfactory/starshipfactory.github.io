@@ -86,6 +86,7 @@ footer:
   - label: Facebook
     icon: fab fa-fw fa-facebook
     url: https://www.facebook.com/starshipfactory
+  linked_pages:
   - label: Impressum
     url: "/impressum/"
   - label: Datenschutz
