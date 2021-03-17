@@ -9,5 +9,7 @@ main:
     url: /anfahrt/
   - title: "Spenden"
     url: /spenden/
+  - title: "Über uns"
+    url: /überuns/
   - title: "Wiki"
     url: https://wiki.starship-factory.ch/
