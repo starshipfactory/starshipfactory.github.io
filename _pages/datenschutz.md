@@ -309,6 +309,19 @@ Wir binden die Videos der Plattform “YouTube” des Anbieters Google LLC, 1600
 
 Wir binden die Landkarten des Dienstes “Google Maps” des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Zu den verarbeiteten Daten können insbesondere IP-Adressen und Standortdaten der Nutzer gehören, die jedoch nicht ohne deren Einwilligung (im Regelfall im Rahmen der Einstellungen ihrer Mobilgeräte vollzogen), erhoben werden. Die Daten können in den USA verarbeitet werden. Datenschutzerklärung: [https://www.google.com/policies/privacy/](https://www.google.com/policies/privacy/), Opt-Out: [https://adssettings.google.com/authenticated](https://adssettings.google.com/authenticated).
 
+## Matomo
+Um besser zu verstehen, was die Besucher/innen auf unseren Websites interessiert und ob diese sich dort zurechtfinden, setzen wir das Open-Source Analyse-Tool Matomo (vormals Piwik) ein. Dieses Tool setzt einen Cookie, um einzelne Nutzer/innen voneinander zu unterscheiden.  
+  
+Da Matomo über unseren Server gehostet wird, verlassen diese Daten allerdings nie unseren Zuständigkeitsbereich. Dies ist somit eine deutlich bessere Alternative als Tools wie GoogleAnalytics, bei denen die Besuchsstatistiken fremdverarbeitet werden. IP-Adressen werden in unserer Konfiguration um sechs Stellen anonymisiert und ermöglichen keinen Rückschluss auf den tatsächlichen Anschluss.  
+  
+Wenn Sie nicht möchten, dass Ihre Besuche bei unseren Websites erfasst werden, können Sie in Ihrem Browser die ‚Do not track‘ Option aktivieren und Matomo wird keine Daten von Ihnen erfassen. Über diesen Klick können Sie die Besuchsstatistiken von Ihnen deaktivieren. Dazu wird in Ihrem Browser ein Opt-Out Cookie gesetzt, welcher das Tracking deaktiviert. Wenn sie grundsätzlich kein Tracking wünschen, aktivieren Sie in Ihrem Browser die „Do not Track“-Funktion
+
+<iframe
+        style="border: 0; height: 400px; width: 600px;"
+        src="https://matomo.services.elpatiostudio.com/index.php?module=CoreAdminHome&action=optOut&language=de&backgroundColor=&fontColor=&fontSize=22px&fontFamily=-apple-system,%20BlinkMacSystemFont,%20%22Roboto%22,%20%22Segoe%20UI%22,%20%22Helvetica%20Neue%22,%20%22Lucida%20Grande%22,%20Arial,%20sans-serif"
+        ></iframe>
+
+
 # Attribution
 
 [Basierend auf Vorlagen für Datenschutzerklärungen von RA Dr. Thomas Schwenke](https://datenschutz-generator.de)
