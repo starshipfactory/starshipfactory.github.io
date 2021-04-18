@@ -44,4 +44,5 @@ Es gilt weiterhin unser bewährtes Schutzkonzept. Dieses bitten wir euch im Folg
 - Besonders gefährdeten Personen wird empfohlen, zu Hause zu bleiben.
 
 Bleibt gesund und hoffentlich bis bald. Wir freuen uns auf euch!
+
 Eure Starship Factory
