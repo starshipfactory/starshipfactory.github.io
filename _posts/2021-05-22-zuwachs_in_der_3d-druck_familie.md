@@ -18,7 +18,7 @@ Das Gerät wird uns freundlicherweise von unserem Mitglied und Präsidenten Pat 
 allgemeinen Einweisung in den 3DDruck kann es wie die anderen 3D-Drucker der Starship Factory genutzt werden. 
 
 Die [Cakewalk-Erweiterung](https://www.lapatisserienumerique.com/en/cakewalk-3d-en/) ist ebenfalls schon eingetroffen
-und wartet darauf in Betrieb genommen zu werden. Wer bei der Inbetriebnahme helfen möchte, kann sich gerne bei melden.
-Wir freuen uns bereits auf köstliche Druckereien ;-)  
+und wartet darauf in Betrieb genommen zu werden. Wer bei der Inbetriebnahme helfen möchte, kann sich gerne bei Pat
+melden. Wir freuen uns bereits auf köstliche Druckereien ;-)  
 
 Wie wünschen euch schon jetzt grossartige Druckerlebnisse!
