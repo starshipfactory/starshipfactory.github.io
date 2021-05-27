@@ -7,8 +7,8 @@ tags:
 - 3d-druck
 - workshop
 header:
-  image: "/assets/images/snippet_images/content/teaser_einfuehrung_in_den_3d-druck.jpg"
-  teaser: "/assets/images/snippet_images/content/teaser_einfuehrung_in_den_3d-druck.jpg"
+  image: "/assets/images/snippet_images/content/teaser-einfuehrung-in-den-3d-druck.jpg"
+  teaser: "/assets/images/snippet_images/content/teaser-einfuehrung-in-den-3d-druck.jpg"
 --- 
 
 Es geht in die zweite Runde: Claudius und Bernd bieten am 2. Juli ab 20 Uhr in der Starship Factory ein weiteres Mal unsere unkomplizierte und ganz unförmliche Einführung in den 3D-Druck an.
