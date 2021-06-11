@@ -9,8 +9,8 @@ tags:
 - wifi
 - bandwidth
 header:
-  image: "/assets/images/snippet_images/content/speedtest.png"
-  teaser: "/assets/images/snippet_images/content/speedtest.png"
+  image: "/assets/images/snippet_images/content/speed-test.png"
+  teaser: "/assets/images/snippet_images/content/speed-test.png"
 --- 
 Einen schnellen Internet-Anschluss hatten wir schon länger. Mit der Hardware waren wir noch nicht ganz so weit. Jetzt haben wir aufgerüstet und einen neuen Router installiert. Mit diesem können wir die Bandbreite unseres Internet-Anschlusses endlich vollständig ausschöpfen. 
 
