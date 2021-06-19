@@ -8,8 +8,8 @@ tags:
 - laser_engraving
 - lightburn
 header:
-  image: "/assets/images/snippet_images/content/entlueftung-laser.png"
-  teaser: "/assets/images/snippet_images/content/entlueftung-laser.png"
+  image: "/assets/images/snippet_images/content/entlueftung-laser.jpg"
+  teaser: "/assets/images/snippet_images/content/entlueftung-laser.jpg"
 --- 
 Nach mehreren Anläufen haben wir endlich die Entlüftung am KH-3020-Laser fertigstellen können. Ab sofort geht Lasern auch ohne Gestank. Der Rohrlüfter ist direkt mit dem KH-3020 verbunden und schaltet sich ein, sobald ihr den Laser einschaltet. Der Unterschied ist merklich :-)
 
