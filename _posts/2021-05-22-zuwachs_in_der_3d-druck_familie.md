@@ -4,7 +4,11 @@ date: 2021-05-22 00:00:00 Z
 categories:
 - 3D-Druck
 tags:
-- 3d-drucker
+- 3D-Druck
+- 3D-Drucker
+- TLD
+- Filament
+- Geräte
 header:
   image: "/assets/images/snippet_images/content/chiron-3d-drucker.jpg"
   teaser: "/assets/images/snippet_images/content/chiron-3d-drucker.jpg"
