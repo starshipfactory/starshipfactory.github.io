@@ -1,5 +1,5 @@
 ---
-title: 'Heisse Schnitte - Einführung in die Materialbearbeitung mit Lasern'
+title: 'Heisse Schnitte - Einführung in die Materialbearbeitung mit einem CO2-Laser'
 date: 2021-10-16 00:00:00 Z
 categories:
 - Laserschnitt
