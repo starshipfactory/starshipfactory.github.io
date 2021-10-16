@@ -16,7 +16,7 @@ header:
 
 Teilt ihr unsere Begeisterung für Laser? Dann ist diese Einführung in die Materialbearbeitung mit unserem KH-3020-Laser vielleicht genau das Richtige für euch. Diese findet am **Freitag, den 19. November** im Rahmen unserer regulären Öffnungszeit ab 20 Uhr statt.
 
-Beim KH-3020 handelt es sich um eine Variante des beliebten K40 CO2-Lasers. Der Controller wurde jedoch ausgetauscht, um die Möglichkeiten zu erweiteren. Die Steuerung erfolgt mit der Software LightBurn.
+Beim KH-3020 handelt es sich um eine Variante des beliebten K40 CO2-Lasers. Der Controller wurde jedoch ausgetauscht, um die Möglichkeiten zu erweitern. Die Steuerung erfolgt mit der Software LightBurn.
 
 Im Rahmen der Einführung optimieren wir gemeinsam die Schnitt-/Gravureinstellungen für ein typisches Material und erstellen eine Materialtestkarte. Dabei lernen wir das Gerät und die zugehörige Software kennen. Nach dieser Einführung seid ihr im Normalfall befähigt, den Laserschneider der Starship Factory auch alleine zu nutzen. Im Anschluss könnt ihr euch dann mit euren eigenen Projekten austoben.
 
