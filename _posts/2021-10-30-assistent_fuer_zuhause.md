@@ -4,7 +4,7 @@ date: 2021-10-30 00:00:00 Z
 categories:
 - Heimautomatisierung
 tags:
-- home_assistent
+- home_assistant
 - automation
 - zigbee
 - smarthome
