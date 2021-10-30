@@ -19,4 +19,4 @@ Der Server wurde weiterhin mit einem Zigbee-USB-Stick ausgestattet, so dass [Zig
 
 Als erstes Mini-Projekt wurden die Leuschtschilder des Werks und der Starship Factory mittels Smartplugs angeschlossen. Ab sofort werden die Schilder bei Sonnenuntergang automatisch eingeschaltet und zu einem vorgegebenen Zeitpunkt in der Nacht wieder ausgeschaltet.
 
-Home Assistant ist innerhalb des Netztes der Starhip Factory unter derm URL [https://hass.lab.starship-factory.ch] oder alternativ [https://liebe.lab.starship-factory.ch] zu erreichen. Wenn ihr ebenfalls experimentieren möchtet, dann könnt ihr euch gerne an Bernd (aka Langweiler) wenden.
+Home Assistant ist innerhalb des Netztes der Starhip Factory unter derm URL [https://hass.lab.starship-factory.ch](https://hass.lab.starship-factory.ch) oder alternativ [https://liebe.lab.starship-factory.ch](https://liebe.lab.starship-factory.ch) zu erreichen. Wenn ihr ebenfalls experimentieren möchtet, dann könnt ihr euch gerne an Bernd (aka Langweiler) wenden.
