@@ -15,8 +15,8 @@ header:
 
 Die Starship Factory ist seit ein paar Tagen um eine Spielwiese reicher: Auf unserem Cloud-Server wurde eine Instanz der freien Software [Home Assistant](https://www.home-assistant.io/) für die Heimautomatisierung installiert.
 
-Der Server wurde weiterhin mit einem Zigbee-USB-Stick ausgestattet, so dass Zigbee-kompatible Geräte  (https://de.wikipedia.org/wiki/ZigBee) direkt angesteuert werden können. Zu diesen gehören unter anderem Produkte der preiswerten Ikea-Heimautomatisierungsserie TRÅDFRI aber auch Leuchtmittel von Philips Hue.
+Der Server wurde weiterhin mit einem Zigbee-USB-Stick ausgestattet, so dass [Zigbee](https://de.wikipedia.org/wiki/ZigBee)-kompatible Geräte direkt angesteuert werden können. Zu diesen gehören unter anderem Produkte der preiswerten Ikea-Heimautomatisierungsserie TRÅDFRI aber auch Leuchtmittel von Philips Hue.
 
 Als erstes Mini-Projekt wurden die Leuschtschilder des Werks und der Starship Factory mittels Smartplugs angeschlossen. Ab sofort werden die Schilder bei Sonnenuntergang automatisch eingeschaltet und zu einem vorgegebenen Zeitpunkt in der Nacht wieder ausgeschaltet.
 
-Home Assistant ist innerhalb des Netztes der Starhip Factory unter derm URL (https://hass.lab.starship-factory.ch) oder alternativ (https://liebe.lab.starship-factory.ch) zu erreichen. Wenn ihr ebenfalls experimentieren möchtet, dann könnt ihr euch gerne an Bernd (aka Langweiler) wenden.
+Home Assistant ist innerhalb des Netztes der Starhip Factory unter derm URL [https://hass.lab.starship-factory.ch] oder alternativ [https://liebe.lab.starship-factory.ch] zu erreichen. Wenn ihr ebenfalls experimentieren möchtet, dann könnt ihr euch gerne an Bernd (aka Langweiler) wenden.
