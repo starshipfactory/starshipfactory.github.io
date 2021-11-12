@@ -11,11 +11,13 @@ tags:
 header:
   image: "/assets/images/snippet_images/content/weihnachtsmann.jpg"
   teaser: "/assets/images/snippet_images/content/weihnachtsmann.jpg"
+excerpt_separator: <!--more-->
 --- 
 
 Liebes Starship Factory Mitglied
 
 Wir möchten Dich zu unserem gemeinsamen Weihnachtsessen am Sonntag, den 5.12 einladen.  
+<!--more-->
 
 Treffpunkt: Starship Factory\
 Datum: 5.12.
