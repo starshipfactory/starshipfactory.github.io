@@ -17,7 +17,7 @@ Liebes Starship Factory Mitglied,
 
 wir möchten Dich zu unserem gemeinsamen Weihnachtsessen am Sonntag, den 5.12 einladen.  
 
-Treffpunkt: Starship Factory 
+Treffpunkt: Starship Factory
 Datum: 5.12
 
 Wir treffen uns ab 10:00 Uhr.
