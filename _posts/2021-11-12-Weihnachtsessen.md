@@ -25,5 +25,5 @@ Datum: 5.12.
 Wir treffen uns ab 10:00 Uhr.\
 Vorhanden: Punsch + Glühwein
 
-Wir freuen uns sehr, wenn du etwas zu Essen mitbringen könntest.
-Damit wir uns alle sicher fühlen können, bitten wir Dich darum, ein Zertifikat mitzubringen.
+Wir freuen uns sehr, wenn Ihr etwas zu Essen mitbringen könntet.
+Damit wir uns alle sicher fühlen können, bitten wir Euch darum, ein Zertifikat mitzubringen.
