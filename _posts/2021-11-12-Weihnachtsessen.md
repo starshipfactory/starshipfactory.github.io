@@ -14,9 +14,9 @@ header:
 excerpt_separator: <!--more-->
 --- 
 
-Liebes Starship Factory Mitglied,
+Liebe Starship Factory Mitglieder und Bewohner des Werks,
 
-wir möchten Dich zu unserem gemeinsamen Weihnachtsessen am Sonntag, den 5. Dezember einladen.  
+wir möchten Euch zu unserem gemeinsamen Weihnachtsessen am Sonntag, den 5. Dezember einladen.  
 <!--more-->
 
 Treffpunkt: Starship Factory\
