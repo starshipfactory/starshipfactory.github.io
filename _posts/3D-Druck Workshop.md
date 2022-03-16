@@ -1,5 +1,5 @@
 ---
-title: '3D-Druck Workshop'
+title: '2022-03-16-3D-Druck Workshop'
 date: 2022-03-16 00:00:00 Z
 categories:
 - 3D-Druck
