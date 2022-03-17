@@ -7,8 +7,8 @@ tags:
 - Workshop
 - 3D-Druck
 header:
-  image: "assets/images/snippet_images/3D-Druck-Projekte.jpg"
-  teaser: "assets/images/snippet_images/3D-Druck-Projekte.jpg"
+  image: "/assets/images/snippet_images/3D-Druck-Projekte.jpg"
+  teaser: "/assets/images/snippet_images/3D-Druck-Projekte.jpg"
 excerpt_separator: <!--more-->
 --- 
 
