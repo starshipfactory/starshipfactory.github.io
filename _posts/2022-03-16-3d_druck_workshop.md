@@ -12,8 +12,8 @@ header:
 excerpt_separator: <!--more-->
 --- 
 
-Interessiert euch der 3D-Druck und möchtet es selbst ausprobieren?\
-Mit der Einführung in Slicen und Drucken lernt man den Umgang mit unsere 3D-Drucker kennen. Der Workshop findet am Dienstag, den 12. April jede Stunde ab 18 bis 21 Uhr statt.
+Interessiert euch der 3D-Druck? Möchtet ihr es selbst ausprobieren?\
+Mit dieser Einführung in Slicen und Drucken lernt ihr den Umgang mit unseren 3D-Druckern kennen. Der Workshop findet am Dienstag, den 12. April jede Stunde ab 18 bis 21 Uhr statt.
 
 **Altersempfehlung**: ab 14 Jahren
 
