@@ -1,15 +1,16 @@
 ---              
-title:  "Klybeck Arealfest"         
+title:  "Klybeck Arealfest 2022"         
 date:   2022-06-21 00:00 Z              
 modified_date: 2022-06-21                             
 categories: 
-- Sonstiges     !
-[Klybeck_Arealfest_2022_1](https://user-images.githubusercontent.com/99049855/174906426-d85344f1-56f7-4d6d-89e3-a13848936bbc.JPG)
+- Sonstiges
 tags: 
 - Offene Tür
 - Arealfest
 - Starship Factory
-header: ![Klybeck_Arealfest_2022_1](https://user-images.githubusercontent.com/99049855/174906426-d85344f1-56f7-4d6d-89e3-a13848936bbc.JPG)
+header:
+  image: "/assets/images/snippet_images/klybeck-arealfest-2022.jpg"
+  teaser: "/assets/images/snippet_images/klybeck-arealfest-2022.jpg"
 excerpt_separator: <!--more--> 
 ---
 
