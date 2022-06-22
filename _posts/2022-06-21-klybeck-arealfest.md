@@ -16,12 +16,11 @@ excerpt_separator: <!--more-->
 
 Am Sonntag, den 26. Juni 2022 haben wir ab <b> 11 Uhr </b> das Klybeck-Arealfest. Wir und viele andere werden ihre Türe öffnen und einen Einblick 
 in unser Schaffen geben. 
-Es gibt viele kleine Projekte für Gross und Klein zum ausprobieren. 
+Es gibt viele kleine Projekte für Gross und Klein zum Ausprobieren. 
 
-Bei uns kann man kleinere Projekte mit dem 3D-Drucker, Laser-Cutter und Schneideplotter ausprobieren. Im Makey Makey Workshop kann 
-den eigenen Tüftler in sich kennenlernen. 
+Bei uns könnt ihr kleinere Projekte mit dem 3D-Drucker, Laser-Cutter und Schneideplotter ausprobieren. Im Makey-Makey-Workshop lernt ihr einen Banana-Controller zu bauen, z.B. für euer Lieblingsgame (Handy mitbringen) und den eigenen Tüftler in euch kennenzulernen. 
 
-### Programm der Führungen des Klybeck Arealfest
+### Programm der Führungen des Klybeck-Arealfest
 
 *Führungen durch das Areal: Mit Pelati Delicati & unterdessen*
 
