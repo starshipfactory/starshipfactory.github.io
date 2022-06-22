@@ -1,7 +1,7 @@
 ---              
-title:  "Klybeck Arealfest 2022"         
-date:   2022-06-21 00:00 Z              
-modified_date: 2022-06-21                             
+title:  "Klybeck Arealfest 2022"
+date:   2022-06-21 00:00:00 Z
+modified_date: 2022-06-21
 categories: 
 - Sonstiges
 tags: 
