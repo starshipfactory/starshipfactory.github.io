@@ -1,13 +1,14 @@
 ---
-title: "Lötkoffer-Prototyp bereit für den Einsatz"
+title: Lötkoffer-Prototyp bereit für den Einsatz
+date: 2014-04-17 00:00:00 Z
 categories:
-  - Elektronik
-header:
-  image: /assets/images/snippet_images/content/der-sticker-an-unserem-lotkoffer-beschreibt-grob-den-inhalt-und-bietet-einen-qr-code-uber-welchen-man-die-wikiseite-findet.jpeg
-  teaser: /assets/images/snippet_images/content/der-sticker-an-unserem-lotkoffer-beschreibt-grob-den-inhalt-und-bietet-einen-qr-code-uber-welchen-man-die-wikiseite-findet.jpeg
+- Elektronik
 tags:
-  - equipment
-  - loeten
+- equipment
+- loeten
+header:
+  image: "/assets/images/snippet_images/content/der-sticker-an-unserem-lotkoffer-beschreibt-grob-den-inhalt-und-bietet-einen-qr-code-uber-welchen-man-die-wikiseite-findet.jpeg"
+  teaser: "/assets/images/snippet_images/content/der-sticker-an-unserem-lotkoffer-beschreibt-grob-den-inhalt-und-bietet-einen-qr-code-uber-welchen-man-die-wikiseite-findet.jpeg"
 ---
 
 In Vorbereitung auf [Lötworkshops](http://wiki.starship-factory.ch/Veranstaltungen/Workshops/Elektronik/ "Wikiseite zu unseren Elektronikworkshops") im Ausseneinsatz haben wir einen Koffer günstig erstanden und mit Lötequipment gefüllt. Diesen könnte man sich nun einfach schnappen und mit ihm an irgendeinen Ort fahren um zu löten. Das Innenleben braucht jedoch noch etwas Arbeit, damit man den Koffer bald nur noch aufklappen braucht um damit zu löten, statt erst mühsam alle Teile heraus zu nehmen und auf einen Tisch zu platzieren. Wenn man darüber hinweg sieht, kann man jedoch mit dem Koffer schon hervorragend arbeiten.

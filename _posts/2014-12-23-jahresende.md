@@ -1,15 +1,16 @@
 ---
-title: "Das Ende eines erfüllten Jahres"
+title: Das Ende eines erfüllten Jahres
+date: 2014-12-23 00:00:00 Z
 categories:
-  - Organisation
-header:
-  image: /assets/images/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg
-  teaser: /assets/images/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg
+- Organisation
 tags:
-  - 31c3
-  - essen
-  - spaghetti
-  - oeffnungszeiten
+- 31c3
+- essen
+- spaghetti
+- oeffnungszeiten
+header:
+  image: "/assets/images/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/SF-Anisbrotli.jpeg"
 ---
 
 Nach dem grossen Spaghettiessen senden wir eine [Delegation an den 31C3](https://events.ccc.de/congress/2014/wiki/Assembly:Starship_Factory)!  

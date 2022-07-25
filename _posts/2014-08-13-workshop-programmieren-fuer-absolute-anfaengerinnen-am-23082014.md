@@ -1,13 +1,14 @@
 ---
-title: 'Workshop "Programmieren für absolute AnfängerInnen" am 23.08.2014'
+title: Workshop "Programmieren für absolute AnfängerInnen" am 23.08.2014
+date: 2014-08-13 00:00:00 Z
 categories:
-  - Software
-  - Veranstaltungen
-header:
-  image: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg
+- Software
+- Veranstaltungen
 tags:
-  - oeffnungszeiten
+- oeffnungszeiten
+header:
+  image: "/assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/nothisisnotmyboyfriendscomputer.jpg"
 ---
 
 Du wolltest schon immer mal programmieren lernen, hast aber bisher gedacht, das sei zu schwierig für dich, oder du bist bisher einfach nicht dazu gekommen? Wir haben genau den passenden Workshop für dich und es ist einfacher, als du denkst.

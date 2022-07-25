@@ -1,8 +1,9 @@
 ---
-title: "Fermentation nation - Second edition"
+title: Fermentation nation - Second edition
+date: 2016-08-10 00:00:00 Z
 categories:
-  - Gesellschaft
-  - Veranstaltungen
+- Gesellschaft
+- Veranstaltungen
 ---
 
 ## Fermentation nation - Second edition

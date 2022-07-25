@@ -1,17 +1,18 @@
 ---
-title: "Monitoring Hub im Februar"
+title: Monitoring Hub im Februar
+date: 2017-02-03 00:00:00 Z
 categories:
-  - Software
+- Software
 tags:
-  - daten
-  - event
-  - graphen
-  - monitoring
-  - prometheus
-  - treffen
+- daten
+- event
+- graphen
+- monitoring
+- prometheus
+- treffen
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/annotations_example.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/annotations_example.png
+  image: "/assets/images/uploads/zinnia/blogtitle/annotations_example.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/annotations_example.png"
 ---
 
 Am 27. Februar ab 19:00 Uhr starten wir ein neues Experiment: zum ersten Mal findet unser «Monitoring Hub» statt.

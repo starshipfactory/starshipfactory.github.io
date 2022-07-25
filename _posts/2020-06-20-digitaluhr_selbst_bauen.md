@@ -1,18 +1,19 @@
 ---
-title: "Workshop: Digitaluhr selbst bauen"
+title: 'Workshop: Digitaluhr selbst bauen'
+date: 2020-06-20 00:00:00 Z
 categories:
-  - 3D-Druck
-  - Electronics
-  - Laser-Schnitt
+- 3D-Druck
+- Electronics
+- Laser-Schnitt
 tags:
-  - 3d-druck
-  - elektronik
-  - laser
-  - workshop
-  - löten
+- 3d-druck
+- elektronik
+- laser
+- workshop
+- löten
 header:
-  image: /assets/images/snippet_images/content/digitaluhr.jpg
-  teaser: /assets/images/snippet_images/content/digitaluhr.jpg
+  image: "/assets/images/snippet_images/content/digitaluhr.jpg"
+  teaser: "/assets/images/snippet_images/content/digitaluhr.jpg"
 ---
 
 Wir bauen eine Digitaluhr nach unserem eigenen Geschmack. Der Workshop bietet eine interessante Mischung aus Löten, 3D-Druck und Laserschnitt. Die einzelnen Arbeitsschritte können dabei in beliebiger Reihenfolge durchgeführt werden. Am Tag des Workshops werden wir uns hierfür in 3 Gruppen aufteilen. Der Workshop dient vorrangig dazu, einen Einstieg in das Projekt zu finden. Die Fertigstellung erfolgt dann beliebig im Rahmen der Öffnungszeiten der Starship Factory (siehe Öffnungszeiten).

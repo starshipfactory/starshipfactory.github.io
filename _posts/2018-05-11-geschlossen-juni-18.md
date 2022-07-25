@@ -1,7 +1,8 @@
 ---
-title: "Starship Factory am 15.06.2018 geschlossen"
+title: Starship Factory am 15.06.2018 geschlossen
+date: 2018-05-11 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 ---
 
 Die Räume der Starship Factory sind am 15. Juni 2018 aufgrund einer Veranstaltung leider nicht verfügbar.

@@ -1,19 +1,20 @@
 ---
-title: "Raspberry Pi Workshop"
+title: Raspberry Pi Workshop
+date: 2016-10-07 00:00:00 Z
 categories:
-  - Elektronik
-  - Software
-  - Veranstaltungen
+- Elektronik
+- Software
+- Veranstaltungen
 tags:
-  - diy
-  - iot
-  - Netzwerk
-  - elektronik
-  - raspi
-  - workshop
+- diy
+- iot
+- Netzwerk
+- elektronik
+- raspi
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/raspi3.jpeg
-  teaser: /assets/images/uploads/zinnia/blogtitle/raspi3.jpeg
+  image: "/assets/images/uploads/zinnia/blogtitle/raspi3.jpeg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/raspi3.jpeg"
 ---
 
 Am 29. Oktober findet in der Starship Factory wieder ein [Raspberry Pi Workshop](https://wiki.starship-factory.ch/Veranstaltungen/Workshops/Raspberry-Pi/) statt.

@@ -1,17 +1,18 @@
 ---
-title: "Workshop für Frauen: Hilfe, meine Kleidung leuchtet!"
+title: 'Workshop für Frauen: Hilfe, meine Kleidung leuchtet!'
+date: 2015-04-07 00:00:00 Z
 categories:
-  - Elektronik
-  - Nähen
-  - Textilbearbeitung  
-  - Veranstaltungen
+- Elektronik
+- Nähen
+- Textilbearbeitung
+- Veranstaltungen
 tags:
-  - el-wire
-  - women
-  - workshop
+- el-wire
+- women
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/2015-03-17_1_0002.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/2015-03-17_1_0002.png
+  image: "/assets/images/uploads/zinnia/blogtitle/2015-03-17_1_0002.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/2015-03-17_1_0002.png"
 ---
 
 Am **Sonntag, 19. April 2015** von **14:00 bis 18:00 Uhr** findet ein Workshop **von Frauen für Frauen** statt:

@@ -1,10 +1,11 @@
 ---
-title: "Kein Zugang zu den Räumen am 18. Mai"
+title: Kein Zugang zu den Räumen am 18. Mai
+date: 2016-05-13 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/frog-1159287_1280.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/frog-1159287_1280.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/frog-1159287_1280.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/frog-1159287_1280.jpg"
 ---
 
 Am **18\. Mai 2016** findet im Stadion St. Jakob ein [UEFA Champions-League-Fussballspiel](http://www.fussball.ch/Sevilla+und+Liverpool+kommen+nach+Basel/696079/detail.htm) statt. Als Sicherheitsvorkehrung wird die gesamte Umgebung des St. Jakobs-Stadions polizeilich abgeriegelt.

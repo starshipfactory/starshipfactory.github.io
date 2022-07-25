@@ -1,10 +1,11 @@
 ---
-title: "Eröffnungsfeier Werk Raumkollektiv"
+title: Eröffnungsfeier Werk Raumkollektiv
+date: 2019-09-03 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/15a8a872-6709-4cc6-92da-389f26dfbf6a.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/15a8a872-6709-4cc6-92da-389f26dfbf6a.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/15a8a872-6709-4cc6-92da-389f26dfbf6a.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/15a8a872-6709-4cc6-92da-389f26dfbf6a.jpg"
 ---
 
 <p><strong><span style="font-size:32px"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="color:#4B0082">E i n l a d u n g &nbsp; z u m</span><br>

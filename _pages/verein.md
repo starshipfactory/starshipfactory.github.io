@@ -1,6 +1,6 @@
 ---
-permalink: /verein/
-title: "Ueber uns"
+title: Ueber uns
+permalink: "/verein/"
 ---
 
 Die Starship Factory ist Makerspace, Hackerspace, Treffpunkt und Mitmachwerkstatt. Bei uns trifft sich eine bunte Mischung aus kreativen BastlerInnen, KünstlerInnen, Geeks und QuerdenkerInnen aus Basel und Umgebung.

@@ -1,14 +1,16 @@
 ---
-title: "Der April in der Starship Factory"
+title: Der April in der Starship Factory
+date: 2015-03-28 00:00:00 Z
 categories:
-  - Veranstaltungen
+- Veranstaltungen
 tags:
-  - arduino
-  - workshop
+- arduino
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png
+  image: "/assets/images/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/sflogo640px_GxUtwa4.png"
 ---
+
 [Starship Factory - Der April in der Starship Factory](https://starship-factory.ch/2015/03/28/der-april-in-der-starship-factory/)
 
 Neuer Raum, neue Möglichkeiten: im April diesen Jahres bieten wir gleich eine ganze Reihe von Workshops für unsere Interessenten an.

@@ -1,13 +1,14 @@
 ---
-title: "Neuer YouTube-Kanal mit erstem Video online"
+title: Neuer YouTube-Kanal mit erstem Video online
+date: 2014-03-06 00:00:00 Z
 categories:
-  - Textilbearbeitung
+- Textilbearbeitung
+tags:
+- plotter
+- t-shirt
 header:
   image: 
   teaser: 
-tags:
-  - plotter
-  - t-shirt
 ---
 
 Nun sind wir auch auf YouTube mit unserem eigenen Kanal zu finden. Für den Start haben wir ein Video zum T-Shirt-Druck gemacht:

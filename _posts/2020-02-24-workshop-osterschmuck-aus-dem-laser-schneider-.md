@@ -1,17 +1,18 @@
 ---
-title: "Workshop: Osterschmuck aus dem Laser-Schneider"
+title: 'Workshop: Osterschmuck aus dem Laser-Schneider'
+date: 2020-02-24 00:00:00 Z
 categories:
-  - Veranstaltungen
-  - Laser-Schnitt
+- Veranstaltungen
+- Laser-Schnitt
 tags:
-  - Dekoration
-  - Holz
-  - Laser
-  - Ostern
-  - Schmuck
+- Dekoration
+- Holz
+- Laser
+- Ostern
+- Schmuck
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/Ostereier.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/Ostereier.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/Ostereier.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/Ostereier.jpg"
 event_date: 2020-03-07 14:00
 ---
 

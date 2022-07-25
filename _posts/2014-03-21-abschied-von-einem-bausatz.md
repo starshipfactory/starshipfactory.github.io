@@ -1,10 +1,11 @@
 ---
-title: "Abschied von einem Bausatz"
+title: Abschied von einem Bausatz
+date: 2014-03-21 00:00:00 Z
 categories:
-  - Elektronik
+- Elektronik
 header:
-  image: /assets/images/snippet_images/content/eine-plastiktute-mit-einem-elektronikbausatz-mit-microcontroller-und-display-ein-paar-raumzeitlabor-merchandising-items-und-eine-traueranzeige.jpeg
-  teaser: /assets/images/snippet_images/content/eine-plastiktute-mit-einem-elektronikbausatz-mit-microcontroller-und-display-ein-paar-raumzeitlabor-merchandising-items-und-eine-traueranzeige.jpeg
+  image: "/assets/images/snippet_images/content/eine-plastiktute-mit-einem-elektronikbausatz-mit-microcontroller-und-display-ein-paar-raumzeitlabor-merchandising-items-und-eine-traueranzeige.jpeg"
+  teaser: "/assets/images/snippet_images/content/eine-plastiktute-mit-einem-elektronikbausatz-mit-microcontroller-und-display-ein-paar-raumzeitlabor-merchandising-items-und-eine-traueranzeige.jpeg"
 ---
 
 Letzte Woche erhielten wir Post von [unseren Freunden aus Mannheim](https://raumzeitlabor.de// "RaumZeitLabor Mannheim"). Im Paket enthalten war ein Elektronikbausatz mit einem Microcontroller sowie einem Display, welcher vom RaumZeitLabor für eingestellt erklärt wurde. Die restlichen Bausätze wurden zum Abschied an befreundete Hackerspaces in ganz Europa verschickt, um das Projekt würdig zu Grabe zu tragen.

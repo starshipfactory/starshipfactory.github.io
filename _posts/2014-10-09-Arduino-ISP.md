@@ -1,14 +1,15 @@
 ---
-title: "Arduino-ISP-Programmer"
+title: Arduino-ISP-Programmer
+date: 2014-10-09 00:00:00 Z
 categories:
-  - Elektronik
-header:
-  image: /assets/images/uploads/zinnia/blogtitle/20141012_220830.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/20141012_220830.jpg
+- Elektronik
 tags:
-  - arduino
-  - avr
-  - isp.attiny
+- arduino
+- avr
+- isp.attiny
+header:
+  image: "/assets/images/uploads/zinnia/blogtitle/20141012_220830.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/20141012_220830.jpg"
 ---
 
 Mit einem Arduino kann man viele Dinge basteln. Die Voraussetzung dafür ist allerdings, dass man den auf dem Arduino befindlichen Mikrocontroller programmieren kann – also in für den Computer verständliche Worte fassen, was der Mikrocontroller tun soll, und das Resultat auf dem Mikrocontroller abspeichern.

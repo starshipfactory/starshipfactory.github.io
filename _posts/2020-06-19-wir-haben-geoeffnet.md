@@ -1,10 +1,11 @@
 ---
-title: "Wir haben geöffnet!"
+title: Wir haben geöffnet!
+date: 2020-06-19 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 header:
-  image: /assets/images/snippet_images/content/we-are-open.jpg
-  teaser: /assets/images/snippet_images/content/we-are-open.jpg
+  image: "/assets/images/snippet_images/content/we-are-open.jpg"
+  teaser: "/assets/images/snippet_images/content/we-are-open.jpg"
 ---
 
 Liebe Maker und alle, die es noch werden wollen: Wir haben wieder geöffnet! Und das bereits seit dem 25. Mai. Ihr seid uns also alle wieder an den Tagen der offenen Tür willkommen. Diese sind wie bisher:

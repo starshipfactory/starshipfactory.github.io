@@ -1,12 +1,11 @@
 ---
-title: "Everyday I'm Ansiblin'"
+title: Everyday I'm Ansiblin'
+date: 2016-06-24 00:00:00 Z
 categories:
-  - Veranstaltungen
-tags:
-  - 
+- Veranstaltungen
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/maxresdefault.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/maxresdefault.jpg
+  image: "/assets/images/uploads/zinnia/blogtitle/maxresdefault.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/maxresdefault.jpg"
 ---
 
 In der Informatik bestehen viele Aufgaben darin, Maschinen zu verwalten, zusätzliche Maschinen zu konfigurieren und die aktuelle Konfiguration auf dem aktuellen Stand zu halten. Früher wurde das von sogenannten Sysadmins von Hand erledigt, welche dann häufig als Reaktion darauf besondere Formen von Irrsinnigkeit an den Tag legten.

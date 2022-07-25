@@ -1,14 +1,15 @@
 ---
-title: "Workshop: Schlösser öffnen für Anfänger"
+title: 'Workshop: Schlösser öffnen für Anfänger'
+date: 2015-04-01 00:00:00 Z
 categories:
-  - Veranstaltungen
+- Veranstaltungen
 tags:
-  - lockpicking
-  - schloesser
-  - workshop
+- lockpicking
+- schloesser
+- workshop
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/DSC_0505_0005_01.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/DSC_0505_0005_01.png
+  image: "/assets/images/uploads/zinnia/blogtitle/DSC_0505_0005_01.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/DSC_0505_0005_01.png"
 ---
 
 Am 17.04.2015 um 18:00 Uhr findet in der [Räumlichkeiten der Starship-Factory](https://starship-factory.ch/anfahrt/) ein Workshop zum Thema «Schlösser öffnen für Anfänger» statt.

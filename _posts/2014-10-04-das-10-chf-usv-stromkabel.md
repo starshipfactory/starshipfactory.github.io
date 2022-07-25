@@ -1,14 +1,15 @@
 ---
-title: "Das 10-CHF-USV-Stromkabel"
+title: Das 10-CHF-USV-Stromkabel
+date: 2014-10-04 00:00:00 Z
 categories:
-  - Elektronik
-header:
-  image: /assets/images/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg
-  teaser: /assets/images/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg
+- Elektronik
 tags:
-  - 220v
-  - elektronik
-  - kabel
+- 220v
+- elektronik
+- kabel
+header:
+  image: "/assets/images/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/2014-09-30_21.29.30.jpg"
 ---
 
 ![USV-Stromkabel mit C13- und C14-Steckern](/assets/images/snippet_images/content_small/usv-stromkabel-mit-c13-und-c14-steckern.jpg "USV-Stromkabel mit C13- und C14-Steckern")

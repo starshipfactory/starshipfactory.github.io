@@ -1,10 +1,11 @@
 ---
-title: "Wir ziehen um!"
+title: Wir ziehen um!
+date: 2019-05-20 00:00:00 Z
 categories:
-  - Organisation
+- Organisation
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/IMG_0188.JPG
-  teaser: /assets/images/uploads/zinnia/blogtitle/IMG_0188.JPG
+  image: "/assets/images/uploads/zinnia/blogtitle/IMG_0188.JPG"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/IMG_0188.JPG"
 ---
 
 Wir werden am 30.05.2019 den [gesamten Makerspace zügeln / umziehen](https://wiki.starship-factory.ch/Projekte/Zuegeltermin_Auffahrt_2019/). Das ist der Feiertag Auffahrt/Christi Himmelfahrt.

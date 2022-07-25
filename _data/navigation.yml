@@ -3,11 +3,13 @@ main:
     url: /
   - title: "Blog"
     url: /blog/
-  - title: "Events"
-    url: /events/
+  - title: "Mitglied werden"
+    url: /mitglied-werden/
   - title: "Anfahrt"
     url: /anfahrt/
   - title: "Spenden"
     url: /spenden/
   - title: "Wiki"
     url: https://wiki.starship-factory.ch/
+  - title: "Cloud"
+    url: https://cloud.lab.starship-factory.ch/

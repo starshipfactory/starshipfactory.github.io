@@ -1,10 +1,12 @@
 ---
-title: "Endlich eigene 3D-Drucker dank einer grosszügigen Spende der E.E. Zunft zu Hausgenossen"
+title: Endlich eigene 3D-Drucker dank einer grosszügigen Spende der E.E. Zunft zu
+  Hausgenossen
+date: 2014-09-04 00:00:00 Z
 categories:
-  - 3D-Druck
+- 3D-Druck
 header:
-  image: /assets/images/uploads/zinnia/blogtitle/img_DSC_8529_0002__small.png
-  teaser: /assets/images/uploads/zinnia/blogtitle/img_DSC_8529_0002__small.png
+  image: "/assets/images/uploads/zinnia/blogtitle/img_DSC_8529_0002__small.png"
+  teaser: "/assets/images/uploads/zinnia/blogtitle/img_DSC_8529_0002__small.png"
 ---
 
 Wir bedanken uns für die grosszügige Spende von 10.000 CHF für unsere [3D-Drucker](http://wiki.starship-factory.ch/Equipment/3D-Drucker/) von der [E.E. Zunft zu Hausgenossen](http://www.hausgenossen.ch/). 
