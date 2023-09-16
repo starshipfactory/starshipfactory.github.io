@@ -76,6 +76,7 @@ footer:
   links:
   - label: Discourse
     url: https://discourse.starship-factory.ch
+    icon: fa-brands fa-discourse
   - label: Signal
     url: https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t
   - label: Twitter
