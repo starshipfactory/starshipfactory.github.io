@@ -75,10 +75,8 @@ author:
 footer:
   links:
   - label: Discourse
-    icon: /assets/images/icons/discourse_icon_256x256.png
     url: https://discourse.starship-factory.ch
   - label: Signal
-    icon: /assets/images/icons/signal_icon_256x256.png
     url: https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t
   - label: Twitter
     icon: fab fa-fw fa-twitter-square
