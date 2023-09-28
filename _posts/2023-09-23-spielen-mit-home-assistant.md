@@ -1,7 +1,7 @@
----              
+---
 title:  "Spielen mit Home Assistant"
 date:   2023-09-23 00:00:00 Z
-modified_date: 2023-09-23
+modified_date: 2023-09-28
 categories:
 - Veranstaltungen
 tags:
@@ -14,6 +14,8 @@ header:
   teaser: "/assets/images/snippet_images/home-assistant-2023.png"
 excerpt_separator: <!--more-->
 ---
++++ Datum geändert +++ Datum geändert +++ Datum geändert +++ Datum geändert +++
+
 Das Thema Heimautomatisierung gewinnt immer mehr an Bedeutung. Die Komponenten gibt es mittlerweile in jedem Baumarkt zu kaufen. Unsere Wohnungen und Häuser sollen „intelligent“ werden. Das ist nicht immer nützlich oder sinnvoll. Man kann aber eine ganze Menge Spass damit haben.
 
 Wie genau, das wollen wir euch zeigen!
@@ -28,7 +30,7 @@ Unter anderem werden wir versuchen, antworten auf die folgenden Fragen zu geben:
 
 Danach geht es weiter mit typischen Anwendungsfällen, die wir gemeinsam bearbeiten werden. Und im Anschluss seid ihr hoffentlich motiviert auch euer Zuhause etwas intelligenter zu machen.
 
-**Datum und Zeit**: 17.10.2023 (Dienstag) ab 19:30 Uhr
+**Datum und Zeit**: ~~17.10.2023~~ 24.10.2023 (Dienstag) ab 19:30 Uhr
 
 **Ort**: Starship Factory, Gebäude K-102, Klybeckstrasse 141, 4057 Basel ([Wegbeschreibung](https://starship-factory.ch/anfahrt/))
 
