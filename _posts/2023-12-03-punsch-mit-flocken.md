@@ -18,7 +18,7 @@ excerpt_separator: <!--more-->
 
 Huch, ist schon wieder Jahresende? Da hilft nur eins: Gang rausnehmen, ausrollen lassen und in den besinnlichen Modus wechseln.
 Eine hervorragende Gelegenheit, um Mal wieder zusammenzuhocken, das Jahr Revue passieren zu lassen und ein wenig zu lasern (was auch sonst)!
-Dieses Jahr möchten wir mit euch Schneeflocken bauen, da der Schnee in der Rheinebene selten geworden ist. Wir trotzen der Klimaerwärmung mit dem Schneeflockengenerator von Bleeptrack und kreieren auf diesem Weg unsere eigene Vielfalt.
+Dieses Jahr möchten wir mit euch Schneeflocken bauen, da der Schnee in der Rheinebene selten geworden ist. Wir trotzen der Klimaerwärmung mit dem [Schneeflockengenerator von Bleeptrack](https://fr0zensystem.bleeptrack.de/) und kreieren auf diesem Weg unsere eigene Vielfalt.
 Natürlich dürft ihr gerne auch andere Dinge lasern. Wer künstlerisch begabt ist hat die Möglichkeit, den Stift in die Hand zu nehmen und mit unserer Hilfe eigene Schnittvorlagen zu erstellen.
 Die Materialien für den Workshop werden gestellt. Dazu gibt es alkoholfreien Punsch und wahlweise Glühwein - ausserdem schädliche Kohlehydrate für alle, die zu schwach sind, um zu widerstehen.
 Wir freuen uns bereits auf euch!
