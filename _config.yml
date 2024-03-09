@@ -1,5 +1,6 @@
 ---
 title: Starship Factory
+repository: starshipfactory/starshipfactory.github.io
 timezone: UTC
 collections:
   posts:
