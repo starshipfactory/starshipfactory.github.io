@@ -85,7 +85,7 @@ footer:
     icon: fa fa-calendar
     url: https://cloud.starship-factory.ch/apps/calendar/p/NBiqtDiWQZmAZYfq
   - label: Twitter
-    icon: fab fa-fw fa-twitter-squar
+    icon: fab fa-fw fa-twitter-square
     url: https://twitter.com/StarshipFactory
   - label: GitHub
     icon: fab fa-fw fa-github
