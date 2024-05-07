@@ -7,8 +7,8 @@ categories:
 tags:
 - workshop
 header:
-  image: "/assets/images/snippet_images/CAM.jpg"
-  teaser: "/assets/images/snippet_images/CAM.jpg"
+  image: "/assets/images/snippet_images/CAM.png"
+  teaser: "/assets/images/snippet_images/CAM.png"
 excerpt_separator: <!--more-->
 ---
 
