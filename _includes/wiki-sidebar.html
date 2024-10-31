@@ -1,0 +1,28 @@
+<nav class="nav__list">
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+
+    {% assign navurl = page.url | remove: 'index.html' %}
+    {% assign pages = site.wiki %}
+    <ul class="nav__items">
+        {% for item in pages %}
+        <li>
+            {% assign level = item.url | remove: '/index.html' | split: '/' | size | minus:3 %}
+
+            <span {% if level==0 %}class="nav__sub-title" {% endif %}>
+
+                {% if level >= 0 and level <= 2 %} <a href="{{ item.url | relative_url }}"
+                    style="margin-left: {{ level | times:0.7}}em; padding-inline: 0px; font-size:0.85em;" {% if
+                    item.url==navurl %} class="active" {% endif %}>
+                    {% if item.navtitle %}
+                    {{item.navtitle}}
+                    {% else %}
+                    {{ item.title }}
+                    {% endif %}
+                    </a>
+                    {% endif %}
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

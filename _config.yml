@@ -9,6 +9,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  wiki:
+    title: Wiki
+    output: true
 defaults:
 - scope:
     path: ''
@@ -28,7 +31,22 @@ defaults:
     type: pages
   values:
     layout: single
+    breadcrumbs: false
     author_profile: false
+- scope:
+    path: ""
+    type: wiki
+  values:
+    layout: wiki
+    read_time: false
+    author_profile: false
+    share: false
+    related: false
+    sidebar_include: wiki-sidebar.html
+    breadcrumbs: true
+    classes: wide
+    permalink: "/wiki/:path/"
+
 subtitle: Dein Makerspace in Basel!
 email: open@lists.starship-factory.ch
 description: Write an awesome description for your new site here. You can edit this
@@ -37,17 +55,22 @@ description: Write an awesome description for your new site here. You can edit t
 twitter_username: StarshipFactory
 github_username: starshipfactory
 minimal_mistakes_skin: default
+relative_permalinks: false
 search: true
 logo: "/assets/images/logo.svg"
 breadcrumbs: true
 teaser: "/assets/images/logo.svg"
 markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md,mdwn"
+strict_front_matter : false
 remote_theme: mmistakes/minimal-mistakes
 permalink: "/:categories/:title/"
+permalink: pretty
 paginate: 5
 paginate_path: "/blog/page:num/"
 include:
 - _pages
+- wiki
 plugins:
 - jekyll-paginate
 - jekyll-sitemap
@@ -79,23 +102,17 @@ footer:
     icon: fab fa-brands fa-discourse
     url: https://discourse.starship-factory.ch
   - label: Signal
-    icon: fa fa-comment
+    icon: fab fa-brands fa-signal-messenger
     url: https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t
   - label: Kalender
-    icon: fa fa-calendar
+    icon: fa-solid fa-calendar-days
     url: https://cloud.starship-factory.ch/apps/calendar/p/NBiqtDiWQZmAZYfq
-  - label: Twitter
-    icon: fab fa-fw fa-twitter-square
-    url: https://twitter.com/StarshipFactory
   - label: GitHub
-    icon: fab fa-fw fa-github
+    icon: fab fa-brands fa-github
     url: https://github.com/starshipfactory
   - label: Instagram
-    icon: fab fa-fw fa-instagram
+    icon: fab fa-brands fa-instagram
     url: https://instagram.com/starship_factory
-  - label: Facebook
-    icon: fab fa-fw fa-facebook
-    url: https://www.facebook.com/starshipfactory
   linked_pages:
   - label: Impressum
     url: "/impressum/"

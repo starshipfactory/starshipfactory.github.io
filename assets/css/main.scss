@@ -1,8 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
-@charset "utf-8";
+--- # Only the main Sass file needs front matter (the dashes are enough) --- @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -14,4 +10,16 @@
 .page__hero-image {
     max-height: 20em;
     object-fit: contain;
+}
+
+.sidebar p,
+.sidebar li {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: .75em;
+    line-height: 1.5;
+}
+
+.wiki_edit_link {
+    float: right;
+    font-size: 0.75em;
 }
