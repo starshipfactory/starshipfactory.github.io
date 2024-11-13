@@ -1,15 +1,15 @@
 ---
-title:  "Workshop on computer-aided manufacturing (CAM) in FreeCAD"
-date:   2024-05-07 00:00:00 Z
-modified_date: 2024-05-07
+title: Workshop on computer-aided manufacturing (CAM) in FreeCAD
+date: 2024-05-07 00:00:00 Z
 categories:
 - Veranstaltungen
 tags:
 - workshop
+modified_date: 2024-05-07 00:00:00 Z
 header:
   image: "/assets/images/snippet_images/CAM.png"
   teaser: "/assets/images/snippet_images/CAM.png"
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 ---
 
 Following the workshop on constraint-based/parametric modelling in FreeCAD, let's take a look at CAM (i.e. computer-aided manufacturing) in FreeCAD! We'll start with some theory on 3-axis CNC milling, covering

@@ -1,5 +1,5 @@
 ---
-title: '3D-Druck Workshop'
+title: 3D-Druck Workshop
 date: 2022-03-16 00:00:00 Z
 categories:
 - 3D-Druck
@@ -9,8 +9,8 @@ tags:
 header:
   image: "/assets/images/snippet_images/3D-Druck-Projekte.jpg"
   teaser: "/assets/images/snippet_images/3D-Druck-Projekte.jpg"
-excerpt_separator: <!--more-->
---- 
+excerpt_separator: "<!--more-->"
+---
 
 Interessiert euch der 3D-Druck? Möchtet ihr es selbst ausprobieren?\
 Mit dieser Einführung in Slicen und Drucken lernt ihr den Umgang mit unseren 3D-Druckern kennen. Der Workshop findet am Dienstag, den 12. April jede Stunde ab 18 bis 21 Uhr statt.

@@ -1,7 +1,6 @@
 ---
-title:  "Spielen mit Home Assistant"
-date:   2023-09-23 00:00:00 Z
-modified_date: 2023-09-28
+title: Spielen mit Home Assistant
+date: 2023-09-23 00:00:00 Z
 categories:
 - Veranstaltungen
 tags:
@@ -9,11 +8,13 @@ tags:
 - Heimautomatisierung
 - Workshop
 - Einführung
+modified_date: 2023-09-28 00:00:00 Z
 header:
   image: "/assets/images/snippet_images/home-assistant-2023.png"
   teaser: "/assets/images/snippet_images/home-assistant-2023.png"
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 ---
+
 +++ Datum geändert +++ Datum geändert +++ Datum geändert +++ Datum geändert +++
 
 Das Thema Heimautomatisierung gewinnt immer mehr an Bedeutung. Die Komponenten gibt es mittlerweile in jedem Baumarkt zu kaufen. Unsere Wohnungen und Häuser sollen „intelligent“ werden. Das ist nicht immer nützlich oder sinnvoll. Man kann aber eine ganze Menge Spass damit haben.

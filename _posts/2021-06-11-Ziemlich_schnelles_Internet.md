@@ -1,5 +1,5 @@
 ---
-title: 'Ziemlich schnelles Internet'
+title: Ziemlich schnelles Internet
 date: 2021-06-11 00:00:00 Z
 categories:
 - Infrastructure
@@ -11,7 +11,8 @@ tags:
 header:
   image: "/assets/images/snippet_images/content/speed-test.png"
   teaser: "/assets/images/snippet_images/content/speed-test.png"
---- 
+---
+
 Einen schnellen Internet-Anschluss hatten wir schon länger. Mit der Hardware waren wir noch nicht ganz so weit. Jetzt haben wir aufgerüstet und einen neuen Router installiert. Mit diesem können wir die Bandbreite unseres Internet-Anschlusses endlich vollständig ausschöpfen. 
 
 Außerdem haben wir fensterseitig auf unserem neuen Arbeitstisch Netzwerkdosen installiert, so dass ihr auch maximal von der schnellen Anbindung profitieren könnt. 

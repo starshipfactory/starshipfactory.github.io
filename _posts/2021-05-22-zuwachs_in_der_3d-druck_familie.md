@@ -1,5 +1,5 @@
 ---
-title: 'Zuwachs in der 3D-Druckfamilie'
+title: Zuwachs in der 3D-Druckfamilie
 date: 2021-05-22 00:00:00 Z
 categories:
 - 3D-Druck
@@ -12,7 +12,7 @@ tags:
 header:
   image: "/assets/images/snippet_images/content/chiron-3d-drucker.jpg"
   teaser: "/assets/images/snippet_images/content/chiron-3d-drucker.jpg"
---- 
+---
 
 Wir haben einen Neuzugang! Für alle, die es gross mögen, steht in der Starship Factory ab sofort ein Anycubic
 [Chiron 3D-Drucker](https://de.anycubic.com/products/anycubic-chiron-3d-drucker) zur Verfügung. Dieser arbeitet

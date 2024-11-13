@@ -1,5 +1,5 @@
 ---
-title: 'Heisse Schnitte - Einführung in die Materialbearbeitung mit einem CO2-Laser'
+title: Heisse Schnitte - Einführung in die Materialbearbeitung mit einem CO2-Laser
 date: 2021-10-16 00:00:00 Z
 categories:
 - Laserschnitt
@@ -12,7 +12,7 @@ tags:
 header:
   image: "/assets/images/snippet_images/content/laser_materialtestkarte.jpg"
   teaser: "/assets/images/snippet_images/content/laser_materialtestkarte.jpg"
---- 
+---
 
 Teilt ihr unsere Begeisterung für Laser? Dann ist diese Einführung in die Materialbearbeitung mit unserem KH-3020-Laser vielleicht genau das Richtige für euch. Diese findet am **Freitag, den 19. November** im Rahmen unserer regulären Öffnungszeit ab 20 Uhr statt.
 

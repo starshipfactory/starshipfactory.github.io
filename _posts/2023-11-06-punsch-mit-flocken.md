@@ -1,7 +1,6 @@
 ---
-title:  "Punsch mit Flocken"
-date:   2023-11-06 00:00:00 Z
-modified_date: 2023-11-06
+title: Punsch mit Flocken
+date: 2023-11-06 00:00:00 Z
 categories:
 - Veranstaltungen
 - Laserschnitt
@@ -10,10 +9,11 @@ tags:
 - workshop
 - weihnachtsschmuck
 - punsch
+modified_date: 2023-11-06 00:00:00 Z
 header:
   image: "/assets/images/snippet_images/punsch-mit-flocken-2023.png"
   teaser: "/assets/images/snippet_images/punsch-mit-flocken-2023.png"
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 ---
 
 Huch, ist schon wieder Jahresende? Da hilft nur eins: Gang rausnehmen, ausrollen lassen und in den besinnlichen Modus wechseln.

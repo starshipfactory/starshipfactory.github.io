@@ -1,5 +1,5 @@
 ---
-title: 'Weihnachtsessen'
+title: Weihnachtsessen
 date: 2021-11-12 00:00:00 Z
 categories:
 - Sonstiges
@@ -11,8 +11,8 @@ tags:
 header:
   image: "/assets/images/snippet_images/content/weihnachtsmann.jpg"
   teaser: "/assets/images/snippet_images/content/weihnachtsmann.jpg"
-excerpt_separator: <!--more-->
---- 
+excerpt_separator: "<!--more-->"
+---
 
 Liebe Starship Factory Mitglieder und Bewohner des Werks,
 

@@ -1,6 +1,5 @@
 ---
 title: Starship Factory
-repository: starshipfactory/starshipfactory.github.io
 timezone: UTC
 collections:
   posts:
@@ -34,7 +33,7 @@ defaults:
     breadcrumbs: false
     author_profile: false
 - scope:
-    path: ""
+    path: ''
     type: wiki
   values:
     layout: wiki
@@ -46,7 +45,7 @@ defaults:
     breadcrumbs: true
     classes: wide
     permalink: "/wiki/:path/"
-
+repository: starshipfactory/starshipfactory.github.io
 subtitle: Dein Makerspace in Basel!
 email: open@lists.starship-factory.ch
 description: Write an awesome description for your new site here. You can edit this
@@ -61,10 +60,9 @@ logo: "/assets/images/logo.svg"
 breadcrumbs: true
 teaser: "/assets/images/logo.svg"
 markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md,mdwn"
-strict_front_matter : false
+markdown_ext: markdown,mkdown,mkdn,mkd,md,mdwn
+strict_front_matter: false
 remote_theme: mmistakes/minimal-mistakes
-permalink: "/:categories/:title/"
 permalink: pretty
 paginate: 5
 paginate_path: "/blog/page:num/"

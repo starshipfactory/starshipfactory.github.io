@@ -1,5 +1,6 @@
 ---
-title: 'Erneute Corona Massnahmen'
+title: Erneute Corona Massnahmen
+date: 2020-12-11 00:00:00 Z
 categories:
 - Organisation
 header:

@@ -1,11 +1,13 @@
 ---
-title: 'Wir öffnen wieder!'
+title: Wir öffnen wieder!
+date: 2021-04-18 00:00:00 Z
 categories:
 - Organisation
 header:
   image: "/assets/images/snippet_images/content/we-are-open.jpg"
   teaser: "/assets/images/snippet_images/content/we-are-open.jpg"
 ---
+
 Der Bundesrat hat am 14. April Lockerungen beschlossen. Ab der Woche vom 19. April öffnet die Starship Factory daher endlich wieder ihre Türen für die Öffentlichkeit. Ab diesem Datum seid ihr uns wieder zu den regulären Öffnungszeiten willkommen. Diese sind wie bisher:
 
 - Dienstags von 19:30 bis 22:00 Uhr

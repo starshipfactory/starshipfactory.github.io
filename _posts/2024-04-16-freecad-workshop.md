@@ -1,15 +1,15 @@
 ---
-title:  "Workshop on constraint-based and parametric modelling in FreeCAD"
-date:   2024-04-16 00:00:00 Z
-modified_date: 2024-04-16
+title: Workshop on constraint-based and parametric modelling in FreeCAD
+date: 2024-04-16 00:00:00 Z
 categories:
 - Veranstaltungen
 tags:
 - workshop
+modified_date: 2024-04-16 00:00:00 Z
 header:
   image: "/assets/images/snippet_images/FreeCAD.jpg"
   teaser: "/assets/images/snippet_images/FreeCAD.jpg"
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 ---
 
 Constraint-based and parametric modelling is ideal for prototyping something, as it is straightforward to modify your design without having to partially 

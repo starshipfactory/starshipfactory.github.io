@@ -1,17 +1,17 @@
----              
-title:  "Klybeck Arealfest 2022"
-date:   2022-06-21 00:00:00 Z
-modified_date: 2022-06-21
-categories: 
+---
+title: Klybeck Arealfest 2022
+date: 2022-06-21 00:00:00 Z
+categories:
 - Sonstiges
-tags: 
+tags:
 - Offene Tür
 - Arealfest
 - Starship Factory
+modified_date: 2022-06-21 00:00:00 Z
 header:
   image: "/assets/images/snippet_images/klybeck-arealfest-2022.jpg"
   teaser: "/assets/images/snippet_images/klybeck-arealfest-2022.jpg"
-excerpt_separator: <!--more--> 
+excerpt_separator: "<!--more-->"
 ---
 
 Am Sonntag, den 26. Juni 2022 haben wir ab <b> 11 Uhr </b> das Klybeck-Arealfest. Wir und viele andere werden ihre Türe öffnen und einen Einblick 

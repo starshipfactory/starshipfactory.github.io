@@ -1,6 +1,6 @@
 ---
 title: Wiki
-permalink: /wiki
+permalink: "/wiki"
 ---
 
 <h3 class="archive__subtitle">Willkommen im wiki</h3>
