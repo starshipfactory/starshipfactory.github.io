@@ -7,7 +7,7 @@ tags:
 - workshop
 modified_date: 2024-11-28 00:00:00 Z
 header:
-  image: "/assets/images/snippet_images/laser-zunge-holz.jpg"
+  image: "/assets/images/snippet_images/laser-zunge-holz-cut.jpg"
   teaser: "/assets/images/snippet_images/laser-zunge-holz.jpg"
 excerpt_separator: "<!--more-->"
 ---
