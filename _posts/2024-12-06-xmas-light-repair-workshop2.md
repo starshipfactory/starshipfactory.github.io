@@ -1,5 +1,5 @@
 ---
-title: Workshop
+title: Weihnachtsbeleuchtungs-Repair-Workshop
 date: 2024-12-06 00:00:00 Z
 categories:
 - Veranstaltungen
