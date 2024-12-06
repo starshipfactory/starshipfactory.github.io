@@ -1,5 +1,5 @@
 ---
-title: Laser dein Motiv auf diverse Materialien
+title: Laser dein Motiv auf diverse Materialien!
 date: 2024-11-29 00:00:00 Z
 categories:
 - Veranstaltungen
@@ -7,8 +7,8 @@ tags:
 - workshop
 modified_date: 2024-11-28 00:00:00 Z
 header:
-  image: "/assets/images/snippet_images/Xmas_lights_DC.jpg"
-  teaser: "/assets/images/snippet_images/Xmas_lights_DC.jpg"
+  image: "/assets/images/snippet_images/laser-zunge-holz.jpg"
+  teaser: "/assets/images/snippet_images/laser-zunge-holz.jpg"
 excerpt_separator: "<!--more-->"
 ---
 
