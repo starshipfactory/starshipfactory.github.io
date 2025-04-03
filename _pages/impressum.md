@@ -11,6 +11,6 @@ Starship Factory
 4000 Basel  
 SWITZERLAND
 
-Wir sind per E-Mail erreichbar unter [pr@lists.starship-factory.ch](mailto:pr@lists.starship-factory.ch "Mail an die PR-Liste senden")
+Wir sind per E-Mail erreichbar unter [board@starship-factory.ch](mailto:board@starship-factory.ch "Mail an den Vorstand senden")
 
 Alle Inhalte dieser Webseite stehen, solange sie nicht speziell gekennzeichnet sind, unter der [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/)-Lizenz.

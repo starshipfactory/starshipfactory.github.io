@@ -9,7 +9,7 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 
 _Starship Factory_  
 CH-4000 Basel (Schweiz)  
-E-Mailadresse: [board@lists.starship-factory.ch](mailto:board@lists.starship-factory.ch)  
+E-Mailadresse: [board@starship-factory.ch](mailto:board@starship-factory.ch)  
 Link zum Impressum: [https://www.starship-factory.ch/impressum/](https://www.starship-factory.ch/impressum/)
 
 # Arten der verarbeiteten Daten:

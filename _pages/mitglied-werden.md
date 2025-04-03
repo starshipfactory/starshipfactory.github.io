@@ -15,4 +15,4 @@ Hauptsächlich sind wir jedoch eine Gruppe von Leuten, die Spass am Basteln habe
 
 # Dein Mitgliederantrag {#join}
 
-Bitte sende uns an [board@lists.starship-factory.ch](mailto:board@lists.starship-factory.ch) deinen ausgefüllten Mitgliederantrag. Diesen kannst du [hier herunterladen](/assets/attachments/Mitgliedschaftsantrag_v4_2021-06-17.pdf).
+Bitte sende uns an [board@starship-factory.ch](mailto:board@starship-factory.ch) deinen ausgefüllten Mitgliederantrag. Diesen kannst du [hier herunterladen](/assets/attachments/Mitgliedschaftsantrag_v4_2021-06-17.pdf).
