@@ -1,4 +1,7 @@
 backend:
+  name: github
+  repo: starshipfactory/starshipfactory.github.io
+  branch: master
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
@@ -7,3 +10,13 @@ backend:
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
 publish_mode: simple
+media_folder: 'assets/images/snippet_images/content'
+collections:
+  - name: 'posts'
+    label: "Posts"
+    folder: '_posts/'
+    fields:
+      - { label: "Title", name: 'title', widget: 'string'}
+      - { label: "Date", name: "date", widget: 'datetime'}
+      - { label: "Blog post content", name: 'body', widget: 'markdown'}
+      - { label: "Header", name: 'header.teaser', widget: 'image'}
