@@ -2,10 +2,12 @@
 title: Die Starship-Factory zieht um
 date: 2025-05-29 00:00:00 Z
 categories:
-- Veranstaltungen
+  - Veranstaltungen
 tags:
-- move
-excerpt_separator: "<!--more-->"
+  - move
+excerpt_separator: <!--more-->
+header:
+  image: /assets/images/snippet_images/content/pxl_20250529_152940177.jpg
 ---
 
 Die Starship-Factory hat aktuell geschlossen.
