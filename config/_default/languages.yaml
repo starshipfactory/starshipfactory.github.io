@@ -70,10 +70,6 @@ de:
         name: "Anfahrt"
         url: "/anfahrt/"
         weight: 4
-      - identifier: "spenden"
-        name: "Spenden"
-        url: "/spenden/"
-        weight: 5
       # "Verein" is a grouping entry only: it has no page of its own. The theme's
       # header.html renders a parent with children as href="#" plus a dropdown, and
       # footer.html renders it as a column heading above its children.
@@ -81,22 +77,27 @@ de:
       # (params.main_cta / params.footer_cta), so it is not duplicated at top level.
       - identifier: "verein"
         name: "Verein"
-        weight: 6
+        weight: 5
       - identifier: "mitglied-werden"
         name: "Mitglied werden"
         url: "/mitglied-werden/"
         parent: "verein"
         weight: 1
+      - identifier: "spenden"
+        name: "Spenden"
+        url: "/spenden/"
+        parent: "verein"
+        weight: 2
       - identifier: "statuten"
         name: "Statuten"
         url: "/statuten/"
         parent: "verein"
-        weight: 2
+        weight: 3
       - identifier: "reglement"
         name: "Reglement/Charta"
         url: "/reglement/"
         parent: "verein"
-        weight: 3
+        weight: 4
     legal:
       - identifier: "datenschutz"
         name: "Datenschutz"
@@ -179,31 +180,32 @@ en:
         name: "How to find us"
         url: "/how-to-find-us/"
         weight: 4
-      - identifier: "spenden"
-        name: "Donate"
-        url: "/donate/"
-        weight: 5
       # Grouping entry only, no page of its own — see the German menu above.
       # "Verein" is the Swiss registered association; "Association" is the plain
       # English equivalent members actually use when speaking English.
       - identifier: "verein"
         name: "Association"
-        weight: 6
+        weight: 5
       - identifier: "mitglied-werden"
         name: "Become a member"
         url: "/become-a-member/"
         parent: "verein"
         weight: 1
+      - identifier: "spenden"
+        name: "Donate"
+        url: "/donate/"
+        parent: "verein"
+        weight: 2
       - identifier: "statuten"
         name: "Statutes"
         url: "/statutes/"
         parent: "verein"
-        weight: 2
+        weight: 3
       - identifier: "reglement"
         name: "Charter"
         url: "/charter/"
         parent: "verein"
-        weight: 3
+        weight: 4
     legal:
       - identifier: "datenschutz"
         name: "Privacy"
