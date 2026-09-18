@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Cache Hugo build artefacts
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: resources/_gen
           key: hugo-resources-${{ runner.os }}-${{ hashFiles('assets/**', 'config/**') }}
