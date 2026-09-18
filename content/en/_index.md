@@ -35,7 +35,7 @@ Tue 19:30–22:00, Fri 19:30–22:00
 #### Contact
 Still got questions? Come join our Signal group! Ask them there and you will get help right away.
 {{< spacer 5 >}}
-{{< button link="https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t" text="Signal group" >}}
+{{< button link="https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t" text="Signal group" target="_blank" >}}
 {{< /card >}}
 {{< /cards >}}
 
