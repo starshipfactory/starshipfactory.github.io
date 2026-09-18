@@ -26,4 +26,4 @@ Das Ziel des Treffens ist einerseits, Monitoringsysteme zu testen und Datenpunkt
 
 Weitere Informationen über den Monitoring Hub und seine Ziele finden sich auf der Workshopseite zum Monitoring Hub.
 
-![Ein Graph unter Prometheus mit Grafana](/assets/images/snippet_images/content/ein-graph-unter-prometheus-mit-grafana_xJPDxGn.png "Ein Graph unter Prometheus mit Grafana")
+![Ein Graph unter Prometheus mit Grafana](/img/blog/ein-graph-unter-prometheus-mit-grafana_xJPDxGn.png "Ein Graph unter Prometheus mit Grafana")

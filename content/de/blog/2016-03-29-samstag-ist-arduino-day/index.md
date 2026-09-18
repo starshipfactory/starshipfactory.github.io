@@ -19,7 +19,7 @@ Ein paar Highlights des Tages:
 
 Dies und mehr findet ihr am Samstag, dem 2. April 2016 ab 13:30 in den [Räumen der Starship Factory](/anfahrt/), Auf dem Wolf 13, Basel. Wer will, darf auch gerne seinen Arduino oder anderen Mikrocontroller mitbringen und sich bei uns beraten, berauschen und inspirieren lassen. Wir freuen uns auf euch!
 
- ![Flyer Arduino Day](/assets/images/snippet_images/content/flyer-arduino-day.jpg "Flyer Arduino Day")
+ ![Flyer Arduino Day](/img/blog/flyer-arduino-day.jpg "Flyer Arduino Day")
 
 
 (Bild im Header: [David Mellis](https://www.flickr.com/photos/mellis/6512280793) [CC-BY-2.0](https://creativecommons.org/licenses/by/2.0/))

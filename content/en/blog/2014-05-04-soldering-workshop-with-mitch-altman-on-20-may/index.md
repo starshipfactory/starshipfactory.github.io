@@ -27,11 +27,11 @@ Mitch brings the soldering kits himself. Among them:
 … and [many other kits](https://noisebridge.net/wiki/MitchWorkshopsEU#Kits) to solder
 yourself!
 
-![image_cache/6465c3141fe51862fa2f170bde8faa5f](/assets/images/snippet_images/content/image_cache6465c3141fe51862fa2f170bde8faa5f.jpeg "image_cache/6465c3141fe51862fa2f170bde8faa5f")
+![Mitch Altman helping a participant solder, surrounded by onlookers](/img/blog/image_cache6465c3141fe51862fa2f170bde8faa5f.jpeg "Mitch Altman helping a participant solder, surrounded by onlookers")
 
-![image_cache/fe490ebd1f09ae5302a4f475f36d1c8b](/assets/images/snippet_images/content/image_cachefe490ebd1f09ae5302a4f475f36d1c8b.jpeg "image_cache/fe490ebd1f09ae5302a4f475f36d1c8b")
+![Soldering tables under a banner reading “Learn to Solder”](/img/blog/image_cachefe490ebd1f09ae5302a4f475f36d1c8b.jpeg "Soldering tables under a banner reading “Learn to Solder”")
 
-![image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a](/assets/images/snippet_images/content/image_cacheac6ffeb6a62ab363ab6dff7b9668cd5a.jpeg "image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a")
+![Mitch Altman demonstrating soldering at a soldering station](/img/blog/image_cacheac6ffeb6a62ab363ab6dff7b9668cd5a.jpeg "Mitch Altman demonstrating soldering at a soldering station")
 
 Mitch and our competent electronics team are glad to help with guidance and support. You can
 find more detailed information in [our flyer](http://wiki.starship-factory.ch/Veranstaltungen/Workshops/MitchAltman/MitchAltmanWorkshopFlyer.pdf)

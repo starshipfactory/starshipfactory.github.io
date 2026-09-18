@@ -12,28 +12,28 @@ tags:
 Having tracked down a few new toys, we are now rather better equipped in general for people
 who want to tinker with electronics here.
 
-![A collection of banana plugs in various sizes.](/assets/images/snippet_images/content/eine-sammlung-bananenstecker-in-verschiedenen-grossen_2.jpeg "A collection of banana plugs in various sizes.")
+![A collection of banana plugs in various sizes.](/img/blog/eine-sammlung-bananenstecker-in-verschiedenen-grossen_2.jpeg "A collection of banana plugs in various sizes.")
 
-![Our new 900 W lab power supply.](/assets/images/snippet_images/content/unser-neues-labornetzteil-mit-900w-leistung_2.jpeg "Our new 900 W lab power supply.")
+![Our new 900 W lab power supply.](/img/blog/unser-neues-labornetzteil-mit-900w-leistung_2.jpeg "Our new 900 W lab power supply.")
 
 Besides the individual parts of circuits, you need things to do something with the electricity.
 So we have electric motors, for instance, in case you want to move something. Above all we
 wanted to use them to stress-test new parts for our
 [sewing machines](http://wiki.starship-factory.ch/Equipment/Naehmaschine/elna_supermatic/).
 
-![Two smaller electric motors.](/assets/images/snippet_images/content/zwei-kleinere-elektromotoren_2.jpeg "Two smaller electric motors.")
+![Two smaller electric motors.](/img/blog/zwei-kleinere-elektromotoren_2.jpeg "Two smaller electric motors.")
 
 More interesting for the computer-minded are the displays, which could serve as spare parts
 for the [Ultimaker](http://wiki.starship-factory.ch/Equipment/3D-Drucker/ultimaker/) but could
 also be used for other purposes and circuits.
 
-![A display from the Ultimaker spare parts box.](/assets/images/snippet_images/content/ein-display-aus-der-ultimaker-ersatzteilkiste_2.jpeg "A display from the Ultimaker spare parts box.")
+![A display from the Ultimaker spare parts box.](/img/blog/ein-display-aus-der-ultimaker-ersatzteilkiste_2.jpeg "A display from the Ultimaker spare parts box.")
 
 If you like it a bit hotter, you can work with lasers instead. The important thing there, of
 course, is to observe and build in the appropriate safety precautions, so that nobody gets
 lasered over.
 
-![A small laser.](/assets/images/snippet_images/content/ein-kleiner-laser_2.jpeg "A small laser.")
+![A small laser.](/img/blog/ein-kleiner-laser_2.jpeg "A small laser.")
 
 Over the course of next year we will expand our stock of parts further. Our plans include an
 SMD-capable soldering iron, circuit boards, a stock of Arduinos, various sensors, and so on. We

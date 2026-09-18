@@ -21,4 +21,4 @@ Die Anzahl der Teilnehmer ist durch die vorhandene Menge an Picksets auf max. 10
 
 Wir freuen uns auf reges Interesse!
 
-![Ein Schloss picken.](/assets/images/snippet_images/content/ein-schloss-picken.png "Ein Schloss picken.")
+![Ein Schloss picken.](/img/blog/ein-schloss-picken.png "Ein Schloss picken.")

@@ -209,10 +209,12 @@ filename. Use the theme's shortcode rather than raw HTML:
 Every image needs meaningful alt text — the theme is built around accessibility and the site
 config has a real `accessibility` block.
 
-**The migrated archive is the exception.** The 131 images belonging to the 96 posts migrated
-from the old Jekyll site live in `static/assets/images/…` and keep the paths they had on the
-old site, because the German and English versions of a post share the same files and because
-the old image URLs still resolve. Do not follow that pattern for new posts.
+**The migrated archive is the exception.** The 58 images belonging to the posts migrated from
+the old Jekyll site live flat in `static/img/blog/`, shared by the German and English version
+of each post rather than duplicated into two bundles. Do not follow that pattern for new
+posts — and do not recreate `static/assets/`, which was removed when the archive was
+reorganised. That move also dropped the old `/assets/images/…` URLs; page URLs were not
+affected, and Hugo `aliases` cannot cover static files.
 
 ### Writing the Markdown
 

@@ -17,7 +17,7 @@ The disc has a minimum on one side and a maximum on the other. Over the course o
 stitches — at stitch width 4 — the machine therefore uses the maximum stitch width in full
 during one revolution.
 
-![A selection of different self-printed Elna pattern discs](/assets/images/snippet_images/content/image_cache8bd406f286f3e8c2d71e842290fa7e53_2.jpeg "A selection of different self-printed Elna pattern discs")
+![A selection of different self-printed Elna pattern discs](/img/blog/image_cache8bd406f286f3e8c2d71e842290fa7e53_2.jpeg "A selection of different self-printed Elna pattern discs")
 
 More about the project can be found in an earlier blog post,
 [Making ELNA Supermatic pattern discs yourself](/en/2013/10/09/making-elna-supermatic-pattern-discs-yourself/).

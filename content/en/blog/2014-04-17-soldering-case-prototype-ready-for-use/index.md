@@ -16,7 +16,7 @@ though, so that before long you only have to open the case to solder with it, in
 laboriously taking all the parts out and placing them on a table. If you can look past that,
 the case already works excellently.
 
-![The soldering case contains a soldering station, another soldering iron, an oscilloscope, cleaning tools, desoldering braid, insulating tape and a contents list for checking that everything is still there.](/assets/images/snippet_images/content/der-lotkoffer-beinhaltet-eine-lotstation-einen-weiteren-lotkolben-ein-oszilloskop-reinigungstools-entlotlitze-isolierband-und-eine-inhaltsliste-zum-prufen-ob-noch-alles-vorhanden-ist.jpeg "The soldering case contains a soldering station, another soldering iron, an oscilloscope, cleaning tools, desoldering braid, insulating tape and a contents list for checking that everything is still there.")
+![The soldering case contains a soldering station, another soldering iron, an oscilloscope, cleaning tools, desoldering braid, insulating tape and a contents list for checking that everything is still there.](/img/blog/der-lotkoffer-beinhaltet-eine-lotstation-einen-weiteren-lotkolben-ein-oszilloskop-reinigungstools-entlotlitze-isolierband-und-eine-inhaltsliste-zum-prufen-ob-noch-alles-vorhanden-ist.jpeg "The soldering case contains a soldering station, another soldering iron, an oscilloscope, cleaning tools, desoldering braid, insulating tape and a contents list for checking that everything is still there.")
 
 Contents of the soldering case
 

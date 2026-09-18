@@ -29,4 +29,4 @@ as soon as possible.
 
 We look forward to plenty of interest!
 
-![Picking a lock.](/assets/images/snippet_images/content/ein-schloss-picken.png "Picking a lock.")
+![Picking a lock.](/img/blog/ein-schloss-picken.png "Picking a lock.")

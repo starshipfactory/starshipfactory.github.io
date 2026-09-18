@@ -11,11 +11,11 @@ parcel contained an electronics kit with a microcontroller and a display, which 
 had declared discontinued. The remaining kits were sent off as a farewell to friendly
 hackerspaces all over Europe, to carry the project to its grave with dignity.
 
-![A plastic bag with an electronics kit with microcontroller and display, some RaumZeitLabor merchandise and an obituary notice.](/assets/images/snippet_images/content/eine-plastiktute-mit-einem-elektronikbausatz-mit-microcontroller-und-display-ein-paar-raumzeitlabor-merchandising-items-und-eine-traueranzeige.jpeg "A plastic bag with an electronics kit with microcontroller and display, some RaumZeitLabor merchandise and an obituary notice.")
+![A plastic bag with an electronics kit with microcontroller and display, some RaumZeitLabor merchandise and an obituary notice.](/img/blog/eine-plastiktute-mit-einem-elektronikbausatz-mit-microcontroller-und-display-ein-paar-raumzeitlabor-merchandising-items-und-eine-traueranzeige.jpeg "A plastic bag with an electronics kit with microcontroller and display, some RaumZeitLabor merchandise and an obituary notice.")
 
 RaumZeitLabor's obituary notice for the kit.
 
-![The assembled kit blinking away.](/assets/images/snippet_images/content/der-zusammengebaute-bausatz-blinkt-vor-sich-hin.jpeg "The assembled kit blinking away.")
+![The assembled kit blinking away.](/img/blog/der-zusammengebaute-bausatz-blinkt-vor-sich-hin.jpeg "The assembled kit blinking away.")
 
 The assembled kit blinking away.
 

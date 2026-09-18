@@ -7,9 +7,9 @@ translationKey: "unser-equipment-3d-drucker"
 
 In der Starship Factory gibt es zur Zeit zwei funktionierende 3D-Drucker: Einen Ultimaker und einen RepRap Pro Huxley:
 
-![Ultimaker](/assets/images/snippet_images/content/ultimaker_3.jpeg "Ultimaker")
+![Ultimaker](/img/blog/ultimaker_3.jpeg "Ultimaker")
 
-![RepRap Pro Huxley](/assets/images/snippet_images/content/reprap-pro-huxley_2.jpeg "RepRap Pro Huxley")
+![RepRap Pro Huxley](/img/blog/reprap-pro-huxley_2.jpeg "RepRap Pro Huxley")
 
 Auf dem Ultimaker drucken wir nur mit PLA, auf dem Huxley bisher nur mit ABS. Das vermeidet das ständige Wechseln des Materials und somit die Gefahr, die Nozzle des Druckers zu verstopfen.
 

@@ -11,4 +11,4 @@ tags:
 Some of our [logo drafts](http://wiki.starship-factory.ch/Vereinsgruendung/Logo/) get modelled
 in 3D, printed out and painted without further ado.
 
-![Chrome-plated screw clamp in PLA](/assets/images/snippet_images/content/img_dsc_5019_0005jpg_2.jpeg "Chrome-plated screw clamp in PLA")
+![Chrome-plated screw clamp in PLA](/img/blog/img_dsc_5019_0005jpg_2.jpeg "Chrome-plated screw clamp in PLA")

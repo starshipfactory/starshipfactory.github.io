@@ -15,22 +15,22 @@ Wir sind noch bis morgen auf dem [30\. Chaos Communication Congress in Hamburg](
 
 Der wichtige Teil des Prozesses ist dabei weniger das T-Shirt selbst als dass die Besucher umfassend lernen, T-Shirts unter Anleitung selbst zu bedrucken — von der Graphik bis zur Presse.
 
-![Motiv-Design in Inkscape](/assets/images/snippet_images/content/motiv-design-in-inkscape_2.jpeg "Motiv-Design in Inkscape")
+![Motiv-Design in Inkscape](/img/blog/motiv-design-in-inkscape_2.jpeg "Motiv-Design in Inkscape")
 
 Eigene Motive haben wir derzeit leider noch nicht auf Lager, doch unsere Besucher finden auch so reichlich Motive, welche sie schon immer einmal selbst herstellen wollten.
 
-![Ein stolzer Besitzer eines neuen, selbst gemachten FreeBSD-T-Shirts](/assets/images/snippet_images/content/ein-stolzer-besitzer-eines-neuen-selbst-gemachten-freebsd-t-shirts_2.jpeg "Ein stolzer Besitzer eines neuen, selbst gemachten FreeBSD-T-Shirts")
+![Ein stolzer Besitzer eines neuen, selbst gemachten FreeBSD-T-Shirts](/img/blog/ein-stolzer-besitzer-eines-neuen-selbst-gemachten-freebsd-t-shirts_2.jpeg "Ein stolzer Besitzer eines neuen, selbst gemachten FreeBSD-T-Shirts")
 
   
 
 Doch sehr viele Interessierte haben sich auch sehr ins Zeug gelegt um eigene Motive zu entwerfen. Nicht selten ist das T-Shirt dabei ein Geschenk für Freunde, Bekannte oder den Nachwuchs:
 
-![Eine Tigerente für Jüngere](/assets/images/snippet_images/content/eine-tigerente-fur-jungere_2.jpeg "Eine Tigerente für Jüngere")
+![Eine Tigerente für Jüngere](/img/blog/eine-tigerente-fur-jungere_2.jpeg "Eine Tigerente für Jüngere")
 
-![Lenas Kinder-T-Shirt](/assets/images/snippet_images/content/lenas-kinder-t-shirt_2.jpeg "Lenas Kinder-T-Shirt")
+![Lenas Kinder-T-Shirt](/img/blog/lenas-kinder-t-shirt_2.jpeg "Lenas Kinder-T-Shirt")
 
 Und manch einer wird auch kreativ um sich endlich ein T-Shirt seines Lieblingsprojekts zu gönnen, welches bislang einfach keines hatte:
 
-![image_cache/f79c5965d31aac2abbf28ba98c5687be](/assets/images/snippet_images/content/image_cachef79c5965d31aac2abbf28ba98c5687be_2.jpeg "image_cache/f79c5965d31aac2abbf28ba98c5687be")
+![Besucher mit selbst bedrucktem «Play Life»-T-Shirt](/img/blog/image_cachef79c5965d31aac2abbf28ba98c5687be_2.jpeg "Besucher mit selbst bedrucktem «Play Life»-T-Shirt")
 
 Mehr Fotos gibts in unserer [Flickr-Gruppe](http://www.flickr.com/groups/2341518@N21/ "http://www.flickr.com/groups/2341518@N21/")

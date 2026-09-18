@@ -46,7 +46,7 @@ silicone reach the surface before it has finished curing. Without heat, curing t
 takes up to 48 hours, which does make the silicone more likely to be free of bubbles. It is
 therefore worth working with a second vat, so the B9Creator can be kept in operation.
 
-![Artec dragon from Thingiverse](/assets/images/snippet_images/content/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png "Artec dragon from Thingiverse")
+![Artec dragon from Thingiverse](/img/blog/image_cache8cdb1cf31c22cbdfe05022b385ab3555_2.png "Artec dragon from Thingiverse")
 
 As a test we printed the [dragon by artec3d on Thingiverse](http://www.thingiverse.com/thing:16860).
 Because of mistakenly different Z-axis settings in the slicer and the printing program, it came

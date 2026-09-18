@@ -11,7 +11,7 @@ overflowing boxes. So we have now bought a few extra shelves and been given anot
 the Monday meeting the time had come: we tidied and cleared out substantially and put up the
 new shelves.
 
-![T-shirt printing corner with plotter and shirt press](/assets/images/snippet_images/content/t-shirt-druck-ecke_2.jpeg "T-shirt printing corner with plotter and shirt press")
+![T-shirt printing corner with plotter and shirt press](/img/blog/t-shirt-druck-ecke_2.jpeg "T-shirt printing corner with plotter and shirt press")
 
 The table became the new home of our
 [T-shirt print shop](http://wiki.starship-factory.ch/Equipment/T-Shirt_Druck/). Some materials
@@ -22,7 +22,7 @@ That means no more constantly packing the T-shirt equipment away. Only the plott
 rolled up to the table again — but that is what its wheels are for. And the T-shirt press no
 longer takes up space [among the snacks](http://wiki.starship-factory.ch/Einkauf/Snacks/).
 
-![New shelves for more space on the tables](/assets/images/snippet_images/content/neue-regale-fur-mehr-platz-auf-den-tischen_2.jpeg "New shelves for more space on the tables")
+![New shelves for more space on the tables](/img/blog/neue-regale-fur-mehr-platz-auf-den-tischen_2.jpeg "New shelves for more space on the tables")
 
 The monumental part of our rebuild was the workbench in the machine room. Over time a great
 many tools and tins had accumulated there that had found no place anywhere else. Thanks to our
@@ -31,7 +31,7 @@ it and pack it into the shelves. Since then the table surface (right in the pict
 for creative work again! And thanks to the labels you can easily find what you are looking for
 in the storage boxes on the shelf.
 
-![The Dali shelf of things and our snack bar](/assets/images/snippet_images/content/dali-regal-und-snack-bar_2.jpeg "The Dali shelf of things and our snack bar")
+![The Dali shelf of things and our snack bar](/img/blog/dali-regal-und-snack-bar_2.jpeg "The Dali shelf of things and our snack bar")
 
 The last big change is our Dali shelf of things, mounted above the snack table on the bridge.
 There we show off our newest work. That has turned our snack bar into a place for refuelling

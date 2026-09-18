@@ -18,7 +18,7 @@ you can take away straight after the course.
 Questions and registrations to:
 [workshops@lists.starship-factory.ch](mailto:workshops@lists.starship-factory.ch?subject=T-Shirtworkshop%2016.08.2014)
 
-![Example T-shirts](/assets/images/snippet_images/content_small/beispiel-t-shirts.jpg "Example T-shirts")
+![Example T-shirts](/img/blog/beispiel-t-shirts.jpg "Example T-shirts")
 
 ### Course content
 
@@ -32,9 +32,9 @@ out for when plotting.
 After you have weeded your design, you get an introduction to operating our textile transfer
 press — and your T-shirt is finished, printed with the design you wanted.
 
-![Various T-shirts](/assets/images/snippet_images/content_small/verschiedene-t-shirts.jpg "Various T-shirts")
+![Various T-shirts](/img/blog/verschiedene-t-shirts.jpg "Various T-shirts")
 
-![A generous choice of colours.](/assets/images/snippet_images/content_small/reichliche-farbauswahl.jpg "A generous choice of colours.")
+![A generous choice of colours.](/img/blog/reichliche-farbauswahl.jpg "A generous choice of colours.")
 
 ### Conditions of participation
 
@@ -56,14 +56,14 @@ email.
 Should the event not be able to take place, we refund the participation fees. No claims for
 liability arise from events cancelled by the organiser.
 
-![Cutting plotter at work.](/assets/images/snippet_images/content_small/schneidplotter-bei-der-arbeit.jpg "Cutting plotter at work.")
+![Cutting plotter at work.](/img/blog/schneidplotter-bei-der-arbeit.jpg "Cutting plotter at work.")
 
 ### Requirements
 
 If possible, you should bring your own laptop running Mac OS X, Windows or Linux, on which we
 can install the [software](http://inkscape.org/).
 
-![Positioning the design on the T-shirt.](/assets/images/snippet_images/content_small/motiv-auf-dem-t-shirt-platzieren_2.jpg "Positioning the design on the T-shirt.")
+![Positioning the design on the T-shirt.](/img/blog/motiv-auf-dem-t-shirt-platzieren_2.jpg "Positioning the design on the T-shirt.")
 
 ### Further information
 

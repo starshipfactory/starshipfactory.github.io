@@ -22,11 +22,11 @@ Lötkits werden von Mitch selbst mitgebracht. Darunter auch:
 
 … und [viele andere Kits](https://noisebridge.net/wiki/MitchWorkshopsEU#Kits "https://noisebridge.net/wiki/MitchWorkshopsEU#Kits") zum selbst löten!
 
-![image_cache/6465c3141fe51862fa2f170bde8faa5f](/assets/images/snippet_images/content/image_cache6465c3141fe51862fa2f170bde8faa5f.jpeg "image_cache/6465c3141fe51862fa2f170bde8faa5f")
+![Mitch Altman hilft einer Teilnehmerin beim Löten, umringt von Zuschauenden](/img/blog/image_cache6465c3141fe51862fa2f170bde8faa5f.jpeg "Mitch Altman hilft einer Teilnehmerin beim Löten, umringt von Zuschauenden")
 
-![image_cache/fe490ebd1f09ae5302a4f475f36d1c8b](/assets/images/snippet_images/content/image_cachefe490ebd1f09ae5302a4f475f36d1c8b.jpeg "image_cache/fe490ebd1f09ae5302a4f475f36d1c8b")
+![Löttische unter einem Banner mit der Aufschrift «Learn to Solder»](/img/blog/image_cachefe490ebd1f09ae5302a4f475f36d1c8b.jpeg "Löttische unter einem Banner mit der Aufschrift «Learn to Solder»")
 
-![image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a](/assets/images/snippet_images/content/image_cacheac6ffeb6a62ab363ab6dff7b9668cd5a.jpeg "image_cache/ac6ffeb6a62ab363ab6dff7b9668cd5a")
+![Mitch Altman zeigt an einer Lötstation, wie gelötet wird](/img/blog/image_cacheac6ffeb6a62ab363ab6dff7b9668cd5a.jpeg "Mitch Altman zeigt an einer Lötstation, wie gelötet wird")
 
   
 

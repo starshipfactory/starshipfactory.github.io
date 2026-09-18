@@ -19,7 +19,7 @@ When choosing the plastic container, make sure there are no holes in the bottom 
 with epoxy resin). The onion planting tray goes into the pot upside down and should have
 roughly the same diameter as the pot.
 
-![Plastic flower pot with onion planting tray](/assets/images/snippet_images/content/plastikblumentopf-mit-zwiebelpflanzschale_14.jpeg "Plastic flower pot with onion planting tray")
+![Plastic flower pot with onion planting tray](/img/blog/plastikblumentopf-mit-zwiebelpflanzschale_14.jpeg "Plastic flower pot with onion planting tray")
 
 The onion planting tray separates the water reservoir from the growing medium.
 
@@ -28,7 +28,7 @@ overflow so the plant does not stand in water. The planter can later be filled w
 to this point. To draw the water up out of the reservoir I used strips of fabric from an old
 pair of trousers as a wick and hung them into the planting tray.
 
-![Fabric strips as a wick](/assets/images/snippet_images/content/stoffstreifen-als-docht_7.jpeg "Fabric strips as a wick")
+![Fabric strips as a wick](/img/blog/stoffstreifen-als-docht_7.jpeg "Fabric strips as a wick")
 
 The two fabric strips carry the water up into the growing medium.
 
@@ -36,7 +36,7 @@ All that remains is a garden fleece, so the growing medium does not later fall i
 reservoir. It is worth pushing a plastic pipe cut off at an angle into the SIP for filling it
 with water later. It makes watering easier.
 
-![Finished SIP with root fleece](/assets/images/snippet_images/content/fertiger-sip-mit-wurzelvlies_4.jpeg "Finished SIP with root fleece")
+![Finished SIP with root fleece](/img/blog/fertiger-sip-mit-wurzelvlies_4.jpeg "Finished SIP with root fleece")
 
 The garden fleece is the separating layer between the water supply and the growing medium.
 

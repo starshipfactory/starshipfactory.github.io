@@ -13,3 +13,7 @@ node_modules/
 # Editors / OS
 .idea/
 .DS_Store
+
+# Claude Code: the agent definitions under .claude/agents/ are shared project
+# tooling and ARE tracked. Only the per-machine settings file is personal.
+.claude/settings.local.json

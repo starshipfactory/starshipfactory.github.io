@@ -11,4 +11,4 @@ tags:
 
 Manche von unseren [Logoentwürfen](http://wiki.starship-factory.ch/Vereinsgruendung/Logo/ "http://wiki.starship-factory.ch/Vereinsgruendung/Logo.html") werden kurzerhand in 3D modelliert, ausgedruckt und angemalt.
 
-![Verchromte Schraubzwinge in PLA](/assets/images/snippet_images/content/img_dsc_5019_0005jpg_2.jpeg "Verchromte Schraubzwinge in PLA")
+![Verchromte Schraubzwinge in PLA](/img/blog/img_dsc_5019_0005jpg_2.jpeg "Verchromte Schraubzwinge in PLA")

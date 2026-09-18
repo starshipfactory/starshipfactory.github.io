@@ -22,7 +22,7 @@ This and more on Saturday, 2 April 2016 from 13:30 at
 bring their Arduino or other microcontroller along and get advice, exhilaration and inspiration
 from us. We look forward to seeing you!
 
-![Arduino Day flyer](/assets/images/snippet_images/content/flyer-arduino-day.jpg "Arduino Day flyer")
+![Arduino Day flyer](/img/blog/flyer-arduino-day.jpg "Arduino Day flyer")
 
 (Header image: [David Mellis](https://www.flickr.com/photos/mellis/6512280793)
 [CC-BY-2.0](https://creativecommons.org/licenses/by/2.0/))

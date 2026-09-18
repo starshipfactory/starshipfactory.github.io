@@ -28,7 +28,7 @@ tackles: instead of a grid of squares, it prints pillars, which take up less tim
 Since a certain degree of overhang is acceptable in 3D printing, these pillars can be printed
 in practically any orientation and hold the 3D object together.
 
-![The B9Creator software generates pillars instead of the usual diamond support structures, to make objects printable that are not connected at the lower end.](/assets/images/snippet_images/content/die-software-des-b9creator-erzeugt-saulen-statt-der-herkommlichen-rauten-supportstrukturen-um-objekte-druckbar-zu-machen-welche-am-unteren-ende-nicht-zusammen-hangen_2.png "The B9Creator software generates pillars instead of the usual diamond support structures, to make objects printable that are not connected at the lower end.")
+![The B9Creator software generates pillars instead of the usual diamond support structures, to make objects printable that are not connected at the lower end.](/img/blog/die-software-des-b9creator-erzeugt-saulen-statt-der-herkommlichen-rauten-supportstrukturen-um-objekte-druckbar-zu-machen-welche-am-unteren-ende-nicht-zusammen-hangen_2.png "The B9Creator software generates pillars instead of the usual diamond support structures, to make objects printable that are not connected at the lower end.")
 
 The B9Creator software generates pillars instead of the usual diamond support structures, to
 make objects printable that are not connected at the lower end.

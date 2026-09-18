@@ -87,7 +87,9 @@ data/authors.yaml               # blog authors, keyed by GitHub username
 archetypes/                     # copied from the theme, adapted
 layouts/partials/footer.html    # override: adds the legal link row (see Footer below)
 static/css/custom.css           # branding + small fixes (see "Branding")
-static/img/                     # logo variants, shared images
+static/img/                     # logo variants, social share image
+static/img/blog/                # blog archive images, flat, shared by de + en
+static/img/home/                # home page photos
 static/img/social-icons/        # signal.svg, discourse.svg (see Footer below)
 static/favicon.ico              # + favicon.svg, favicon-32x32.png, apple-touch-icon.png
 themes/dot-org-hugo-theme/      # submodule — NEVER edit files in here
@@ -281,7 +283,8 @@ Old posts live at `master:_posts/YYYY-MM-DD-slug.md` with Jekyll front matter an
   `aliases` only for posts whose slug had to change.
 - **The feed URL changes.** Jekyll served `/feed.xml`; Hugo serves `/index.xml`. Add an
   alias or a redirect so existing subscribers do not silently break.
-- Rewrite Jekyll-isms: `{% include %}`, `{% highlight %}`, and `/assets/images/...` paths.
+- Rewrite Jekyll-isms: `{% include %}`, `{% highlight %}`, and `/assets/images/...` paths
+  (images now live at `/img/blog/...`).
 - **Every post gets an English translation** under `content/en/blog/`, per the "Translating"
   rules above. Old posts are translated too — the archive is part of the site, not an
   exception. Translate a post in the same batch in which it is migrated, so no post is ever
@@ -305,12 +308,16 @@ The old site carries a large `assets/images/uploads/` tree. Do not bulk-copy it 
 
 - Migrate images **as page bundles**: `content/de/blog/my-post/index.md` with its images
   beside it. Only genuinely shared images belong in `static/img/`.
-- **Exception, already applied to the blog archive.** The 131 images referenced by the 96
-  migrated posts live in `static/assets/images/…`, keeping the paths they had on the old
-  site, rather than moving into per-post bundles. Two reasons: the German and English
-  versions of a post reference the same files, so bundles would duplicate every image; and
-  keeping the paths means the old image URLs still resolve. They were downscaled on the way
-  in (51 MB → 19 MB). New posts should still use page bundles.
+- **Exception, already applied to the blog archive.** The 58 images referenced by the
+  migrated posts live flat in `static/img/blog/`, rather than in per-post bundles, because
+  the German and English version of a post reference the same file and bundles would
+  duplicate every one of them. New posts should still use page bundles.
+
+  This tree was reorganised out of `static/assets/images/snippet_images/{content,content_small}/`
+  — the old Jekyll/Zinnia paths — and 82 unreferenced files were deleted at the same time.
+  The old image URLs (`/assets/images/…`) therefore no longer resolve; page URLs were not
+  affected. `aliases` cannot help here, as they only work for pages, not static files.
+  Do not reintroduce `static/assets/`.
 - Use Hugo's image pipeline on bundle resources — `.Resize`, `.Fill`, and WebP conversion —
   rather than shipping full-size originals. Configure defaults once:
 

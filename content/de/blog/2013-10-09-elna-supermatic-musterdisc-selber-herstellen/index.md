@@ -16,7 +16,7 @@ Dieser Artikel erklärt die aktuellen Fortschritte bei der Analyse und Herstellu
 
 # Basisdiscs
 
-![Viele verschiedene Elna-Discs](/assets/images/snippet_images/content/viele-verschiedene-elna-discs_2.jpeg "Viele verschiedene Elna-Discs")
+![Viele verschiedene Elna-Discs](/img/blog/viele-verschiedene-elna-discs_2.jpeg "Viele verschiedene Elna-Discs")
 
 Für die ELNA Supermatic-Maschinen aus den 50ern gibt es hauptsächlich 2 Arten von Discs:
 
@@ -29,13 +29,13 @@ In jedem Fall gibt es mehrere Stufen, die durch unterschiedlich weit heraus rage
 
 Die Discs bestehen aus einem dicken Innenring, welcher auf der unteren Seite angeschrägt ist, um richtig auf den Sockel in der Maschine zu passen.
 
-![Der Innenring wird vermessen](/assets/images/snippet_images/content/der-innenring-wird-vermessen_2.jpeg "Der Innenring wird vermessen")
+![Der Innenring wird vermessen](/img/blog/der-innenring-wird-vermessen_2.jpeg "Der Innenring wird vermessen")
 
 Auf der Unterseite der Disc findet sich ein Loch, in welches die Maschine einen Stift steckt, welcher die Disc festhält und dreht.
 
-![Elna-Disc mit Transportloch](/assets/images/snippet_images/content/elna-disc-mit-transportloch_2.jpeg "Elna-Disc mit Transportloch")
+![Elna-Disc mit Transportloch](/img/blog/elna-disc-mit-transportloch_2.jpeg "Elna-Disc mit Transportloch")
 
-![Elna-Lesemechanik mit Transportstift](/assets/images/snippet_images/content/elna-lesemechanik-mit-transportstift_2.jpeg "Elna-Lesemechanik mit Transportstift")
+![Elna-Lesemechanik mit Transportstift](/img/blog/elna-lesemechanik-mit-transportstift_2.jpeg "Elna-Lesemechanik mit Transportstift")
 
 Der dicke Innenring hat einen Durchmesser von 3.4cm, welcher ein 1.7cm breites Loch genau in der Mitte hat. Auf diesem Ring sind dann Kränze mit Erhöhungen und Vertiefungen angebracht, welche von 0.2cm bis 0.5cm variieren können.
 
@@ -43,21 +43,21 @@ Die Anschrägung auf der Unterseite erfolgt in 2 Stufen. Zuerst einmal gibt es e
 
 Das Transportloch ist ca. 4mm lang (vom Zentrum der Disc weg) und 3mm breit. Es ist 2.5mm vom Innenrand (also inklusive der 1.5mm-Schräge) entfernt. Das Loch ist 5.5mm tief und 3mm vom Aussenrand des Innenringes entfernt.
 
-![Eine einfache Elna-Disc mit Links-Rechts-Bewegungsinformationen](/assets/images/snippet_images/content/eine-einfache-elna-disc-mit-links-rechts-bewegungsinformationen_2.jpeg "Eine einfache Elna-Disc mit Links-Rechts-Bewegungsinformationen")
+![Eine einfache Elna-Disc mit Links-Rechts-Bewegungsinformationen](/img/blog/eine-einfache-elna-disc-mit-links-rechts-bewegungsinformationen_2.jpeg "Eine einfache Elna-Disc mit Links-Rechts-Bewegungsinformationen")
 
 Bei einfachen Discs beginnt der Kranz mit den Nadelpositionsinformationen 1mm über der Unterkante des Innenrings. Der Kranz ist 3.5mm breit, wodurch der Innenring lediglich 7mm gross sein muss. Oberhalb des Kranzes bleiben also noch 2.5mm ohne jegliche Informationen.
 
 Die Höhe sollte jedoch trotzdem eingehalten werden, damit die Disc gut einrasten kann. Bei einer einfachen Umdrehung der Disc sticht die Nadel beginnend beim Transportloch insgesamt 18 mal regelmässig ein.
 
-![Eine einfache Elna-Disc, welche in die Maschine eingelegt wurde](/assets/images/snippet_images/content/eine-einfache-elna-disc-welche-in-die-maschine-eingelegt-wurde_2.jpeg "Eine einfache Elna-Disc, welche in die Maschine eingelegt wurde")
+![Eine einfache Elna-Disc, welche in die Maschine eingelegt wurde](/img/blog/eine-einfache-elna-disc-welche-in-die-maschine-eingelegt-wurde_2.jpeg "Eine einfache Elna-Disc, welche in die Maschine eingelegt wurde")
 
-![Eine selbst gebaute Elna-Disc liegt in der Maschine](/assets/images/snippet_images/content/eine-selbst-gebaute-elna-disc-liegt-in-der-maschine_2.jpeg "Eine selbst gebaute Elna-Disc liegt in der Maschine")
+![Eine selbst gebaute Elna-Disc liegt in der Maschine](/img/blog/eine-selbst-gebaute-elna-disc-liegt-in-der-maschine_2.jpeg "Eine selbst gebaute Elna-Disc liegt in der Maschine")
 
-![Diese Naht wurde mit der Eigenbau-Disc erstellt](/assets/images/snippet_images/content/diese-naht-wurde-mit-der-eigenbau-disc-erstellt_2.jpeg "Diese Naht wurde mit der Eigenbau-Disc erstellt")
+![Diese Naht wurde mit der Eigenbau-Disc erstellt](/img/blog/diese-naht-wurde-mit-der-eigenbau-disc-erstellt_2.jpeg "Diese Naht wurde mit der Eigenbau-Disc erstellt")
 
 Die doppelten Discs sind 9mm gross. Darauf sind zwei 3mm breite Kränze angebracht, welche 1mm voneinander entfernt sind und jeweils 1mm Abstand zum oberen bzw. unteren Rand der Scheibe haben.
 
-![Elna-Disc mit zweiter Spur zur Einstellung der Geschwindigkeit](/assets/images/snippet_images/content/elna-disc-mit-zweiter-spur-zur-einstellung-der-geschwindigkeit_2.jpeg "Elna-Disc mit zweiter Spur zur Einstellung der Geschwindigkeit")
+![Elna-Disc mit zweiter Spur zur Einstellung der Geschwindigkeit](/img/blog/elna-disc-mit-zweiter-spur-zur-einstellung-der-geschwindigkeit_2.jpeg "Elna-Disc mit zweiter Spur zur Einstellung der Geschwindigkeit")
 
 ## Auswirkungen von Einstellungen
 

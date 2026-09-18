@@ -10,9 +10,9 @@ tags:
   - "electronics"
   - "cable"
 ---
-![UPS power cable with C13 and C14 plugs](/assets/images/snippet_images/content_small/usv-stromkabel-mit-c13-und-c14-steckern.jpg "UPS power cable with C13 and C14 plugs")
+![UPS power cable with C13 and C14 plugs](/img/blog/usv-stromkabel-mit-c13-und-c14-steckern.jpg "UPS power cable with C13 and C14 plugs")
 
-![Regular Swiss type 13 power couplers](/assets/images/snippet_images/content_small/regulare-schweizer-strombuchsen.jpg "Regular Swiss type 13 power couplers")
+![Regular Swiss type 13 power couplers](/img/blog/regulare-schweizer-strombuchsen.jpg "Regular Swiss type 13 power couplers")
 
 Every now and then in life you come across devices such as uninterruptible power supplies
 (UPSs) which deliver power not through the familiar Swiss mains plug but through the pin-laden
@@ -29,7 +29,7 @@ The resourceful maker knows another solution, though. All you need are the regul
 cables (C13 to C14), which can be found online for around CHF 9, and a couple of Swiss power
 sockets, available for CHF 1 at the DIY store.
 
-![The cable is cut through with side cutters](/assets/images/snippet_images/content_small/das-kabel-wird-mit-dem-seitenschneider-durchtrennt.jpg "The cable is cut through with side cutters")
+![The cable is cut through with side cutters](/img/blog/das-kabel-wird-mit-dem-seitenschneider-durchtrennt.jpg "The cable is cut through with side cutters")
 
 For the first step you need sturdy side cutters or a comparable tool. Use them to cut through
 the power cable. It is advisable not to cut directly at the plug but rather more towards the
@@ -38,7 +38,7 @@ course also important that the power cable is unplugged while cutting, since tou
 of the local mains can lead not only to burns and the associated kidney and liver damage, but
 the energy suddenly passing through could also melt the side cutters.
 
-![The cable consists of a brown, a blue and a yellow-green striped conductor](/assets/images/snippet_images/content_small/das-kabel-besteht-aus-einer-braunen-einer-blauen-und-einer-gelb-grun-gestreiften-litze.jpg "The cable consists of a brown, a blue and a yellow-green striped conductor")
+![The cable consists of a brown, a blue and a yellow-green striped conductor](/img/blog/das-kabel-besteht-aus-einer-braunen-einer-blauen-und-einer-gelb-grun-gestreiften-litze.jpg "The cable consists of a brown, a blue and a yellow-green striped conductor")
 
 Now you can see clearly how the power cable is built. It consists of three wires, which are in
 turn made up of many small individual strands. This construction is called stranded wire. The
@@ -49,7 +49,7 @@ The three conductors are distinguished by colour, since they have different func
 power cable. They are separated from one another by an insulating plastic sheath. The colour
 of the plastic sheath indicates the function of the respective conductor.
 
-![The insulation is removed completely at the front end of the conductor](/assets/images/snippet_images/content_small/am-vorderen-ende-wird-die-isolierung-der-litze-vollstandig-entfernt.jpg "The insulation is removed completely at the front end of the conductor")
+![The insulation is removed completely at the front end of the conductor](/img/blog/am-vorderen-ende-wird-die-isolierung-der-litze-vollstandig-entfernt.jpg "The insulation is removed completely at the front end of the conductor")
 
 Since the cable does not fit into the new plug as a whole, complete with insulation, the next
 step is to remove about 2–3 centimetres of the outer black insulation with a wire stripper. If
@@ -67,23 +67,23 @@ Furthermore the stranded wire can be thinned at that point by severing some of t
 strands. That makes the wire hotter at that point, leading to a risk of melting and fire. A
 wire stripper is, by comparison, quite cheap and versatile.
 
-![Perfectly stripped conductors](/assets/images/snippet_images/content_small/perfekt-abisolierte-litzen.jpg "Perfectly stripped conductors")
+![Perfectly stripped conductors](/img/blog/perfekt-abisolierte-litzen.jpg "Perfectly stripped conductors")
 
 Now the tips on the cable side just need to be stripped a little. To do this, carefully remove
 the insulation over roughly the width of a screw head with the stripper.
 
-![The screws at the entry have to be loosened.](/assets/images/snippet_images/content_small/die-schrauben-am-eingang-mussen-gelost-werden.jpg "The screws at the entry have to be loosened.")
+![The screws at the entry have to be loosened.](/img/blog/die-schrauben-am-eingang-mussen-gelost-werden.jpg "The screws at the entry have to be loosened.")
 
 Now we turn to the type 13 coupler. First the screws at the end have to be loosened, so that
 the cable can be fastened by its thick insulation.
 
-![The screws at the contacts have to be loosened](/assets/images/snippet_images/content_small/die-schrauben-an-den-kontakten-mussen-gelost-werden.jpg "The screws at the contacts have to be loosened")
+![The screws at the contacts have to be loosened](/img/blog/die-schrauben-an-den-kontakten-mussen-gelost-werden.jpg "The screws at the contacts have to be loosened")
 
 Now the contacts have to be "opened", so to speak. There are usually screws for this which
 press a metal plate against the contact. We have to loosen these in order to fasten the
 conductors in them afterwards.
 
-![All conductors in place](/assets/images/snippet_images/content_small/alle-litzen-an-ort-und-stelle.jpg "All conductors in place")
+![All conductors in place](/img/blog/alle-litzen-an-ort-und-stelle.jpg "All conductors in place")
 
 Now the conductors have to be connected to the actual contact. To do this, the conductor is
 pushed between the metal plate and the top of the contact with the screw (not on top of it —
@@ -98,7 +98,7 @@ just remember: brown — right. The rest follows by itself.
 Once the conductors are in place, the screws that are supposed to hold them should be tightened
 again, to clamp the conductors and make the contact.
 
-![The strain relief is fitted again](/assets/images/snippet_images/content_small/die-zugentlastung-wird-wieder-eingebaut.jpg "The strain relief is fitted again")
+![The strain relief is fitted again](/img/blog/die-zugentlastung-wird-wieder-eingebaut.jpg "The strain relief is fitted again")
 
 So that the tensile load of the power cable does not hang on the contacts and the small
 conductors alone, the white strain relief bridge now has to be screwed back in at the entry of
@@ -106,14 +106,14 @@ the socket. It is important here that the strain relief clamps the thick black i
 of the cable and not the three thin coloured conductor insulations. That makes the plug more
 stable and longer-lasting.
 
-![The coupler is now reassembled](/assets/images/snippet_images/content_small/die-kupplung-ist-nun-wieder-zusammen-gebaut.jpg "The coupler is now reassembled")
+![The coupler is now reassembled](/img/blog/die-kupplung-ist-nun-wieder-zusammen-gebaut.jpg "The coupler is now reassembled")
 
 Now the cap just has to be put back on, so that the contacts cannot be touched (220 volts is
 quite a lot and does not exactly aid relaxation). It is held in place by a single screw.
 
 ## Testing
 
-![The power cable has to be tested thoroughly](/assets/images/snippet_images/content_small/das-stromkabel-muss-ausgiebig-getestet-werden.jpg "The power cable has to be tested thoroughly")
+![The power cable has to be tested thoroughly](/img/blog/das-stromkabel-muss-ausgiebig-getestet-werden.jpg "The power cable has to be tested thoroughly")
 
 You could now plug the finished cable in somewhere straight away. But as already mentioned,
 220 volts is not a voltage to joke with. So before putting the power cable into service, you

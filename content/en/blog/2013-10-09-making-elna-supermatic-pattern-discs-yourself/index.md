@@ -19,7 +19,7 @@ found in our [wiki](http://wiki.starship-factory.ch/).
 
 ## Basic discs
 
-![Many different Elna discs](/assets/images/snippet_images/content/viele-verschiedene-elna-discs_2.jpeg "Many different Elna discs")
+![Many different Elna discs](/img/blog/viele-verschiedene-elna-discs_2.jpeg "Many different Elna discs")
 
 For the ELNA Supermatic machines from the 1950s there are mainly 2 kinds of disc:
 
@@ -36,14 +36,14 @@ amounts. (Large deflection == large effect.)
 The discs consist of a thick inner ring, chamfered on the underside so that it fits properly
 onto the base in the machine.
 
-![Measuring the inner ring](/assets/images/snippet_images/content/der-innenring-wird-vermessen_2.jpeg "Measuring the inner ring")
+![Measuring the inner ring](/img/blog/der-innenring-wird-vermessen_2.jpeg "Measuring the inner ring")
 
 On the underside of the disc there is a hole into which the machine puts a pin that holds the
 disc and turns it.
 
-![Elna disc with drive hole](/assets/images/snippet_images/content/elna-disc-mit-transportloch_2.jpeg "Elna disc with drive hole")
+![Elna disc with drive hole](/img/blog/elna-disc-mit-transportloch_2.jpeg "Elna disc with drive hole")
 
-![Elna reading mechanism with drive pin](/assets/images/snippet_images/content/elna-lesemechanik-mit-transportstift_2.jpeg "Elna reading mechanism with drive pin")
+![Elna reading mechanism with drive pin](/img/blog/elna-lesemechanik-mit-transportstift_2.jpeg "Elna reading mechanism with drive pin")
 
 The thick inner ring has a diameter of 3.4 cm, with a 1.7 cm wide hole exactly in the middle.
 On this ring there are then rings with raised and lowered sections, which can vary from 0.2 cm
@@ -57,7 +57,7 @@ The drive hole is about 4 mm long (measured away from the centre of the disc) an
 It is 2.5 mm from the inner edge (including the 1.5 mm chamfer). The hole is 5.5 mm deep and
 3 mm from the outer edge of the inner ring.
 
-![A simple Elna disc with left-right movement information](/assets/images/snippet_images/content/eine-einfache-elna-disc-mit-links-rechts-bewegungsinformationen_2.jpeg "A simple Elna disc with left-right movement information")
+![A simple Elna disc with left-right movement information](/img/blog/eine-einfache-elna-disc-mit-links-rechts-bewegungsinformationen_2.jpeg "A simple Elna disc with left-right movement information")
 
 On simple discs, the ring carrying the needle position information starts 1 mm above the lower
 edge of the inner ring. The ring is 3.5 mm wide, so the inner ring only needs to be 7 mm. That
@@ -66,16 +66,16 @@ leaves 2.5 mm above the ring without any information.
 The height should be kept to nonetheless, so that the disc engages properly. In one full
 rotation of the disc the needle makes 18 evenly spaced stitches, starting at the drive hole.
 
-![A simple Elna disc inserted into the machine](/assets/images/snippet_images/content/eine-einfache-elna-disc-welche-in-die-maschine-eingelegt-wurde_2.jpeg "A simple Elna disc inserted into the machine")
+![A simple Elna disc inserted into the machine](/img/blog/eine-einfache-elna-disc-welche-in-die-maschine-eingelegt-wurde_2.jpeg "A simple Elna disc inserted into the machine")
 
-![A self-built Elna disc sitting in the machine](/assets/images/snippet_images/content/eine-selbst-gebaute-elna-disc-liegt-in-der-maschine_2.jpeg "A self-built Elna disc sitting in the machine")
+![A self-built Elna disc sitting in the machine](/img/blog/eine-selbst-gebaute-elna-disc-liegt-in-der-maschine_2.jpeg "A self-built Elna disc sitting in the machine")
 
-![This seam was made with the home-made disc](/assets/images/snippet_images/content/diese-naht-wurde-mit-der-eigenbau-disc-erstellt_2.jpeg "This seam was made with the home-made disc")
+![This seam was made with the home-made disc](/img/blog/diese-naht-wurde-mit-der-eigenbau-disc-erstellt_2.jpeg "This seam was made with the home-made disc")
 
 The double discs are 9 mm tall. They carry two 3 mm wide rings, 1 mm apart, each 1 mm from the
 upper and lower edge of the disc respectively.
 
-![Elna disc with a second track for setting the speed](/assets/images/snippet_images/content/elna-disc-mit-zweiter-spur-zur-einstellung-der-geschwindigkeit_2.jpeg "Elna disc with a second track for setting the speed")
+![Elna disc with a second track for setting the speed](/img/blog/elna-disc-mit-zweiter-spur-zur-einstellung-der-geschwindigkeit_2.jpeg "Elna disc with a second track for setting the speed")
 
 ### Effects of the settings
 

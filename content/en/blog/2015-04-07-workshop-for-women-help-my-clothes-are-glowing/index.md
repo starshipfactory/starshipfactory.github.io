@@ -34,4 +34,4 @@ Have you not been to Starship Factory before? You will find directions under
 
 Please register by [email](mailto:workshops@lists.starship-factory.ch?subject=Frauenworkshop%2019.4.2015).
 
-![The workshop was a glowing success!](/assets/images/snippet_images/content/der-workshop-war-ein-leuchtender-erfolg.png "The workshop was a glowing success!")
+![The workshop was a glowing success!](/img/blog/der-workshop-war-ein-leuchtender-erfolg.png "The workshop was a glowing success!")

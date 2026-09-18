@@ -35,4 +35,4 @@ up completely afresh should not be left out of consideration either.
 Further information about the Monitoring Hub and its aims can be found on the Monitoring Hub
 workshop page.
 
-![A graph in Prometheus with Grafana](/assets/images/snippet_images/content/ein-graph-unter-prometheus-mit-grafana_xJPDxGn.png "A graph in Prometheus with Grafana")
+![A graph in Prometheus with Grafana](/img/blog/ein-graph-unter-prometheus-mit-grafana_xJPDxGn.png "A graph in Prometheus with Grafana")
