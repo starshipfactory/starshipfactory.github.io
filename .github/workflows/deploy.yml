@@ -45,7 +45,7 @@ jobs:
           restore-keys: hugo-resources-${{ runner.os }}-
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build
         run: npx hugo --gc --minify --environment production
