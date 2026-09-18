@@ -18,7 +18,7 @@ lernen, lehren und inspirieren einander.
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/hero.jpg" alt="Die Starship Factory bei Nacht" loading="eager" fetchpriority="high" >}}
+{{< img src="/img/home/sf_club_raum.jpeg" alt="Starship Factory Clubraum" loading="eager" fetchpriority="high" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -43,39 +43,39 @@ Noch Fragen? Komm in unsere Signal Gruppe! Dort kannst du deine Fragen stellen u
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/3d-druck.jpg" alt="Die 3D-Druck-Ecke der Starship Factory" >}}
+{{< img src="/img/home/3d_druck_ecke.jpeg" alt="Die 3D-Druck-Ecke der Starship Factory" >}}
 {{< /column >}}
 {{< column >}}
 ### 3D-Druck
-Wir haben aktuell einen Maschinenpark von mehreren 3D-Druckern. Auf diesen können eigene
-3D-Modelle aus Plastik ausgedruckt werden.
+Wir haben einen umfangreichen Maschinenpark von 3D-Druckern. Auf diesen können eigene
+3D-Modelle aus Plastik oder Resin ausgedruckt werden.
 
-{{< button link="/3d-druck/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/3d-druck/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
 ### CNC-Bearbeitung
-Mit unserer CNC-Fräse können wir Teile aus Holz oder anderen weichen Materialien fertigen.
+Mit unseren CNC-Fräsen können wir Teile aus weichen Metallen, Holz oder anderen weichen Materialien fertigen.
 
-{{< button link="/cnc-bearbeitung/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/cnc-bearbeitung/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/cnc-portalfraese.jpg" alt="Die CNC-Portalfräse der Starship Factory" >}}
+{{< img src="/img/home/cnc_carvera.jpeg" alt="Die Carvera CNC Fräse der Starship Factory" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/laser-kh-3020.jpg" alt="Der Laser-Cutter KH-3020" >}}
+{{< img src="/img/home/laser_ecke.jpeg" alt="Der XTool Laser-Cutter" >}}
 {{< /column >}}
 {{< column >}}
 ### Laser
-Wir haben einen Laser Engraver. Mit unserem Laser-Cutter kann man aus Sperrholz oder Acrylglas Bauteile ausschneiden, und
-vieles mehr!
+Wir haben einen Laser Engraver und mehrere Laser Cutter. Mit unserem Laser-Cutter kann man aus Sperrholz oder
+Acrylglas Bauteile ausschneiden, und vieles mehr!
 
-{{< button link="/laser/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/laser/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -86,36 +86,34 @@ In der Starship Factory gibt es ein sehr gut ausgestattetes Elektroniklabor. Hie
 nach Herzenslust löten, SMD-Platinen fertigen oder deine Arduino-Schaltungen testen. Wir
 stehen Elektronikneulingen auch gerne mit Rat und Tat zur Seite.
 
-{{< button link="/elektronik/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/elektronik/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/elektronik.jpg" alt="Basteln in der Starship Factory" >}}
+{{< img src="/img/home/elektronik.jpg" alt="Elektronik Basteln in der Starship Factory" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/folienplotter.jpg" alt="Ein selbst bedrucktes T-Shirt aus der Textilecke" >}}
+{{< img src="/img/home/holzwerkstatt_kreissaege_hobel.jpeg" alt="Kreissäge und Hobelmaschine der Starship Factory" >}}
 {{< /column >}}
 {{< column >}}
 ### Holzwerkstatt
-Wir haben eine voll ausgestatte Holzwerkstatt mit Bandsäge, Kreissäge, Hobelmaschine und vielen mehr.
+Wir haben eine voll ausgestatte Holzwerkstatt mit Bandsäge, Kreissäge, Hobelmaschine und vielem mehr.
 
-{{< button link="/holzwerkstatt/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/holzwerkstatt/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
 ### Textil
-In unserer Textilecke kann man Folien für verschiedenste Zwecke ausplotten, unter anderem für
-den T-Shirt-Druck oder um eigene Aufkleber zu designen. Am besten bringst du dein Design
-direkt als SVG-Grafik mit!
+In unserer Textilwerkstatt haben wir eine Strickmaschine, Nähmaschine, Xtool Wonderpress und vieles mehr.
 
-{{< button link="/textil/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/textil/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/folienplotter.jpg" alt="Ein selbst bedrucktes T-Shirt aus der Textilecke" >}}
+{{< img src="/img/home/textil_kniterate.jpeg" alt="Kniterate Strickmaschine" >}}
 {{< /column >}}
 
 {{< /columns >}}

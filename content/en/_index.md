@@ -18,7 +18,7 @@ other.
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/hero.jpg" alt="Starship Factory at night" loading="eager" fetchpriority="high" >}}
+{{< img src="/img/home/sf_club_raum.jpeg" alt="The Starship Factory clubroom" loading="eager" fetchpriority="high" >}}
 {{< /column >}}
 {{< /columns >}}
 

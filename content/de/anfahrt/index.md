@@ -22,7 +22,17 @@ Die Clubräume befinden sich dort im 1. Untergeschoss.
 
 {{< columns count=2 >}}
 {{< column >}}
-## Vom Bahnhof SBB
+{{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory Aussenansicht" >}}
+{{< /column >}}
+{{< column >}}
+{{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="Die Treppe zu den Starship Factory Clubräumen" >}}
+{{< /column >}}
+{{< /columns >}}
+
+
+{{< columns count=2 >}}
+{{< column >}}
+## Mit dem ÖV vom Bahnhof SBB
 
 _15 Minuten vom Bahnhof SBB_
 
