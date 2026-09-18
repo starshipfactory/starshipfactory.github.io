@@ -1,12 +1,17 @@
 ---
 title: "Textil"
-description: "Der Bereich Textil in der Werkstatt der Starship Factory in Basel."
+description: "Kniterate-Strickmaschine, Nähmaschine, Folienplotter und Heisspressen: die Textilwerkstatt der Starship Factory in Basel."
 translationKey: "textiles"
 ---
+
+In unserer Textilwerkstatt entstehen bedruckte T-Shirts, genähte und gestrickte Stücke und
+Aufkleber. Dein Motiv bringst du am besten als SVG mit.
 
 {{< columns count=2 >}}
 {{< column >}}
 ## Kniterate Strickmaschine
+Die Kniterate ist eine digitale Strickmaschine: Sie strickt ein Muster, das du am Rechner
+entworfen hast, als fertiges Stück — Schals, Mützen, Stoffstücke.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/textil/textil_kniterate.jpeg" alt="Kniterate Strickmaschine" loading="eager" fetchpriority="high" sizes="column" >}}
@@ -19,13 +24,16 @@ translationKey: "textiles"
 {{< /column >}}
 {{< column >}}
 ## Brother Nähmaschine
+Zum Zusammennähen, Ändern und Reparieren. Auch der schnellste Weg, einem Kleidungsstück ein
+zweites Leben zu geben.
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
 ## XTool Wonderpress
-
+Eine Heisspresse: Sie überträgt mit Hitze und Druck ein Motiv auf Stoff. Damit landet dein
+Design auf dem T-Shirt oder der Tasche.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/textil/textil_xtool.jpeg" alt="XTool Wonderpress" sizes="column" >}}
@@ -40,6 +48,8 @@ translationKey: "textiles"
 {{< /column >}}
 {{< column >}}
 ## HTV Press
+Unsere zweite Presse, für Flexfolie (HTV) — die Folie, die vorher am Plotter zugeschnitten
+wurde.
 {{< /column >}}
 {{< /columns >}}
 
@@ -54,3 +64,10 @@ direkt als SVG-Grafik mit!
 {{< img src="/img/textil/textil_folienplotter.jpeg" alt="Folien Plotten" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
+
+{{< spacer 20 >}}
+
+Komm einfach an einem Öffnungsabend vorbei und schau es dir an — wir zeigen dir gerne, wie
+die Maschinen funktionieren. Vorkenntnisse brauchst du keine.
+
+{{< button link="/anfahrt/" text="Anfahrt" style="secondary" >}}

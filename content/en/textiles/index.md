@@ -1,12 +1,17 @@
 ---
 title: "Textiles"
-description: "The textiles area in the Starship Factory workshop in Basel."
+description: "Kniterate knitting machine, sewing machine, vinyl cutter and heat presses: the textile workshop at Starship Factory in Basel."
 translationKey: "textiles"
 ---
+
+Printed T-shirts, sewn and knitted pieces and stickers all come out of our textile workshop.
+Bring your design along as an SVG if you can.
 
 {{< columns count=2 >}}
 {{< column >}}
 ## Kniterate knitting machine
+The Kniterate is a digital knitting machine: it knits a pattern you designed on the computer
+as a finished piece — scarves, hats, panels of fabric.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/textil/textil_kniterate.jpeg" alt="Kniterate knitting machine" loading="eager" fetchpriority="high" sizes="column" >}}
@@ -19,13 +24,16 @@ translationKey: "textiles"
 {{< /column >}}
 {{< column >}}
 ## Brother sewing machine
+For sewing together, altering and repairing. Also the quickest way to give a piece of
+clothing a second life.
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
 ## XTool Wonderpress
-
+A heat press: it transfers a design onto fabric with heat and pressure. That is how your
+design ends up on the T-shirt or the bag.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/textil/textil_xtool.jpeg" alt="XTool Wonderpress" sizes="column" >}}
@@ -40,6 +48,8 @@ translationKey: "textiles"
 {{< /column >}}
 {{< column >}}
 ## HTV press
+Our second press, for heat transfer vinyl (HTV) — the vinyl that was cut on the plotter
+beforehand.
 {{< /column >}}
 {{< /columns >}}
 
@@ -53,3 +63,10 @@ printing or designing your own stickers. Best of all, bring your design along as
 {{< img src="/img/textil/textil_folienplotter.jpeg" alt="Vinyl cutting" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
+
+{{< spacer 20 >}}
+
+Just drop by on one of our opening evenings and take a look — we are happy to show you how
+the machines work. You do not need any previous experience.
+
+{{< button link="/en/how-to-find-us/" text="How to find us" style="secondary" >}}
