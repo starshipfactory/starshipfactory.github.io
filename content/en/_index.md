@@ -16,18 +16,29 @@ and guests work on their own and on joint projects, learning, teaching and inspi
 other.
 {{< /intro >}}
 
-{{< button link="/en/how-to-find-us/" text="How to find us" >}}
-
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/home/hero.jpg" alt="Starship Factory at night" loading="eager" >}}
-**Where?**\
-Gasstrasse 20, 4056 Basel (in the rear courtyard)
-
-**Opening hours**\
-Tue 19:30–22:00, Fri 19:30–22:00
 {{< /column >}}
 {{< /columns >}}
+
+{{< cards count=2 >}}
+{{< card >}}
+#### Opening hours
+Gasstrasse 20, 4056 Basel (in the rear courtyard)
+
+Tue 19:30–22:00, Fri 19:30–22:00
+{{< spacer 5 >}}
+{{< button link="/en/how-to-find-us/" text="How to find us" >}}
+{{< /card >}}
+{{< card >}}
+#### Contact
+Still got questions? Come join our Signal group! Ask them there and you will get help right away.
+{{< spacer 5 >}}
+{{< button link="https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t" text="Signal group" >}}
+{{< /card >}}
+{{< /cards >}}
+
 ## What you can do here
 
 {{< columns count=2 >}}

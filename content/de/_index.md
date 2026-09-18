@@ -16,18 +16,29 @@ aus Basel und Umgebung. Unsere Vereinsmitglieder und Gäste basteln an eigenen u
 lernen, lehren und inspirieren einander.
 {{< /intro >}}
 
-{{< button link="/anfahrt/" text="Anfahrt" >}}
-
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/home/hero.jpg" alt="Die Starship Factory bei Nacht" loading="eager" >}}
-**Wo?**\
-Gasstrasse 20, 4056 Basel (im Hinterhof)
-
-**Öffnungszeiten**\
-Di 19:30–22:00, Fr 19:30–22:00
 {{< /column >}}
 {{< /columns >}}
+
+{{< cards count=2 >}}
+{{< card >}}
+#### Öffnungszeiten
+Gasstrasse 20, 4056 Basel (im Hinterhof)
+
+Di 19:30–22:00, Fr 19:30–22:00
+{{< spacer 5 >}}
+{{< button link="/anfahrt/" text="Anfahrt" >}}
+{{< /card >}}
+{{< card >}}
+#### Kontakt
+Noch Fragen? Komm in unsere Signal Gruppe! Dort kannst du deine Fragen stellen und dir wird sofort weitergeholfen.
+{{< spacer 5 >}}
+{{< button link="https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t" text="Signal Gruppe" >}}
+{{< /card >}}
+{{< /cards >}}
+
 ## Was du bei uns machen kannst
 
 {{< columns count=2 >}}
