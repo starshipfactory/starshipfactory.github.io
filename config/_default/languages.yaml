@@ -26,14 +26,54 @@ de:
         name: "Blog"
         url: "/blog/"
         weight: 2
+      # "Werkstatt" is a grouping entry only, like "Verein" below: it has no page
+      # of its own, just the machine areas as children.
+      - identifier: "werkstatt"
+        name: "Werkstatt"
+        weight: 3
+      - identifier: "3d-druck"
+        name: "3D-Druck"
+        url: "/3d-druck/"
+        parent: "werkstatt"
+        weight: 1
+      - identifier: "cnc-bearbeitung"
+        name: "CNC-Bearbeitung"
+        url: "/cnc-bearbeitung/"
+        parent: "werkstatt"
+        weight: 2
+      - identifier: "laser"
+        name: "Laser"
+        url: "/laser/"
+        parent: "werkstatt"
+        weight: 3
+      - identifier: "elektronik"
+        name: "Elektronik"
+        url: "/elektronik/"
+        parent: "werkstatt"
+        weight: 4
+      - identifier: "holzwerkstatt"
+        name: "Holzwerkstatt"
+        url: "/holzwerkstatt/"
+        parent: "werkstatt"
+        weight: 5
+      - identifier: "textil"
+        name: "Textil"
+        url: "/textil/"
+        parent: "werkstatt"
+        weight: 6
+      - identifier: "folien-plotten"
+        name: "Folien plotten"
+        url: "/folien-plotten/"
+        parent: "werkstatt"
+        weight: 7
       - identifier: "anfahrt"
         name: "Anfahrt"
         url: "/anfahrt/"
-        weight: 3
+        weight: 4
       - identifier: "spenden"
         name: "Spenden"
         url: "/spenden/"
-        weight: 4
+        weight: 5
       # "Verein" is a grouping entry only: it has no page of its own. The theme's
       # header.html renders a parent with children as href="#" plus a dropdown, and
       # footer.html renders it as a column heading above its children.
@@ -41,7 +81,7 @@ de:
       # (params.main_cta / params.footer_cta), so it is not duplicated at top level.
       - identifier: "verein"
         name: "Verein"
-        weight: 5
+        weight: 6
       - identifier: "mitglied-werden"
         name: "Mitglied werden"
         url: "/mitglied-werden/"
@@ -96,20 +136,59 @@ en:
         name: "Blog"
         url: "/blog/"
         weight: 2
+      # Grouping entry only, no page of its own — see the German menu above.
+      - identifier: "werkstatt"
+        name: "Workshop"
+        weight: 3
+      - identifier: "3d-druck"
+        name: "3D printing"
+        url: "/3d-printing/"
+        parent: "werkstatt"
+        weight: 1
+      - identifier: "cnc-bearbeitung"
+        name: "CNC machining"
+        url: "/cnc-machining/"
+        parent: "werkstatt"
+        weight: 2
+      - identifier: "laser"
+        name: "Laser"
+        url: "/laser/"
+        parent: "werkstatt"
+        weight: 3
+      - identifier: "elektronik"
+        name: "Electronics"
+        url: "/electronics/"
+        parent: "werkstatt"
+        weight: 4
+      - identifier: "holzwerkstatt"
+        name: "Wood workshop"
+        url: "/wood-workshop/"
+        parent: "werkstatt"
+        weight: 5
+      - identifier: "textil"
+        name: "Textiles"
+        url: "/textiles/"
+        parent: "werkstatt"
+        weight: 6
+      - identifier: "folien-plotten"
+        name: "Vinyl cutting"
+        url: "/vinyl-cutting/"
+        parent: "werkstatt"
+        weight: 7
       - identifier: "anfahrt"
         name: "How to find us"
         url: "/how-to-find-us/"
-        weight: 3
+        weight: 4
       - identifier: "spenden"
         name: "Donate"
         url: "/donate/"
-        weight: 4
+        weight: 5
       # Grouping entry only, no page of its own — see the German menu above.
       # "Verein" is the Swiss registered association; "Association" is the plain
       # English equivalent members actually use when speaking English.
       - identifier: "verein"
         name: "Association"
-        weight: 5
+        weight: 6
       - identifier: "mitglied-werden"
         name: "Become a member"
         url: "/become-a-member/"
