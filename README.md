@@ -410,6 +410,15 @@ on every build, which is what keeps the custom domain bound. `baseURL` is set to
 these emit meta-refresh pages, which is the only redirect mechanism GitHub Pages supports.
 Netlify-style `_redirects` files do **not** work here.
 
+### What search engines are told
+
+[`layouts/partials/head/custom-head.html`](layouts/partials/head/custom-head.html) — the
+theme's designated `<head>` extension point, which ships empty — adds `rel=canonical` and
+the `hreflang` pairs that tell a search engine `/holzwerkstatt/` and `/en/wood-workshop/`
+are the same page in two languages. `hreflang` values come from each language's
+`languageCode`, so changing those in `config/_default/languages.yaml` changes the markup.
+Canonical is deliberately omitted on paginated lists; the file says why.
+
 ### ⚠️ The cutover is manual
 
 At the time of writing, **`master` still serves the old Jekyll site**, and the new Hugo site

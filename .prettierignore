@@ -28,3 +28,4 @@ layouts/index.html
 layouts/_default/_markup/render-image.html
 layouts/partials/image.html
 layouts/shortcodes/img.html
+layouts/partials/head/custom-head.html
