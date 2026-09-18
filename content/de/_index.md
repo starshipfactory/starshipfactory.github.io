@@ -50,7 +50,7 @@ Noch Fragen? Komm in unsere Signal Gruppe! Dort kannst du deine Fragen stellen u
 Wir haben aktuell einen Maschinenpark von mehreren 3D-Druckern. Auf diesen können eigene
 3D-Modelle aus Plastik ausgedruckt werden.
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/3D-Drucker/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/3d-druck/" text="Mehr lesen" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -59,7 +59,7 @@ Wir haben aktuell einen Maschinenpark von mehreren 3D-Druckern. Auf diesen könn
 ### CNC-Bearbeitung
 Mit unserer CNC-Fräse können wir Teile aus Holz oder anderen weichen Materialien fertigen.
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/CNC_Portalfraese/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/cnc-bearbeitung/" text="Mehr lesen" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
 {{< img src="https://wiki.starship-factory.ch/Equipment/CNC_Portalfraese/800x-image4.jpg" alt="Die CNC-Portalfräse der Starship Factory" >}}
@@ -71,11 +71,11 @@ Mit unserer CNC-Fräse können wir Teile aus Holz oder anderen weichen Materiali
 {{< img src="https://wiki.starship-factory.ch/Equipment/KH-3020/Laser_KH-3020.jpg" alt="Der Laser-Cutter KH-3020" >}}
 {{< /column >}}
 {{< column >}}
-### Laser-Cutter
-Mit unserem Laser-Cutter kann man aus Sperrholz oder Acrylglas Bauteile ausschneiden, und
+### Laser
+Wir haben einen Laser Engraver. Mit unserem Laser-Cutter kann man aus Sperrholz oder Acrylglas Bauteile ausschneiden, und
 vieles mehr!
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/KH-3020/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/laser/" text="Mehr lesen" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -86,7 +86,7 @@ In der Starship Factory gibt es ein sehr gut ausgestattetes Elektroniklabor. Hie
 nach Herzenslust löten, SMD-Platinen fertigen oder deine Arduino-Schaltungen testen. Wir
 stehen Elektronikneulingen auch gerne mit Rat und Tat zur Seite.
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/#Elektronikecke" text="Mehr lesen" style="secondary" >}}
+{{< button link="/elektronik/" text="Mehr lesen" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/home/elektronik.jpg" alt="Basteln in der Starship Factory" >}}
@@ -98,13 +98,26 @@ stehen Elektronikneulingen auch gerne mit Rat und Tat zur Seite.
 {{< img src="/img/home/folienplotter.jpg" alt="Ein selbst bedrucktes T-Shirt aus der Textilecke" >}}
 {{< /column >}}
 {{< column >}}
-### Folien plotten
+### Holzwerkstatt
+Wir haben eine voll ausgestatte Holzwerkstatt mit Bandsäge, Kreissäge, Hobelmaschine und vielen mehr.
+
+{{< button link="/holzwerkstatt/" text="Mehr lesen" style="secondary" >}}
+{{< /column >}}
+{{< /columns >}}
+
+{{< columns count=2 >}}
+{{< column >}}
+### Textil
 In unserer Textilecke kann man Folien für verschiedenste Zwecke ausplotten, unter anderem für
 den T-Shirt-Druck oder um eigene Aufkleber zu designen. Am besten bringst du dein Design
 direkt als SVG-Grafik mit!
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/T-Shirt_Druck/" text="Mehr lesen" style="secondary" >}}
+{{< button link="/textil/" text="Mehr lesen" style="secondary" >}}
 {{< /column >}}
+{{< column >}}
+{{< img src="/img/home/folienplotter.jpg" alt="Ein selbst bedrucktes T-Shirt aus der Textilecke" >}}
+{{< /column >}}
+
 {{< /columns >}}
 
 {{< spacer 20 >}}

@@ -50,7 +50,7 @@ Still got questions? Come join our Signal group! Ask them there and you will get
 We currently have a fleet of several 3D printers. You can use them to print your own 3D models
 in plastic.
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/3D-Drucker/" text="Read more" style="secondary" >}}
+{{< button link="/en/3d-printing/" text="Read more" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -59,7 +59,7 @@ in plastic.
 ### CNC machining
 With our CNC mill we can make parts from wood and other soft materials.
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/CNC_Portalfraese/" text="Read more" style="secondary" >}}
+{{< button link="/en/cnc-machining/" text="Read more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
 {{< img src="https://wiki.starship-factory.ch/Equipment/CNC_Portalfraese/800x-image4.jpg" alt="The CNC gantry mill at Starship Factory" >}}
@@ -71,10 +71,11 @@ With our CNC mill we can make parts from wood and other soft materials.
 {{< img src="https://wiki.starship-factory.ch/Equipment/KH-3020/Laser_KH-3020.jpg" alt="The KH-3020 laser cutter" >}}
 {{< /column >}}
 {{< column >}}
-### Laser cutter
-With our laser cutter you can cut parts from plywood or acrylic glass, and much more!
+### Laser
+We have a laser engraver. With our laser cutter you can cut parts from plywood or acrylic
+glass, and much more!
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/KH-3020/" text="Read more" style="secondary" >}}
+{{< button link="/en/laser/" text="Read more" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -85,7 +86,7 @@ Starship Factory has a very well equipped electronics lab. Here you can solder t
 content, make SMD boards or test your Arduino circuits. We are also happy to help newcomers to
 electronics with advice and a hand.
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/#Elektronikecke" text="Read more" style="secondary" >}}
+{{< button link="/en/electronics/" text="Read more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/home/elektronik.jpg" alt="Making things at Starship Factory" >}}
@@ -97,11 +98,23 @@ electronics with advice and a hand.
 {{< img src="/img/home/folienplotter.jpg" alt="A self-printed T-shirt from the textile corner" >}}
 {{< /column >}}
 {{< column >}}
-### Vinyl cutting
+### Wood workshop
+We have a fully equipped wood workshop with a band saw, table saw, planer and much more.
+
+{{< button link="/en/wood-workshop/" text="Read more" style="secondary" >}}
+{{< /column >}}
+{{< /columns >}}
+
+{{< columns count=2 >}}
+{{< column >}}
+### Textiles
 In our textile corner you can cut vinyl for all sorts of purposes, among them T-shirt printing
 or designing your own stickers. Best of all, bring your design along as an SVG file!
 
-{{< button link="https://wiki.starship-factory.ch/Equipment/T-Shirt_Druck/" text="Read more" style="secondary" >}}
+{{< button link="/en/textiles/" text="Read more" style="secondary" >}}
+{{< /column >}}
+{{< column >}}
+{{< img src="/img/home/folienplotter.jpg" alt="A self-printed T-shirt from the textile corner" >}}
 {{< /column >}}
 {{< /columns >}}
 
