@@ -142,7 +142,8 @@ enableRobotsTXT: true         # Jekyll gave this via jekyll-sitemap; Hugo needs 
 enableGitInfo: true           # lastmod from git history (needs full checkout depth in CI)
 
 pagination:
-  pagerSize: 5                # the old site's `paginate: 5`.
+  pagerSize: 25               # the old site used `paginate: 5`; 25 keeps the 96-post
+                              # archive to 4 pages instead of 20.
                               # NOTE: `paginate` was renamed in Hugo 0.128 and is dead.
 
 permalinks:
@@ -289,8 +290,11 @@ Old posts live at `master:_posts/YYYY-MM-DD-slug.md` with Jekyll front matter an
   `categories`). `author` must match a key in `data/authors.yaml`.
 - The permalink structure is handled by the `permalinks` config above, not per post. Use
   `aliases` only for posts whose slug had to change.
-- **The feed URL changes.** Jekyll served `/feed.xml`; Hugo serves `/index.xml`. Add an
-  alias or a redirect so existing subscribers do not silently break.
+- **The feed URL changes, deliberately.** Jekyll served `/feed.xml`; Hugo's built-in RSS
+  output serves `/index.xml`, and that is the feed the site uses. Do **not** add a
+  `/feed.xml` alias, a custom output format or a redirect for the old URL — backwards
+  compatibility for existing subscribers is explicitly out of scope. Leave the theme's
+  and Hugo's default RSS mechanism alone.
 - Rewrite Jekyll-isms: `{% include %}`, `{% highlight %}`, and `/assets/images/...` paths
   (images now live at `/img/blog/...`).
 - **Every post gets an English translation** under `content/en/blog/`, per the "Translating"
