@@ -199,22 +199,117 @@ both — the footer already lists every `menu.main` entry.
 
 ### Images
 
-Images for a **new** post go in its bundle, next to `index.md`, and are referenced by
-filename. Use the theme's shortcode rather than raw HTML:
+Images are processed at build time: converted to WebP, capped at the 895px content width,
+given a 2x `srcset` when the original is big enough, and emitted with `width`/`height` so
+the page does not jump around while loading. You commit one original and Hugo produces the
+rest. None of that happens for files in `static/`, which is copied as-is.
 
-```markdown
-{{< img src="werkstatt.jpg" alt="Die Werkstatt an einem Dienstagabend" caption="Dienstagabend." >}}
+So the only real question is **where to put the file**.
+
+#### Most pages: `assets/img/<section>/`
+
+Every German page has an English translation in its own directory
+(`content/de/3d-druck/` and `content/en/3d-printing/`), so an image kept next to one of
+them would have to be duplicated to be used by the other. Putting it in `assets/` keeps one
+copy, shared by both languages:
+
+```
+assets/img/3d-druck/prusa.jpg
 ```
 
-Every image needs meaningful alt text — the theme is built around accessibility and the site
-config has a real `accessibility` block.
+Both language versions reference it by the same root-relative path — only the alt text is
+translated. The folder name under `assets/img/` is just a folder name and never appears in a
+URL a visitor sees, so there is no need for an English variant of it.
 
-**The migrated archive is the exception.** The 58 images belonging to the posts migrated from
-the old Jekyll site live flat in `static/img/blog/`, shared by the German and English version
-of each post rather than duplicated into two bundles. Do not follow that pattern for new
-posts — and do not recreate `static/assets/`, which was removed when the archive was
-reorganised. That move also dropped the old `/assets/images/…` URLs; page URLs were not
-affected, and Hugo `aliases` cannot cover static files.
+In `content/de/3d-druck/index.md`:
+
+```markdown
+![Ein Prusa-Drucker beim Drucken](/img/3d-druck/prusa.jpg)
+```
+
+In `content/en/3d-printing/index.md`:
+
+```markdown
+![A Prusa printer mid-print](/img/3d-druck/prusa.jpg)
+```
+
+This is how `assets/img/home/` and `assets/img/blog/` already work.
+
+#### Pages built from columns or cards
+
+The home page and **Anfahrt** are built out of `{{< columns >}}` / `{{< card >}}`. Inside
+those shortcodes a **bundle-relative** image quietly skips the pipeline: the theme renders
+their contents in a way that loses track of which page it is on, so Hugo never finds the
+resource. The picture still appears — the untouched original is served — which is exactly
+why this is easy to miss. You just lose the WebP conversion, the resize and the
+`width`/`height`. Root-relative `/img/…` paths are unaffected.
+
+Inside a column or a card, always use a root-relative path:
+
+```markdown
+{{< column >}}
+![Die Werkstatt an einem Dienstagabend](/img/home/werkstatt.jpg)
+{{< /column >}}
+```
+
+Since `assets/img/<section>/` is the recommendation everywhere anyway, following it means
+you will not hit this.
+
+#### Page bundles
+
+A page bundle — the image sitting next to `index.md` — works on any page that is **not**
+built from columns or cards, and is referenced by bare filename:
+
+```
+content/de/holzwerkstatt/
+├── index.md
+└── hobelmaschine.jpg
+```
+```markdown
+![Die Hobelmaschine](hobelmaschine.jpg)
+```
+
+It is the tidiest option when an image belongs to exactly one page in one language, because
+the image moves and gets deleted along with the page. For anything that appears in both
+languages, prefer `assets/`. If you do use a bundle and all its images go through the
+pipeline, add `build: {publishResources: false}` to the front matter, or the untouched
+original ships next to the WebP.
+
+For **blog posts**, `CLAUDE.md` asks for page bundles on anything new. Know the trade-off
+before you follow it: the English translation of a post lives in `content/en/blog/…`, so a
+bundle image has to be copied into both bundles — which is precisely what the migrated
+archive avoids by keeping its 58 images flat in `assets/img/blog/` and referring to them as
+`/img/blog/…` from both languages. If you would rather keep one copy, do what the archive
+does. Either way: do not "fix" the archive's paths, and do not recreate `static/assets/`.
+
+#### When to use `{{< img >}}` instead
+
+`{{< img >}}` and `![alt](src)` produce identical markup — both go through
+`layouts/partials/image.html`. Use the shortcode when you need something Markdown cannot
+express:
+
+```markdown
+{{< img src="/img/home/hero.jpg" alt="Die Starship Factory bei Nacht" loading="eager" fetchpriority="high" >}}
+{{< img src="/img/home/werkstatt.jpg" alt="Die Werkstatt" caption="Dienstagabend." >}}
+```
+
+- `loading="eager"` + `fetchpriority="high"` — for the one big image at the top of a page.
+  Everything else should stay lazy.
+- `caption` — wraps the image in `<figure>` with a `<figcaption>`.
+- `class` — for the rare case CSS needs a hook.
+
+#### Alt text
+
+**Every image needs meaningful alt text, translated along with the rest of the page.**
+Describe what is in the picture, not the filename. If an image is purely decorative, pass
+`alt=""` deliberately. Leaving `alt` out entirely gives you an empty alt, which is only
+correct for decoration — the site does not guess alt text from filenames, because the
+guesses are wrong in a way that sounds plausible to a screen-reader user.
+
+#### `static/` is for something else
+
+Use it only for files that need a fixed, unhashed URL: the favicons, `logo.svg`,
+`social-share.png`, the social icons. Photos do not belong there.
 
 ### Writing the Markdown
 
@@ -230,9 +325,12 @@ mapped onto the theme's `--primary-*` custom properties. Keep it small.
 
 The theme is a submodule and is **read-only**. Anything that needs changing is done by
 copying the file into the project's own `layouts/` directory, which Hugo resolves first.
-There are three such overrides today (`layouts/index.html`,
-`layouts/partials/footer.html`, `layouts/partials/blog/byline.html`), each with a comment at
-the top saying what it forked and why. Reach for CSS before forking a template, and never
+There are five such files today: `layouts/partials/footer.html`,
+`layouts/partials/blog/byline.html`, `layouts/shortcodes/button.html` and
+`layouts/shortcodes/img.html` are copies of a theme file, and `layouts/index.html` fills a
+gap the theme leaves. Each carries a comment at the top saying what it forked and why.
+`layouts/partials/image.html` and `layouts/_default/_markup/render-image.html` are not
+forks — the theme has no equivalent. Reach for CSS before forking a template, and never
 fork `header.html` — it carries the hamburger menu and the whole mobile navigation.
 
 ### Before you commit
