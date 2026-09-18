@@ -18,7 +18,7 @@ lernen, lehren und inspirieren einander.
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/sf_club_raum.jpeg" alt="Starship Factory Clubraum" loading="eager" fetchpriority="high" >}}
+{{< img src="/img/home/sf_club_raum.jpeg" alt="Starship Factory Clubraum" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -43,7 +43,7 @@ Noch Fragen? Komm in unsere Signal Gruppe! Dort kannst du deine Fragen stellen u
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/3d_druck_ecke.jpeg" alt="Die 3D-Druck-Ecke der Starship Factory" >}}
+{{< img src="/img/home/3d_druck_ecke.jpeg" alt="Die 3D-Druck-Ecke der Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ### 3D-Druck
@@ -62,13 +62,13 @@ Mit unseren CNC-Fräsen können wir Teile aus weichen Metallen, Holz oder andere
 {{< button link="/cnc-bearbeitung/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/cnc_carvera.jpeg" alt="Die Carvera CNC Fräse der Starship Factory" >}}
+{{< img src="/img/home/cnc_carvera.jpeg" alt="Die Carvera CNC Fräse der Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/laser_ecke.jpeg" alt="Der XTool Laser-Cutter" >}}
+{{< img src="/img/home/laser_ecke.jpeg" alt="Der XTool Laser-Cutter" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ### Laser
@@ -89,13 +89,13 @@ stehen Elektronikneulingen auch gerne mit Rat und Tat zur Seite.
 {{< button link="/elektronik/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/elektronik.jpg" alt="Elektronik Basteln in der Starship Factory" >}}
+{{< img src="/img/home/elektronik.jpg" alt="Elektronik Basteln in der Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/holzwerkstatt_kreissaege_hobel.jpeg" alt="Kreissäge und Hobelmaschine der Starship Factory" >}}
+{{< img src="/img/home/holzwerkstatt_kreissaege_hobel.jpeg" alt="Kreissäge und Hobelmaschine der Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ### Holzwerkstatt
@@ -113,7 +113,7 @@ In unserer Textilwerkstatt haben wir eine Strickmaschine, Nähmaschine, Xtool Wo
 {{< button link="/textil/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/textil_kniterate.jpeg" alt="Kniterate Strickmaschine" >}}
+{{< img src="/img/home/textil_kniterate.jpeg" alt="Kniterate Strickmaschine" sizes="column" >}}
 {{< /column >}}
 
 {{< /columns >}}

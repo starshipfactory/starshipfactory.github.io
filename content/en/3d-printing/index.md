@@ -13,13 +13,13 @@ translationKey: "3d-printing"
 The Prusa XL can print with two filaments at once.
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/3d-druck/3d_printer_prusa_xl.jpeg" alt="Prusa XL" >}}
+{{< img src="/img/3d-druck/3d_printer_prusa_xl.jpeg" alt="Prusa XL" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/3d-druck/3d_printer_resin_anycubic.jpeg" alt="Anycube Photon Mono M7 Max" >}}
+{{< img src="/img/3d-druck/3d_printer_resin_anycubic.jpeg" alt="Anycube Photon Mono M7 Max" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ## Anycube Photon Mono M7 Max
@@ -33,13 +33,13 @@ The Anycube Photon Mono M7 Max is a resin printer.
 Our resin curing station for the Anycube Photon Mono M7 Max.
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/3d-druck/3d_printer_curing_station.jpeg" alt="Resin curing station" >}}
+{{< img src="/img/3d-druck/3d_printer_curing_station.jpeg" alt="Resin curing station" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/3d-druck/3d_printer_prusa_mk4.jpeg" alt="Prusa MK4" >}}
+{{< img src="/img/3d-druck/3d_printer_prusa_mk4.jpeg" alt="Prusa MK4" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ## Prusa MK4
@@ -52,6 +52,6 @@ Our resin curing station for the Anycube Photon Mono M7 Max.
 Several Ender 3D printers are available.
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/3d-druck/3d_printer_ender.jpeg" alt="Ender" >}}
+{{< img src="/img/3d-druck/3d_printer_ender.jpeg" alt="Ender" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}

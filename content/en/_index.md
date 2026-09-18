@@ -18,7 +18,7 @@ other.
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/sf_club_raum.jpeg" alt="The Starship Factory clubroom" loading="eager" fetchpriority="high" >}}
+{{< img src="/img/home/sf_club_raum.jpeg" alt="The Starship Factory clubroom" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -43,7 +43,7 @@ Still got questions? Come join our Signal group! Ask them there and you will get
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/3d_druck_ecke.jpeg" alt="The 3D printing corner at Starship Factory" >}}
+{{< img src="/img/home/3d_druck_ecke.jpeg" alt="The 3D printing corner at Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ### 3D printing
@@ -62,13 +62,13 @@ With our CNC mills we can make parts from soft metals, wood and other soft mater
 {{< button link="/en/cnc-machining/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/cnc_carvera.jpeg" alt="The Carvera CNC mill at Starship Factory" >}}
+{{< img src="/img/home/cnc_carvera.jpeg" alt="The Carvera CNC mill at Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/laser_ecke.jpeg" alt="The XTool laser cutter" >}}
+{{< img src="/img/home/laser_ecke.jpeg" alt="The XTool laser cutter" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ### Laser
@@ -89,13 +89,13 @@ electronics with advice and a hand.
 {{< button link="/en/electronics/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/elektronik.jpg" alt="Electronics tinkering at Starship Factory" >}}
+{{< img src="/img/home/elektronik.jpg" alt="Electronics tinkering at Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/holzwerkstatt_kreissaege_hobel.jpeg" alt="The table saw and planer at Starship Factory" >}}
+{{< img src="/img/home/holzwerkstatt_kreissaege_hobel.jpeg" alt="The table saw and planer at Starship Factory" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ### Wood workshop
@@ -113,7 +113,7 @@ In our textile workshop we have a knitting machine, a sewing machine, an XTool W
 {{< button link="/en/textiles/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/textil_kniterate.jpeg" alt="Kniterate knitting machine" >}}
+{{< img src="/img/home/textil_kniterate.jpeg" alt="Kniterate knitting machine" sizes="column" >}}
 {{< /column >}}
 
 {{< /columns >}}

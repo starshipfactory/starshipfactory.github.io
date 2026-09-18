@@ -11,13 +11,13 @@ Wir haben modernste Laser Geräte.
 ## XTool Laser Cutter
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/laser/laser_xtool_cutter.jpeg" alt="XTool Laser Cutter" >}}
+{{< img src="/img/laser/laser_xtool_cutter.jpeg" alt="XTool Laser Cutter" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/laser/laser_xtool_engraver.jpeg" alt="XTool Laser Engraver" >}}
+{{< img src="/img/laser/laser_xtool_engraver.jpeg" alt="XTool Laser Engraver" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ## XTool Laser Engraver

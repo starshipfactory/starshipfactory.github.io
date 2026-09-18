@@ -17,6 +17,6 @@ Wir verfügen über eine voll ausgestattete Elektronikwerkstatt. Folgende Gerät
 Auch ein grosser Fundus elektronischer Bauteile ist vorhanden und kann gegen Spende verwendet werden. 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/elektronik/elektronik_ecke.jpeg" alt="Elektronik Werkstatt" >}}
+{{< img src="/img/elektronik/elektronik_ecke.jpeg" alt="Elektronik Werkstatt" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}

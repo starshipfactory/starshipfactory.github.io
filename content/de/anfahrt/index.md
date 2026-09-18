@@ -22,10 +22,10 @@ Die Clubräume befinden sich dort im 1. Untergeschoss.
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory Aussenansicht" >}}
+{{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory Aussenansicht" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="Die Treppe zu den Starship Factory Clubräumen" >}}
+{{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="Die Treppe zu den Starship Factory Clubräumen" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 

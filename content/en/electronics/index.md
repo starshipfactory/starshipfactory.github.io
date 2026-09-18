@@ -17,6 +17,6 @@ We have a fully equipped electronics workshop. The following equipment is availa
 There is also a large stock of electronic components, which you can use in exchange for a donation.
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/elektronik/elektronik_ecke.jpeg" alt="Electronics workshop" >}}
+{{< img src="/img/elektronik/elektronik_ecke.jpeg" alt="Electronics workshop" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}

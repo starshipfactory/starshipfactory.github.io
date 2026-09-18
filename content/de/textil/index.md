@@ -9,13 +9,13 @@ translationKey: "textiles"
 ## Kniterate Strickmaschine
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/textil/textil_kniterate.jpeg" alt="Kniterate Strickmaschine" >}}
+{{< img src="/img/textil/textil_kniterate.jpeg" alt="Kniterate Strickmaschine" loading="eager" fetchpriority="high" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Brother Nähmaschine" >}}
+{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Brother Nähmaschine" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ## Brother Nähmaschine
@@ -28,7 +28,7 @@ translationKey: "textiles"
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/textil/textil_xtool.jpeg" alt="XTool Wonderpress" >}}
+{{< img src="/img/textil/textil_xtool.jpeg" alt="XTool Wonderpress" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -36,7 +36,7 @@ translationKey: "textiles"
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/textil/textil_htv.jpeg" alt="HTV Press" >}}
+{{< img src="/img/textil/textil_htv.jpeg" alt="HTV Press" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
 ## HTV Press
@@ -51,6 +51,6 @@ den T-Shirt-Druck oder um eigene Aufkleber zu designen. Am besten bringst du dei
 direkt als SVG-Grafik mit!
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/textil/textil_folienplotter.jpeg" alt="Folien Plotten" >}}
+{{< img src="/img/textil/textil_folienplotter.jpeg" alt="Folien Plotten" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}

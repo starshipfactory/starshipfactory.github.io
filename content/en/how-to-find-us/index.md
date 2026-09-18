@@ -22,10 +22,10 @@ Our rooms are on the first basement level.
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory seen from the street" >}}
+{{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory seen from the street" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="The stairs down to the Starship Factory clubrooms" >}}
+{{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="The stairs down to the Starship Factory clubrooms" sizes="column" >}}
 {{< /column >}}
 {{< /columns >}}
 

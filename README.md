@@ -199,10 +199,13 @@ both — the footer already lists every `menu.main` entry.
 
 ### Images
 
-Images are processed at build time: converted to WebP, capped at the 895px content width,
-given a 2x `srcset` when the original is big enough, and emitted with `width`/`height` so
-the page does not jump around while loading. You commit one original and Hugo produces the
-rest. None of that happens for files in `static/`, which is copied as-is.
+Images are processed at build time: converted to WebP, rendered at five widths (448, 671,
+895, 1343, 1790) as a `srcset`, and emitted with `width`/`height` so the page does not jump
+around while loading. You commit one original and Hugo produces the rest. None of that
+happens for files in `static/`, which is copied as-is.
+
+Which of those five a visitor actually downloads is decided by the `sizes` attribute, and
+that is the one thing you have to get right by hand — see "Images in columns" below.
 
 So the only real question is **where to put the file**.
 
@@ -254,6 +257,32 @@ Inside a column or a card, always use a root-relative path:
 
 Since `assets/img/<section>/` is the recommendation everywhere anyway, following it means
 you will not hit this.
+
+##### Images in columns
+
+Inside `{{< columns count=2 >}}` an image is laid out at roughly half the container — at
+most 582px, never the full 895px the pipeline assumes by default. The browser cannot work
+that out on its own, so tell it:
+
+```
+{{< img src="/img/3d-druck/prusa.jpg" alt="Ein Prusa-Drucker beim Drucken" sizes="column" >}}
+```
+
+Leave `sizes` off and every phone with a 2x screen downloads the 1790px file for a slot
+about 325px wide — roughly 300 KB per photo instead of 50 KB, on the connection least able
+to afford it. Nothing looks wrong, which is what makes it easy to ship.
+
+`sizes` takes `"column"`, `"full"` (the default, and what markdown images get) or a literal
+CSS sizes string. Both presets are defined and explained in `layouts/partials/image.html`;
+if the theme's column layout ever changes, that is the one place to update.
+
+The first image on a page is also the one the visitor waits for. Give it
+`loading="eager" fetchpriority="high"` so the browser fetches it immediately instead of
+deferring it like the rest:
+
+```
+{{< img src="/img/laser/laser_xtool_cutter.jpeg" alt="XTool Laser Cutter" loading="eager" fetchpriority="high" sizes="column" >}}
+```
 
 #### Page bundles
 
