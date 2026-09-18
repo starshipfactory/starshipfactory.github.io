@@ -4,9 +4,9 @@ date: 2025-10-07
 slug: "opening-on-19-october"
 translationKey: "eroeffnung"
 categories:
-  - "{'- Veranstaltungen': ''}"
+  - "Events"
 tags:
-  - "{'- move': ''}"
+  - "move"
 ---
 Starship Factory is officially opening again.
 <!--more-->

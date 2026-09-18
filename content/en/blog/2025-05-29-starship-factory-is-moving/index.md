@@ -4,9 +4,9 @@ date: 2025-05-29
 slug: "starship-factory-is-moving"
 translationKey: "2025-05-30-wir-ziehen-um"
 categories:
-  - "{'- Veranstaltungen': ''}"
+  - "Events"
 tags:
-  - "{'- move': ''}"
+  - "move"
 ---
 Starship Factory is currently closed.
 

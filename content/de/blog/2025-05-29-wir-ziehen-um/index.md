@@ -4,9 +4,9 @@ date: 2025-05-29
 slug: "wir-ziehen-um"
 translationKey: "2025-05-30-wir-ziehen-um"
 categories:
-  - "{'- Veranstaltungen': ''}"
+  - "Veranstaltungen"
 tags:
-  - "{'- move': ''}"
+  - "umzug"
 ---
 
 Die Starship-Factory hat aktuell geschlossen.

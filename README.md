@@ -419,6 +419,17 @@ are the same page in two languages. `hreflang` values come from each language's
 `languageCode`, so changing those in `config/_default/languages.yaml` changes the markup.
 Canonical is deliberately omitted on paginated lists; the file says why.
 
+The same file marks the **generated taxonomy pages** (`/tags/`, `/tags/laser/`,
+`/categories/elektronik/`) as `noindex, follow`, and
+[`layouts/sitemap.xml`](layouts/sitemap.xml) keeps anything marked noindex out of the
+sitemap. They stay browsable and crawlable — only the listings are kept out of search
+results. There were 282 of them against 15 real content pages per language, 73% listing a
+single post, all sharing one meta description, and their titles were competing with the
+pages that should rank. Pagefind already excluded them for the same reason.
+
+If you add a page that should not be indexed, put `noindex: true` in its front matter: the
+theme emits the meta tag and the sitemap template drops it, with no second list to update.
+
 ### ⚠️ The cutover is manual
 
 At the time of writing, **`master` still serves the old Jekyll site**, and the new Hugo site

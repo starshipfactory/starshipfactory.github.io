@@ -1,0 +1,43 @@
+{{- /*
+  Overrides Hugo's embedded sitemap template. Reproduces its output — including the
+  xhtml:link hreflang alternates — but filters out pages that are marked noindex.
+
+  Why: a sitemap is a list of URLs you are asking search engines to index, so listing a
+  page that then tells them not to index it is a contradiction. Search Console reports it
+  as "Submitted URL marked noindex".
+
+  Two groups are affected, and the rule is written as "whatever is noindex" rather than as
+  a list of URLs so the two can never drift apart:
+
+  - Taxonomy and term pages (/tags/, /tags/laser/, /categories/…). These are generated,
+    not written: 73% of the tag pages list a single post, they all inherit the site-level
+    meta description, and their titles compete with the real pages (six pages were titled
+    "Laser | Starship Factory"). They stay fully browsable and crawlable — the noindex is
+    "noindex, follow", so posts are still reached through them. See partials/head/custom-head.html.
+  - content/<lang>/search.md, which already carried noindex: true in its front matter.
+
+  Everything else — pages, blog posts, the section lists and the home page — is unaffected.
+  Paginated pages were never in the sitemap; Hugo does not put them there.
+*/ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{ range .Pages }}
+  {{- if not (or .Params.noindex (in (slice "taxonomy" "term") .Kind)) }}
+  <url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>{{ end }}{{ range .Translations }}
+    <xhtml:link
+                rel="alternate"
+                hreflang="{{ .Language.LanguageCode }}"
+                href="{{ .Permalink }}"
+                />{{ end }}{{ if .IsTranslated }}
+    <xhtml:link
+                rel="alternate"
+                hreflang="{{ .Language.LanguageCode }}"
+                href="{{ .Permalink }}"
+                />{{ end }}
+  </url>
+  {{- end }}
+  {{ end }}
+</urlset>

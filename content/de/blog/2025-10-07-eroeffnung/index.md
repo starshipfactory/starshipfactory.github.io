@@ -4,9 +4,9 @@ date: 2025-10-07
 slug: "eroeffnung"
 translationKey: "eroeffnung"
 categories:
-  - "{'- Veranstaltungen': ''}"
+  - "Veranstaltungen"
 tags:
-  - "{'- move': ''}"
+  - "umzug"
 ---
 
 Die Starship Factory öffnet wieder offiziell. 
