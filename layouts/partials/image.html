@@ -1,0 +1,66 @@
+{{- /*
+  Shared image-pipeline renderer. One implementation, two entry points:
+
+    layouts/_default/_markup/render-image.html  — markdown ![alt](src "title")
+    layouts/shortcodes/img.html                 — the theme's {{< img >}}, overridden
+
+  Params (dict):
+    src           required. Bundle-relative ("foo.jpg") or root-relative ("/img/home/foo.jpg").
+    page          required for bundle-relative lookups. See the caveat below.
+    alt           alt text. Always pass something meaningful.
+    title         title attribute (markdown's "title" position).
+    caption       when set, the <img> is wrapped in <figure> with a <figcaption>.
+    loading       "lazy" (default) or "eager".
+    fetchpriority "high" for the LCP image, otherwise omitted.
+    class         extra class attribute.
+
+  Resolution order: page resource, then a global asset for root-relative paths, then
+  an unprocessed passthrough (remote URLs, static/ files, anything unresolvable).
+
+  CAVEAT — bundle lookups do not work from inside {{< column >}} or {{< card >}}.
+  Those shortcodes render their body with `.Inner | markdownify`, which loses the page
+  context: inside them the render hook's .Page is the site home, not the current page,
+  so .Resources is empty (.PageInner does not help either). Root-relative asset paths
+  are unaffected, which is why content/<lang>/_index.md keeps using /img/home/… rather
+  than bundle-relative paths. Verified against Hugo 0.148.1.
+*/ -}}
+
+{{- $src := .src -}}
+{{- $page := .page -}}
+{{- $alt := .alt | default "" -}}
+{{- $title := .title -}}
+{{- $caption := .caption -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority -}}
+{{- $class := .class -}}
+
+{{- $maxWidth := 895 -}}{{/* --content-width, themes/dot-org-hugo-theme/assets/scss/_variables.scss */ -}}
+{{- $processable := slice "jpeg" "png" "webp" "tiff" "bmp" -}}
+
+{{- $res := "" -}}
+{{- with $page -}}
+  {{- $res = .Resources.GetMatch $src -}}
+{{- end -}}
+{{- if and (not $res) (hasPrefix $src "/") -}}
+  {{- $res = resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- end -}}
+
+{{- with $caption -}}<figure>{{- end -}}
+
+{{- if and $res (in $processable $res.MediaType.SubType) -}}
+  {{- $w := cond (gt $res.Width $maxWidth) $maxWidth $res.Width -}}
+  {{- $img := $res.Resize (printf "%dx webp" $w) -}}
+  {{- $srcset := "" -}}
+  {{- $w2x := mul $w 2 -}}
+  {{- if le $w2x $res.Width -}}
+    {{- $retina := $res.Resize (printf "%dx webp" $w2x) -}}
+    {{- $srcset = printf "%s 1x, %s 2x" $img.RelPermalink $retina.RelPermalink -}}
+  {{- end -}}
+  <img src="{{ $img.RelPermalink }}"{{ with $srcset }} srcset="{{ . }}"{{ end }} width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }} loading="{{ $loading }}"{{ with $fetchpriority }} fetchpriority="{{ . }}"{{ end }} decoding="async">
+{{- else -}}
+  {{- $url := $src -}}
+  {{- with $res }}{{ $url = .RelPermalink }}{{ end -}}
+  <img src="{{ $url | safeURL }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }} loading="{{ $loading }}"{{ with $fetchpriority }} fetchpriority="{{ . }}"{{ end }} decoding="async">
+{{- end -}}
+
+{{- with $caption -}}<figcaption>{{ . | markdownify }}</figcaption></figure>{{- end -}}

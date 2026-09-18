@@ -22,6 +22,8 @@ layouts/partials/blog/byline.html
 # but unreadable.
 layouts/index.html
 
-# Go template with heavy {{- -}} whitespace control. Prettier has no Go-template
+# Go templates with heavy {{- -}} whitespace control. Prettier has no Go-template
 # parser and reflows the tags, which changes the rendered output.
 layouts/_default/_markup/render-image.html
+layouts/partials/image.html
+layouts/shortcodes/img.html

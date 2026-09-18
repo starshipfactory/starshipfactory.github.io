@@ -18,7 +18,7 @@ other.
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/hero.jpg" alt="Starship Factory at night" loading="eager" >}}
+{{< img src="/img/home/hero.jpg" alt="Starship Factory at night" loading="eager" fetchpriority="high" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -62,13 +62,13 @@ With our CNC mill we can make parts from wood and other soft materials.
 {{< button link="/en/cnc-machining/" text="Read more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="https://wiki.starship-factory.ch/Equipment/CNC_Portalfraese/800x-image4.jpg" alt="The CNC gantry mill at Starship Factory" >}}
+{{< img src="/img/home/cnc-portalfraese.jpg" alt="The CNC gantry mill at Starship Factory" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="https://wiki.starship-factory.ch/Equipment/KH-3020/Laser_KH-3020.jpg" alt="The KH-3020 laser cutter" >}}
+{{< img src="/img/home/laser-kh-3020.jpg" alt="The KH-3020 laser cutter" >}}
 {{< /column >}}
 {{< column >}}
 ### Laser

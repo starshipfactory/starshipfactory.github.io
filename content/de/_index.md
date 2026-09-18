@@ -18,7 +18,7 @@ lernen, lehren und inspirieren einander.
 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/hero.jpg" alt="Die Starship Factory bei Nacht" loading="eager" >}}
+{{< img src="/img/home/hero.jpg" alt="Die Starship Factory bei Nacht" loading="eager" fetchpriority="high" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -62,13 +62,13 @@ Mit unserer CNC-Fräse können wir Teile aus Holz oder anderen weichen Materiali
 {{< button link="/cnc-bearbeitung/" text="Mehr lesen" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="https://wiki.starship-factory.ch/Equipment/CNC_Portalfraese/800x-image4.jpg" alt="Die CNC-Portalfräse der Starship Factory" >}}
+{{< img src="/img/home/cnc-portalfraese.jpg" alt="Die CNC-Portalfräse der Starship Factory" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="https://wiki.starship-factory.ch/Equipment/KH-3020/Laser_KH-3020.jpg" alt="Der Laser-Cutter KH-3020" >}}
+{{< img src="/img/home/laser-kh-3020.jpg" alt="Der Laser-Cutter KH-3020" >}}
 {{< /column >}}
 {{< column >}}
 ### Laser

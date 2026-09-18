@@ -86,10 +86,13 @@ i18n/de.yaml, i18n/en.yaml      # UI strings — the theme ships NO i18n files
 data/authors.yaml               # blog authors, keyed by GitHub username
 archetypes/                     # copied from the theme, adapted
 layouts/partials/footer.html    # override: adds the legal link row (see Footer below)
+layouts/partials/image.html     # shared image-pipeline renderer (see "Images & media")
+layouts/shortcodes/img.html     # override: routes {{< img >}} through the pipeline
+layouts/_default/_markup/render-image.html   # markdown image render hook
 static/css/custom.css           # branding + small fixes (see "Branding")
 static/img/                     # logo variants, social share image
 assets/img/blog/                # blog archive images, flat, shared by de + en
-static/img/home/                # home page photos
+assets/img/home/                # home page photos
 static/img/social-icons/        # signal.svg, discourse.svg (see Footer below)
 static/favicon.ico              # + favicon.svg, favicon-32x32.png, apple-touch-icon.png
 themes/dot-org-hugo-theme/      # submodule — NEVER edit files in here
@@ -99,8 +102,11 @@ Anything that needs changing in the theme is done by **overriding** the correspo
 under the project's own `layouts/` directory — Hugo resolves project files before theme
 files. Never patch the submodule. Keep overrides minimal and rare: copy the theme's version
 of the file, make the smallest possible change, and note at the top which theme file it
-forked and why, so theme updates can be re-merged. `footer.html` is currently the only
-override the site needs — reach for CSS before forking a template.
+forked and why, so theme updates can be re-merged. Reach for CSS before forking a
+template. Current overrides: `footer.html` (legal link row), `byline.html` (per-language
+post dates), `index.html` (home page), `button.html` (external link targets) and
+`img.html` (image pipeline). `partials/image.html` and the render hook are not forks —
+the theme has no equivalent files.
 
 The theme provides these designated extension points; use them instead of forking:
 `params.custom_css`, `params.custom_js`, `layouts/partials/head/custom-head.html`,
@@ -337,9 +343,26 @@ that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
   and emits intrinsic `width`/`height`. SVG and GIF pass through untouched; remote URLs
   and unresolvable paths fall back to a plain `<img>`.
 
-  Prefer it over the theme's `{{< img >}}` shortcode, which emits a raw `<img>` and never
-  touches `.Resources`. The shortcode is still right inside `{{< column >}}` blocks and
-  anywhere else the markdown syntax cannot reach.
+  `{{< img >}}` is overridden in `layouts/shortcodes/img.html` and goes through the same
+  `partials/image.html`, so both syntaxes produce identical markup. Use the shortcode when
+  you need `loading="eager"`, `fetchpriority`, a `caption` (it emits `<figure>`/
+  `<figcaption>`) or a `class` — markdown syntax cannot express those. Unlike the theme's
+  version, the override does **not** invent alt text from the filename; a missing `alt`
+  stays empty rather than becoming plausible-sounding nonsense for screen readers.
+
+  **Bundle-relative paths do not work inside `{{< column >}}` or `{{< card >}}`.** Those
+  shortcodes render their body with `.Inner | markdownify`, which loses the page context:
+  inside them the render hook's `.Page` is the site home with no resources, so
+  `![alt](foo.jpg)` silently falls through unprocessed (`.PageInner` does not help).
+  Root-relative `/img/…` asset paths are unaffected, which is why `content/<lang>/_index.md`
+  — built entirely from columns — keeps its images in `assets/img/home/` and refers to them
+  by root-relative path. Nested `{{< img >}}` shortcodes are fine: shortcode invocations
+  keep their page context, only markdownify-rendered markdown loses it. Verified on 0.148.1.
+
+  **Home page images live in `assets/img/home/`** for that reason. Two of them
+  (`cnc-portalfraese.jpg`, `laser-kh-3020.jpg`) were hotlinked from
+  `wiki.starship-factory.ch` and are now vendored: the home page must not depend on a
+  second origin staying up, and every image should be served from our own domain.
 
   The hook sits at the legacy `layouts/_default/_markup/` path rather than the 0.146+
   `layouts/_markup/`, because that works with no deprecation warning and stays compatible
