@@ -1,0 +1,32 @@
+{{/* Fork of themes/dot-org-hugo-theme/layouts/blog/list.html (theme 0.1.8).
+
+     Only change: the section content and the post listing are wrapped in a
+     data-pagefind-body element so /blog/ is searchable. baseof.html sets that
+     attribute for .IsPage only, which excludes section pages, and Pagefind
+     skips every page without it as soon as any page on the site has one.
+
+     The wrapper is emitted for the first paginator page only. /blog/page/2/
+     and later repeat post summaries that are already indexed on the posts
+     themselves, and would show up as duplicate results. .Paginate is therefore
+     called before .Content rather than after it — same output, but
+     $paginator.PageNumber has to be known before the wrapper opens.
+
+     data-pagefind-meta supplies the result title because baseof's
+     <h1 class="title"> sits outside the "main" block, and the listing's own
+     headings are the post titles.
+*/}}
+{{ define "main" }}
+  {{ $paginator := .Paginate .Pages }}
+  {{ $indexed := eq $paginator.PageNumber 1 }}
+  {{ if $indexed }}<div data-pagefind-body data-pagefind-meta="title:{{ .Title }}">{{ end }}
+  {{ .Content }}
+  {{- range $paginator.Pages }}
+      <article class="blog-item">
+        <h2 class="blog-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{- partial "blog/byline.html" . }}
+        <p class="blog-item__summary">{{ .Summary | plainify }}</p>
+      </article>
+  {{ end }}
+  {{ if $indexed }}</div>{{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

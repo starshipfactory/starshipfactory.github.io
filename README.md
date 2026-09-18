@@ -325,10 +325,10 @@ mapped onto the theme's `--primary-*` custom properties. Keep it small.
 
 The theme is a submodule and is **read-only**. Anything that needs changing is done by
 copying the file into the project's own `layouts/` directory, which Hugo resolves first.
-There are five such files today: `layouts/partials/footer.html`,
-`layouts/partials/blog/byline.html`, `layouts/shortcodes/button.html` and
-`layouts/shortcodes/img.html` are copies of a theme file, and `layouts/index.html` fills a
-gap the theme leaves. Each carries a comment at the top saying what it forked and why.
+There are six such files today: `layouts/partials/footer.html`,
+`layouts/partials/blog/byline.html`, `layouts/shortcodes/button.html`,
+`layouts/shortcodes/img.html` and `layouts/blog/list.html` are copies of a theme file, and
+`layouts/index.html` fills a gap the theme leaves. Each carries a comment at the top saying what it forked and why.
 `layouts/partials/image.html` and `layouts/_default/_markup/render-image.html` are not
 forks — the theme has no equivalent. Reach for CSS before forking a template, and never
 fork `header.html` — it carries the hamburger menu and the whole mobile navigation.

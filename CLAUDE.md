@@ -86,6 +86,7 @@ i18n/de.yaml, i18n/en.yaml      # UI strings — the theme ships NO i18n files
 data/authors.yaml               # blog authors, keyed by GitHub username
 archetypes/                     # copied from the theme, adapted
 layouts/partials/footer.html    # override: adds the legal link row (see Footer below)
+layouts/blog/list.html          # override: makes /blog/ searchable (see "Search")
 layouts/partials/image.html     # shared image-pipeline renderer (see "Images & media")
 layouts/shortcodes/img.html     # override: routes {{< img >}} through the pipeline
 layouts/_default/_markup/render-image.html   # markdown image render hook
@@ -104,9 +105,10 @@ files. Never patch the submodule. Keep overrides minimal and rare: copy the them
 of the file, make the smallest possible change, and note at the top which theme file it
 forked and why, so theme updates can be re-merged. Reach for CSS before forking a
 template. Current overrides: `footer.html` (legal link row), `byline.html` (per-language
-post dates), `index.html` (home page), `button.html` (external link targets) and
-`img.html` (image pipeline). `partials/image.html` and the render hook are not forks —
-the theme has no equivalent files.
+post dates), `index.html` (home page), `button.html` (external link targets),
+`img.html` (image pipeline) and `blog/list.html` (search indexing of `/blog/`).
+`partials/image.html` and the render hook are not forks — the theme has no equivalent
+files.
 
 The theme provides these designated extension points; use them instead of forking:
 `params.custom_css`, `params.custom_js`, `layouts/partials/head/custom-head.html`,
@@ -384,6 +386,51 @@ that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
   fill it in, in both languages.
 - The Anfahrt map and any video go through the theme's iframe styles and the
   `youtube_enhanced` shortcode, never a raw `<iframe>`.
+
+## Search
+
+Search is [Pagefind](https://pagefind.app/), run over the **built `public/` directory** as a
+post-build step — it is not something Hugo generates. `content/<lang>/search.md` holds the
+theme's `{{< search_form >}}` shortcode, which loads `/pagefind/pagefind-ui.js`; both CI
+workflows run `npx -y pagefind --site public` right after the Hugo build. `static/pagefind/`
+is generated and gitignored.
+
+`npm run start` does **not** build the index, so `/search` renders an empty box and the
+script 404s. Use `npm run dev:start:with-pagefind` when touching search; its index is a
+snapshot and goes stale until the script is rerun.
+
+**What gets indexed is decided by `data-pagefind-body`.** The theme's `baseof.html` puts that
+attribute on `#content` for `.IsPage` only. Pagefind's rule is all-or-nothing: once *any*
+page on the site carries the attribute, every page without one is skipped entirely. That
+covers every regular page and every blog post, in both languages.
+
+Section and home pages are **not** `.IsPage`, so they need their own wrapper —
+`baseof.html` must not be forked for this. One project template supplies one:
+`layouts/blog/list.html` wraps the content and the post listing on `/blog/` and
+`/en/blog/`, but **only on the first paginator page**. `/blog/page/2/` and later repeat
+summaries that are already indexed on the posts themselves and would return duplicate
+results. It also sets `data-pagefind-meta="title:…"`, since baseof's `<h1>` sits outside
+the `main` block.
+
+Deliberately left out of the index:
+
+- **The home pages** (`/`, `/en/`). Their content is a set of teasers that all link on to
+  the real page, so a hit on the home page is a detour. `layouts/index.html` is therefore
+  *not* a search-related override — do not add a wrapper to it.
+- **Taxonomy list pages** (`/tags/…`, `/categories/…`). Keyword listings, 272 of them, that
+  would crowd out real pages.
+- Not by choice: the `/search` page indexes itself as a near-empty result. Excluding it
+  cleanly would need `data-pagefind-ignore` on an ancestor of `#content`, i.e. a
+  `baseof.html` fork, which is not worth it.
+
+Pagefind splits the index by the `<html lang>` attribute on its own, so a German search
+returns German pages only, and its UI strings are localised without anything in `i18n/`.
+After a build, `public/pagefind/pagefind-entry.json` reports the per-language page counts —
+check it when changing what is indexed. A page with a near-zero word count there is a
+content problem, not a search one: **the seven workshop pages (`/laser/`, `/3d-druck/`,
+`/cnc-bearbeitung/`, `/elektronik/`, `/holzwerkstatt/`, `/textil/`, `/folien-plotten/`) and
+their English counterparts are front-matter-only stubs with no body**, so they are indexed
+on their title alone and are effectively unfindable by anything else.
 
 ## Branding: logo & colours
 

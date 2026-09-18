@@ -16,6 +16,7 @@ content/
 # cleanly. Reformatting them would destroy that property.
 layouts/partials/footer.html
 layouts/partials/blog/byline.html
+layouts/blog/list.html
 
 # Go template with no HTML of its own. Prettier has no Go-template parser and
 # reflows the explanatory comment into the {{ define }} line, which is valid
