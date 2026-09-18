@@ -91,3 +91,21 @@ With a 3D printer with a 0.3 mm nozzle you can make quite acceptable Elna progra
 yourself. The problem is that the Elna machine's reading mechanism immortalises even the
 slightest variation in material as a deviation in the seam, which is why a 0.5 mm nozzle is
 not good enough.
+
+PLA is a good choice of material: it is soft enough not to shatter at the speeds the machine
+spins it. The disc does deform and wear out fairly quickly in use, though.
+
+That would make ABS the obvious candidate, but given the considerable risk of a disc
+splintering while running we have not carried out any experiments in that direction.
+
+In our [Elna disc repository](http://git.ancient-solutions.com/cgi-bin/gitweb.cgi?p=starship-factory/elna-discs.git;a=summary "http://git.ancient-solutions.com/cgi-bin/gitweb.cgi?p=starship-factory/elna-discs.git;a=summary") we have put together a number of 3D models
+that can be printed on the 3D printer; it holds both basic discs with no further information
+and discs with zigzag patterns and the like.
+
+## Resources
+
+- [Elna Supermatic pattern discs: the current state](http://wiki.starship-factory.ch/Projekte/ELNA-Musterdisks.html "http://wiki.starship-factory.ch/Projekte/ELNA-Musterdisks.html")
+- [A list of all discs, without photos](http://whitesewingcenter.com/elnaparts.php "http://whitesewingcenter.com/elnaparts.php")
+- [OpenSCAD user manual](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual")
+- Git repository: _git clone http://git.ancient-solutions.com/starship-factory/elna-discs.git_
+- [Git web interface](http://git.ancient-solutions.com/cgi-bin/gitweb.cgi?p=starship-factory/elna-discs.git;a=summary "http://git.ancient-solutions.com/cgi-bin/gitweb.cgi?p=starship-factory/elna-discs.git;a=summary")

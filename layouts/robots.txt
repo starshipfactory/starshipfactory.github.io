@@ -1,0 +1,14 @@
+{{- /*
+  Overrides Hugo's embedded robots.txt, which emits only "User-agent: *" and no more.
+
+  The point of the override is the Sitemap line: enableRobotsTXT is on and a valid sitemap
+  index sits at /sitemap.xml, but nothing pointed crawlers at it. The index covers both
+  languages — see layouts/sitemap.xml, which keeps noindex pages out of it.
+
+  Hugo writes one robots.txt, at the site root, for the default language. There is no
+  /en/robots.txt and there should not be: robots.txt is per-host, not per-language.
+*/ -}}
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}

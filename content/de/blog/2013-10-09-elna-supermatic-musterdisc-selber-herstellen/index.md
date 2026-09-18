@@ -14,7 +14,7 @@ Wir versuchen in einem Projekt, Discs für ELNA-Nähmaschinen selbst am 3D-Druck
 
 Dieser Artikel erklärt die aktuellen Fortschritte bei der Analyse und Herstellung der Elna-Discs. [Der aktuelle Stand](http://wiki.starship-factory.ch/Projekte/ELNA-Musterdisks/ "http://wiki.starship-factory.ch/Projekte/ELNA-Musterdisks.html") ist jeweils in unserem [Wiki](http://wiki.starship-factory.ch/ "http://wiki.starship-factory.ch/") zu finden.
 
-# Basisdiscs
+## Basisdiscs
 
 ![Viele verschiedene Elna-Discs](/img/blog/viele-verschiedene-elna-discs_2.jpeg "Viele verschiedene Elna-Discs")
 
@@ -25,7 +25,7 @@ Für die ELNA Supermatic-Maschinen aus den 50ern gibt es hauptsächlich 2 Arten 
 
 In jedem Fall gibt es mehrere Stufen, die durch unterschiedlich weit heraus ragende Aussenzähne abgebildet werden. (Grosser Ausschlag == grosse Wirkung.)
 
-## Abmessungen
+### Abmessungen
 
 Die Discs bestehen aus einem dicken Innenring, welcher auf der unteren Seite angeschrägt ist, um richtig auf den Sockel in der Maschine zu passen.
 
@@ -59,13 +59,13 @@ Die doppelten Discs sind 9mm gross. Darauf sind zwei 3mm breite Kränze angebrac
 
 ![Elna-Disc mit zweiter Spur zur Einstellung der Geschwindigkeit](/img/blog/elna-disc-mit-zweiter-spur-zur-einstellung-der-geschwindigkeit_2.jpeg "Elna-Disc mit zweiter Spur zur Einstellung der Geschwindigkeit")
 
-## Auswirkungen von Einstellungen
+### Auswirkungen von Einstellungen
 
 Der Hebel, welcher die Stichbreite einstellt, bewirkt, dass die Informationen auf der Disc beim Abtasten stärkere Variationen der Nadel auslösen. Eine Einstellung von 0 bewirkt dementsprechend, dass die Nadel unabhängig von der Struktur der Disc geradeaus näht.
 
 Der Einstellhebel zur Stichlänge hat lediglich Einfluss auf den Transport des Stoffes und nicht direkt auf die Disc.
 
-# Discs selber herstellen
+## Discs selber herstellen
 
 Mit einem 3D-Drucker mit 0.3mm-Nozzle kann man recht akzeptable Elna-Programmdiscs selbst herstellen. Das Problem dabei ist, dass der Ablesemechanismus der Elna-Maschine bereits geringste Materialschwankungen als Abweichung in der Naht verewigt, weshalb eine 0.5mm-Nozzle nicht ausreicht.
 
@@ -75,7 +75,7 @@ Daher käme ABS eigentlich als Material in Betracht; aufgrund der grossen Gefahr
 
 In unserem [Elna-Disc-Repository](http://git.ancient-solutions.com/cgi-bin/gitweb.cgi?p=starship-factory/elna-discs.git;a=summary "http://git.ancient-solutions.com/cgi-bin/gitweb.cgi?p=starship-factory/elna-discs.git;a=summary") haben wir einige 3D-Modelle zusammengestellt, welche mit Hilfe des 3D-Druckers gedruckt werden können; dort finden sich sowohl Basisdiscs ohne weitere Informationen als auch Discs mit Zickzackmustern und dergleichen.
 
-# Resourcen
+## Ressourcen
 
 - [Elna-Supermatic-Musterdiscs: der aktuelle Stand](http://wiki.starship-factory.ch/Projekte/ELNA-Musterdisks.html "http://wiki.starship-factory.ch/Projekte/ELNA-Musterdisks.html")
 - [Auflistung aller discs ohne Fotos](http://whitesewingcenter.com/elnaparts.php "http://whitesewingcenter.com/elnaparts.php")
