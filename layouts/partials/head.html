@@ -1,0 +1,49 @@
+{{- /*
+  Forked from themes/dot-org-hugo-theme/layouts/partials/head.html.
+
+  ONE CHANGE, the two $title lines below. Everything after them is byte-identical to the
+  theme — keep it that way so theme updates stay easy to merge.
+
+  A page may set `meta_title` in its front matter to override the <title> element without
+  changing .Title. The home page uses it: the theme hardcodes .Site.Title as the home
+  title, so otherwise the only way to give it a keyword-bearing title is to change
+  .Site.Title itself.
+
+  Why not .Site.Title: it is also the suffix on every other page ("Holzwerkstatt |
+  Starship Factory"), plus og:site_name, the logo alt text, the RSS channel title, and
+  Organization.name / Place.name in our JSON-LD. Measured when it was tried: titles over 60
+  characters went from 60 pages to 211 (median 31 -> 58), and the schema named the
+  association "Dein Makerspace in Basel - Starship Factory" — a slogan, not an entity name.
+
+  Why not the home page's front matter `title` either: the theme's _default/rss.xml prints
+  the feed name as `{{ if eq .Title .Site.Title }}`, so a different .Title on the home page
+  turns the feed into "Dein Makerspace in Basel - Starship Factory on Starship Factory".
+  meta_title sidesteps both, and is available to any page that wants a <title> different
+  from its heading.
+*/ -}}
+{{ $title := cond .IsHome .Site.Title (print .Title " | " .Site.Title) }}
+{{ with .Params.meta_title }}{{ $title = . }}{{ end }}
+{{ $description := .Description | default (.Summary | truncate 160) | default .Site.Params.description | default "" }}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{- partial "head/csp.html" . }}
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ $description }}" />
+
+    {{ if .Params.noindex }}
+    <meta name="robots" content="noindex, nofollow" />
+    {{ end }}
+
+    {{- partial "head/preload.html" . }}
+    {{- partial "head/css.html" . }}
+    {{- template "_internal/opengraph.html" . -}}
+    {{- partial "head/twitter-cards.html" . }}
+    {{- partial "head/published-time.html" . }}
+    {{- partial "head/favicons.html" . }}
+    {{- template "_internal/google_analytics.html" . -}}
+    {{- partial "head/custom-css.html" . }}
+    {{- partial "head/custom-head.html" . }}
+    {{- partial "head/sticky-header.html" . }}
+</head>

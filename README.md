@@ -430,6 +430,17 @@ pages that should rank. Pagefind already excluded them for the same reason.
 If you add a page that should not be indexed, put `noindex: true` in its front matter: the
 theme emits the meta tag and the sitemap template drops it, with no second list to update.
 
+Any page can set **`meta_title`** in its front matter to change the `<title>` element
+without changing `.Title`. The home pages use it, which is the only reason
+[`layouts/partials/head.html`](layouts/partials/head.html) is forked — one added line.
+Reach for it when a page needs a longer, keyword-bearing title than its heading; leave
+`.Title` alone, since that also feeds `og:title` and the RSS channel name.
+
+Do **not** solve this by changing `title:` in `config/_default/languages.yaml`. That value
+is the suffix on every other page's title, plus `og:site_name`, the logo alt text, the RSS
+channel title and `Organization.name` in the JSON-LD. Measured: it pushed pages with titles
+over 60 characters from 60 to 211, and named the association after a slogan.
+
 [`layouts/partials/head/schema.html`](layouts/partials/head/schema.html) emits schema.org
 JSON-LD: an `Organization` + `Place` + `WebSite` graph on the two home pages, and a
 `BlogPosting` on each post. The Place carries the address, the coordinates and the opening

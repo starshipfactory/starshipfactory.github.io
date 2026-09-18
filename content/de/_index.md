@@ -1,10 +1,11 @@
 ---
 title: "Starship Factory"
+meta_title: "Dein Makerspace in Basel - Starship Factory"
 description: "Die Starship Factory ist dein Makerspace in Basel: ein offener Werkraum zum Basteln, Bauen, Reparieren und Lernen. Gasstrasse 20, im Hinterhof."
 showHeader: false
 ---
 
-# Starship Factory - dein Makerspace in Basel
+# Dein Makerspace in Basel - Starship Factory
 
 {{< columns count=2 >}}
 {{< column >}}
