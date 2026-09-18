@@ -26,11 +26,24 @@ de:
         name: "Blog"
         url: "/blog/"
         weight: 2
+      - identifier: "anfahrt"
+        name: "Anfahrt"
+        url: "/anfahrt/"
+        weight: 3
+      # External link to the Discourse forum, so no page of its own. The theme's
+      # header.html tags any menu URL starting with "http" with .external-link and
+      # renders an outbound arrow after it; static/js/external-links.js then adds
+      # target="_blank". relLangURL leaves absolute URLs untouched, so the href is
+      # emitted as written.
+      - identifier: "forum"
+        name: "Forum"
+        url: "https://discourse.starship-factory.ch/"
+        weight: 4
       # "Werkstatt" is a grouping entry only, like "Verein" below: it has no page
       # of its own, just the machine areas as children.
       - identifier: "werkstatt"
         name: "Werkstatt"
-        weight: 3
+        weight: 5
       - identifier: "3d-druck"
         name: "3D-Druck"
         url: "/3d-druck/"
@@ -66,10 +79,6 @@ de:
         url: "/folien-plotten/"
         parent: "werkstatt"
         weight: 7
-      - identifier: "anfahrt"
-        name: "Anfahrt"
-        url: "/anfahrt/"
-        weight: 4
       # "Verein" is a grouping entry only: it has no page of its own. The theme's
       # header.html renders a parent with children as href="#" plus a dropdown, and
       # footer.html renders it as a column heading above its children.
@@ -77,7 +86,7 @@ de:
       # (params.main_cta / params.footer_cta), so it is not duplicated at top level.
       - identifier: "verein"
         name: "Verein"
-        weight: 5
+        weight: 6
       - identifier: "mitglied-werden"
         name: "Mitglied werden"
         url: "/mitglied-werden/"
@@ -137,10 +146,19 @@ en:
         name: "Blog"
         url: "/blog/"
         weight: 2
+      - identifier: "anfahrt"
+        name: "How to find us"
+        url: "/how-to-find-us/"
+        weight: 3
+      # External link to the Discourse forum — see the German menu above.
+      - identifier: "forum"
+        name: "Forum"
+        url: "https://discourse.starship-factory.ch/"
+        weight: 4
       # Grouping entry only, no page of its own — see the German menu above.
       - identifier: "werkstatt"
         name: "Workshop"
-        weight: 3
+        weight: 5
       - identifier: "3d-druck"
         name: "3D printing"
         url: "/3d-printing/"
@@ -176,16 +194,12 @@ en:
         url: "/vinyl-cutting/"
         parent: "werkstatt"
         weight: 7
-      - identifier: "anfahrt"
-        name: "How to find us"
-        url: "/how-to-find-us/"
-        weight: 4
       # Grouping entry only, no page of its own — see the German menu above.
       # "Verein" is the Swiss registered association; "Association" is the plain
       # English equivalent members actually use when speaking English.
       - identifier: "verein"
         name: "Association"
-        weight: 5
+        weight: 6
       - identifier: "mitglied-werden"
         name: "Become a member"
         url: "/become-a-member/"

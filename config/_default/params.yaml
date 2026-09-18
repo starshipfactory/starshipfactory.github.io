@@ -8,7 +8,11 @@ logo_on_black: "/img/logo-on-dark.svg"
 # raw string through absURL, so these files must live under static/.
 custom_css:
   - "/css/custom.css"
-custom_js: []
+custom_js:
+  # Adds target="_blank" to off-site links in the header nav and the footer menu
+  # (currently the "Forum" entry). The theme's header.html cannot set it and must
+  # not be forked — see the file's own comment.
+  - "/js/external-links.js"
 
 # Default social share image (1200x630)
 images:
