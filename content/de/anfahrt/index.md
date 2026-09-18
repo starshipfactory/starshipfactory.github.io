@@ -4,6 +4,11 @@ description: "So findest du die Starship Factory an der Gasstrasse 20 in Basel �
 translationKey: "directions"
 ---
 
+{{< columns count=2 >}}
+{{< column >}}
+{{< iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.5746843218803415%2C47.56923319789967%2C7.578265070915223%2C47.57153687404694&layer=mapnik&marker=47.5703843%2C7.576474599999983" title="Karte mit dem Standort der Starship Factory an der Gasstrasse 20 in Basel" height="350px" >}}
+{{< /column >}}
+{{< column >}}
 Das Vereinslokal der Starship Factory befindet sich im Hinterhof der
 
 Gasstrasse 20\
@@ -11,17 +16,20 @@ Gasstrasse 20\
 
 Die Clubräume befinden sich dort im 1. Untergeschoss.
 
-{{< iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.5746843218803415%2C47.56923319789967%2C7.578265070915223%2C47.57153687404694&layer=mapnik&marker=47.5703843%2C7.576474599999983" title="Karte mit dem Standort der Starship Factory an der Gasstrasse 20 in Basel" height="350px" >}}
+{{< button link="https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475" text="Grössere Karte anzeigen" target="_blank" >}}
+{{< /column >}}
+{{< /columns >}}
 
-[Grössere Karte anzeigen](https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475)
-
+{{< columns count=2 >}}
+{{< column >}}
 ## Vom Bahnhof SBB
 
 _15 Minuten vom Bahnhof SBB_
 
 Mit der Tram Nummer 1 oder 11 Richtung Dreirosenbrücke bis zur Haltestelle „Voltaplatz“
 fahren.
-
+{{< /column >}}
+{{< column >}}
 ## Mit dem Auto
 
 _5 Minuten (1.8 km) von der Autobahnausfahrt Basel St. Johann_
@@ -35,3 +43,5 @@ Die blauen Parkplätze in Basel sind montags bis samstags von 19 bis 8 Uhr frei 
 Ausserhalb dieser Zeiten muss eine
 [Parkscheibe im Auto deponiert und auf die nächste halbe Stunde eingestellt werden](http://www.polizei.bs.ch/verkehr/strassenverkehr/parkieren.html).
 Mit dieser darf man dann für eine Stunde parkieren.
+{{< /column >}}
+{{< /columns >}}
