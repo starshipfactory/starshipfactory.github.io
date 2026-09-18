@@ -74,11 +74,6 @@ de:
         url: "/textil/"
         parent: "werkstatt"
         weight: 6
-      - identifier: "folien-plotten"
-        name: "Folien plotten"
-        url: "/folien-plotten/"
-        parent: "werkstatt"
-        weight: 7
       # "Verein" is a grouping entry only: it has no page of its own. The theme's
       # header.html renders a parent with children as href="#" plus a dropdown, and
       # footer.html renders it as a column heading above its children.
@@ -189,11 +184,6 @@ en:
         url: "/textiles/"
         parent: "werkstatt"
         weight: 6
-      - identifier: "folien-plotten"
-        name: "Vinyl cutting"
-        url: "/vinyl-cutting/"
-        parent: "werkstatt"
-        weight: 7
       # Grouping entry only, no page of its own — see the German menu above.
       # "Verein" is the Swiss registered association; "Association" is the plain
       # English equivalent members actually use when speaking English.
