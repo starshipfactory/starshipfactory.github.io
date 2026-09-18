@@ -430,6 +430,20 @@ pages that should rank. Pagefind already excluded them for the same reason.
 If you add a page that should not be indexed, put `noindex: true` in its front matter: the
 theme emits the meta tag and the sitemap template drops it, with no second list to update.
 
+[`layouts/partials/head/schema.html`](layouts/partials/head/schema.html) emits schema.org
+JSON-LD: an `Organization` + `Place` + `WebSite` graph on the two home pages, and a
+`BlogPosting` on each post. The Place carries the address, the coordinates and the opening
+hours, which is what lets a search engine treat Starship Factory as somewhere you can go
+rather than just a website.
+
+Those facts live in `params.organization` in
+[`config/_default/params.yaml`](config/_default/params.yaml) — **but the address and hours
+are also prose in `content/<lang>/_index.md` and the Anfahrt page.** There is no single
+source; if the club moves or changes its hours, both have to be updated.
+
+The Organization has one `@id` for the whole site, built from the German home page, because
+the German and English pages describe the same association rather than two of them.
+
 ### ⚠️ The cutover is manual
 
 At the time of writing, **`master` still serves the old Jekyll site**, and the new Hugo site

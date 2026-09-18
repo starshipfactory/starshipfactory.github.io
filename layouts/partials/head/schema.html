@@ -1,0 +1,153 @@
+{{- /*
+  schema.org structured data, as JSON-LD. Called from head/custom-head.html.
+
+  The theme emits none, so this is additive rather than a fork. It exists so that search
+  engines can tell what Starship Factory is, where it is and when it is open, instead of
+  inferring it from prose.
+
+  Two shapes, deliberately not emitted on every page:
+
+    home pages   an @graph with the Organization, the Place it occupies (address, geo,
+                 opening hours) and the WebSite (including the /search/ action).
+    blog posts   a BlogPosting, whose publisher is an @id reference back to the
+                 Organization above rather than a second copy of it.
+
+  Everything else gets nothing. The markup would be generic WebPage boilerplate that
+  restates the title and adds weight to every page in the site.
+
+  ONE ENTITY, TWO LANGUAGES. The @id is always built from the default language's home
+  (site.Sites is ordered by language weight, so index 0 is German), because /holzwerkstatt/
+  and /en/wood-workshop/ describe the same association, not two of them. Only the human
+  readable fields — description, inLanguage — differ per language.
+
+  The facts come from params.organization in config/_default/params.yaml. The visible
+  address and opening hours are prose in content/, so the two must be kept in sync by hand.
+
+  JSON is built as maps and passed through jsonify, never assembled as a string: that way
+  quoting and escaping are the template engine's problem, not ours.
+*/ -}}
+
+{{- $o := site.Params.organization -}}
+{{- $root := (index site.Sites 0).Home.Permalink -}}
+{{- $orgID := printf "%s#organization" $root -}}
+{{- $placeID := printf "%s#place" $root -}}
+
+{{- if .IsHome -}}
+  {{- $place := dict
+        "@type" "Place"
+        "@id" $placeID
+        "name" site.Title
+        "hasMap" $o.map
+        "address" (dict
+          "@type" "PostalAddress"
+          "streetAddress" $o.street
+          "postalCode" (string $o.postal_code)
+          "addressLocality" $o.city
+          "addressRegion" $o.region
+          "addressCountry" $o.country)
+        "geo" (dict
+          "@type" "GeoCoordinates"
+          "latitude" $o.latitude
+          "longitude" $o.longitude)
+  -}}
+  {{- $hours := slice -}}
+  {{- range $o.opening_hours -}}
+    {{- $hours = $hours | append (dict
+          "@type" "OpeningHoursSpecification"
+          "dayOfWeek" .days
+          "opens" .opens
+          "closes" .closes) -}}
+  {{- end -}}
+  {{- with $hours }}{{ $place = merge $place (dict "openingHoursSpecification" .) }}{{ end -}}
+
+  {{- $sameAs := slice -}}
+  {{- range $k, $v := site.Params.social_links -}}
+    {{- with $v }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+  {{- end -}}
+
+  {{- $org := dict
+        "@type" "Organization"
+        "@id" $orgID
+        "name" site.Title
+        "url" $root
+        "description" site.Params.description
+        "email" $o.email
+        "logo" (dict
+          "@type" "ImageObject"
+          "url" (printf "%simg/logo.svg" $root))
+        "location" (dict "@id" $placeID)
+        "address" (dict "@id" $placeID)
+  -}}
+  {{- with $sameAs }}{{ $org = merge $org (dict "sameAs" .) }}{{ end -}}
+
+  {{- $site := dict
+        "@type" "WebSite"
+        "@id" (printf "%s#website" .Permalink)
+        "url" .Permalink
+        "name" site.Title
+        "inLanguage" site.Language.LanguageCode
+        "publisher" (dict "@id" $orgID)
+        "potentialAction" (dict
+          "@type" "SearchAction"
+          "target" (dict
+            "@type" "EntryPoint"
+            "urlTemplate" (printf "%ssearch/?q={search_term_string}" .Permalink))
+          "query-input" "required name=search_term_string")
+  -}}
+
+  {{- $graph := dict "@context" "https://schema.org" "@graph" (slice $org $place $site) -}}
+  <script type="application/ld+json">{{ jsonify (dict "indent" "  ") $graph | safeJS }}</script>
+
+{{- else if and .IsPage (eq .Section "blog") -}}
+  {{- /* First image in the rendered body, already run through the image pipeline. */ -}}
+  {{- $img := "" -}}
+  {{- with findRESubmatch `<img[^>]+src="([^"]+)"` .Content 1 -}}
+    {{- $img = index (index . 0) 1 -}}
+  {{- end -}}
+  {{- /*
+    No fallback to params.images. That file is the social share card — the logo on white —
+    and claiming it as the article's image on the 154 posts that carry no picture would be
+    asserting something untrue about each of them. image is a recommended field, not a
+    required one; a post without a picture simply does not have one.
+  */ -}}
+  {{- if hasPrefix $img "/" -}}{{- $img = $img | absURL -}}{{- end -}}
+
+  {{- /*
+    No dateModified. enableGitInfo derives .Lastmod from the last commit that touched the
+    file, and the migration rewrote all 192 post files — so every post, including the ones
+    from 2013, would claim to have been updated during the rewrite. That is true of the
+    file and false of the content, and dateModified is exactly the field a search engine
+    may surface as "updated". datePublished is the honest one, and it is the one that
+    matters for an archive. Add dateModified back the day posts start being genuinely
+    revised.
+  */ -}}
+
+  {{- /* The 96 migrated posts carry no author, so the association is the author. */ -}}
+  {{- $author := dict "@id" $orgID -}}
+  {{- with .Params.author -}}
+    {{- with (index site.Data.authors .) -}}
+      {{- $author = dict "@type" "Person" "name" .name -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* Summaries can start or end with a newline and wrap mid-sentence: flatten to one line. */ -}}
+  {{- $desc := trim (replaceRE `\s+` " " (.Description | default (.Summary | plainify | truncate 200))) " " -}}
+
+  {{- $post := dict
+        "@context" "https://schema.org"
+        "@type" "BlogPosting"
+        "@id" (printf "%s#post" .Permalink)
+        "mainEntityOfPage" .Permalink
+        "url" .Permalink
+        "headline" .Title
+        "description" $desc
+        "inLanguage" site.Language.LanguageCode
+        "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+        "author" $author
+        "publisher" (dict "@id" $orgID)
+  -}}
+  {{- with $img }}{{ $post = merge $post (dict "image" .) }}{{ end -}}
+  {{- with .Params.tags }}{{ $post = merge $post (dict "keywords" (delimit . ", ")) }}{{ end -}}
+
+  <script type="application/ld+json">{{ jsonify (dict "indent" "  ") $post | safeJS }}</script>
+{{- end -}}

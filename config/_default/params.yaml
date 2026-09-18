@@ -40,3 +40,26 @@ social_links:
 sticky_header: true
 # Search in the header (requires content/<lang>/search.md — created in phase 3)
 show_search: true
+
+######################## structured data (JSON-LD) ####################
+# Facts about the association, rendered by layouts/partials/head/schema.html into the
+# schema.org graph. These are NOT display copy — the visible address and opening hours
+# live in content/<lang>/_index.md and content/<lang>/anfahrt/index.md. When the club
+# moves or changes its hours, both have to be updated; there is no single source.
+#
+# Coordinates match the marker in the Anfahrt map embed.
+organization:
+  email: "board@starship-factory.ch"
+  street: "Gasstrasse 20"
+  postal_code: "4056"
+  city: "Basel"
+  region: "Basel-Stadt"
+  country: "CH"
+  latitude: 47.570384
+  longitude: 7.576475
+  map: "https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475"
+  # Di 19:30–22:00, Fr 19:30–22:00
+  opening_hours:
+    - days: ["Tuesday", "Friday"]
+      opens: "19:30"
+      closes: "22:00"
