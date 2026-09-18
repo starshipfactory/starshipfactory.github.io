@@ -72,7 +72,7 @@ Mit unseren CNC-Fräsen können wir Teile aus weichen Metallen, Holz oder andere
 {{< /column >}}
 {{< column >}}
 ### Laser
-Wir haben einen Laser Engraver und mehrere Laser Cutter. Mit unserem Laser-Cutter kann man aus Sperrholz oder
+Wir haben einen Laser Engraver und mehrere Laser Cutter. Mit unseren Laser-Cuttern kann man aus Sperrholz oder
 Acrylglas Bauteile ausschneiden, und vieles mehr!
 
 {{< button link="/laser/" text="Mehr erfahren" style="secondary" >}}

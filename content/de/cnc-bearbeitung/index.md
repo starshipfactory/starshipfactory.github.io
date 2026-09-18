@@ -4,7 +4,7 @@ description: "Der Bereich CNC-Bearbeitung in der Werkstatt der Starship Factory 
 translationKey: "cnc-machining"
 ---
 
-Wir verfügen über zwei CNC Fräsen.
+Wir haben zwei CNC Fräsen.
 
 {{< columns count=2 >}}
 {{< column >}}
