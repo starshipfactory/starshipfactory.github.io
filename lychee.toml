@@ -12,9 +12,19 @@ max_retries = 2
 accept = ["200..=299", "403", "429"]
 
 exclude = [
-  # Historical external links in blog posts. Many of these sites are gone;
+  # Every absolute http(s) URL, our own production domain included.
+  #
+  # Historical external links in blog posts: many of those sites are gone;
   # the posts are archives and their links are left as written.
-  "^https?://(?!starship-factory\\.ch|www\\.starship-factory\\.ch)",
+  #
+  # Our own domain is excluded too, which is not obvious. Internal links are
+  # verified offline instead, against the relativeURLs render that build.yml
+  # produces in public-linkcheck/. Fetching https://starship-factory.ch/...
+  # over the network would check a PR against whatever is *currently
+  # deployed* rather than against the PR itself, so a PR adding a page would
+  # fail on its own new page. Before the Hugo cutover it fails on nearly
+  # everything, since the live site is still the old Jekyll one.
+  "^https?://",
   # mailto: links carry long prefilled bodies that lychee cannot verify
   "^mailto:",
 ]

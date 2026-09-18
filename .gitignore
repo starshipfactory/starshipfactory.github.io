@@ -1,5 +1,7 @@
 # Hugo build output
 public/
+# relativeURLs copy built in CI for the link check
+public-linkcheck/
 resources/
 .hugo_build.lock
 hugo_stats.json
