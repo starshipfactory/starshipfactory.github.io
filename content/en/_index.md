@@ -4,10 +4,10 @@ description: "Starship Factory is your makerspace in Basel: an open workshop for
 showHeader: false
 ---
 
+# Starship Factory - your makerspace in Basel
+
 {{< columns count=2 >}}
 {{< column >}}
-
-# Starship Factory
 
 {{< intro >}}
 We are a makerspace, hackerspace, meeting point and open workshop. A colourful mix of creative

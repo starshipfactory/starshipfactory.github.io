@@ -4,10 +4,10 @@ description: "Die Starship Factory ist dein Makerspace in Basel: ein offener Wer
 showHeader: false
 ---
 
+# Starship Factory - dein Makerspace in Basel
+
 {{< columns count=2 >}}
 {{< column >}}
-
-# Starship Factory
 
 {{< intro >}}
 Wir sind ein Makerspace, Hackerspace, Treffpunkt und eine
