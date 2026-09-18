@@ -1,0 +1,46 @@
+{{- /*
+  Image render hook — routes Markdown images through Hugo's image pipeline.
+
+  NOT a theme fork: dot-org-hugo-theme ships no render hooks at all, so this adds
+  behaviour rather than freezing a copy of a theme template. It lets plain Markdown
+  `![alt](foo.jpg "title")` get pipeline treatment, so content stays portable
+  Markdown instead of being locked into the theme's {{< img >}} shortcode (which
+  emits a raw <img> and never touches .Resources).
+
+  Behaviour:
+  - Page-bundle raster images (foo.jpg beside index.md) are converted to WebP,
+    capped at the theme's --content-width, given a 2x srcset where the original is
+    large enough, and emitted with intrinsic width/height so nothing shifts on load.
+  - SVG and GIF bundle resources pass through untouched — Resize cannot handle
+    vectors and would flatten an animated GIF to a single frame.
+  - Everything else (absolute paths like /img/blog/…, remote URLs) falls back to a
+    plain <img>. This is what keeps the 96 migrated blog posts rendering unchanged.
+
+  Path note: `layouts/_default/_markup/` is the legacy location. Hugo 0.146 moved
+  render hooks to `layouts/_markup/`, but the legacy path still works with no
+  deprecation warning and is compatible with the min: "0.121.0" floor in
+  config/_default/hugo.yaml. Move this file if that floor is ever raised past 0.146.
+*/ -}}
+
+{{- $maxWidth := 895 -}}{{/* --content-width, themes/dot-org-hugo-theme/assets/scss/_variables.scss */ -}}
+{{- $processable := slice "jpeg" "png" "webp" "tiff" "bmp" -}}
+
+{{- $res := .Page.Resources.GetMatch .Destination -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+
+{{- if and $res (in $processable $res.MediaType.SubType) -}}
+  {{- $w := cond (gt $res.Width $maxWidth) $maxWidth $res.Width -}}
+  {{- $img := $res.Resize (printf "%dx webp" $w) -}}
+  {{- $srcset := "" -}}
+  {{- $w2x := mul $w 2 -}}
+  {{- if le $w2x $res.Width -}}
+    {{- $retina := $res.Resize (printf "%dx webp" $w2x) -}}
+    {{- $srcset = printf "%s 1x, %s 2x" $img.RelPermalink $retina.RelPermalink -}}
+  {{- end -}}
+  <img src="{{ $img.RelPermalink }}"{{ with $srcset }} srcset="{{ . }}"{{ end }} width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- else if $res -}}
+  <img src="{{ $res.RelPermalink }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- else -}}
+  <img src="{{ .Destination | safeURL }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}

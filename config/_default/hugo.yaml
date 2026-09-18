@@ -45,6 +45,14 @@ privacy:
   vimeo:
     enableDNT: true
 
+######################## images ####################
+# Defaults for Hugo's image pipeline, used by layouts/_default/_markup/render-image.html.
+# Lanczos is slower than the default Box filter but noticeably sharper on downscales,
+# which is all this site does.
+imaging:
+  quality: 80
+  resampleFilter: Lanczos
+
 markup:
   goldmark:
     renderer:
