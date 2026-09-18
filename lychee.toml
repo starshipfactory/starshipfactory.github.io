@@ -1,0 +1,30 @@
+# Link checker configuration. See https://lychee.cli.rs
+# Run against the built site in public/, not the Markdown sources, so that
+# aliases, permalinks and the language prefixes are all resolved.
+
+# The archive spans 2013-2025 and links to a lot of the early web. Dead
+# external links in historical posts are expected and are not a reason to
+# fail a build; only internal links must hold.
+exclude_all_private = true
+max_concurrency = 8
+timeout = 20
+max_retries = 2
+accept = ["200..=299", "403", "429"]
+
+exclude = [
+  # Every absolute http(s) URL, our own production domain included.
+  #
+  # Historical external links in blog posts: many of those sites are gone;
+  # the posts are archives and their links are left as written.
+  #
+  # Our own domain is excluded too, which is not obvious. Internal links are
+  # verified offline instead, against the relativeURLs render that build.yml
+  # produces in public-linkcheck/. Fetching https://starship-factory.ch/...
+  # over the network would check a PR against whatever is *currently
+  # deployed* rather than against the PR itself, so a PR adding a page would
+  # fail on its own new page. Before the Hugo cutover it fails on nearly
+  # everything, since the live site is still the old Jekyll one.
+  "^https?://",
+  # mailto: links carry long prefilled bodies that lychee cannot verify
+  "^mailto:",
+]

@@ -1,0 +1,16 @@
+# Blog authors, keyed by GitHub username.
+#
+# The key is what goes in a post's `author:` front matter; the theme resolves it
+# in partials/blog/byline.html. If the key is missing from this file the byline
+# silently falls back to showing only the date, so keep them in sync.
+#
+# Fields:
+#   name     required — displayed name
+#   twitter  optional — renders the name as a link to twitter.com/<handle>
+#   company  optional — rendered in brackets after the name
+#
+# The 96 posts migrated from the old Jekyll site carry no author front matter,
+# so they render with the date alone unless an author is added deliberately.
+
+starshipfactory:
+  name: "Starship Factory"

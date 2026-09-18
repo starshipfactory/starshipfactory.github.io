@@ -1,0 +1,65 @@
+######################## logos & custom assets ####################
+# Header logo (light background) and footer logo (the footer background is black).
+# Both are created in phase 4 from master:assets/images/logo.svg
+logo_on_white: "/img/logo.svg"
+logo_on_black: "/img/logo-on-dark.svg"
+
+# NOTE: custom_css/custom_js are NOT the asset pipeline. head/custom-css.html emits the
+# raw string through absURL, so these files must live under static/.
+custom_css:
+  - "/css/custom.css"
+custom_js:
+  # Adds target="_blank" to off-site links in the header nav and the footer menu
+  # (currently the "Forum" entry). The theme's header.html cannot set it and must
+  # not be forked — see the file's own comment.
+  - "/js/external-links.js"
+
+# Default social share image (1200x630)
+images:
+  - "/img/social-share.png"
+
+######################## github ####################
+github:
+  repo_url: "https://github.com/starshipfactory/starshipfactory.github.io/blob/master"
+  # Kept off until this branch is merged to master — until then every edit link
+  # would point at a path that does not exist on the default branch.
+  show_edit_link: false
+
+######################## social links ####################
+# Every non-empty key here renders /img/social-icons/<key>.svg in the footer.
+# Keys map 1:1 to icon filenames; signal.svg and discourse.svg are added in phase 4
+# because the theme does not ship them.
+social_links:
+  signal: "https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t"
+  instagram: "https://instagram.com/starship_factory"
+  github: "https://github.com/starshipfactory"
+  discourse: "https://discourse.starship-factory.ch"
+
+######################## ui ####################
+# Sticky header on tall screens
+sticky_header: true
+# Search in the header (requires content/<lang>/search.md — created in phase 3)
+show_search: true
+
+######################## structured data (JSON-LD) ####################
+# Facts about the association, rendered by layouts/partials/head/schema.html into the
+# schema.org graph. These are NOT display copy — the visible address and opening hours
+# live in content/<lang>/_index.md and content/<lang>/anfahrt/index.md. When the club
+# moves or changes its hours, both have to be updated; there is no single source.
+#
+# Coordinates match the marker in the Anfahrt map embed.
+organization:
+  email: "board@starship-factory.ch"
+  street: "Gasstrasse 20"
+  postal_code: "4056"
+  city: "Basel"
+  region: "Basel-Stadt"
+  country: "CH"
+  latitude: 47.570384
+  longitude: 7.576475
+  map: "https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475"
+  # Di 19:30–22:00, Fr 19:30–22:00
+  opening_hours:
+    - days: ["Tuesday", "Friday"]
+      opens: "19:30"
+      closes: "22:00"

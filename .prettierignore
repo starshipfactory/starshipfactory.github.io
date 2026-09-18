@@ -1,0 +1,33 @@
+# Never format what we do not own or generate
+themes/
+public/
+resources/
+node_modules/
+static/pagefind/
+package-lock.json
+
+# Content is migrated prose; reformatting it would churn 192 files and
+# risk changing Markdown semantics (hard line breaks, tables).
+content/
+
+# Forked theme partials. These are kept byte-identical to the theme's
+# versions apart from the documented change, so that `diff` against
+# themes/dot-org-hugo-theme/ stays readable and theme updates merge
+# cleanly. Reformatting them would destroy that property.
+layouts/partials/footer.html
+layouts/partials/blog/byline.html
+layouts/blog/list.html
+layouts/partials/head.html
+
+# Go template with no HTML of its own. Prettier has no Go-template parser and
+# reflows the explanatory comment into the {{ define }} line, which is valid
+# but unreadable.
+layouts/index.html
+
+# Go templates with heavy {{- -}} whitespace control. Prettier has no Go-template
+# parser and reflows the tags, which changes the rendered output.
+layouts/_default/_markup/render-image.html
+layouts/partials/image.html
+layouts/shortcodes/img.html
+layouts/partials/head/custom-head.html
+layouts/partials/head/schema.html

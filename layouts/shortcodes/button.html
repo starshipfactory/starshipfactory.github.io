@@ -1,0 +1,12 @@
+{{/* Forked from dot-org-hugo-theme 0.1.8, layouts/shortcodes/button.html.
+     Reason: the theme's button renders a bare <a href class> with no way to open the
+     link in a new tab, and the Signal group invite on the home page has to leave the
+     site. Raw HTML in the Markdown was the alternative, which the project conventions
+     rule out in favour of the theme's shortcodes.
+
+     The ONLY change is the optional `target` parameter below. Omitted, the output is
+     byte-identical to the theme's. With target="_blank" it also emits
+     rel="noopener noreferrer", which prevents the opened page from reaching back
+     through window.opener. */}}
+{{- $target := .Get "target" -}}
+<a href="{{ .Get "link" }}" class="{{ with .Get "style" }}{{ if eq . "secondary" }}button secondary{{ else if eq . "tertiary" }}button tertiary{{ else }}button{{ end }}{{ else }}button{{ end }}"{{ with $target }} target="{{ . }}"{{ if eq . "_blank" }} rel="noopener noreferrer"{{ end }}{{ end }}>{{ .Get "text" }}</a>

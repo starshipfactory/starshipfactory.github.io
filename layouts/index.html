@@ -1,0 +1,8 @@
+{{/* Home page template.
+
+     The theme has no layouts/index.html, so the home page (Kind: home) falls
+     through to themes/dot-org-hugo-theme/layouts/_default/list.html, which
+     appends a title + summary block for every top-level page after .Content.
+     This template renders only the page content; baseof.html supplies the rest.
+*/}}
+{{ define "main" }}{{ .Content }}{{ end }}

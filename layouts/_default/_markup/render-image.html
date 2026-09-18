@@ -1,0 +1,20 @@
+{{- /*
+  Image render hook — routes markdown images through Hugo's image pipeline.
+
+  NOT a theme fork: dot-org-hugo-theme ships no render hooks at all, so this adds
+  behaviour rather than freezing a copy of a theme template. Plain markdown
+  `![alt](foo.jpg "title")` is the preferred way to place an image; the rendering
+  itself lives in partials/image.html, shared with the {{< img >}} override.
+
+  Path note: `layouts/_default/_markup/` is the legacy location. Hugo 0.146 moved
+  render hooks to `layouts/_markup/`, but the legacy path still works with no
+  deprecation warning and is compatible with the min: "0.121.0" floor in
+  config/_default/hugo.yaml. On the new path it would silently stop firing below
+  0.146 instead of failing loudly. Move it if that floor is ever raised.
+*/ -}}
+{{- partial "image.html" (dict
+      "src"   .Destination
+      "page"  .Page
+      "alt"   .Text
+      "title" .Title
+) -}}

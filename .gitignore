@@ -1,4 +1,21 @@
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
+# Hugo build output
+public/
+# relativeURLs copy built in CI for the link check
+public-linkcheck/
+resources/
+.hugo_build.lock
+hugo_stats.json
+
+# Generated Pagefind search index (built at deploy time)
+static/pagefind/
+
+# Node
+node_modules/
+
+# Editors / OS
+.idea/
+.DS_Store
+
+# Claude Code: the agent definitions under .claude/agents/ are shared project
+# tooling and ARE tracked. Only the per-machine settings file is personal.
+.claude/settings.local.json

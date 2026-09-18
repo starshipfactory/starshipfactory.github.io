@@ -1,0 +1,39 @@
+{{/* Forked from dot-org-hugo-theme 0.1.8, layouts/partials/blog/byline.html.
+     Two changes from the theme version, both in the variable block below:
+
+     1. The theme hardcodes .Date.Format "January 2, 2006", rendering German posts as
+        "August 30, 2026" instead of "30. August 2026". The layout string now comes
+        from i18n per language; Hugo's time.Format localises the month name.
+     2. The theme calls `index $allAuthors $authorKey` unguarded, which ABORTS THE
+        BUILD for any post without an `author` front matter field ("value is nil;
+        should be of type string"). None of the 96 posts migrated from the old Jekyll
+        site have one, so the lookup is now guarded and such posts render date-only.
+
+     The markup below is byte-identical to the theme's. */}}
+{{- $date := time.Format (i18n "date_format" | default "January 2, 2006") .Date }}
+{{- $allAuthors := .Site.Data.authors }}
+{{- $authorKey := .Params.author }}
+{{- $authorData := false }}
+{{- with $authorKey }}{{ $authorData = index $allAuthors . }}{{ end }}
+
+<div class="blog-item__byline">
+  <p>
+    {{ if $date }}
+      <span class="blog-item__date">{{ $date }}</span>
+    {{ end }}
+    {{ if $authorData }}
+      <span class="blog-item__author"
+        >{{ i18n "by" | default "by" }}
+        {{ if $authorData.twitter }}
+          <a
+            href="https://www.twitter.com/{{ $authorData.twitter }}"
+            title="Visit {{ $authorData.name }} on Twitter"
+          >{{ $authorData.name }}</a>
+        {{ else }}
+          {{ $authorData.name }}
+        {{ end }}
+        {{ if $authorData.company }}({{ $authorData.company }}){{ end }}
+      </span>
+    {{ end }}
+  </p>
+</div>

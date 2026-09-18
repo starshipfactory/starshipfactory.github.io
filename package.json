@@ -1,0 +1,36 @@
+{
+  "name": "starship-factory-website",
+  "version": "0.1.0",
+  "description": "Website of Starship Factory, the makerspace in Basel",
+  "scripts": {
+    "build": "hugo --theme=dot-org-hugo-theme",
+    "build:production": "hugo --environment=production --baseURL ${npm_config_url}",
+    "start": "hugo serve --logLevel info --configDir=config --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
+    "dev": "npm run dev:start",
+    "dev:start": "hugo serve --logLevel info --configDir=config --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
+    "dev:start:with-pagefind": "hugo --baseURL=/ --theme=dot-org-hugo-theme && npm_config_yes=true npx pagefind --site 'public' --output-subdir '../static/pagefind' && npm run dev:start",
+    "dev:build": "hugo --theme=dot-org-hugo-theme",
+    "format": "prettier --write \"**/*.{json,yaml,yml,html,css,js}\"",
+    "format:check": "prettier --check \"**/*.{json,yaml,yml,html,css,js}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starshipfactory/starshipfactory.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starshipfactory/starshipfactory.github.io/issues"
+  },
+  "homepage": "https://starship-factory.ch",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "hugo-extended": "^0.148.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "sass-embedded": "^1.89.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "private": true
+}

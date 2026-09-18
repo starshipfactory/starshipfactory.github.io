@@ -1,0 +1,221 @@
+######################## german — main language, served at the site root ####################
+de:
+  languageName: "Deutsch"
+  languageCode: "de-CH"
+  weight: 1
+  title: "Starship Factory"
+  copyright: "Copyright &copy; {{< current_year >}} Starship Factory, Basel. Inhalte unter [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.de), sofern nicht anders angegeben."
+  params:
+    description: "Die Starship Factory ist der Makerspace in Basel: ein offener Werkraum zum Basteln, Bauen, Reparieren und Lernen."
+    accessibility:
+      skip_text: "Zum Inhalt springen"
+    main_cta:
+      text: "Mitglied werden"
+      link: "/mitglied-werden/"
+    footer_cta:
+      text: "Mach mit"
+      link: "/mitglied-werden/"
+    github_edit: "Diese Seite auf GitHub bearbeiten"
+  menu:
+    main:
+      - identifier: "home"
+        name: "Home"
+        url: "/"
+        weight: 1
+      - identifier: "blog"
+        name: "Blog"
+        url: "/blog/"
+        weight: 2
+      - identifier: "anfahrt"
+        name: "Anfahrt"
+        url: "/anfahrt/"
+        weight: 3
+      # External link to the Discourse forum, so no page of its own. The theme's
+      # header.html tags any menu URL starting with "http" with .external-link and
+      # renders an outbound arrow after it; static/js/external-links.js then adds
+      # target="_blank". relLangURL leaves absolute URLs untouched, so the href is
+      # emitted as written.
+      - identifier: "forum"
+        name: "Forum"
+        url: "https://discourse.starship-factory.ch/"
+        weight: 4
+      # "Werkstatt" is a grouping entry only, like "Verein" below: it has no page
+      # of its own, just the machine areas as children.
+      - identifier: "werkstatt"
+        name: "Werkstatt"
+        weight: 5
+      - identifier: "3d-druck"
+        name: "3D-Druck"
+        url: "/3d-druck/"
+        parent: "werkstatt"
+        weight: 1
+      - identifier: "cnc-bearbeitung"
+        name: "CNC-Bearbeitung"
+        url: "/cnc-bearbeitung/"
+        parent: "werkstatt"
+        weight: 2
+      - identifier: "laser"
+        name: "Laser"
+        url: "/laser/"
+        parent: "werkstatt"
+        weight: 3
+      - identifier: "elektronik"
+        name: "Elektronik"
+        url: "/elektronik/"
+        parent: "werkstatt"
+        weight: 4
+      - identifier: "holzwerkstatt"
+        name: "Holzwerkstatt"
+        url: "/holzwerkstatt/"
+        parent: "werkstatt"
+        weight: 5
+      - identifier: "textil"
+        name: "Textil"
+        url: "/textil/"
+        parent: "werkstatt"
+        weight: 6
+      # "Verein" is a grouping entry only: it has no page of its own. The theme's
+      # header.html renders a parent with children as href="#" plus a dropdown, and
+      # footer.html renders it as a column heading above its children.
+      # "Mitglied werden" also stays reachable from the header/footer CTA buttons
+      # (params.main_cta / params.footer_cta), so it is not duplicated at top level.
+      - identifier: "verein"
+        name: "Verein"
+        weight: 6
+      - identifier: "mitglied-werden"
+        name: "Mitglied werden"
+        url: "/mitglied-werden/"
+        parent: "verein"
+        weight: 1
+      - identifier: "spenden"
+        name: "Spenden"
+        url: "/spenden/"
+        parent: "verein"
+        weight: 2
+      - identifier: "statuten"
+        name: "Statuten"
+        url: "/statuten/"
+        parent: "verein"
+        weight: 3
+      - identifier: "reglement"
+        name: "Reglement/Charta"
+        url: "/reglement/"
+        parent: "verein"
+        weight: 4
+    legal:
+      - identifier: "datenschutz"
+        name: "Datenschutz"
+        url: "/datenschutz/"
+        weight: 1
+      - identifier: "impressum"
+        name: "Impressum"
+        url: "/impressum/"
+        weight: 2
+
+######################## english — translated from the german, served under /en/ ############
+en:
+  languageName: "English"
+  languageCode: "en"
+  contentDir: content/en
+  weight: 2
+  title: "Starship Factory"
+  copyright: "Copyright &copy; {{< current_year >}} Starship Factory, Basel. Content under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) unless stated otherwise."
+  params:
+    description: "Starship Factory is the makerspace in Basel: an open workshop for making, building, repairing and learning."
+    accessibility:
+      skip_text: "Skip to content"
+    main_cta:
+      text: "Become a member"
+      link: "/become-a-member/"
+    footer_cta:
+      text: "Join us"
+      link: "/become-a-member/"
+    github_edit: "Edit this page on GitHub"
+  menu:
+    main:
+      - identifier: "home"
+        name: "Home"
+        url: "/"
+        weight: 1
+      - identifier: "blog"
+        name: "Blog"
+        url: "/blog/"
+        weight: 2
+      - identifier: "anfahrt"
+        name: "How to find us"
+        url: "/how-to-find-us/"
+        weight: 3
+      # External link to the Discourse forum — see the German menu above.
+      - identifier: "forum"
+        name: "Forum"
+        url: "https://discourse.starship-factory.ch/"
+        weight: 4
+      # Grouping entry only, no page of its own — see the German menu above.
+      - identifier: "werkstatt"
+        name: "Workshop"
+        weight: 5
+      - identifier: "3d-druck"
+        name: "3D printing"
+        url: "/3d-printing/"
+        parent: "werkstatt"
+        weight: 1
+      - identifier: "cnc-bearbeitung"
+        name: "CNC machining"
+        url: "/cnc-machining/"
+        parent: "werkstatt"
+        weight: 2
+      - identifier: "laser"
+        name: "Laser"
+        url: "/laser/"
+        parent: "werkstatt"
+        weight: 3
+      - identifier: "elektronik"
+        name: "Electronics"
+        url: "/electronics/"
+        parent: "werkstatt"
+        weight: 4
+      - identifier: "holzwerkstatt"
+        name: "Wood workshop"
+        url: "/wood-workshop/"
+        parent: "werkstatt"
+        weight: 5
+      - identifier: "textil"
+        name: "Textiles"
+        url: "/textiles/"
+        parent: "werkstatt"
+        weight: 6
+      # Grouping entry only, no page of its own — see the German menu above.
+      # "Verein" is the Swiss registered association; "Association" is the plain
+      # English equivalent members actually use when speaking English.
+      - identifier: "verein"
+        name: "Association"
+        weight: 6
+      - identifier: "mitglied-werden"
+        name: "Become a member"
+        url: "/become-a-member/"
+        parent: "verein"
+        weight: 1
+      - identifier: "spenden"
+        name: "Donate"
+        url: "/donate/"
+        parent: "verein"
+        weight: 2
+      - identifier: "statuten"
+        name: "Statutes"
+        url: "/statutes/"
+        parent: "verein"
+        weight: 3
+      - identifier: "reglement"
+        name: "Charter"
+        url: "/charter/"
+        parent: "verein"
+        weight: 4
+    legal:
+      - identifier: "datenschutz"
+        name: "Privacy"
+        url: "/privacy/"
+        weight: 1
+      - identifier: "impressum"
+        name: "Imprint"
+        url: "/imprint/"
+        weight: 2

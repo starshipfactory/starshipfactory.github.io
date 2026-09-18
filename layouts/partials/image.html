@@ -1,0 +1,106 @@
+{{- /*
+  Shared image-pipeline renderer. One implementation, two entry points:
+
+    layouts/_default/_markup/render-image.html  — markdown ![alt](src "title")
+    layouts/shortcodes/img.html                 — the theme's {{< img >}}, overridden
+
+  Params (dict):
+    src           required. Bundle-relative ("foo.jpg") or root-relative ("/img/home/foo.jpg").
+    page          required for bundle-relative lookups. See the caveat below.
+    alt           alt text. Always pass something meaningful.
+    title         title attribute (markdown's "title" position).
+    caption       when set, the <img> is wrapped in <figure> with a <figcaption>.
+    loading       "lazy" (default) or "eager".
+    fetchpriority "high" for the LCP image, otherwise omitted.
+    class         extra class attribute.
+    sizes         "full" (default), "column", or a literal CSS sizes string.
+                  See "Picking sizes" below — getting this wrong is invisible on a
+                  desktop connection and expensive on a phone.
+
+  Resolution order: page resource, then a global asset for root-relative paths, then
+  an unprocessed passthrough (remote URLs, static/ files, anything unresolvable).
+
+  Picking sizes
+  -------------
+  The candidates below carry `w` descriptors, so the browser needs `sizes` to know how
+  wide the image will actually be laid out. Without it every candidate is assumed to be
+  full-viewport-width and a 2x phone downloads the largest one — which is what this site
+  did until the srcset was switched from `x` to `w` descriptors.
+
+  Two presets cover every current use; both derive from the theme's own SCSS:
+
+    full    the image is a direct child of .content — markdown images, i.e. `<p><img>`.
+            `.content > *` caps those at --content-width (895px), and below a 945px
+            viewport the .container/.wrap pair gives 100vw minus 2 x --gutter (25px).
+
+    column  the image sits inside {{< columns count=2 >}}. NOTE these rows are NOT capped
+            at 895px: `.content div` (specificity 0,1,1) beats `.content > *` (0,1,0), so
+            .columns takes the full container width, up to --container-width (1200px).
+            shortcodes/_columns.scss lays out 12 tracks with a 3% column-gap, and a
+            column spans 6 of them plus 5 internal gaps = 48.5% of the container, so
+            582px at most. Below the 800px breakpoint a column spans all 12 and fills
+            the container.
+
+  Verified against the compiled stylesheet, not inferred from the SCSS source.
+
+  CAVEAT — bundle lookups do not work from inside {{< column >}} or {{< card >}}.
+  Those shortcodes render their body with `.Inner | markdownify`, which loses the page
+  context: inside them the render hook's .Page is the site home, not the current page,
+  so .Resources is empty (.PageInner does not help either). Root-relative asset paths
+  are unaffected, which is why content/<lang>/_index.md keeps using /img/home/… rather
+  than bundle-relative paths. Verified against Hugo 0.148.1.
+*/ -}}
+
+{{- $src := .src -}}
+{{- $page := .page -}}
+{{- $alt := .alt | default "" -}}
+{{- $title := .title -}}
+{{- $caption := .caption -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority -}}
+{{- $class := .class -}}
+
+{{- $maxWidth := 895 -}}{{/* --content-width, themes/dot-org-hugo-theme/assets/scss/_variables.scss */ -}}
+
+{{/* Ladder capped at 2 x --content-width: nothing on this site is laid out wider. */}}
+{{- $ladder := slice 448 671 895 1343 1790 -}}
+
+{{- $sizePresets := dict
+      "full"   "(min-width: 945px) 895px, calc(100vw - 50px)"
+      "column" "(min-width: 1250px) 582px, (min-width: 800px) calc(48.5vw - 24px), calc(100vw - 50px)"
+-}}
+{{- $sizes := .sizes | default "full" -}}
+{{- $sizes = (index $sizePresets $sizes) | default $sizes -}}
+
+{{- $processable := slice "jpeg" "png" "webp" "tiff" "bmp" -}}
+
+{{- $res := "" -}}
+{{- with $page -}}
+  {{- $res = .Resources.GetMatch $src -}}
+{{- end -}}
+{{- if and (not $res) (hasPrefix $src "/") -}}
+  {{- $res = resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- end -}}
+
+{{- with $caption -}}<figure>{{- end -}}
+
+{{- if and $res (in $processable $res.MediaType.SubType) -}}
+  {{- $w := cond (gt $res.Width $maxWidth) $maxWidth $res.Width -}}
+  {{- $img := $res.Resize (printf "%dx webp" $w) -}}
+  {{- $candidates := slice -}}
+  {{- range $ladder -}}
+    {{- if le . $res.Width -}}
+      {{- $c := $res.Resize (printf "%dx webp" .) -}}
+      {{- $candidates = $candidates | append (printf "%s %dw" $c.RelPermalink .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- /* One candidate is no choice at all — skip srcset and let src stand alone. */ -}}
+  {{- $srcset := cond (gt (len $candidates) 1) (delimit $candidates ", ") "" -}}
+  <img src="{{ $img.RelPermalink }}"{{ with $srcset }} srcset="{{ . }}" sizes="{{ $sizes }}"{{ end }} width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }} loading="{{ $loading }}"{{ with $fetchpriority }} fetchpriority="{{ . }}"{{ end }} decoding="async">
+{{- else -}}
+  {{- $url := $src -}}
+  {{- with $res }}{{ $url = .RelPermalink }}{{ end -}}
+  <img src="{{ $url | safeURL }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }} loading="{{ $loading }}"{{ with $fetchpriority }} fetchpriority="{{ . }}"{{ end }} decoding="async">
+{{- end -}}
+
+{{- with $caption -}}<figcaption>{{ . | markdownify }}</figcaption></figure>{{- end -}}

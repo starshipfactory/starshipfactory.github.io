@@ -1,0 +1,78 @@
+name: Build
+
+# Build check for pull requests. Does everything the deploy workflow does
+# except publish, so a PR fails here rather than after merging.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          # The theme is a git submodule. Without this the build fails with
+          # confusing "missing layout" errors rather than "missing theme".
+          submodules: recursive
+          # enableGitInfo derives lastmod from git history, which needs it all.
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        # npm ci, not install: respect the lock file. This also provides Hugo,
+        # via the hugo-extended package — do not install Hugo separately.
+        run: npm ci
+
+      - name: Cache Hugo build artefacts
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: hugo-resources-${{ runner.os }}-${{ hashFiles('assets/**', 'config/**') }}
+          restore-keys: hugo-resources-${{ runner.os }}-
+
+      - name: Build
+        run: npx hugo --gc --minify --environment production
+
+      - name: Build search index
+        # Pagefind indexes the built output, so it has to run after Hugo.
+        run: npx -y pagefind --site public
+
+      - name: Build for link check
+        # A second render with relativeURLs. The production build above writes
+        # every internal link as https://starship-factory.ch/..., which lychee
+        # would resolve over the network against the deployed site instead of
+        # against this PR. relativeURLs rewrites them to correctly computed
+        # document-relative paths (../../../en/...) that resolve on disk.
+        #
+        # Do NOT reach for --baseURL=/ here: it degrades the theme's
+        # relLangURL calls to bare "en/", which is genuinely broken from any
+        # nested post URL. relativeURLs is the flag built for this.
+        run: HUGO_RELATIVEURLS=true npx hugo --gc --minify --environment production --destination public-linkcheck
+
+      - name: Build search index for link check
+        # The theme's search page links /pagefind/pagefind-ui.{js,css}, which
+        # exist only once Pagefind has run over this copy as well.
+        run: npx -y pagefind --site public-linkcheck
+
+      - name: Check links
+        # Internal links only — see lychee.toml. The archive links to a lot
+        # of the 2013-era web, and those breaking is not a build failure.
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml --no-progress --root-dir "${{ github.workspace }}/public-linkcheck" "public-linkcheck/**/*.html"
+          fail: true
+
+      - name: Report build output
+        run: |
+          echo "pages built: $(find public -name index.html | wc -l)"
+          du -sh public

@@ -1,0 +1,17 @@
+# UI-Strings für die deutsche Seite.
+# Das Theme bringt selbst kein i18n-Verzeichnis mit; alle übersetzbaren Strings
+# der Templates müssen hier stehen, sonst fällt Hugo auf Englisch zurück.
+# Verwendete Keys findet man mit:
+#   grep -rno 'i18n "[^"]*"' themes/dot-org-hugo-theme/layouts | sort -u
+
+# Breadcrumb-Eintrag für die Startseite
+breadcrumb_home: "Startseite"
+
+# Autorenzeile im Blog: "von Max Muster"
+by: "von"
+
+# Title-Attribut der Social-Media-Icons im Footer
+social_link_title: "{{ .SiteTitle }} auf {{ .Network }}"
+
+# Date format for blog bylines. Go layout string; Hugo localises the month name.
+date_format: "2. January 2006"

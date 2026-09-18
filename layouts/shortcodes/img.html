@@ -1,0 +1,31 @@
+{{- /*
+  Overrides themes/dot-org-hugo-theme/layouts/shortcodes/img.html.
+
+  Why: the theme's version emits a raw <img src> and never touches .Resources, so
+  every image placed with it shipped as a full-size original with no width/height.
+  This version keeps the same parameters and the same <figure>/<figcaption> output
+  but renders through partials/image.html, so it gets WebP conversion, the 895px
+  content-width cap, a width-descriptor srcset, and intrinsic dimensions.
+
+  Three deliberate differences from the theme:
+  - alt is NOT invented from the filename. The theme humanises the slug when alt is
+    missing, which produces plausible-looking nonsense for screen readers. An empty
+    alt (correct for decorative images) is now expressible; a missing one stays empty.
+  - fetchpriority is supported, for the LCP image on the home page.
+  - sizes is supported. Pass sizes="column" for any image inside {{< columns >}};
+    without it the browser assumes full-viewport width and over-downloads on phones.
+    See "Picking sizes" in partials/image.html.
+
+  Bundle-relative src does not work inside {{< column >}} / {{< card >}} — see the
+  caveat in partials/image.html. Use a root-relative /img/… path there.
+*/ -}}
+{{- partial "image.html" (dict
+      "src"           (.Get "src")
+      "page"          .Page
+      "alt"           (.Get "alt")
+      "caption"       (.Get "caption")
+      "loading"       (.Get "loading")
+      "fetchpriority" (.Get "fetchpriority")
+      "class"         (.Get "class")
+      "sizes"         (.Get "sizes")
+) -}}

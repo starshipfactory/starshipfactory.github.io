@@ -1,0 +1,3 @@
+[submodule "themes/dot-org-hugo-theme"]
+	path = themes/dot-org-hugo-theme
+	url = https://github.com/cncf/dot-org-hugo-theme.git

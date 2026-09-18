@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Starship Factory — brand overrides for the dot-org Hugo theme.
+
+   Loaded via params.custom_css. This is NOT the Hugo asset pipeline: the theme's
+   head/custom-css.html emits the raw path through absURL, so this file must live
+   under static/ and is served unfingerprinted.
+
+   Keep this file small and additive. The theme owns layout and responsive
+   behaviour; overriding its component styles fights its own media queries.
+   ========================================================================== */
+
+:root {
+  /* Brand colours, taken from static/img/logo.svg */
+  --sf-orange: #ff6600; /* logo wordmark and orbit ring */
+  --sf-orange-dark: #b34700; /* darkened: 5.5:1 on white, AA for text */
+  --sf-orange-darker: #8f3900; /* hover for the above */
+  --sf-blue: #3e5f81; /* logo planet: 6.6:1 on white, AA for text */
+  --sf-blue-dark: #2e4760;
+  --sf-blue-darker: #22354a;
+
+  /* Map the brand onto the theme's palette roles.
+     Full-strength orange is NOT used for anything carrying text: #ff6600 on
+     white is 2.9:1 and fails WCAG AA. The theme puts white text on
+     --primary-400, so that role gets the darkened orange instead. */
+  --primary-400: var(--sf-orange-dark); /* secondary/tertiary button background */
+  --primary-500: var(--sf-orange-darker); /* its hover */
+  --primary-600: var(--sf-blue); /* body links */
+  --primary-700: var(--sf-blue-dark); /* primary button background, link hover */
+  --primary-800: var(--sf-blue-darker); /* primary button hover */
+
+  /* The footer sits on black, where full-strength orange is 7.2:1 and reads well. */
+  --footer-link-color-hover: var(--sf-orange);
+}
+
+/* The theme hardcodes width="150" height="40" on the logo <img> (3.75:1) while the
+   Starship Factory logo is 293.56 x 169.73 (1.73:1). The artwork is not distorted
+   by this — the theme's own `object-fit: contain` handles that — but the element
+   box stays 100x40 (130x50 on desktop) while the logo only fills ~69x40 of it,
+   and `object-position: 0 0` pushes the leftover space to the right of the mark.
+   Letting both axes size themselves makes the box hug the artwork, within the
+   theme's own max-width/max-height caps. Done here rather than by forking
+   header.html, which also carries the hamburger and the whole mobile menu. */
+.header .logo,
+.footer .logo {
+  width: auto;
+  height: auto;
+}

@@ -1,0 +1,17 @@
+# UI strings for the English site.
+# The theme ships no i18n directory of its own; every translatable string used
+# by its templates has to live here or Hugo falls back to the hardcoded default.
+# Find the keys in use with:
+#   grep -rno 'i18n "[^"]*"' themes/dot-org-hugo-theme/layouts | sort -u
+
+# Breadcrumb entry for the home page
+breadcrumb_home: "Home"
+
+# Blog byline: "by Max Muster"
+by: "by"
+
+# Title attribute on the footer social media icons
+social_link_title: "{{ .SiteTitle }} on {{ .Network }}"
+
+# Date format for blog bylines. Go layout string; Hugo localises the month name.
+date_format: "January 2, 2006"

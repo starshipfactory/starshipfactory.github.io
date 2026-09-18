@@ -1,0 +1,59 @@
+######################## default configuration ####################
+theme: "dot-org-hugo-theme"
+# Fallback title; per-language titles live in languages.yaml
+title: "Starship Factory"
+# Basel, Switzerland — do NOT leave this at the theme's America/Los_Angeles
+timeZone: "Europe/Zurich"
+# Minimum number of words in an auto-generated summary
+summaryLength: 50
+
+# Fail fast on an unsupported Hugo instead of breaking in strange ways.
+# The binary comes from the hugo-extended npm package, never a separate install.
+module:
+  hugoVersion:
+    min: "0.121.0"
+    extended: true
+
+######################## i18n ####################
+# German is the main language and lives at the site root; English lives under /en/.
+contentDir: content/de/
+defaultContentLanguage: de
+defaultContentLanguageInSubdir: false
+
+######################## urls & structure ####################
+enableRobotsTXT: true
+# Use git history for lastmod dates
+enableGitInfo: true
+
+pagination:
+  # The old Jekyll site used `paginate: 5`. That key was renamed in Hugo 0.128.
+  pagerSize: 25
+
+permalinks:
+  # Reproduces the old Jekyll permalink structure so migrated posts keep their URLs
+  blog: "/:year/:month/:day/:slug/"
+
+taxonomies:
+  tag: tags
+  category: categories
+
+######################## privacy & speed ####################
+# Do not track, no cookies on video embeds
+privacy:
+  youtube:
+    privacyEnhanced: true
+  vimeo:
+    enableDNT: true
+
+######################## images ####################
+# Defaults for Hugo's image pipeline, used by layouts/_default/_markup/render-image.html.
+# Lanczos is slower than the default Box filter but noticeably sharper on downscales,
+# which is all this site does.
+imaging:
+  quality: 80
+  resampleFilter: Lanczos
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

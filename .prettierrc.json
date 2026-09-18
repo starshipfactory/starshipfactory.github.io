@@ -1,0 +1,14 @@
+{
+  "printWidth": 100,
+  "singleQuote": false,
+  "overrides": [
+    {
+      "files": ["*.md"],
+      "options": { "proseWrap": "preserve" }
+    },
+    {
+      "files": ["*.html"],
+      "options": { "parser": "html" }
+    }
+  ]
+}
