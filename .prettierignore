@@ -21,3 +21,7 @@ layouts/partials/blog/byline.html
 # reflows the explanatory comment into the {{ define }} line, which is valid
 # but unreadable.
 layouts/index.html
+
+# Go template with heavy {{- -}} whitespace control. Prettier has no Go-template
+# parser and reflows the tags, which changes the rendered output.
+layouts/_default/_markup/render-image.html

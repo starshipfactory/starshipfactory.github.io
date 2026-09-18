@@ -88,7 +88,7 @@ archetypes/                     # copied from the theme, adapted
 layouts/partials/footer.html    # override: adds the legal link row (see Footer below)
 static/css/custom.css           # branding + small fixes (see "Branding")
 static/img/                     # logo variants, social share image
-static/img/blog/                # blog archive images, flat, shared by de + en
+assets/img/blog/                # blog archive images, flat, shared by de + en
 static/img/home/                # home page photos
 static/img/social-icons/        # signal.svg, discourse.svg (see Footer below)
 static/favicon.ico              # + favicon.svg, favicon-32x32.png, apple-touch-icon.png
@@ -306,10 +306,15 @@ Old posts live at `master:_posts/YYYY-MM-DD-slug.md` with Jekyll front matter an
 The old site carries a large `assets/images/uploads/` tree. Do not bulk-copy it into
 `static/`.
 
+**Three homes, and which to pick.** `static/` is copied verbatim with no processing;
+`assets/` and page bundles both go through Hugo's image pipeline. Default to a page
+bundle, use `assets/` when two languages share one file, and keep `static/` for files
+that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
+
 - Migrate images **as page bundles**: `content/de/blog/my-post/index.md` with its images
-  beside it. Only genuinely shared images belong in `static/img/`.
+  beside it.
 - **Exception, already applied to the blog archive.** The 58 images referenced by the
-  migrated posts live flat in `static/img/blog/`, rather than in per-post bundles, because
+  migrated posts live flat in `assets/img/blog/`, rather than in per-post bundles, because
   the German and English version of a post reference the same file and bundles would
   duplicate every one of them. New posts should still use page bundles.
 
@@ -318,8 +323,33 @@ The old site carries a large `assets/images/uploads/` tree. Do not bulk-copy it 
   The old image URLs (`/assets/images/…`) therefore no longer resolve; page URLs were not
   affected. `aliases` cannot help here, as they only work for pages, not static files.
   Do not reintroduce `static/assets/`.
-- Use Hugo's image pipeline on bundle resources — `.Resize`, `.Fill`, and WebP conversion —
-  rather than shipping full-size originals. Configure defaults once:
+
+  It later moved again, from `static/img/blog/` to `assets/img/blog/`, so the archive
+  gets pipeline treatment while both languages keep sharing one copy of each file.
+  **The markdown still says `/img/blog/foo.jpg`** — the render hook strips the leading
+  slash and looks the path up in `assets/`. That deliberately avoids rewriting the image
+  line in all 192 archive files and keeps the German and English copies diffable. Do not
+  "fix" those paths to match the new location.
+- **Markdown images go through the pipeline automatically**, via
+  `layouts/_default/_markup/render-image.html`. Plain `![alt](foo.jpg "title")` is the
+  preferred syntax: the hook converts bundle and `assets/` rasters to WebP, caps them at
+  the theme's 895px content width, adds a 2x `srcset` when the original is wide enough,
+  and emits intrinsic `width`/`height`. SVG and GIF pass through untouched; remote URLs
+  and unresolvable paths fall back to a plain `<img>`.
+
+  Prefer it over the theme's `{{< img >}}` shortcode, which emits a raw `<img>` and never
+  touches `.Resources`. The shortcode is still right inside `{{< column >}}` blocks and
+  anywhere else the markdown syntax cannot reach.
+
+  The hook sits at the legacy `layouts/_default/_markup/` path rather than the 0.146+
+  `layouts/_markup/`, because that works with no deprecation warning and stays compatible
+  with the `min: "0.121.0"` floor. On the new path it would silently stop firing below
+  0.146 instead of failing loudly.
+- Once a page's images all go through the pipeline, set `build: {publishResources: false}`
+  in its front matter, or the unprocessed original ships alongside the derivative. This is
+  a page-bundle concern only — `assets/` files are published only when something calls
+  `RelPermalink` on them.
+- Pipeline defaults are configured once, in `config/_default/hugo.yaml`:
 
   ```yaml
   imaging:

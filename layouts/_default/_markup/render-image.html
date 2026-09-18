@@ -13,8 +13,12 @@
     large enough, and emitted with intrinsic width/height so nothing shifts on load.
   - SVG and GIF bundle resources pass through untouched — Resize cannot handle
     vectors and would flatten an animated GIF to a single frame.
-  - Everything else (absolute paths like /img/blog/…, remote URLs) falls back to a
-    plain <img>. This is what keeps the 96 migrated blog posts rendering unchanged.
+  - Root-relative paths are looked up in assets/ (so /img/blog/foo.jpg resolves to
+    assets/img/blog/foo.jpg) and processed the same way. This is how the blog archive
+    gets pipeline treatment while both languages keep sharing one copy of each file —
+    page bundles would force a duplicate of all 58 images into content/en/.
+  - Everything else (remote URLs, paths with no matching asset) falls back to a plain
+    <img> with the destination untouched, so static/ files keep working.
 
   Path note: `layouts/_default/_markup/` is the legacy location. Hugo 0.146 moved
   render hooks to `layouts/_markup/`, but the legacy path still works with no
@@ -25,7 +29,14 @@
 {{- $maxWidth := 895 -}}{{/* --content-width, themes/dot-org-hugo-theme/assets/scss/_variables.scss */ -}}
 {{- $processable := slice "jpeg" "png" "webp" "tiff" "bmp" -}}
 
+{{- /* Page-bundle resource first, then a global asset for root-relative paths.
+       The markdown keeps saying /img/blog/foo.jpg even though the file now lives in
+       assets/, which avoids rewriting the image line in all 192 archive files and
+       keeps the German and English copies byte-identical there. */ -}}
 {{- $res := .Page.Resources.GetMatch .Destination -}}
+{{- if and (not $res) (hasPrefix .Destination "/") -}}
+  {{- $res = resources.Get (strings.TrimPrefix "/" .Destination) -}}
+{{- end -}}
 {{- $alt := .Text -}}
 {{- $title := .Title -}}
 
