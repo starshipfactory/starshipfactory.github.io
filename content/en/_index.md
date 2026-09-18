@@ -43,39 +43,39 @@ Still got questions? Come join our Signal group! Ask them there and you will get
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/3d-druck.jpg" alt="The 3D printing corner at Starship Factory" >}}
+{{< img src="/img/home/3d_druck_ecke.jpeg" alt="The 3D printing corner at Starship Factory" >}}
 {{< /column >}}
 {{< column >}}
 ### 3D printing
-We currently have a fleet of several 3D printers. You can use them to print your own 3D models
-in plastic.
+We have an extensive fleet of 3D printers. You can use them to print your own 3D models
+in plastic or resin.
 
-{{< button link="/en/3d-printing/" text="Read more" style="secondary" >}}
+{{< button link="/en/3d-printing/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
 ### CNC machining
-With our CNC mill we can make parts from wood and other soft materials.
+With our CNC mills we can make parts from soft metals, wood and other soft materials.
 
-{{< button link="/en/cnc-machining/" text="Read more" style="secondary" >}}
+{{< button link="/en/cnc-machining/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/cnc-portalfraese.jpg" alt="The CNC gantry mill at Starship Factory" >}}
+{{< img src="/img/home/cnc_carvera.jpeg" alt="The Carvera CNC mill at Starship Factory" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/laser-kh-3020.jpg" alt="The KH-3020 laser cutter" >}}
+{{< img src="/img/home/laser_ecke.jpeg" alt="The XTool laser cutter" >}}
 {{< /column >}}
 {{< column >}}
 ### Laser
-We have a laser engraver. With our laser cutter you can cut parts from plywood or acrylic
-glass, and much more!
+We have a laser engraver and several laser cutters. With our laser cutters you can cut parts
+from plywood or acrylic glass, and much more!
 
-{{< button link="/en/laser/" text="Read more" style="secondary" >}}
+{{< button link="/en/laser/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
@@ -86,36 +86,36 @@ Starship Factory has a very well equipped electronics lab. Here you can solder t
 content, make SMD boards or test your Arduino circuits. We are also happy to help newcomers to
 electronics with advice and a hand.
 
-{{< button link="/en/electronics/" text="Read more" style="secondary" >}}
+{{< button link="/en/electronics/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/elektronik.jpg" alt="Making things at Starship Factory" >}}
+{{< img src="/img/home/elektronik.jpg" alt="Electronics tinkering at Starship Factory" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/home/folienplotter.jpg" alt="A self-printed T-shirt from the textile corner" >}}
+{{< img src="/img/home/holzwerkstatt_kreissaege_hobel.jpeg" alt="The table saw and planer at Starship Factory" >}}
 {{< /column >}}
 {{< column >}}
 ### Wood workshop
 We have a fully equipped wood workshop with a band saw, table saw, planer and much more.
 
-{{< button link="/en/wood-workshop/" text="Read more" style="secondary" >}}
+{{< button link="/en/wood-workshop/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=2 >}}
 {{< column >}}
 ### Textiles
-In our textile corner you can cut vinyl for all sorts of purposes, among them T-shirt printing
-or designing your own stickers. Best of all, bring your design along as an SVG file!
+In our textile workshop we have a knitting machine, a sewing machine, an XTool Wonderpress and much more.
 
-{{< button link="/en/textiles/" text="Read more" style="secondary" >}}
+{{< button link="/en/textiles/" text="Learn more" style="secondary" >}}
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/home/folienplotter.jpg" alt="A self-printed T-shirt from the textile corner" >}}
+{{< img src="/img/home/textil_kniterate.jpeg" alt="Kniterate knitting machine" >}}
 {{< /column >}}
+
 {{< /columns >}}
 
 {{< spacer 20 >}}

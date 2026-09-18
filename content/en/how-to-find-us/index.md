@@ -22,7 +22,17 @@ Our rooms are on the first basement level.
 
 {{< columns count=2 >}}
 {{< column >}}
-## From Basel SBB station
+{{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory seen from the street" >}}
+{{< /column >}}
+{{< column >}}
+{{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="The stairs down to the Starship Factory clubrooms" >}}
+{{< /column >}}
+{{< /columns >}}
+
+
+{{< columns count=2 >}}
+{{< column >}}
+## By public transport from Basel SBB
 
 _15 minutes from Basel SBB_
 
