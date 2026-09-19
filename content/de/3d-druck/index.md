@@ -25,8 +25,8 @@ grosse Werkstücke.
 {{< img src="/img/3d-druck/3d_printer_resin_anycubic.jpeg" alt="Anycube Photon Mono M7 Max" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-## Anycube Photon Mono M7 Max
-Der Anycube Photon Mono M7 Max ist ein Resin-Drucker: Er härtet flüssiges Harz schichtweise
+## Anycubic Photon Mono M7 Max
+Der Anycubic Photon Mono M7 Max ist ein Resin-Drucker: Er härtet flüssiges Harz schichtweise
 mit Licht aus. Das ergibt deutlich feinere Details als ein Filamentdrucker — ideal für
 Figuren, Modellbau und kleine, genaue Teile.
 {{< /column >}}
@@ -35,7 +35,7 @@ Figuren, Modellbau und kleine, genaue Teile.
 {{< columns count=2 >}}
 {{< column >}}
 ## Resin Curing Station
-Unsere Resin Curing Station für den Anycube Photon Mono M7 Max. Frisch gedruckte Resin-Teile
+Unsere Resin Curing Station für den Anycubic Photon Mono M7 Max. Frisch gedruckte Resin-Teile
 werden darin gewaschen und nachgehärtet — der Schritt, der aus einem klebrigen Rohling ein
 fertiges Teil macht.
 {{< /column >}}

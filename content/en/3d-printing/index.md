@@ -24,8 +24,8 @@ structures in a different material. It is also our printer for large workpieces.
 {{< img src="/img/3d-druck/3d_printer_resin_anycubic.jpeg" alt="Anycube Photon Mono M7 Max" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-## Anycube Photon Mono M7 Max
-The Anycube Photon Mono M7 Max is a resin printer: it cures liquid resin layer by layer with
+## Anycubic Photon Mono M7 Max
+The Anycubic Photon Mono M7 Max is a resin printer: it cures liquid resin layer by layer with
 light. That gives considerably finer detail than a filament printer — ideal for figures,
 model making and small, accurate parts.
 {{< /column >}}
@@ -34,7 +34,7 @@ model making and small, accurate parts.
 {{< columns count=2 >}}
 {{< column >}}
 ## Resin curing station
-Our resin curing station for the Anycube Photon Mono M7 Max. Freshly printed resin parts are
+Our resin curing station for the Anycubic Photon Mono M7 Max. Freshly printed resin parts are
 washed and post-cured in it — the step that turns a sticky blank into a finished part.
 {{< /column >}}
 {{< column >}}

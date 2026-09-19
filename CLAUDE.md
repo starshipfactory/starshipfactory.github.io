@@ -7,19 +7,29 @@ Guidance for Claude Code when working in this repository.
 The website of **Starship Factory**, the makerspace/hackerspace in Basel, Switzerland
 (https://starship-factory.ch).
 
-This branch (`feature/new-website-with-hugo`) is a **greenfield rewrite**. The previous site
-was a Jekyll site using the `minimal-mistakes` theme; it has been removed (commit `cdf4f44`
-"refactor: removed old clutter"). The working tree is intentionally empty apart from `.git`
-and `.idea` — everything is built from scratch here.
+**Status: live.** The Hugo rewrite was merged into `master` (PR #29) and is published to
+GitHub Pages at <https://starship-factory.ch/>. The greenfield rewrite and the content
+migration are **done** — this is now a maintained site, not a build-out.
 
-The old site is still fully available on the `master` branch and is the source of truth for
-migrating content and assets:
+`master` is the deployed branch: every push to it redeploys the live website via
+`.github/workflows/deploy.yml`. Work on a feature branch and open a pull request; do not
+commit or push to `master` directly, and do not merge a PR without being asked to.
+
+The previous site was a Jekyll site using the `minimal-mistakes` theme. It was removed in
+commit `cdf4f44` ("refactor: removed old clutter"), so **`master` no longer carries it** —
+the last commit that does is `cdf4f44^`. Read old content and assets from there:
 
 ```bash
-git show master:_pages/anfahrt.md          # read a single old file
-git show master:assets/images/logo.svg     # extract an old asset
-git ls-tree -r --name-only master           # list all old files
+git show cdf4f44^:_pages/anfahrt.md          # read a single old file
+git show cdf4f44^:assets/images/logo.svg     # extract an old asset
+git ls-tree -r --name-only cdf4f44^          # list all old files
 ```
+
+Much of what follows describes how the site was built and migrated. It is kept in the
+present tense because it records **why things are the way they are** — the constraints,
+the deliberate exclusions and the rules for new content all still apply. Where a section
+describes a one-off step that has already been carried out, treat it as the reason not to
+undo it rather than as work to do.
 
 ## Tech stack
 
@@ -50,28 +60,25 @@ Prefer theme shortcodes and params over custom HTML.
 
 ## Setup
 
-The theme is consumed as a **git submodule** in `themes/dot-org-hugo-theme`:
+The theme is consumed as a **git submodule** in `themes/dot-org-hugo-theme`, so a plain
+`git clone` produces a tree that cannot build (Hugo reports missing *layouts*, not a
+missing theme):
 
 ```bash
-git submodule add https://github.com/cncf/dot-org-hugo-theme.git themes/dot-org-hugo-theme
+git clone --recurse-submodules https://github.com/starshipfactory/starshipfactory.github.io.git
+npm install
+
+git submodule update --init --recursive   # if you already cloned without it
+git submodule update --remote --merge     # to update the theme
 ```
 
-The theme's `exampleSite/` is the reference implementation. Copy `package.json`,
-`postcss.config.js` and `config/` from it into the repo root, then `npm install`.
-Update the theme with `git submodule update --remote --merge`.
+`package.json`, `postcss.config.js` and `config/` were seeded from the theme's
+`exampleSite/`, which remains the reference implementation when looking for how a theme
+feature is meant to be configured.
 
-Copy the theme's `.gitignore` too, and extend it. It must contain at least:
-
-```gitignore
-public/
-resources/
-node_modules/
-.hugo_build.lock
-hugo_stats.json
-.DS_Store
-static/pagefind/     # generated search index
-.idea/               # JetBrains project files, currently untracked in this repo
-```
+`.gitignore` is in place and must keep covering at least `public/`, `resources/`,
+`node_modules/`, `.hugo_build.lock`, `hugo_stats.json`, `.DS_Store`, `.idea/` and
+`static/pagefind/` (the generated search index).
 
 ## Repository layout
 
@@ -86,10 +93,18 @@ i18n/de.yaml, i18n/en.yaml      # UI strings — the theme ships NO i18n files
 data/authors.yaml               # blog authors, keyed by GitHub username
 archetypes/                     # copied from the theme, adapted
 layouts/partials/footer.html    # override: adds the legal link row (see Footer below)
+layouts/partials/head.html      # override: honours front-matter `meta_title`
 layouts/blog/list.html          # override: makes /blog/ searchable (see "Search")
+layouts/robots.txt              # override: adds the Sitemap line
+layouts/sitemap.xml             # override: drops noindex pages from the sitemap
 layouts/partials/image.html     # shared image-pipeline renderer (see "Images & media")
+layouts/partials/head/custom-head.html       # canonical + hreflang; calls schema.html
+layouts/partials/head/schema.html            # schema.org JSON-LD
 layouts/shortcodes/img.html     # override: routes {{< img >}} through the pipeline
 layouts/_default/_markup/render-image.html   # markdown image render hook
+lychee.toml                     # link-check config (internal links only)
+.github/workflows/              # build.yml (PRs) and deploy.yml (master -> Pages)
+static/CNAME                    # starship-factory.ch, copied into public/ on build
 static/css/custom.css           # branding + small fixes (see "Branding")
 static/img/                     # logo variants, social share image
 assets/img/blog/                # blog archive images, flat, shared by de + en
@@ -104,11 +119,13 @@ under the project's own `layouts/` directory — Hugo resolves project files bef
 files. Never patch the submodule. Keep overrides minimal and rare: copy the theme's version
 of the file, make the smallest possible change, and note at the top which theme file it
 forked and why, so theme updates can be re-merged. Reach for CSS before forking a
-template. Current overrides: `footer.html` (legal link row), `byline.html` (per-language
-post dates), `index.html` (home page), `button.html` (external link targets),
-`img.html` (image pipeline) and `blog/list.html` (search indexing of `/blog/`).
-`partials/image.html` and the render hook are not forks — the theme has no equivalent
-files.
+template. Current forks of a theme (or Hugo built-in) file: `footer.html` (legal link
+row), `head.html` (front-matter `meta_title`), `byline.html` (per-language post dates and
+a guarded author lookup), `button.html` (external link targets), `img.html` (image
+pipeline), `blog/list.html` (search indexing of `/blog/`), `robots.txt` (Sitemap line) and
+`sitemap.xml` (drops noindex pages). Additive, not forks — the theme has no equivalent:
+`index.html` (home page), `partials/image.html`, the render hook, `head/schema.html` and
+`head/custom-head.html` (which fills a designated extension point the theme ships empty).
 
 The theme provides these designated extension points; use them instead of forking:
 `params.custom_css`, `params.custom_js`, `layouts/partials/head/custom-head.html`,
@@ -116,8 +133,8 @@ The theme provides these designated extension points; use them instead of forkin
 
 ## Required files the theme expects
 
-The theme silently degrades — or serves CNCF's assets — when these are missing. Create all
-of them:
+The theme silently degrades — or serves CNCF's assets — when these are missing. They all
+exist now; the table records why, so they do not get tidied away:
 
 | File | Why |
 |------|-----|
@@ -233,54 +250,73 @@ member, not as output from a translation tool.
 
 ## Content sections
 
-Menu order, German (default) URLs, and their English counterparts:
+This is the site as published. Menu order, German (default) URLs, and their English
+counterparts:
 
-| Section        | German URL          | English URL              | Notes                                     |
-|----------------|---------------------|--------------------------|-------------------------------------------|
-| Home           | `/`                 | `/en/`                   | `content/<lang>/_index.md`                |
-| Blog           | `/blog/`            | `/en/blog/`              | List + posts, migrated from old `_posts/` |
-| Mitglied werden| `/mitglied-werden/` | `/en/become-a-member/`   | Membership info + main CTA                |
-| Anfahrt        | `/anfahrt/`         | `/en/how-to-find-us/`    | Address, public transport, map            |
-| Spenden        | `/spenden/`         | `/en/donate/`            | Donation options                          |
-| Statuten       | `/statuten/`        | `/en/statutes/`          | From `master:_pages/organisation/statuten.md` |
-| Reglement/Charta| `/reglement/`      | `/en/charter/`           | From `master:_pages/organisation/reglement.md` |
+| Menu entry (de / en)        | German URL          | English URL             | Notes |
+|-----------------------------|---------------------|-------------------------|-------|
+| Home                        | `/`                 | `/en/`                  | `content/<lang>/_index.md` |
+| Blog                        | `/blog/`            | `/en/blog/`             | List + 96 posts, migrated from the old `_posts/` |
+| Anfahrt / How to find us    | `/anfahrt/`         | `/en/how-to-find-us/`   | Address, public transport, map |
+| Forum                       | —                   | —                       | External link to `https://discourse.starship-factory.ch/`; no page of its own |
+| **Werkstatt / Workshop**    | —                   | —                       | Grouping entry only, no page — the six machine areas below are its children |
+| 3D-Druck / 3D printing      | `/3d-druck/`        | `/en/3d-printing/`      | |
+| CNC-Bearbeitung / CNC machining | `/cnc-bearbeitung/` | `/en/cnc-machining/` | |
+| Laser                       | `/laser/`           | `/en/laser/`            | |
+| Elektronik / Electronics    | `/elektronik/`      | `/en/electronics/`      | |
+| Holzwerkstatt / Wood workshop | `/holzwerkstatt/` | `/en/wood-workshop/`    | |
+| Textil / Textiles           | `/textil/`          | `/en/textiles/`         | |
+| **Verein / Association**    | —                   | —                       | Grouping entry only, no page |
+| Mitglied werden / Become a member | `/mitglied-werden/` | `/en/become-a-member/` | Membership info; also the header + footer CTA |
+| Spenden / Donate            | `/spenden/`         | `/en/donate/`           | Donation options |
+| Statuten / Statutes         | `/statuten/`        | `/en/statutes/`         | From `cdf4f44^:_pages/organisation/statuten.md` |
+| Reglement/Charta / Charter  | `/reglement/`       | `/en/charter/`          | From `cdf4f44^:_pages/organisation/reglement.md` |
 
-All seven are the **header navigation** (`menu.main`), in that order. The header CTA
-(`params.main_cta`) and footer CTA (`params.footer_cta`) both point at "Mitglied werden".
+Six top-level entries, two of them dropdowns. **Werkstatt and Verein are grouping entries
+with no `url:` and no page** — the theme renders a parent with children as `href="#"` plus
+a dropdown on desktop, a nested list in the hamburger menu, and a column heading with its
+children beneath it in the footer. All three behaviours are already styled; do not give
+either entry a page to "fix" the `#` href.
+
+The two dropdowns are what keeps the menu from crowding the CTA. If a further top-level
+entry is ever needed, put it under an existing parent before adding a seventh at the top
+level. The header CTA (`params.main_cta`) and footer CTA (`params.footer_cta`) both point
+at "Mitglied werden", which is why it sits under Verein rather than at top level — it is
+not duplicated.
 
 Two further pages exist for the **footer only** (`menu.legal`, see below) and must not be
 added to `menu.main`:
 
-| Page            | German URL     | Source on `master`                  |
-|-----------------|----------------|-------------------------------------|
-| Datenschutz     | `/datenschutz/`| `_pages/datenschutz.md`             |
-| Impressum       | `/impressum/`  | `_pages/impressum.md`               |
+| Page                  | German URL      | English URL    | Source at `cdf4f44^`     |
+|-----------------------|-----------------|----------------|--------------------------|
+| Datenschutz / Privacy | `/datenschutz/` | `/en/privacy/` | `_pages/datenschutz.md`  |
+| Impressum / Imprint   | `/impressum/`   | `/en/imprint/` | `_pages/impressum.md`    |
 
-The old site nested Statuten and Reglement under `/organisation/`. The new site flattens
-them; add `aliases: ["/organisation/statuten/"]` (resp. `reglement`) in the front matter so
-the old URLs keep working.
+The old site nested Statuten and Reglement under `/organisation/`; this site flattens
+them, and `aliases: ["/organisation/statuten/"]` (resp. `reglement`) in their front matter
+keeps the old URLs working. Leave those aliases in place.
 
-Seven top-level entries is a lot for the horizontal desktop menu. If it wraps or crowds the
-CTA, group Statuten and Reglement/Charta under a parent entry using the theme's `parent:`
-menu key rather than dropping them — the theme renders children as a dropdown on desktop and
-as a nested list in the hamburger menu, and both are already styled.
-
-### Excluded from the new site
+### Deliberately excluded
 
 - **The wiki is out of scope entirely.** The old site had a `wiki` collection, a
   `_layouts/wiki.html`, a `wiki-sidebar.html` and a `Wiki` nav entry pointing at
   `https://wiki.starship-factory.ch/`. Do **not** migrate any of it, do **not** add a wiki
-  section, and do **not** add a wiki link to the header or footer. If wiki content comes up
-  during migration, skip it and say so rather than porting it.
+  section, and do **not** add a wiki link to the header or footer. If wiki content comes up,
+  skip it and say so rather than porting it. (The header's "Forum" entry links to
+  Discourse, not the wiki — do not turn it into one.)
 - The old `verein`, `events`, and archive pages (`category-archive`, `tag-archive`,
   `year-archive`) are not part of the sections above. Do not add them unless asked.
 - A 404 page needs no work: the theme ships `layouts/404.html`, and GitHub Pages serves
   `/404.html` automatically. Add `content/<lang>/404.md` only if custom copy is wanted.
 
-### Blog migration
+### Blog: the migrated archive and new posts
 
-Old posts live at `master:_posts/YYYY-MM-DD-slug.md` with Jekyll front matter and a
-`/:year/:month/:day/:title/` permalink.
+**The migration is complete** — all 96 old posts live under `content/de/blog/` and
+`content/en/blog/` and are published. The originals are at
+`cdf4f44^:_posts/YYYY-MM-DD-slug.md`, with Jekyll front matter and a
+`/:year/:month/:day/:title/` permalink; consult them when a migrated post looks wrong, not
+to re-run the migration. Everything below applies to new posts as well, except where it is
+explicitly about the old ones.
 
 - Create new posts with the theme's archetype: `hugo new content blog/my-post.md`. Copy
   `archetypes/{default,blog,faq}.md` from the theme into the project root and adapt them.
@@ -295,21 +331,21 @@ Old posts live at `master:_posts/YYYY-MM-DD-slug.md` with Jekyll front matter an
   `/feed.xml` alias, a custom output format or a redirect for the old URL — backwards
   compatibility for existing subscribers is explicitly out of scope. Leave the theme's
   and Hugo's default RSS mechanism alone.
-- Rewrite Jekyll-isms: `{% include %}`, `{% highlight %}`, and `/assets/images/...` paths
-  (images now live at `/img/blog/...`).
+- Jekyll-isms (`{% include %}`, `{% highlight %}`, `/assets/images/...` paths) were
+  rewritten during the migration; blog images now live at `/img/blog/...`. If one survives
+  somewhere, fix it the same way.
 - **Every post gets an English translation** under `content/en/blog/`, per the "Translating"
-  rules above. Old posts are translated too — the archive is part of the site, not an
-  exception. Translate a post in the same batch in which it is migrated, so no post is ever
-  committed German-only.
+  rules above. The archive is fully translated, both languages 96 posts; keep it that way —
+  a post committed German-only breaks the pairing.
 - Post `date` and `author` must be identical in both languages; only the prose, `title`,
   `description`, `slug` and `tags` are translated. Keep `translationKey` on both.
-- **Known theme limitation — the byline date is English-only.**
-  `partials/blog/byline.html` hardcodes `.Date.Format "January 2, 2006"`, so German posts
-  render "August 30, 2026" instead of "30. August 2026". Fixing it means overriding that one
-  partial to format per language (e.g. via `time.Format` with a language-aware layout, or an
-  `i18n` date string). Decide before migrating posts; it affects all 96.
-- The old posts use German `ß` (`großen`, `gießen`). Normalise to Swiss `ss` during
-  migration, per the orthography rule above.
+- **The byline is already fixed in `layouts/partials/blog/byline.html`** — two changes
+  against the theme, documented at the top of that file: the date layout comes from `i18n`
+  so German posts render "30. August 2026", and the author lookup is guarded, because the
+  theme's unguarded `index` aborts the build on any post without an `author` (none of the
+  96 migrated posts have one). Do not revert either when re-merging a theme update.
+- The old posts used German `ß` (`großen`, `gießen`); these were normalised to Swiss `ss`,
+  per the orthography rule above. New posts follow the same rule.
 - Old posts carry minimal-mistakes front matter such as `header.teaser`, which has no Hugo
   equivalent — map it to the page bundle's cover image or drop it.
 
@@ -431,19 +467,18 @@ Pagefind splits the index by the `<html lang>` attribute on its own, so a German
 returns German pages only, and its UI strings are localised without anything in `i18n/`.
 After a build, `public/pagefind/pagefind-entry.json` reports the per-language page counts —
 check it when changing what is indexed. A page with a near-zero word count there is a
-content problem, not a search one: **the seven workshop pages (`/laser/`, `/3d-druck/`,
-`/cnc-bearbeitung/`, `/elektronik/`, `/holzwerkstatt/`, `/textil/`, `/folien-plotten/`) and
-their English counterparts are front-matter-only stubs with no body**, so they are indexed
-on their title alone and are effectively unfindable by anything else.
+content problem, not a search one — the six workshop pages were front-matter-only stubs
+for a while and were findable by title alone; they have bodies now. Check that count after
+adding a page.
 
 ## Branding: logo & colours
 
 ### Logo
 
-Use the **Starship Factory logo from the old website**, at `master:assets/images/logo.svg`:
+Use the **Starship Factory logo from the old website**, at `cdf4f44^:assets/images/logo.svg`:
 
 ```bash
-git show master:assets/images/logo.svg > static/img/logo.svg
+git show cdf4f44^:assets/images/logo.svg > static/img/logo.svg
 ```
 
 Do not redesign it — it is the organisation's existing identity. It is a steel-blue planet
@@ -485,10 +520,10 @@ centred on white.
 ### Favicons
 
 **Reuse the favicon from the old website, regenerated as SVG.** The old one is at
-`master:favicon.ico`:
+`cdf4f44^:favicon.ico`:
 
 ```bash
-git show master:favicon.ico > /tmp/old-favicon.ico
+git show cdf4f44^:favicon.ico > /tmp/old-favicon.ico
 ```
 
 Two facts about that file matter:
@@ -611,7 +646,7 @@ The theme ships icons for a fixed set of networks that **does not include Signal
 Discourse**, so both must be added to `static/img/social-icons/`.
 
 The old site already has artwork for them —
-`master:assets/images/icons/signal_icon_256x256.png` and `discourse_icon_256x256.png` — but
+`cdf4f44^:assets/images/icons/signal_icon_256x256.png` and `discourse_icon_256x256.png` — but
 the partial hardcodes the `.svg` extension, so PNGs cannot be dropped in as-is. Supply real
 SVGs (official brand marks, monochrome, 31×31 like the theme's own icons). Changing the
 extension logic would mean forking the partial; prefer supplying SVGs.
@@ -646,7 +681,7 @@ navigation. Do not add them to `menu.legal` as well — that would duplicate the
 Other links carried over from the old site, for reference (only add if asked):
 calendar `https://cloud.starship-factory.ch/apps/calendar/p/NBiqtDiWQZmAZYfq`,
 contact `board@starship-factory.ch`. (The old wiki link is deliberately not listed — see
-"Excluded from the new site".)
+"Deliberately excluded".)
 
 ## Responsive design
 
@@ -734,10 +769,11 @@ the flags the theme expects. Search results are stale until Pagefind reruns, so 
 ## Deployment
 
 The repo is `starshipfactory/starshipfactory.github.io` and the site is served from
-**GitHub Pages** at the custom domain `starship-factory.ch` (see `CNAME` on `master`).
+**GitHub Pages** at the custom domain `starship-factory.ch` (see `static/CNAME`).
 
-Two workflows: a build check on pull requests, and build-and-deploy on the default branch.
-Both must:
+Two workflows are in place — `.github/workflows/build.yml` (build check on pull requests,
+including the Pagefind index and a lychee link check) and `.github/workflows/deploy.yml`
+(build and deploy on `master`). Both must keep doing the following:
 
 - **`actions/checkout` with `submodules: recursive`** — the theme *is* a submodule; without
   this the build fails confusingly with missing layouts. Add `fetch-depth: 0` as well, since
@@ -757,22 +793,24 @@ Other deployment notes:
   Netlify-style `_redirects` files do **not** work here — use `aliases` for every old URL.
 - The theme ships a `netlify.toml`; it is a reference for the build steps, not the
   deployment target. Do not add Netlify config to this repo.
-- **`master` still serves the old Jekyll site, and merging is the user's job.** Do not merge
-  this branch into `master`, do not push to `master`, and do not open the merge as a
-  "finishing touch" — the merge replaces the live website and Max performs it manually once
-  the site is complete. Finish the work on `feature/new-website-with-hugo`, report that it is
-  ready, and stop there.
+- **`master` is the live website.** A push to it deploys within a couple of minutes, with
+  no review step in between. So: work on a feature branch, open a pull request, let
+  `build.yml` go green, and stop there. Do not commit or push to `master`, and do not merge
+  a pull request unless asked to — merging is publishing, and that call is Max's.
 
 ## Tooling & maintenance
 
 - **`.editorconfig`** at the root; 2-space indent for YAML/HTML/CSS, LF endings.
 - **Prettier** is already a theme devDependency — use it for HTML/CSS/YAML we write.
-- **Renovate or Dependabot** for both the npm dependencies *and* the theme submodule; the
-  theme is actively developed and pinning it silently is how sites rot.
-- **Link checking** in CI (e.g. lychee) — this site is a migration with many old URLs and
-  `aliases`, so broken links are the most likely regression.
+- **Dependabot** is configured in `.github/dependabot.yml` for the npm dependencies, the
+  GitHub Actions *and* the theme submodule; the theme is actively developed and pinning it
+  silently is how sites rot. A theme-submodule PR must get a local `npm run build` and a
+  look at the rendered pages before it is merged — it can move layout, not just versions.
+- **Link checking** runs in CI via lychee (`lychee.toml`, internal links only). The site
+  carries many old URLs and `aliases` from the migration, so broken links are the most
+  likely regression.
 - Build with warnings visible before declaring work done. `npm run start` already passes
-  `--printI18nWarnings` and `--printPathWarnings`; treat those as errors during migration.
+  `--printI18nWarnings` and `--printPathWarnings`; treat those as errors.
 
 ## Conventions
 

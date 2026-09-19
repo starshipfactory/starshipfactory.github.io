@@ -1,3 +1,6 @@
+[![Build](https://github.com/starshipfactory/starshipfactory.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/starshipfactory/starshipfactory.github.io/actions/workflows/build.yml)
+[![Deploy to GitHub Pages](https://github.com/starshipfactory/starshipfactory.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/starshipfactory/starshipfactory.github.io/actions/workflows/deploy.yml)
+
 # Starship Factory — Website
 
 The website of [Starship Factory](https://starship-factory.ch), the makerspace in Basel,
@@ -6,6 +9,10 @@ Switzerland.
 Built with [Hugo](https://gohugo.io) (extended) and the
 [cncf/dot-org-hugo-theme](https://github.com/cncf/dot-org-hugo-theme), bilingual in German
 and English, published to GitHub Pages.
+
+**It is live at <https://starship-factory.ch/>.** `master` is the deployed branch: pushing
+to it publishes the site, within a couple of minutes and with nothing to run by hand. So
+work on a branch, open a pull request, and let the build go green before merging.
 
 | | |
 |---|---|
@@ -16,13 +23,18 @@ and English, published to GitHub Pages.
 | Search | [Pagefind](https://pagefind.app), built as a post-build step |
 | Hosting | GitHub Pages, custom domain `starship-factory.ch` |
 
-Two further documents live alongside this one and go deeper:
+**[`CLAUDE.md`](CLAUDE.md)** lives alongside this file and goes deeper: the standing rules
+— theme boundaries, branding, colours, responsive constraints, translation policy, what is
+deliberately excluded. Read it before changing anything structural.
 
-- **[`CLAUDE.md`](CLAUDE.md)** — the standing rules: theme boundaries, branding, colours,
-  responsive constraints, translation policy, what is deliberately excluded. Read it before
-  changing anything structural.
-- **[`SETUP.md`](SETUP.md)** — the phase-by-phase record of how the site was built from an
-  empty tree. Historical, but useful when you need to know *why* something is the way it is.
+This site replaced a Jekyll site that used the `minimal-mistakes` theme. That site is no
+longer on `master`; the last commit carrying it is `cdf4f44^`, which is where to look when
+you need the original of a migrated page or asset:
+
+```bash
+git show cdf4f44^:_pages/anfahrt.md        # an old page
+git ls-tree -r --name-only cdf4f44^        # everything the old site had
+```
 
 ---
 
@@ -354,13 +366,15 @@ mapped onto the theme's `--primary-*` custom properties. Keep it small.
 
 The theme is a submodule and is **read-only**. Anything that needs changing is done by
 copying the file into the project's own `layouts/` directory, which Hugo resolves first.
-There are six such files today: `layouts/partials/footer.html`,
-`layouts/partials/blog/byline.html`, `layouts/shortcodes/button.html`,
-`layouts/shortcodes/img.html` and `layouts/blog/list.html` are copies of a theme file, and
-`layouts/index.html` fills a gap the theme leaves. Each carries a comment at the top saying what it forked and why.
-`layouts/partials/image.html` and `layouts/_default/_markup/render-image.html` are not
-forks — the theme has no equivalent. Reach for CSS before forking a template, and never
-fork `header.html` — it carries the hamburger menu and the whole mobile navigation.
+Copies of a theme or Hugo built-in file: `layouts/partials/footer.html`,
+`layouts/partials/head.html`, `layouts/partials/blog/byline.html`,
+`layouts/shortcodes/button.html`, `layouts/shortcodes/img.html`, `layouts/blog/list.html`,
+`layouts/robots.txt` and `layouts/sitemap.xml`. Additive files, with no theme equivalent:
+`layouts/index.html`, `layouts/partials/image.html`,
+`layouts/_default/_markup/render-image.html`, `layouts/partials/head/schema.html` and
+`layouts/partials/head/custom-head.html`. Each carries a comment at the top saying what it
+forked or fills, and why. Reach for CSS before forking a template, and never fork
+`header.html` — it carries the hamburger menu and the whole mobile navigation.
 
 ### Before you commit
 
@@ -454,13 +468,3 @@ source; if the club moves or changes its hours, both have to be updated.
 
 The Organization has one `@id` for the whole site, built from the German home page, because
 the German and English pages describe the same association rather than two of them.
-
-### ⚠️ The cutover is manual
-
-At the time of writing, **`master` still serves the old Jekyll site**, and the new Hugo site
-lives on `feature/new-website-with-hugo`. Merging that branch into `master` is what replaces
-the live website, and that merge is performed **by hand, deliberately, by a human** — it is
-not a routine step and not the tail end of someone's feature work.
-
-Once the cutover has happened, this section can go and the normal flow applies: branch → PR
-→ green build → merge to `master` → deployed.
