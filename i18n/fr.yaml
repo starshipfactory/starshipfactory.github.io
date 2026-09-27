@@ -1,0 +1,19 @@
+# Chaînes d'interface pour le site français.
+# Le thème ne fournit aucun répertoire i18n ; chaque chaîne traduisible utilisée par ses
+# gabarits doit figurer ici, sinon Hugo retombe sur la valeur anglaise codée en dur.
+# Pour retrouver les clés utilisées :
+#   grep -rno 'i18n "[^"]*"' themes/dot-org-hugo-theme/layouts | sort -u
+
+# Entrée « fil d'Ariane » pour la page d'accueil
+breadcrumb_home: "Accueil"
+
+# Signature du blog : « par Max Muster »
+by: "par"
+
+# Attribut title des icônes de réseaux sociaux dans le pied de page
+social_link_title: "{{ .SiteTitle }} sur {{ .Network }}"
+
+# Format de date des signatures du blog. Chaîne de mise en page Go ; Hugo localise le nom
+# du mois. En français le jour ne porte pas d'ordinal et le mois est en minuscules :
+# « 22 août 2013 ».
+date_format: "2 January 2006"

@@ -219,3 +219,116 @@ en:
         name: "Imprint"
         url: "/imprint/"
         weight: 2
+
+######################## french — translated from the german, served under /fr/ #############
+# Translated from the German, never from the English: English is a sibling translation,
+# not an intermediate, and relay translation compounds drift.
+# Register is "tu" (tutoiement), matching the German "du" and the plain English voice.
+# Standard French, with every Swiss fact preserved verbatim (CHF, Swiss addresses and
+# dates, BVB line numbers, street and stop names).
+fr:
+  languageName: "Français"
+  languageCode: "fr-CH"
+  contentDir: content/fr
+  weight: 3
+  title: "Starship Factory"
+  copyright: "Copyright &copy; {{< current_year >}} Starship Factory, Bâle. Contenus sous [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.fr), sauf mention contraire."
+  params:
+    description: "La Starship Factory est le makerspace de Bâle : un atelier ouvert pour bricoler, construire, réparer et apprendre."
+    accessibility:
+      skip_text: "Aller au contenu"
+    main_cta:
+      text: "Devenir membre"
+      link: "/devenir-membre/"
+    footer_cta:
+      text: "Rejoins-nous"
+      link: "/devenir-membre/"
+    github_edit: "Modifier cette page sur GitHub"
+  menu:
+    main:
+      - identifier: "home"
+        name: "Accueil"
+        url: "/"
+        weight: 1
+      - identifier: "blog"
+        name: "Blog"
+        url: "/blog/"
+        weight: 2
+      - identifier: "anfahrt"
+        name: "Nous trouver"
+        url: "/nous-trouver/"
+        weight: 3
+      # External link to the Discourse forum — see the German menu above.
+      - identifier: "forum"
+        name: "Forum"
+        url: "https://discourse.starship-factory.ch/"
+        weight: 4
+      # Grouping entry only, no page of its own — see the German menu above.
+      - identifier: "werkstatt"
+        name: "Atelier"
+        weight: 5
+      - identifier: "3d-druck"
+        name: "Impression 3D"
+        url: "/impression-3d/"
+        parent: "werkstatt"
+        weight: 1
+      - identifier: "cnc-bearbeitung"
+        name: "Usinage CNC"
+        url: "/usinage-cnc/"
+        parent: "werkstatt"
+        weight: 2
+      - identifier: "laser"
+        name: "Laser"
+        url: "/laser/"
+        parent: "werkstatt"
+        weight: 3
+      - identifier: "elektronik"
+        name: "Électronique"
+        url: "/electronique/"
+        parent: "werkstatt"
+        weight: 4
+      - identifier: "holzwerkstatt"
+        name: "Atelier bois"
+        url: "/atelier-bois/"
+        parent: "werkstatt"
+        weight: 5
+      - identifier: "textil"
+        name: "Textile"
+        url: "/textile/"
+        parent: "werkstatt"
+        weight: 6
+      # Grouping entry only, no page of its own — see the German menu above.
+      # "Verein" is the Swiss registered association; "Association" is the plain French
+      # equivalent, and the German term is glossed on first use in the content.
+      - identifier: "verein"
+        name: "Association"
+        weight: 6
+      - identifier: "mitglied-werden"
+        name: "Devenir membre"
+        url: "/devenir-membre/"
+        parent: "verein"
+        weight: 1
+      - identifier: "spenden"
+        name: "Dons"
+        url: "/dons/"
+        parent: "verein"
+        weight: 2
+      - identifier: "statuten"
+        name: "Statuts"
+        url: "/statuts/"
+        parent: "verein"
+        weight: 3
+      - identifier: "reglement"
+        name: "Charte"
+        url: "/charte/"
+        parent: "verein"
+        weight: 4
+    legal:
+      - identifier: "datenschutz"
+        name: "Confidentialité"
+        url: "/confidentialite/"
+        weight: 1
+      - identifier: "impressum"
+        name: "Mentions légales"
+        url: "/mentions-legales/"
+        weight: 2

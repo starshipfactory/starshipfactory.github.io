@@ -89,6 +89,7 @@ config/_default/params.yaml     # logos, social_links, custom_css, search toggle
 config/production/hugo.yaml     # production-only overrides (hugo.Environment)
 content/de/                     # German content (default language)
 content/en/                     # English content
+content/fr/                     # French content
 i18n/de.yaml, i18n/en.yaml      # UI strings — the theme ships NO i18n files
 data/authors.yaml               # blog authors, keyed by GitHub username
 archetypes/                     # copied from the theme, adapted
@@ -107,7 +108,7 @@ lychee.toml                     # link-check config (internal links only)
 static/CNAME                    # starship-factory.ch, copied into public/ on build
 static/css/custom.css           # branding + small fixes (see "Branding")
 static/img/                     # logo variants, social share image
-assets/img/blog/                # blog archive images, flat, shared by de + en
+assets/img/blog/                # blog archive images, flat, shared by de + en + fr
 assets/img/home/                # home page photos
 static/img/social-icons/        # signal.svg, discourse.svg (see Footer below)
 static/favicon.ico              # + favicon.svg, favicon-32x32.png, apple-touch-icon.png
@@ -142,7 +143,7 @@ exist now; the table records why, so they do not get tidied away:
 | `content/<lang>/blog/_index.md` | Section list page. Without it the blog section renders empty. |
 | `content/<lang>/_index.md` | Home page. |
 | `static/favicon.ico`, `static/favicon.svg`, `static/favicon-32x32.png`, `static/apple-touch-icon.png` | **The theme ships its own CNCF favicons in its `static/`, which get published to the site root.** Browsers request `/favicon.ico` unprompted, so without ours the CNCF icon is what people bookmark. `head/favicons.html` only emits `<link>` tags for files that exist with *exactly* these names. Regenerate all four from the old favicon — see "Favicons" under Branding. |
-| `i18n/de.yaml`, `i18n/en.yaml` | The theme has **no `i18n/` directory at all**; template strings such as `social_link_title` fall back to hardcoded English. Any UI string that should be German must be defined here. |
+| `i18n/de.yaml`, `i18n/en.yaml`, `i18n/fr.yaml` | The theme has **no `i18n/` directory at all**; template strings such as `social_link_title` fall back to hardcoded English. Any UI string that should be German or French must be defined here. One file per language, same four keys in each. |
 | `data/authors.yaml` | The blog archetype has an `author:` field resolved against this file, keyed by GitHub username. |
 | `static/img/social-icons/signal.svg`, `discourse.svg` | See "Footer links". |
 
@@ -188,7 +189,7 @@ data-protection regression.
 
 ## Multilingual
 
-German is the **main/default** language, English is secondary.
+German is the **main/default** language; English and French are secondary.
 
 In `config/_default/hugo.yaml`:
 
@@ -198,79 +199,134 @@ defaultContentLanguage: de
 defaultContentLanguageInSubdir: false
 ```
 
-German therefore lives at the site root (`/anfahrt/`) and English under `/en/`
-(`/en/how-to-find-us/`). In `config/_default/languages.yaml` define `de` (weight 1,
-`languageCode: de-CH`) and `en` (weight 2, `contentDir: content/en`), each with its own
-`title`, `params.description`, CTA texts and menus.
+German therefore lives at the site root (`/anfahrt/`), English under `/en/`
+(`/en/how-to-find-us/`) and French under `/fr/` (`/fr/nous-trouver/`). In
+`config/_default/languages.yaml` define `de` (weight 1, `languageCode: de-CH`), `en`
+(weight 2, `contentDir: content/en`) and `fr` (weight 3, `languageCode: fr-CH`,
+`contentDir: content/fr`), each with its own `title`, `params.description`, CTA texts and
+menus.
+
+**Adding the third language needed no template changes, and a fourth would not either.**
+The theme's `language-selector.html` ranges over `.Site.Languages`, `head/custom-head.html`
+loops `.AllTranslations` for hreflang (keeping `x-default` pinned to German),
+`head/schema.html` derives its `@id` from the default language, `blog/byline.html` takes its
+date layout from `i18n`, and the forked `footer.html` ranges `.Site.Menus.legal`. Adding a
+language is config + `i18n/<lang>.yaml` + `content/<lang>/`, nothing more.
 
 Rules:
 
-- **German is written first and is the source of truth. English is produced by translating
-  it.** Never author an English page independently — it drifts from the German and nobody
-  notices.
-- **Every German page and every blog post gets an English translation**, produced as part of
-  the same task that creates or changes the German. A German page committed without its
-  English counterpart is unfinished work, not a backlog item. Hugo's fallback to the default
-  language exists as a safety net, not as a plan.
+- **German is written first and is the source of truth. English and French are produced by
+  translating it.** Never author an English or French page independently — it drifts from the
+  German and nobody notices. **Translate from the German, never from the other translation:**
+  English and French are siblings, not intermediates, and relay translation compounds drift.
+- **Every German page and every blog post gets an English *and* a French translation**,
+  produced as part of the same task that creates or changes the German. A German page
+  committed without both counterparts is unfinished work, not a backlog item. Hugo's fallback
+  to the default language exists as a safety net, not as a plan.
+- **Parity is all-or-nothing.** The theme's language selector falls back to
+  `href="/{{ .Lang }}/"` for a page with no translation — which yields `/de/`, a 404, since
+  German is at the root. One missing translation therefore breaks the switcher on that page's
+  *other* two languages too, not just its own.
 - Link translated pages with an explicit `translationKey` in front matter, so the theme's
   language selector works even when the slugs differ.
-- UI strings go in `i18n/de.yaml` / `i18n/en.yaml`, never hardcoded in a template.
+- UI strings go in `i18n/de.yaml` / `i18n/en.yaml` / `i18n/fr.yaml`, never hardcoded in a
+  template. All three carry the same four keys (`breadcrumb_home`, `by`,
+  `social_link_title`, `date_format`).
 - German content uses Swiss German orthography: **"ss" instead of "ß"** (`Strasse`,
   `Schliessfach`), and Swiss number/date conventions.
 - Address the reader with the informal **"du"** — that is the tone of the space. In English
-  use the equivalent plain, direct register ("you", contractions, no corporate voice).
+  use the equivalent plain, direct register ("you", contractions, no corporate voice); in
+  French use **"tu"** (tutoiement). **The one exception is the privacy policy**, which the
+  German itself writes in the formal register ("Sie"); the French mirrors that with "vous"
+  and says so in its opening note. Register follows the source document, not the site
+  average.
 
 ### Translating
 
-Translate the meaning, not the words. The English site should read as though written by a
-member, not as output from a translation tool.
+Translate the meaning, not the words. The English and French sites should read as though
+written by a member, not as output from a translation tool.
+
+**French specifics.** Standard French, with every Swiss fact preserved verbatim (CHF, Swiss
+addresses and date formats, BVB line numbers, street and stop names) — no Romandie-only
+vocabulary. French typography: a no-break space before `: ; ! ?`, `«  »` for quotation
+marks, `’`-style apostrophes in prose, and times as `19h30`. **Every internal link and
+`{{< button link= >}}` in `content/fr/` starts with `/fr/`** — see the warning at the end of
+this section.
 
 - **Translate the slug too**, and keep it in the front matter: `/mitglied-werden/` becomes
   `/en/become-a-member/`, not `/en/mitglied-werden/`. Front matter `title`, `description`,
   `summary` and image alt text all get translated as well — not just the body.
-  **One exception: `search.md` keeps its filename in both languages.** The theme's
-  `header.html` hardcodes `{{ "/search" | absLangURL }}`, so a German `suche.md` would leave
-  the header's search icon pointing at a 404. Translate its `title` to "Suche", not its path.
+  **One exception: `search.md` keeps its filename in all three languages.** The theme's
+  `header.html` hardcodes `{{ "/search" | absLangURL }}`, so a German `suche.md` or a French
+  `recherche.md` would leave the header's search icon pointing at a 404. Translate its
+  `title` ("Suche", "Recherche"), not its path.
 - **Do not translate proper nouns**: "Starship Factory", street and place names, Basel
   transport lines and stop names, "Verein" when it names the legal entity, product and
-  machine names. Keep the German term and add a short gloss on first use where an English
-  reader would otherwise be lost (e.g. *Verein* — a Swiss registered association).
-- Keep German terms that have no clean English equivalent and that members actually say,
-  rather than inventing English ones.
+  machine names. Keep the German term and add a short gloss on first use where an English or
+  French reader would otherwise be lost (e.g. *Verein* — a Swiss registered association, or
+  *une association de droit suisse*).
+- Keep German terms that have no clean English or French equivalent and that members
+  actually say, rather than inventing new ones.
 - Convert nothing factual: prices in CHF stay CHF, dates and addresses keep Swiss format,
   IBANs and opening hours are copied verbatim. A translation must not change a number.
 - Keep the Markdown structure identical — same headings, same links, same images, same
-  shortcodes — so the two languages stay diffable against each other.
+  shortcodes — so the three languages stay diffable against each other. Where the German
+  itself is garbled or self-contradictory, translate the evident meaning literally rather
+  than repairing it, so the copies keep lining up.
 - **Legal pages are a special case.** Translate Impressum, Datenschutz, Statuten and
-  Reglement/Charta for comprehension, but add a line at the top of each English version
+  Reglement/Charta for comprehension, but add a line at the top of each translated version
   stating that the German original is the legally binding version, and never reword a legal
   clause to "improve" it. If a passage is genuinely ambiguous, translate it literally and
-  flag it rather than interpreting it.
-- When the German changes later, update the English in the same commit.
+  flag it rather than interpreting it. Those notices are the **only** place a translated page
+  links to a German URL (`/impressum/`, `/datenschutz/`, `/statuten/`, `/reglement/`) — that
+  is deliberate, because they point at the binding original.
+- When the German changes later, update the English **and** the French in the same commit.
+
+**The trap that lychee cannot catch.** `layouts/shortcodes/button.html` does *not* apply
+`relLangURL`, so internal links in content carry their language prefix literally: German
+writes `link="/anfahrt/"`, English `link="/en/how-to-find-us/"`, French
+`link="/fr/nous-trouver/"`. A French page that kept an `/en/…` or a bare `/anfahrt/` link
+would silently send the reader to the wrong language, and the link check would pass, because
+the target genuinely exists. Gate it with a grep instead — this must print nothing:
+
+```bash
+grep -rnoE '(link="|\]\()/[a-z0-9-]+' content/fr --include='*.md' \
+  | grep -vE '/fr/|/img/|/attachments/|/datenschutz/|/impressum/|/reglement/|/statuten/'
+```
 
 ## Content sections
 
-This is the site as published. Menu order, German (default) URLs, and their English
-counterparts:
+This is the site as published. Menu order, German (default) URLs, and their English and
+French counterparts. `identifier:` values are identical across all three language menus, so
+the three `menu.main` blocks stay diffable against each other — keep it that way.
 
-| Menu entry (de / en)        | German URL          | English URL             | Notes |
-|-----------------------------|---------------------|-------------------------|-------|
-| Home                        | `/`                 | `/en/`                  | `content/<lang>/_index.md` |
-| Blog                        | `/blog/`            | `/en/blog/`             | List + 96 posts, migrated from the old `_posts/` |
-| Anfahrt / How to find us    | `/anfahrt/`         | `/en/how-to-find-us/`   | Address, public transport, map |
-| Forum                       | —                   | —                       | External link to `https://discourse.starship-factory.ch/`; no page of its own |
-| **Werkstatt / Workshop**    | —                   | —                       | Grouping entry only, no page — the six machine areas below are its children |
-| 3D-Druck / 3D printing      | `/3d-druck/`        | `/en/3d-printing/`      | |
-| CNC-Bearbeitung / CNC machining | `/cnc-bearbeitung/` | `/en/cnc-machining/` | |
-| Laser                       | `/laser/`           | `/en/laser/`            | |
-| Elektronik / Electronics    | `/elektronik/`      | `/en/electronics/`      | |
-| Holzwerkstatt / Wood workshop | `/holzwerkstatt/` | `/en/wood-workshop/`    | |
-| Textil / Textiles           | `/textil/`          | `/en/textiles/`         | |
-| **Verein / Association**    | —                   | —                       | Grouping entry only, no page |
-| Mitglied werden / Become a member | `/mitglied-werden/` | `/en/become-a-member/` | Membership info; also the header + footer CTA |
-| Spenden / Donate            | `/spenden/`         | `/en/donate/`           | Donation options |
-| Statuten / Statutes         | `/statuten/`        | `/en/statutes/`         | From `cdf4f44^:_pages/organisation/statuten.md` |
-| Reglement/Charta / Charter  | `/reglement/`       | `/en/charter/`          | From `cdf4f44^:_pages/organisation/reglement.md` |
+| Menu entry (de / en / fr) | German URL | English URL | French URL | Notes |
+|---------------------------|------------|-------------|------------|-------|
+| Home / Home / Accueil | `/` | `/en/` | `/fr/` | `content/<lang>/_index.md` |
+| Blog | `/blog/` | `/en/blog/` | `/fr/blog/` | List + 96 posts, migrated from the old `_posts/` |
+| Anfahrt / How to find us / Nous trouver | `/anfahrt/` | `/en/how-to-find-us/` | `/fr/nous-trouver/` | Address, public transport, map |
+| Forum | — | — | — | External link to `https://discourse.starship-factory.ch/`; no page of its own |
+| **Werkstatt / Workshop / Atelier** | — | — | — | Grouping entry only, no page — the six machine areas below are its children |
+| 3D-Druck / 3D printing / Impression 3D | `/3d-druck/` | `/en/3d-printing/` | `/fr/impression-3d/` | |
+| CNC-Bearbeitung / CNC machining / Usinage CNC | `/cnc-bearbeitung/` | `/en/cnc-machining/` | `/fr/usinage-cnc/` | |
+| Laser | `/laser/` | `/en/laser/` | `/fr/laser/` | |
+| Elektronik / Electronics / Électronique | `/elektronik/` | `/en/electronics/` | `/fr/electronique/` | |
+| Holzwerkstatt / Wood workshop / Atelier bois | `/holzwerkstatt/` | `/en/wood-workshop/` | `/fr/atelier-bois/` | |
+| Textil / Textiles / Textile | `/textil/` | `/en/textiles/` | `/fr/textile/` | |
+| **Verein / Association / Association** | — | — | — | Grouping entry only, no page |
+| Mitglied werden / Become a member / Devenir membre | `/mitglied-werden/` | `/en/become-a-member/` | `/fr/devenir-membre/` | Membership info; also the header + footer CTA |
+| Spenden / Donate / Dons | `/spenden/` | `/en/donate/` | `/fr/dons/` | Donation options |
+| Statuten / Statutes / Statuts | `/statuten/` | `/en/statutes/` | `/fr/statuts/` | From `cdf4f44^:_pages/organisation/statuten.md` |
+| Reglement/Charta / Charter / Charte | `/reglement/` | `/en/charter/` | `/fr/charte/` | From `cdf4f44^:_pages/organisation/reglement.md` |
+
+French slugs stay ASCII (`electronique`, `confidentialite`); the accents live in `title` and
+the menu `name` only.
+
+**`params.main_cta` / `params.footer_cta` links are NOT prefixed.** The theme passes them
+through `absLangURL`, so the French CTA is `link: "/devenir-membre/"`, not
+`/fr/devenir-membre/` — the latter would render as `/fr/fr/devenir-membre/`. Menu `url:`
+values are likewise unprefixed (`footer.html` applies `relLangURL`). Only links *inside
+content* carry the prefix.
 
 Six top-level entries, two of them dropdowns. **Werkstatt and Verein are grouping entries
 with no `url:` and no page** — the theme renders a parent with children as `href="#"` plus
@@ -287,14 +343,16 @@ not duplicated.
 Two further pages exist for the **footer only** (`menu.legal`, see below) and must not be
 added to `menu.main`:
 
-| Page                  | German URL      | English URL    | Source at `cdf4f44^`     |
-|-----------------------|-----------------|----------------|--------------------------|
-| Datenschutz / Privacy | `/datenschutz/` | `/en/privacy/` | `_pages/datenschutz.md`  |
-| Impressum / Imprint   | `/impressum/`   | `/en/imprint/` | `_pages/impressum.md`    |
+| Page | German URL | English URL | French URL | Source at `cdf4f44^` |
+|------|------------|-------------|------------|----------------------|
+| Datenschutz / Privacy / Confidentialité | `/datenschutz/` | `/en/privacy/` | `/fr/confidentialite/` | `_pages/datenschutz.md` |
+| Impressum / Imprint / Mentions légales | `/impressum/` | `/en/imprint/` | `/fr/mentions-legales/` | `_pages/impressum.md` |
 
 The old site nested Statuten and Reglement under `/organisation/`; this site flattens
 them, and `aliases: ["/organisation/statuten/"]` (resp. `reglement`) in their front matter
-keeps the old URLs working. Leave those aliases in place.
+keeps the old URLs working. Leave those aliases in place. **Those aliases are German-only,
+and so are the two in the blog archive** — the old Jekyll site had no English or French URLs
+to preserve, so translated pages get no `aliases` at all.
 
 ### Deliberately excluded
 
@@ -311,8 +369,8 @@ keeps the old URLs working. Leave those aliases in place.
 
 ### Blog: the migrated archive and new posts
 
-**The migration is complete** — all 96 old posts live under `content/de/blog/` and
-`content/en/blog/` and are published. The originals are at
+**The migration is complete** — all 96 old posts live under `content/de/blog/`,
+`content/en/blog/` and `content/fr/blog/` and are published. The originals are at
 `cdf4f44^:_posts/YYYY-MM-DD-slug.md`, with Jekyll front matter and a
 `/:year/:month/:day/:title/` permalink; consult them when a migrated post looks wrong, not
 to re-run the migration. Everything below applies to new posts as well, except where it is
@@ -334,11 +392,20 @@ explicitly about the old ones.
 - Jekyll-isms (`{% include %}`, `{% highlight %}`, `/assets/images/...` paths) were
   rewritten during the migration; blog images now live at `/img/blog/...`. If one survives
   somewhere, fix it the same way.
-- **Every post gets an English translation** under `content/en/blog/`, per the "Translating"
-  rules above. The archive is fully translated, both languages 96 posts; keep it that way —
-  a post committed German-only breaks the pairing.
-- Post `date` and `author` must be identical in both languages; only the prose, `title`,
-  `description`, `slug` and `tags` are translated. Keep `translationKey` on both.
+- **Every post gets an English and a French translation** under `content/en/blog/` and
+  `content/fr/blog/`, per the "Translating" rules above. The archive is fully translated,
+  96 posts in each of the three languages; keep it that way — a post committed German-only
+  breaks the pairing.
+- Post `date` and `author` must be identical in all three languages; only the prose, `title`,
+  `description`, `slug`, `tags` and `categories` are translated. Keep the same
+  `translationKey` on all three — **the German-derived key is the shared one**, so the English
+  and French files carry keys like `loop-schal`, not their own slug. A few keys are quirky and
+  must be copied verbatim rather than guessed: trailing hyphens
+  (`feinmechanikerschraubenzieherset-von-bruetschruegger-werkzeuge-ag-`), mixed case
+  (`Arduino-ISP`, `Ziemlich_schnelles_Internet`), underscores (`digitaluhr_selbst_bauen`) and
+  date-prefixed keys that disambiguate the two "wir ziehen um" posts
+  (`2019-05-20-wir-ziehen-um`, `2025-05-30-wir-ziehen-um` — note the latter's date does not
+  match its own filename).
 - **The byline is already fixed in `layouts/partials/blog/byline.html`** — two changes
   against the theme, documented at the top of that file: the date layout comes from `i18n`
   so German posts render "30. August 2026", and the author lookup is guarded, because the
@@ -356,15 +423,16 @@ The old site carries a large `assets/images/uploads/` tree. Do not bulk-copy it 
 
 **Three homes, and which to pick.** `static/` is copied verbatim with no processing;
 `assets/` and page bundles both go through Hugo's image pipeline. Default to a page
-bundle, use `assets/` when two languages share one file, and keep `static/` for files
+bundle, use `assets/` when several languages share one file, and keep `static/` for files
 that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
 
 - Migrate images **as page bundles**: `content/de/blog/my-post/index.md` with its images
   beside it.
 - **Exception, already applied to the blog archive.** The 58 images referenced by the
   migrated posts live flat in `assets/img/blog/`, rather than in per-post bundles, because
-  the German and English version of a post reference the same file and bundles would
-  duplicate every one of them. New posts should still use page bundles.
+  all three language versions of a post reference the same file and bundles would duplicate
+  every one of them. New posts should still use page bundles. **Adding French therefore added
+  no image files at all** — only the `alt` and `title` text is translated.
 
   This tree was reorganised out of `static/assets/images/snippet_images/{content,content_small}/`
   — the old Jekyll/Zinnia paths — and 82 unreferenced files were deleted at the same time.
@@ -373,10 +441,10 @@ that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
   Do not reintroduce `static/assets/`.
 
   It later moved again, from `static/img/blog/` to `assets/img/blog/`, so the archive
-  gets pipeline treatment while both languages keep sharing one copy of each file.
+  gets pipeline treatment while all three languages keep sharing one copy of each file.
   **The markdown still says `/img/blog/foo.jpg`** — the render hook strips the leading
   slash and looks the path up in `assets/`. That deliberately avoids rewriting the image
-  line in all 192 archive files and keeps the German and English copies diffable. Do not
+  line in all 288 archive files and keeps the three language copies diffable. Do not
   "fix" those paths to match the new location.
 - **Markdown images go through the pipeline automatically**, via
   `layouts/_default/_markup/render-image.html`. Plain `![alt](foo.jpg "title")` is the
@@ -423,7 +491,7 @@ that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
   ```
 - Every image needs meaningful alt text; the theme is built around accessibility and
   `params.accessibility` is a real config block (`skip_text`, `help_text`, `help_url`) —
-  fill it in, in both languages.
+  fill it in, in all three languages.
 - The Anfahrt map and any video go through the theme's iframe styles and the
   `youtube_enhanced` shortcode, never a raw `<iframe>`.
 
@@ -442,7 +510,7 @@ snapshot and goes stale until the script is rerun.
 **What gets indexed is decided by `data-pagefind-body`.** The theme's `baseof.html` puts that
 attribute on `#content` for `.IsPage` only. Pagefind's rule is all-or-nothing: once *any*
 page on the site carries the attribute, every page without one is skipped entirely. That
-covers every regular page and every blog post, in both languages.
+covers every regular page and every blog post, in all three languages.
 
 Section and home pages are **not** `.IsPage`, so they need their own wrapper —
 `baseof.html` must not be forked for this. One project template supplies one:
@@ -457,19 +525,23 @@ Deliberately left out of the index:
 - **The home pages** (`/`, `/en/`). Their content is a set of teasers that all link on to
   the real page, so a hit on the home page is a detour. `layouts/index.html` is therefore
   *not* a search-related override — do not add a wrapper to it.
-- **Taxonomy list pages** (`/tags/…`, `/categories/…`). Keyword listings, 272 of them, that
+- **Taxonomy list pages** (`/tags/…`, `/categories/…`). Keyword listings, ~400 of them, that
   would crowd out real pages.
 - Not by choice: the `/search` page indexes itself as a near-empty result. Excluding it
   cleanly would need `data-pagefind-ignore` on an ancestor of `#content`, i.e. a
   `baseof.html` fork, which is not worth it.
 
 Pagefind splits the index by the `<html lang>` attribute on its own, so a German search
-returns German pages only, and its UI strings are localised without anything in `i18n/`.
+returns German pages only, and its UI strings are localised without anything in `i18n/`. It
+picked up French unprompted: the build emits `wasm.fr.pagefind`, i.e. a real French stemmer
+rather than the `unknown` fallback.
+
 After a build, `public/pagefind/pagefind-entry.json` reports the per-language page counts —
-check it when changing what is indexed. A page with a near-zero word count there is a
-content problem, not a search one — the six workshop pages were front-matter-only stubs
-for a while and were findable by title alone; they have bodies now. Check that count after
-adding a page.
+check it when changing what is indexed. The three languages should agree; they currently read
+**111 pages each** (112 content files per language, minus the deliberately excluded home
+page). A page with a near-zero word count there is a content problem, not a search one — the
+six workshop pages were front-matter-only stubs for a while and were findable by title alone;
+they have bodies now. Check that count after adding a page.
 
 ## Branding: logo & colours
 
@@ -747,8 +819,11 @@ menu, not a separate tablet layout. Do not add an intermediate tablet breakpoint
 
 Check three widths before calling responsive work done: **~375px** (phone), **~768px**
 (tablet — still the mobile layout) and **~1280px** (desktop). At each, confirm the hamburger
-menu still opens and closes, the seven main-nav entries are all reachable, the logo is
-undistorted, and the footer's link groups reflow without horizontal scroll.
+menu still opens and closes, the six top-level nav entries and the ten dropdown children are
+all reachable, the logo is undistorted, and the footer's link groups reflow without
+horizontal scroll. Check it on a `/fr/` page too, not only the German one: the language
+selector now holds three entries, which is the one bit of theme CSS the third language
+stresses.
 
 ## Commands
 
