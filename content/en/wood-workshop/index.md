@@ -4,8 +4,10 @@ description: "Table saw, planer, band saw, mitre saw, wood lathe, pillar drills 
 translationKey: "wood-workshop"
 ---
 
+{{< intro >}}
 We have a fully equipped wood workshop. From cutting to planing to drilling and assembly, a
 piece of furniture, an enclosure or a repair can be taken from start to finish here.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

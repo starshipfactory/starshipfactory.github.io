@@ -4,8 +4,10 @@ description: "Kniterate knitting machine, sewing machine, vinyl cutter and heat 
 translationKey: "textiles"
 ---
 
+{{< intro >}}
 Printed T-shirts, sewn and knitted pieces and stickers all come out of our textile workshop.
 Bring your design along as an SVG if you can.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

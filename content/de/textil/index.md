@@ -4,8 +4,10 @@ description: "Kniterate-Strickmaschine, Nähmaschine, Folienplotter und Heisspre
 translationKey: "textiles"
 ---
 
+{{< intro >}}
 In unserer Textilwerkstatt entstehen bedruckte T-Shirts, genähte und gestrickte Stücke und
 Aufkleber. Dein Motiv bringst du am besten als SVG mit.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}
