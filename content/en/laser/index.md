@@ -4,9 +4,11 @@ description: "XTool laser cutter and laser engraver at Starship Factory in Basel
 translationKey: "laser"
 ---
 
+{{< intro >}}
 A laser cuts and engraves whatever drawing you bring along — ideally as an SVG. Parts, signs,
 boxes, presents and prototypes come out of it in minutes. We have two machines: one for
 cutting, one for engraving.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

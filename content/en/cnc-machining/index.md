@@ -4,9 +4,11 @@ description: "Two CNC mills at Starship Factory in Basel: the Carvera for small,
 translationKey: "cnc-machining"
 ---
 
+{{< intro >}}
 A CNC mill cuts and engraves shapes you have drawn on the computer beforehand — enclosures,
 front panels, signs, inlays. We have two of them, one for small precise work and one for
 large workpieces.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

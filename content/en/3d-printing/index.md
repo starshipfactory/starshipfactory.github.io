@@ -4,9 +4,11 @@ description: "Prusa XL, Prusa MK4, several Enders and an Anycube resin printer w
 translationKey: "3d-printing"
 ---
 
+{{< intro >}}
 3D printing is one of Starship Factory's main focuses. We have an extensive fleet of 3D
 printers — from filament printers for sturdy parts to a resin printer for fine detail. Bring
 your model along as an STL and slice it on site.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

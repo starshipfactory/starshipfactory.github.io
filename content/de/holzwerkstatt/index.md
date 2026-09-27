@@ -4,9 +4,11 @@ description: "Kreissäge, Hobelmaschine, Bandsäge, Kappsäge, Drechselbank, Sta
 translationKey: "wood-workshop"
 ---
 
+{{< intro >}}
 Wir verfügen über eine voll ausgestattete Holzwerkstatt. Vom Zuschnitt über das Aushobeln bis
 zum Bohren und Zusammenbauen lässt sich hier ein Möbelstück, ein Gehäuse oder eine Reparatur
 von Anfang bis Ende erledigen.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

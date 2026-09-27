@@ -4,9 +4,11 @@ description: "Zwei CNC-Fräsen in der Starship Factory in Basel: die Carvera fü
 translationKey: "cnc-machining"
 ---
 
+{{< intro >}}
 Mit einer CNC-Fräse schneidest und gravierst du Formen, die du vorher am Rechner gezeichnet
 hast — Gehäuse, Frontplatten, Schilder, Einlegeteile. Wir haben zwei davon, eine für kleine
 genaue Arbeiten und eine für grosse Werkstücke.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

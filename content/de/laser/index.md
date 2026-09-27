@@ -4,9 +4,11 @@ description: "Laser-Cutter und Laser-Engraver von XTool in der Starship Factory 
 translationKey: "laser"
 ---
 
+{{< intro >}}
 Ein Laser schneidet und graviert, was du vorher als Zeichnung mitbringst — am besten als
 SVG. Damit entstehen Bauteile, Schilder, Schachteln, Geschenke und Prototypen in wenigen
 Minuten. Wir haben zwei Geräte: eines zum Schneiden, eines zum Gravieren.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}

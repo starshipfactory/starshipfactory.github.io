@@ -25,7 +25,7 @@ lernen, lehren und inspirieren einander.
 
 {{< cards count=2 >}}
 {{< card >}}
-#### Öffnungszeiten
+### Öffnungszeiten
 Gasstrasse 20, 4056 Basel (im Hinterhof)
 
 Di 19:30–22:00, Fr 19:30–22:00
@@ -33,7 +33,7 @@ Di 19:30–22:00, Fr 19:30–22:00
 {{< button link="/anfahrt/" text="Anfahrt" >}}
 {{< /card >}}
 {{< card >}}
-#### Kontakt
+### Kontakt
 Noch Fragen? Komm in unsere Signal Gruppe! Dort kannst du deine Fragen stellen und dir wird sofort weitergeholfen.
 {{< spacer 5 >}}
 {{< button link="https://signal.group/#CjQKIIt5fkwCXHlImGzm41tTrf-6umAhyM7ENTpqW4Y0P4SHEhDgMyhI63oL7v3mTk0N7G3t" text="Signal Gruppe" target="_blank" >}}

@@ -4,9 +4,11 @@ description: "Prusa XL, Prusa MK4, mehrere Ender und ein Anycube-Resin-Drucker m
 translationKey: "3d-printing"
 ---
 
+{{< intro >}}
 3D-Druck ist ein Hauptschwerpunkt der Starship Factory. Wir verfügen über einen umfangreichen
 Maschinenpark an 3D-Druckern — vom Filamentdrucker für robuste Teile bis zum Resin-Drucker
 für feine Details. Dein Modell bringst du als STL mit, geschnitten wird vor Ort.
+{{< /intro >}}
 
 {{< columns count=2 >}}
 {{< column >}}
