@@ -9,12 +9,10 @@ translationKey: "directions"
 {{< iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.5746843218803415%2C47.56923319789967%2C7.578265070915223%2C47.57153687404694&layer=mapnik&marker=47.5703843%2C7.576474599999983" title="Karte mit dem Standort der Starship Factory an der Gasstrasse 20 in Basel" height="350px" >}}
 {{< /column >}}
 {{< column >}}
-Das Vereinslokal der Starship Factory befindet sich im Hinterhof der
+Die Werkstatt und die Clubräume der Starship Factory befinden sich im Hinterhof der
 
 Gasstrasse 20\
 4056 Basel
-
-Die Clubräume befinden sich dort im 1. Untergeschoss.
 
 {{< button link="https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475" text="Grössere Karte anzeigen" target="_blank" >}}
 {{< /column >}}
@@ -23,9 +21,11 @@ Die Clubräume befinden sich dort im 1. Untergeschoss.
 {{< columns count=2 >}}
 {{< column >}}
 {{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory Aussenansicht" sizes="column" >}}
+Durch die Toreinfahrt auf den Hinterhof gehen. Ihr geht dann direkt auf unsere Werkstatt im Erdgeschoss zu.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="Die Treppe zu den Starship Factory Clubräumen" sizes="column" >}}
+Die Clubräume befinden sich dort im 1. Untergeschoss.
 {{< /column >}}
 {{< /columns >}}
 
