@@ -9,12 +9,10 @@ translationKey: "directions"
 {{< iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.5746843218803415%2C47.56923319789967%2C7.578265070915223%2C47.57153687404694&layer=mapnik&marker=47.5703843%2C7.576474599999983" title="Carte indiquant l'emplacement de la Starship Factory à la Gasstrasse 20 à Bâle" height="350px" >}}
 {{< /column >}}
 {{< column >}}
-Le local de l'association Starship Factory se trouve dans la cour intérieure du
+L'atelier et les locaux du club de la Starship Factory se trouvent dans la cour intérieure du
 
 Gasstrasse 20\
 4056 Bâle
-
-Les locaux du club se trouvent au 1er sous-sol.
 
 {{< button link="https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475" text="Afficher une carte plus grande" target="_blank" >}}
 {{< /column >}}
@@ -23,9 +21,11 @@ Les locaux du club se trouvent au 1er sous-sol.
 {{< columns count=2 >}}
 {{< column >}}
 {{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="La Starship Factory vue de l'extérieur" sizes="column" >}}
+Passe par le porche pour entrer dans la cour intérieure. Tu arrives alors directement devant notre atelier, au rez-de-chaussée.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="L'escalier menant aux locaux de la Starship Factory" sizes="column" >}}
+Les locaux du club se trouvent là, au 1er sous-sol.
 {{< /column >}}
 {{< /columns >}}
 

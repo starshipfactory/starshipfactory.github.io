@@ -9,12 +9,10 @@ translationKey: "directions"
 {{< iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.5746843218803415%2C47.56923319789967%2C7.578265070915223%2C47.57153687404694&layer=mapnik&marker=47.5703843%2C7.576474599999983" title="Map showing the location of Starship Factory at Gasstrasse 20 in Basel" height="350px" >}}
 {{< /column >}}
 {{< column >}}
-The Starship Factory clubhouse is in the rear courtyard of
+The Starship Factory workshop and clubrooms are in the rear courtyard of
 
 Gasstrasse 20\
 4056 Basel
-
-Our rooms are on the first basement level.
 
 {{< button link="https://www.openstreetmap.org/?mlat=47.570384&mlon=7.576475#map=19/47.570384/7.576475" text="View larger map" target="_blank" >}}
 {{< /column >}}
@@ -23,9 +21,11 @@ Our rooms are on the first basement level.
 {{< columns count=2 >}}
 {{< column >}}
 {{< img src="/img/anfahrt/sf_aussenansicht.jpeg" alt="Starship Factory seen from the street" sizes="column" >}}
+Go through the gateway into the rear courtyard. You'll walk straight towards our workshop on the ground floor.
 {{< /column >}}
 {{< column >}}
 {{< img src="/img/anfahrt/sf_eingang_clubraum.jpeg" alt="The stairs down to the Starship Factory clubrooms" sizes="column" >}}
+The clubrooms are on the first basement level.
 {{< /column >}}
 {{< /columns >}}
 
