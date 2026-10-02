@@ -124,7 +124,7 @@ Xtool Wonderpress et bien plus encore.
 
 {{< /columns >}}
 
-## Du nouveau sur le blog
+## Dernières nouvelles
 
 {{< recent_posts count=5 >}}
 
