@@ -119,6 +119,10 @@ In unserer Textilwerkstatt haben wir eine Strickmaschine, Nähmaschine, Xtool Wo
 
 {{< /columns >}}
 
+## Neues aus dem Blog
+
+{{< recent_posts count=5 >}}
+
 {{< spacer 20 >}}
 
 {{< cards count=3 >}}

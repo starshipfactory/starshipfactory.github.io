@@ -124,6 +124,10 @@ Xtool Wonderpress et bien plus encore.
 
 {{< /columns >}}
 
+## Du nouveau sur le blog
+
+{{< recent_posts count=5 >}}
+
 {{< spacer 20 >}}
 
 {{< cards count=3 >}}
