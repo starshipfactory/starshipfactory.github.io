@@ -122,10 +122,10 @@ of the file, make the smallest possible change, and note at the top which theme 
 forked and why, so theme updates can be re-merged. Reach for CSS before forking a
 template. Current forks of a theme (or Hugo built-in) file: `footer.html` (legal link
 row), `head.html` (front-matter `meta_title`), `byline.html` (per-language post dates and
-a guarded author lookup), `button.html` (external link targets), `img.html` (image
-pipeline), `blog/list.html` (search indexing of `/blog/`), `robots.txt` (Sitemap line) and
-`sitemap.xml` (drops noindex pages). Additive, not forks — the theme has no equivalent:
-`index.html` (home page), `partials/image.html`, the render hook, `head/schema.html` and
+a guarded author lookup), `img.html` (image pipeline), `blog/list.html` (search indexing
+of `/blog/`), `robots.txt` (Sitemap line) and `sitemap.xml` (drops noindex pages).
+Additive, not forks — the theme has no equivalent: `index.html` (home page),
+`partials/image.html`, the render hook, `head/schema.html` and
 `head/custom-head.html` (which fills a designated extension point the theme ships empty).
 
 The theme provides these designated extension points; use them instead of forking:
@@ -282,7 +282,7 @@ this section.
   is deliberate, because they point at the binding original.
 - When the German changes later, update the English **and** the French in the same commit.
 
-**The trap that lychee cannot catch.** `layouts/shortcodes/button.html` does *not* apply
+**The trap that lychee cannot catch.** The theme's `button` shortcode does *not* apply
 `relLangURL`, so internal links in content carry their language prefix literally: German
 writes `link="/anfahrt/"`, English `link="/en/how-to-find-us/"`, French
 `link="/fr/nous-trouver/"`. A French page that kept an `/en/…` or a bare `/anfahrt/` link
