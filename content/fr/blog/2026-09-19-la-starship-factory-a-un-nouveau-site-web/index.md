@@ -3,6 +3,8 @@ title: "La Starship Factory a un nouveau site web"
 date: 2026-09-19
 slug: "nouveau-site-starship-factory"
 translationKey: "neue-starship-factory-website"
+images:
+  - "/img/blog/new-starship-factory-website.jpeg"
 categories:
   - "Site web"
 tags:
@@ -11,6 +13,8 @@ tags:
 
 La Starship Factory a un nouveau site web.
 <!--more-->
+![La page d'accueil du nouveau site web de la Starship Factory](/img/blog/new-starship-factory-website.jpeg)
+
 Nous avons modernisé notre site web et nous utilisons désormais [Hugo](https://gohugo.io/). [Hugo](https://gohugo.io/)
 est un framework Go qui sert à générer des sites web statiques.
 
