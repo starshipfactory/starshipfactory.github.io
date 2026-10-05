@@ -98,13 +98,15 @@ layouts/partials/head.html      # override: honours front-matter `meta_title`
 layouts/blog/list.html          # override: makes /blog/ searchable (see "Search")
 layouts/robots.txt              # override: adds the Sitemap line
 layouts/sitemap.xml             # override: drops noindex pages from the sitemap
+layouts/tags/term.rss.xml       # override: Instagram feed for the opt-in tag (see "Instagram")
 layouts/partials/image.html     # shared image-pipeline renderer (see "Images & media")
 layouts/partials/head/custom-head.html       # canonical + hreflang; calls schema.html
 layouts/partials/head/schema.html            # schema.org JSON-LD
 layouts/shortcodes/img.html     # override: routes {{< img >}} through the pipeline
 layouts/_default/_markup/render-image.html   # markdown image render hook
 lychee.toml                     # link-check config (internal links only)
-.github/workflows/              # build.yml (PRs) and deploy.yml (master -> Pages)
+.github/workflows/              # build.yml (PRs), deploy.yml (master -> Pages), instagram.yml
+.github/scripts/instagram.py    # validates the Instagram feed and posts to the Instagram API
 static/CNAME                    # starship-factory.ch, copied into public/ on build
 static/css/custom.css           # branding + small fixes (see "Branding")
 static/img/                     # logo variants, social share image
@@ -123,7 +125,8 @@ forked and why, so theme updates can be re-merged. Reach for CSS before forking 
 template. Current forks of a theme (or Hugo built-in) file: `footer.html` (legal link
 row), `head.html` (front-matter `meta_title`), `byline.html` (per-language post dates and
 a guarded author lookup), `img.html` (image pipeline), `blog/list.html` (search indexing
-of `/blog/`), `robots.txt` (Sitemap line) and `sitemap.xml` (drops noindex pages).
+of `/blog/`), `robots.txt` (Sitemap line), `sitemap.xml` (drops noindex pages) and
+`tags/term.rss.xml` (the theme's `rss.xml`, replaced for the Instagram tag only).
 Additive, not forks — the theme has no equivalent: `index.html` (home page),
 `partials/image.html`, the render hook, `head/schema.html` and
 `head/custom-head.html` (which fills a designated extension point the theme ships empty).
@@ -143,7 +146,7 @@ exist now; the table records why, so they do not get tidied away:
 | `content/<lang>/blog/_index.md` | Section list page. Without it the blog section renders empty. |
 | `content/<lang>/_index.md` | Home page. |
 | `static/favicon.ico`, `static/favicon.svg`, `static/favicon-32x32.png`, `static/apple-touch-icon.png` | **The theme ships its own CNCF favicons in its `static/`, which get published to the site root.** Browsers request `/favicon.ico` unprompted, so without ours the CNCF icon is what people bookmark. `head/favicons.html` only emits `<link>` tags for files that exist with *exactly* these names. Regenerate all four from the old favicon — see "Favicons" under Branding. |
-| `i18n/de.yaml`, `i18n/en.yaml`, `i18n/fr.yaml` | The theme has **no `i18n/` directory at all**; template strings such as `social_link_title` fall back to hardcoded English. Any UI string that should be German or French must be defined here. One file per language, same four keys in each. |
+| `i18n/de.yaml`, `i18n/en.yaml`, `i18n/fr.yaml` | The theme has **no `i18n/` directory at all**; template strings such as `social_link_title` fall back to hardcoded English. Any UI string that should be German or French must be defined here. One file per language, same five keys in each. |
 | `data/authors.yaml` | The blog archetype has an `author:` field resolved against this file, keyed by GitHub username. |
 | `static/img/social-icons/signal.svg`, `discourse.svg` | See "Footer links". |
 
@@ -230,8 +233,8 @@ Rules:
 - Link translated pages with an explicit `translationKey` in front matter, so the theme's
   language selector works even when the slugs differ.
 - UI strings go in `i18n/de.yaml` / `i18n/en.yaml` / `i18n/fr.yaml`, never hardcoded in a
-  template. All three carry the same four keys (`breadcrumb_home`, `by`,
-  `social_link_title`, `date_format`).
+  template. All three carry the same five keys (`breadcrumb_home`, `by`,
+  `social_link_title`, `date_format`, `instagram_read_more`).
 - German content uses Swiss German orthography: **"ss" instead of "ß"** (`Strasse`,
   `Schliessfach`), and Swiss number/date conventions.
 - Address the reader with the informal **"du"** — that is the tone of the space. In English
@@ -494,6 +497,56 @@ that need a fixed, unhashed URL (favicons, `logo.svg`, `social-share.png`).
   fill it in, in all three languages.
 - The Anfahrt map and any video go through the theme's iframe styles and the
   `youtube_enhanced` shortcode, never a raw `<iframe>`.
+
+## Instagram
+
+Blog posts are posted to the club's Instagram account
+(`instagram.com/starship_factory`) **by opt-in**: add the tag `instagram`
+(`params.instagram.tag`) to the post's `tags`. Add it in all three languages, so the tag
+lists stay diffable; only the German feed is posted, because German is the source of truth
+and the account is Basel-local. Nothing else marks a post for Instagram, and a post without
+the tag is never posted.
+
+The pipeline has three parts, and the split is deliberate — **Hugo prepares, the workflow
+only posts**:
+
+- **`layouts/tags/term.rss.xml`** renders `/tags/instagram/index.xml` as RSS 2.0 + Media
+  RSS. Each item carries the finished caption in `<description>` (title, summary,
+  `instagram_read_more`, permalink, hashtags from `params.instagram.hashtags` plus the
+  post's own tags) and a dedicated JPEG in `<enclosure>`. Instagram accepts JPEG only, so
+  the image is a 1080px-wide derivative, cropped to 4:5 or 1.91:1 only when it falls
+  outside that range. Source image: `images[0]` in front matter, else the first bundle
+  image, else the first Markdown image. Every other tag feed takes the theme's template,
+  copied verbatim.
+- **`build.yml`** runs `instagram.py check` on every PR. A tagged post with no usable
+  image, a caption over 2,200 characters or more than 30 hashtags fails the build.
+- **`instagram.yml`** runs `instagram.py publish` after every successful deploy, daily
+  and on demand (dry run by default). It reads the **live** German feed and posts each item
+  that is not yet on the account.
+
+**How "new" is decided — do not replace this with git diffs or a state file.** The
+Instagram account is the record: every caption contains the post's permalink, and an item
+is skipped when its permalink appears in one of the account's ~200 most recent captions.
+That makes every run idempotent, retries free, and keeps the workflow from ever writing to
+`master` (a push there is a deploy). Consequences:
+
+- Do not edit the link out of a posted caption on Instagram; the post would be posted again
+  on the next run. The age guard below limits the damage.
+- Only items dated within the last 30 days (`--max-age-days`) are considered, so tagging
+  an old archive post does nothing unless you run the workflow by hand with a larger value.
+- A post that is not live yet (CDN, failed deploy) is skipped with a warning and picked up
+  by the next run. A future-dated post is posted by the first deploy after its date.
+
+**Setup** (one-off, done in the Meta and GitHub UIs):
+
+1. Instagram account switched to a **Business** account, linked to a Facebook Page.
+2. A Meta app with `instagram_content_publish`. Use a **System User token** from Meta
+   Business Suite: it does not expire. (An Instagram Login token expires after 60 days;
+   then also set the variable `IG_API_HOST=graph.instagram.com`.)
+3. GitHub environment **`instagram`**, restricted to `master`, with the secrets
+   `IG_USER_ID` and `IG_ACCESS_TOKEN`.
+4. Repository variable **`INSTAGRAM_ENABLED=true`**. Until then the automatic runs are
+   skipped; manual dry runs work regardless. Optional: `IG_API_VERSION` (default `v26.0`).
 
 ## Search
 

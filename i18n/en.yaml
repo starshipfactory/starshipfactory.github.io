@@ -15,3 +15,7 @@ social_link_title: "{{ .SiteTitle }} on {{ .Network }}"
 
 # Date format for blog bylines. Go layout string; Hugo localises the month name.
 date_format: "January 2, 2006"
+
+# Instagram caption (layouts/tags/term.rss.xml), directly before the link to the post.
+# Links in Instagram captions are not clickable, hence the pointer to the bio.
+instagram_read_more: "Read the whole post on our website (link in bio):"

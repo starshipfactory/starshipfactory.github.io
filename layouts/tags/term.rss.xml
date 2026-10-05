@@ -1,0 +1,121 @@
+{{- /*
+  RSS for tag term pages (/tags/<term>/index.xml). Forks the theme's
+  layouts/_default/rss.xml for exactly one term: params.instagram.tag. Every other tag
+  takes the {{ else }} branch, which is the theme's file copied verbatim — re-merge it
+  from the theme when the theme's rss.xml changes.
+
+  The Instagram feed is the hand-off to .github/workflows/instagram.yml. Tagging a German
+  blog post with the opt-in tag puts it in /tags/instagram/index.xml, and Hugo prepares
+  everything the workflow needs, so the workflow never parses Markdown:
+
+    <description>  the finished caption: title, summary, link, hashtags
+    <enclosure>    a JPEG derivative of the post image, inside Instagram's limits
+    <media:content> the same JPEG with its width and height, for the PR-time check
+
+  Instagram only accepts JPEG, while the render hook serves WebP, so the post image gets a
+  dedicated derivative. Its source is the first entry of the post's `images` front matter
+  (the OpenGraph image), else the first image in the page bundle, else the first Markdown
+  image in the body (the migrated archive keeps its images in assets/). Instagram allows aspect
+  ratios from 4:5 to 1.91:1: an image inside that range is only resized, one outside it is
+  cropped to the nearest limit.
+
+  The output is still plain RSS 2.0 with Media RSS, so an RSS-to-Instagram service could
+  consume it just as well.
+*/ -}}
+{{- $cfg := site.Params.instagram -}}
+{{- if and $cfg (eq .Data.Term $cfg.tag) -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>{{ .Title }} | {{ site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ site.Params.description }}</description>
+    <language>{{ site.Language.LanguageCode }}</language>
+    <atom:link href="{{ .Permalink }}index.xml" rel="self" type="application/rss+xml"/>
+    {{- range .Pages }}
+    {{- $page := . }}
+    {{- $src := false }}
+    {{- with .Params.images }}
+      {{- $path := index . 0 }}
+      {{- $src = or ($page.Resources.Get $path) (resources.Get (strings.TrimPrefix "/" $path)) }}
+    {{- end }}
+    {{- if not $src }}
+      {{- with .Resources.ByType "image" }}{{ $src = index . 0 }}{{ end }}
+    {{- end }}
+    {{- if not $src }}
+      {{- with findRESubmatch `!\[[^\]]*\]\(\s*([^\s)]+)` .RawContent 1 }}
+        {{- $path := index (index . 0) 1 }}
+        {{- $src = or ($page.Resources.Get $path) (resources.Get (strings.TrimPrefix "/" $path)) }}
+      {{- end }}
+    {{- end }}
+    {{- $jpeg := false }}
+    {{- if and $src (in (slice "jpeg" "png" "webp" "tiff" "bmp") $src.MediaType.SubType) }}
+      {{- $ratio := div (float $src.Width) $src.Height }}
+      {{- if lt $ratio 0.8 }}
+        {{- $jpeg = $src.Fill "1080x1350 Center jpg q85" }}
+      {{- else if gt $ratio 1.91 }}
+        {{- $jpeg = $src.Fill "1080x565 Center jpg q85" }}
+      {{- else }}
+        {{- $jpeg = $src.Resize "1080x jpg q85" }}
+      {{- end }}
+    {{- end }}
+
+    {{- $summary := .Description | default (.Summary | plainify | htmlUnescape) | strings.TrimSpace | truncate 1200 }}
+    {{- $tags := $cfg.hashtags | default slice }}
+    {{- range .Params.tags }}
+      {{- if ne (lower .) (lower $cfg.tag) }}
+        {{- $tags = $tags | append (replaceRE `[^\p{L}\p{N}_]` "" . | lower) }}
+      {{- end }}
+    {{- end }}
+    {{- $hashtags := slice }}
+    {{- range $tags | uniq | first 30 }}{{ with . }}{{ $hashtags = $hashtags | append (printf "#%s" .) }}{{ end }}{{ end }}
+    {{- $caption := printf "%s\n\n%s\n\n%s\n%s\n\n%s" .Title $summary (i18n "instagram_read_more") .Permalink (delimit $hashtags " ") }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- /* XMLEscape writes every newline as &#xA;, which survives --minify; literal
+             newlines would be collapsed and the caption's blank lines lost. */}}
+      <description>{{ $caption | transform.XMLEscape | safeHTML }}</description>
+      {{- with $jpeg }}
+      <enclosure url="{{ .Permalink }}" length="{{ len .Content }}" type="image/jpeg"/>
+      <media:content url="{{ .Permalink }}" medium="image" type="image/jpeg" width="{{ .Width }}" height="{{ .Height }}"/>
+      {{- end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>
+{{- else -}}
+<rss version="2.0">
+    <channel>
+        <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+        <link>{{ .Permalink }}</link>
+        <description>Recent content in {{ .Site.Title }}</description>
+
+        {{ if eq .Kind "home" }} <!-- If it's the main index -->
+            {{ range .Site.RegularPages }}
+                {{ if .Date }} <!-- Only include posts with dates -->
+                <item>
+                    <title>{{ .Title }}</title>
+                    <link>{{ .Permalink }}</link>
+                    <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+                    <description>{{ .Summary | plainify | transform.XMLEscape | safeHTML }}</description>
+                </item>
+                {{ end }}
+            {{ end }}
+        {{ else }} <!-- If it's a section index -->
+            {{ range .Pages }}
+                {{ if .Date }} <!-- Only include posts with dates -->
+                <item>
+                    <title>{{ .Title }}</title>
+                    <link>{{ .Permalink }}</link>
+                    <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+                    <description>{{ .Summary | plainify | transform.XMLEscape | safeHTML }}</description>
+                </item>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </channel>
+</rss>
+{{- end -}}
