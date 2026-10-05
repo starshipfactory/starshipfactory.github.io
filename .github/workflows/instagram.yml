@@ -1,0 +1,70 @@
+name: Post to Instagram
+
+# Posts blog posts tagged `instagram` (params.instagram.tag) to the club's Instagram
+# account. Hugo prepares caption and image in /tags/instagram/index.xml (see
+# layouts/tags/term.rss.xml); .github/scripts/instagram.py posts every item in that feed
+# whose permalink is not yet in one of the account's captions.
+#
+# Because the account is the record of what was posted, every trigger below is safe to
+# fire any number of times:
+#   - after each successful deploy, which is when a new post goes live;
+#   - daily, to pick up anything a deploy-time run missed (Instagram outage, CDN still
+#     serving the old feed);
+#   - by hand, with dry_run on by default to preview the captions.
+#
+# Setup — see the "Instagram" section in CLAUDE.md:
+#   environment `instagram`: secrets IG_USER_ID and IG_ACCESS_TOKEN
+#   repository variable INSTAGRAM_ENABLED=true, which switches the automatic runs on
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types: [completed]
+    branches: [master]
+  schedule:
+    - cron: "23 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print what would be posted"
+        type: boolean
+        default: true
+      max_age_days:
+        description: "Ignore posts older than this many days"
+        type: number
+        default: 30
+
+permissions:
+  contents: read
+
+# Never run two at once: both would see the same post as missing and post it twice.
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: >-
+      (vars.INSTAGRAM_ENABLED == 'true' || inputs.dry_run) &&
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    environment: instagram
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+        with:
+          sparse-checkout: .github/scripts
+
+      - name: Post new blog posts
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          # graph.facebook.com for a System User token (recommended, does not expire),
+          # graph.instagram.com for an Instagram Login token.
+          IG_API_HOST: ${{ vars.IG_API_HOST }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          MAX_AGE_DAYS: ${{ inputs.max_age_days || 30 }}
+          DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
+        run: |
+          args=(publish --max-age-days "$MAX_AGE_DAYS")
+          if [ "$DRY_RUN" = true ]; then args+=(--dry-run); fi
+          python3 .github/scripts/instagram.py "${args[@]}"

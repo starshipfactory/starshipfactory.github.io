@@ -47,6 +47,11 @@ jobs:
         # Pagefind indexes the built output, so it has to run after Hugo.
         run: npx -y pagefind --site public
 
+      - name: Check Instagram feed
+        # Posts tagged `instagram` are posted by instagram.yml once merged. Catch what
+        # Instagram would reject (no image, caption too long, …) here, not after merge.
+        run: python3 .github/scripts/instagram.py check public/tags/instagram/index.xml --public public
+
       - name: Build for link check
         # A second render with relativeURLs. The production build above writes
         # every internal link as https://starship-factory.ch/..., which lychee

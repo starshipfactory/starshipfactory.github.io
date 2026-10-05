@@ -17,3 +17,7 @@ social_link_title: "{{ .SiteTitle }} sur {{ .Network }}"
 # du mois. En français le jour ne porte pas d'ordinal et le mois est en minuscules :
 # « 22 août 2013 ».
 date_format: "2 January 2006"
+
+# Légende Instagram (layouts/tags/term.rss.xml), juste avant le lien vers l'article.
+# Les liens ne sont pas cliquables dans une légende Instagram, d'où le renvoi à la bio.
+instagram_read_more: "Lis l’article complet sur notre site (lien dans la bio) :"
