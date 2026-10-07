@@ -892,7 +892,9 @@ Other deployment notes:
 - Content is Markdown in `content/<lang>/`; page bundles (`page-name/index.md` plus its
   images) are preferred for pages that carry their own media.
 - Theme front matter extras: `showHeader`, `noindex`. Theme shortcodes exist for buttons,
-  cards, columns, tables, FAQ, table-of-contents and YouTube — use them instead of raw HTML.
+  cards, columns, tables, FAQ, table-of-contents, YouTube and recent blog posts
+  (`{{< recent_posts count=5 heading=3 >}}`, used on the home pages) — use them instead of
+  raw HTML.
 - Set `description` in front matter: `head.html` uses it for the meta description and
   OpenGraph, falling back to a truncated summary.
 - `markup.goldmark.renderer.unsafe: true` is enabled by the theme's example config, so inline

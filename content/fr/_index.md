@@ -126,7 +126,7 @@ Xtool Wonderpress et bien plus encore.
 
 ## Dernières nouvelles
 
-{{< recent_posts count=5 >}}
+{{< recent_posts count=5 heading=3 >}}
 
 {{< spacer 20 >}}
 
