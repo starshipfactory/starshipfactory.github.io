@@ -121,7 +121,7 @@ In our textile workshop we have a knitting machine, a sewing machine, an XTool W
 
 ## Latest news
 
-{{< recent_posts count=5 >}}
+{{< recent_posts count=5 heading=3 >}}
 
 {{< spacer 20 >}}
 
