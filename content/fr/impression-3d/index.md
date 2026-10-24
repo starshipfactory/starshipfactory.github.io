@@ -69,9 +69,21 @@ plusieurs pièces en parallèle ou pour laisser tourner une impression plus long
 {{< /column >}}
 {{< /columns >}}
 
+{{< columns count=2 >}}
+{{< column >}}
+{{< img src="/img/3d-druck/sunlu_filadryer_s4.jpeg" alt="Sunlu Filadryer S4" sizes="column" >}}
+{{< /column >}}
+{{< column >}}
+## Sunlu Filadryer S4
+Pour sécher les filaments, nous avons acquis le [Sunlu Filadryer S4](https://www.sunlu.com/products/filadryer-s4-filament-dryer).
+{{< /column >}}
+{{< /columns >}}
+
+
 {{< spacer 20 >}}
 
-Passe simplement un soir d'ouverture et viens voir — on te montre volontiers comment les
-machines fonctionnent. Aucune connaissance préalable n'est nécessaire.
+Passe simplement un soir d'ouverture et viens voir. On te montre volontiers comment les
+machines fonctionnent. Aucune connaissance préalable n'est nécessaire. Idéalement, apporte
+ton ordinateur portable avec [PrusaSlicer déjà installé](https://www.prusa3d.com/fr/p/prusaslicer/).
 
 {{< button link="/fr/nous-trouver/" text="Nous trouver" style="secondary" >}}
