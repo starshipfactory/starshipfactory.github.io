@@ -63,3 +63,13 @@ organization:
     - days: ["Tuesday", "Friday"]
       opens: "19:30"
       closes: "22:00"
+
+######################## instagram ####################
+# Opt-in auto-posting to Instagram. Tagging a German blog post with `tag` lists it in
+# /tags/instagram/index.xml, which layouts/tags/term.rss.xml turns into a feed carrying a
+# finished caption and a JPEG for every post. .github/workflows/instagram.yml posts each
+# item that is not on the account yet. See the "Instagram" section in CLAUDE.md.
+instagram:
+  tag: "instagram"
+  # Always appended to the caption, before the post's own tags. Without the leading #.
+  hashtags: ["starshipfactory", "makerspace", "basel"]

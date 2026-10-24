@@ -147,7 +147,8 @@
         "publisher" (dict "@id" $orgID)
   -}}
   {{- with $img }}{{ $post = merge $post (dict "image" .) }}{{ end -}}
-  {{- with .Params.tags }}{{ $post = merge $post (dict "keywords" (delimit . ", ")) }}{{ end -}}
+  {{- /* The Instagram opt-in tag is plumbing, not a keyword. See layouts/tags/term.rss.xml. */ -}}
+  {{- with complement (slice (site.Params.instagram.tag | default "")) (.Params.tags | default slice) }}{{ $post = merge $post (dict "keywords" (delimit . ", ")) }}{{ end -}}
 
   <script type="application/ld+json">{{ jsonify (dict "indent" "  ") $post | safeJS }}</script>
 {{- end -}}
