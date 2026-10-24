@@ -66,9 +66,21 @@ parallel, or letting a longer print run.
 {{< /column >}}
 {{< /columns >}}
 
+{{< columns count=2 >}}
+{{< column >}}
+{{< img src="/img/3d-druck/sunlu_filadryer_s4.jpeg" alt="Sunlu Filadryer S4" sizes="column" >}}
+{{< /column >}}
+{{< column >}}
+## Sunlu Filadryer S4
+For drying filament we got the [Sunlu Filadryer S4](https://www.sunlu.com/products/filadryer-s4-filament-dryer).
+{{< /column >}}
+{{< /columns >}}
+
+
 {{< spacer 20 >}}
 
-Just drop by on one of our opening evenings and take a look — we are happy to show you how
-the machines work. You do not need any previous experience.
+Just drop by on one of our opening evenings and take a look. We're happy to show you how
+the machines work. You don't need any previous experience. Ideally, bring your laptop with
+[PrusaSlicer already installed](https://www.prusa3d.com/en/p/prusaslicer/).
 
 {{< button link="/en/how-to-find-us/" text="How to find us" style="secondary" >}}

@@ -68,9 +68,22 @@ Teile zu drucken oder einen längeren Druck laufen zu lassen.
 {{< /column >}}
 {{< /columns >}}
 
+{{< columns count=2 >}}
+{{< column >}}
+{{< img src="/img/3d-druck/sunlu_filadryer_s4.jpeg" alt="Sunlu Filadryer S4" sizes="column" >}}
+{{< /column >}}
+{{< column >}}
+## Sunlu Filadryer S4
+Für das Trocknen von Filamenten haben wir den [Sunlu Filadryer S4](https://www.sunlu.com/de/products/filadryer-s4-filament-dryer)
+angeschafft.
+{{< /column >}}
+{{< /columns >}}
+
+
 {{< spacer 20 >}}
 
-Komm einfach an einem Öffnungsabend vorbei und schau es dir an — wir zeigen dir gerne, wie
-die Maschinen funktionieren. Vorkenntnisse brauchst du keine.
+Komm einfach an einem Öffnungsabend vorbei und schau es dir an. Wir zeigen dir gerne, wie
+die Maschinen funktionieren. Vorkenntnisse brauchst du keine. Idealerweise bringst du deinen Laptop mit und hast dort
+bereits den [Prusa Slicer installiert](https://www.prusa3d.com/de/p/prusaslicer/).
 
 {{< button link="/anfahrt/" text="Anfahrt" style="secondary" >}}
