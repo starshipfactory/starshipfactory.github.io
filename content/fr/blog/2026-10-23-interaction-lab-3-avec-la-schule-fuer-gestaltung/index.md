@@ -20,7 +20,7 @@ tags:
 ---
 
 Pendant quatre week-ends, la Starship Factory s’est transformée en salle de classe : les étudiant·e·s de la filière
-HF Interaction Design de la Schule für Gestaltung Basel (une école supérieure de design à Bâle) ont suivi chez nous
+HF Interaction Design de la [Schule für Gestaltung Basel](https://www.sfgbasel.ch/) (une école supérieure de design à Bâle) ont suivi chez nous
 leur module pratique *Interaction Lab 3*. L’objectif : concevoir et construire des interfaces qui ne s’arrêtent pas à
 un écran.
 <!--more-->
@@ -102,7 +102,7 @@ librement accessible sur [GitHub](https://github.com/antomicblitz/hf-game-contro
 
 ## Module 3 : Sound Interfaces
 
-Robin Michel, lui aussi de l’équipe Starship, a fait entrer le son dans l’atelier. Pour commencer, une brève histoire
+[Robin Michel](https://www.robin-michel.ch/), lui aussi de l’équipe Starship, a fait entrer le son dans l’atelier. Pour commencer, une brève histoire
 de la musique électronique, du thérémine des années 1920 au premier synthétiseur Moog, en passant par le Trautonium,
 les ondes Martenot et les studios de radio, jusqu’à *Switched-On Bach* de Wendy Carlos et au premier instrument de
 musique informatique, le Fairlight CMI.
