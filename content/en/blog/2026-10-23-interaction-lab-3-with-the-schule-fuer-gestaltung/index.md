@@ -20,7 +20,7 @@ tags:
 ---
 
 For four weekends, Starship Factory was a classroom: students of the HF Interaction Design programme at the
-Schule für Gestaltung Basel (a Swiss college of higher vocational education in design) took their practical module
+[Schule für Gestaltung Basel](https://www.sfgbasel.ch/) (a Swiss college of higher vocational education in design) took their practical module
 *Interaction Lab 3* with us. The goal: to design and build interfaces that don't end at a screen.
 <!--more-->
 ![An Adafruit Feather nRF52840 Sense on a wooden table, back side up, showing the list of built-in sensors](/img/blog/interaction-lab-3-feather-sense.jpg "The board that ran through the course: the Adafruit Feather nRF52840 Sense")
@@ -96,7 +96,7 @@ the controller centred on *mapping*, *affordance* and *Fitts's law*. The worksho
 
 ## Module 3: Sound interfaces
 
-Robin Michel, also of the Starship crew, brought sound into the workshop. It started with a short history of
+[Robin Michel](https://www.robin-michel.ch/), also of the Starship crew, brought sound into the workshop. It started with a short history of
 electronic music, from the theremin of the 1920s through the Trautonium, the Ondes Martenot and the radio studios to
 the first Moog synthesizer, Wendy Carlos's *Switched-On Bach* and the first computer musical instrument, the
 Fairlight CMI.

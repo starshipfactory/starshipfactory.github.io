@@ -20,8 +20,8 @@ tags:
 ---
 
 Vier Wochenenden lang war die Starship Factory Klassenzimmer: Die Studierenden der HF Interaction Design der
-Schule für Gestaltung Basel haben bei uns ihr Praxismodul *Interaction Lab 3* absolviert. Das Ziel: Interfaces
-entwerfen und bauen, die nicht auf einem Bildschirm enden.
+[Schule für Gestaltung Basel](https://www.sfgbasel.ch/) haben bei uns ihr Praxismodul *Interaction Lab 3* absolviert.
+Das Ziel: Interfaces entwerfen und bauen, die nicht auf einem Bildschirm enden.
 <!--more-->
 ![Ein Adafruit Feather nRF52840 Sense auf einem Holztisch, die Rückseite mit der Liste der eingebauten Sensoren nach oben](/img/blog/interaction-lab-3-feather-sense.jpg "Das Board, das durch den Kurs führte: der Adafruit Feather nRF52840 Sense")
 
@@ -101,9 +101,10 @@ Workshop-Material liegt offen auf
 
 ## Modul 3: Sound Interfaces
 
-Robin Michel, ebenfalls aus der Starship-Crew, brachte Klang in die Werkstatt. Den Anfang machte eine kurze Geschichte der elektronischen Musik, vom
-Theremin der 1920er-Jahre über Trautonium, Ondes Martenot und die Radiostudios bis zum ersten Moog-Synthesizer, Wendy
-Carlos' *Switched-On Bach* und dem ersten Computer-Musikinstrument Fairlight CMI.
+[Robin Michel](https://www.robin-michel.ch/), ebenfalls aus der Starship-Crew, brachte Klang in die Werkstatt.
+Den Anfang machte eine kurze Geschichte der elektronischen Musik, vom Theremin der 1920er-Jahre über Trautonium,
+Ondes Martenot und die Radiostudios bis zum ersten Moog-Synthesizer, Wendy Carlos' *Switched-On Bach* und dem ersten
+Computer-Musikinstrument Fairlight CMI.
 
 ![Ein Tisch voller Synthesizer, Drum-Computer und Kabel, dahinter wird ein Gerät verkabelt](/img/blog/interaction-lab-3-synthesizer.jpg "Der Synthesizer-Tisch: Hier wird Klang zur Interaktion")
 
