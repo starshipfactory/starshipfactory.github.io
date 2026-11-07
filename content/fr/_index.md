@@ -113,7 +113,7 @@ bien plus encore.
 {{< columns count=2 >}}
 {{< column >}}
 ### Textile
-Dans notre atelier textile, nous avons une machine à tricoter, une machine à coudre, une
+Dans notre atelier textile, nous avons une machine à tricoter, une machine à broder, une
 Xtool Wonderpress et bien plus encore.
 
 {{< button link="/fr/textile/" text="En savoir plus" style="secondary" >}}

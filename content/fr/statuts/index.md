@@ -30,7 +30,7 @@ La **Starship Factory** permet à toutes et à tous d'exercer une activité cré
 L'idée fondamentale de la Starship Factory réside dans la transmission du savoir et dans
 l'aide à la réalisation d'idées.
 
-À cette fin, l'association met à disposition, tant de ses membres que du public :
+À cette fin, l'association met à disposition du public :
 
 - des locaux
 - une infrastructure

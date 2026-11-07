@@ -1,6 +1,6 @@
 ---
 title: "Textile"
-description: "Machine à tricoter Kniterate, machine à coudre, plotter de découpe et presses à chaud : l'atelier textile de la Starship Factory à Bâle."
+description: "Machine à tricoter Kniterate, machine à broder, plotter de découpe et presses à chaud : l'atelier textile de la Starship Factory à Bâle."
 translationKey: "textiles"
 ---
 
@@ -22,12 +22,11 @@ l'ordinateur et en fait une pièce finie — écharpes, bonnets, pièces de tiss
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Machine à coudre Brother" sizes="column" >}}
+{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Machine à broder Brother" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-## Machine à coudre Brother
-Pour assembler, retoucher et réparer. C'est aussi le moyen le plus rapide de donner une
-seconde vie à un vêtement.
+## Machine à broder Brother
+Pour broder des textiles. Même des motifs de broderie complexes peuvent être programmés.
 {{< /column >}}
 {{< /columns >}}
 
