@@ -109,7 +109,7 @@ We have a fully equipped wood workshop with a band saw, table saw, planer and mu
 {{< columns count=2 >}}
 {{< column >}}
 ### Textiles
-In our textile workshop we have a knitting machine, a sewing machine, an XTool Wonderpress and much more.
+In our textile workshop we have a knitting machine, an embroidery machine, an XTool Wonderpress and much more.
 
 {{< button link="/en/textiles/" text="Learn more" style="secondary" >}}
 {{< /column >}}

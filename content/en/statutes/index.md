@@ -30,7 +30,7 @@ Swiss law applies to all legal disputes.
 The basic idea of Starship Factory lies in passing on knowledge and in helping people put
 ideas into practice.
 
-To that end the association provides both members and the general public with
+To that end the association provides the general public with
 
 - space
 - infrastructure

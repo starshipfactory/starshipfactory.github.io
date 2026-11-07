@@ -24,7 +24,7 @@ Die **Starship Factory** ermöglicht allen kreativ zu wirken.
 
 Die Grundidee der Starship Factory liegt in der Vermittlung von Wissen und in der Hilfestellung beim Umsetzen von Ideen.
 
-Dafür stellt der Verein sowohl Mitgliedern, wie auch der Allgemeinheit
+Dafür stellt der Verein der Allgemeinheit
 
 - Raum
 - Infrastruktur

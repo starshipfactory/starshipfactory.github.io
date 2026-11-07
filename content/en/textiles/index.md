@@ -1,6 +1,6 @@
 ---
 title: "Textiles"
-description: "Kniterate knitting machine, sewing machine, vinyl cutter and heat presses: the textile workshop at Starship Factory in Basel."
+description: "Kniterate knitting machine, embroidery machine, vinyl cutter and heat presses: the textile workshop at Starship Factory in Basel."
 translationKey: "textiles"
 ---
 
@@ -22,12 +22,11 @@ as a finished piece — scarves, hats, panels of fabric.
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Brother sewing machine" sizes="column" >}}
+{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Brother embroidery machine" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-## Brother sewing machine
-For sewing together, altering and repairing. Also the quickest way to give a piece of
-clothing a second life.
+## Brother embroidery machine
+For embroidering textiles. Even complex embroidery designs can be programmed.
 {{< /column >}}
 {{< /columns >}}
 

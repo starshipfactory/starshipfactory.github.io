@@ -109,7 +109,7 @@ Wir haben eine voll ausgestatte Holzwerkstatt mit Bandsäge, Kreissäge, Hobelma
 {{< columns count=2 >}}
 {{< column >}}
 ### Textil
-In unserer Textilwerkstatt haben wir eine Strickmaschine, Nähmaschine, Xtool Wonderpress und vieles mehr.
+In unserer Textilwerkstatt haben wir eine Strickmaschine, Stickmaschine, Xtool Wonderpress und vieles mehr.
 
 {{< button link="/textil/" text="Mehr erfahren" style="secondary" >}}
 {{< /column >}}

@@ -1,6 +1,6 @@
 ---
 title: "Textil"
-description: "Kniterate-Strickmaschine, Nähmaschine, Folienplotter und Heisspressen: die Textilwerkstatt der Starship Factory in Basel."
+description: "Kniterate-Strickmaschine, Stickmaschine, Folienplotter und Heisspressen: die Textilwerkstatt der Starship Factory in Basel."
 translationKey: "textiles"
 ---
 
@@ -22,12 +22,11 @@ entworfen hast, als fertiges Stück — Schals, Mützen, Stoffstücke.
 
 {{< columns count=2 >}}
 {{< column >}}
-{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Brother Nähmaschine" sizes="column" >}}
+{{< img src="/img/textil/textil_naehmaschine.jpeg" alt="Brother Stickmaschine" sizes="column" >}}
 {{< /column >}}
 {{< column >}}
-## Brother Nähmaschine
-Zum Zusammennähen, Ändern und Reparieren. Auch der schnellste Weg, einem Kleidungsstück ein
-zweites Leben zu geben.
+## Brother Stickmaschine
+Zum Besticken von Textilien. Auch komplexe Stickmotive können programmiert werden.
 {{< /column >}}
 {{< /columns >}}
 
