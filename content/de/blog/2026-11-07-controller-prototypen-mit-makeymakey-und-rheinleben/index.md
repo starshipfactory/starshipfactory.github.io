@@ -41,13 +41,8 @@ Dabei ist niemand allein unterwegs. Das Soziale gehört fest zum Angebot:
 
 - **Entwicklungsgruppen:** In Gruppen von 10 bis 15 Klient:innen stehen der Erfahrungsaustausch und die Begleitung des
   eigenen Prozesses im Vordergrund.
-- **Gemeinsam kochen:** In kleinen Gruppen planen die Klient:innen Menüs, kaufen ein und kochen zusammen. Das stärkt
-  auch die Teamfähigkeit.
 - **Projektraum:** Hier entstehen eigene Projekte, vom Malen, Töpfern und Nähen bis zu handwerklichen Arbeiten. Auch
   Praktisches wie Post, Rechnungen oder die Steuererklärung hat Platz, und Fachpersonen sind bei Bedarf da.
-
-Wie sich das anfühlen kann, beschreibt eine Stimme auf der Webseite von Rheinleben: *«Die Tagesstruktur Entwicklung ist
-für mich ein safe space, wo ich auch über Dinge reden kann, die andere nicht verstehen.»*
 
 Ein Makerspace-Workshop passt gut dazu. Auch bei uns geht es darum, Neues auszuprobieren und zu merken, was man kann.
 Ein Prototyp muss nicht perfekt sein, und wenn etwas beim ersten Mal nicht klappt, gehört das einfach dazu.
@@ -69,6 +64,8 @@ Rosenbaum. Sie meldet sich am Computer als Tastatur und Maus an. Mit Krokodilkle
 was Strom leitet: Alufolie, Früchte, Wasser. Berührt man den Gegenstand und ist gleichzeitig mit der Erde der Platine
 verbunden, schliesst sich der Stromkreis und der Computer glaubt, es sei eine Taste gedrückt worden. Wie das aussieht,
 zeigt das [Video von MakeyMakey](https://vimeo.com/279920496).
+
+![Eine lange Werkbank mit Computern, Kabeln und einem Bündel bunter Krokodilklemmen auf Papier, im Vordergrund eine Maschine von Brother, am Bildrand zwei angeschnittene Personen](/img/blog/rheinleben-makey-makey-workshop.jpg "Die Krokodilklemmen liegen bereit: ein Blick in den Workshop")
 
 Das macht den Einstieg so niederschwellig: Niemand muss löten oder programmieren, um etwas zum Laufen zu bringen.
 Stromkreise versteht man hier nicht aus dem Schulbuch, sondern mit den eigenen Händen. Dieselbe Idee stand auch im

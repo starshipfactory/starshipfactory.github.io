@@ -41,14 +41,9 @@ Personne n’y avance seul·e. La dimension sociale fait pleinement partie de l�
 
 - **Groupes de développement :** dans des groupes de 10 à 15 client·e·s, l’échange d’expériences et l’accompagnement
   de son propre parcours sont au premier plan.
-- **Cuisiner ensemble :** en petits groupes, les client·e·s planifient les menus, font les courses et cuisinent
-  ensemble. Cela renforce aussi l’esprit d’équipe.
 - **Salle de projets :** c’est ici que naissent les projets personnels, de la peinture, de la poterie et de la couture
   aux travaux manuels. Il y a aussi de la place pour les choses pratiques comme le courrier, les factures ou la
   déclaration d’impôts, et des professionnel·le·s sont là en cas de besoin.
-
-Une voix sur le site de Rheinleben décrit ce que cela peut représenter : *« Pour moi, la Tagesstruktur Entwicklung est
-un safe space, où je peux aussi parler de choses que les autres ne comprennent pas. »*
 
 Un atelier de makerspace s’y intègre bien. Chez nous aussi, il s’agit d’essayer de nouvelles choses et de découvrir ce
 dont on est capable. Un prototype n’a pas besoin d’être parfait, et si quelque chose ne marche pas du premier coup, ça
@@ -72,6 +67,8 @@ et Eric Rosenbaum. Elle se présente à l’ordinateur comme un clavier et une s
 relie à tout ce qui conduit l’électricité : papier d’aluminium, fruits, eau. Si tu touches l’objet tout en étant relié·e
 à la masse de la carte, le circuit se ferme et l’ordinateur croit qu’une touche a été pressée. La
 [vidéo de MakeyMakey](https://vimeo.com/279920496) montre à quoi cela ressemble.
+
+![Un long établi avec des ordinateurs, des câbles et un faisceau de pinces crocodile colorées sur une feuille de papier, une machine Brother au premier plan et deux personnes partiellement visibles en bord d’image](/img/blog/rheinleben-makey-makey-workshop.jpg "Les pinces crocodile sont prêtes : un coup d’œil dans l’atelier")
 
 C’est ce qui rend l’accès si facile : personne n’a besoin de souder ou de programmer pour faire fonctionner quelque
 chose. Ici, on ne comprend pas les circuits dans un manuel, mais avec ses propres mains. La même idée était aussi le point

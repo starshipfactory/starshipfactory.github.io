@@ -40,13 +40,8 @@ Nobody goes through this alone. The social side is a firm part of the programme:
 
 - **Development groups:** In groups of 10 to 15 clients, the focus is on sharing experiences and on support for your
   own process.
-- **Cooking together:** In small groups, clients plan menus, do the shopping and cook together. That also builds
-  teamwork.
 - **Project room:** This is where personal projects happen, from painting, pottery and sewing to craft work. There's
   also room for practical things like post, bills or tax returns, and professionals are there when needed.
-
-One voice on Rheinleben's website describes what that can feel like: *"For me, Tagesstruktur Entwicklung is a safe
-space where I can also talk about things other people don't understand."*
 
 A makerspace workshop fits in well with that. We're also about trying new things and finding out what you can do. A
 prototype doesn't have to be perfect, and if something doesn't work the first time, that's simply part of it.
@@ -67,6 +62,8 @@ Rosenbaum. It shows up on a computer as a keyboard and mouse. With alligator cli
 conducts electricity: aluminium foil, fruit, water. Touch the object while you're connected to the board's earth and
 the circuit closes, and the computer thinks a key has been pressed. The [MakeyMakey video](https://vimeo.com/279920496)
 shows what that looks like.
+
+![A long workbench with computers, cables and a bundle of colourful alligator clips on a sheet of paper, a Brother machine in the foreground and two people partly in frame at the edge](/img/blog/rheinleben-makey-makey-workshop.jpg "The alligator clips are ready to go: a look into the workshop")
 
 That's what makes it so easy to get started: nobody has to solder or write code to get something working. You don't
 learn about circuits from a textbook here, but with your own hands. The same idea was also the starting point in
